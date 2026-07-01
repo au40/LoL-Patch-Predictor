@@ -1,0 +1,62 @@
+Patch 26.12 — Champion changes (fetched from leagueoflegends.com; game patch 16.12)
+
+Aatrox
+Q - The Darkin Blade Sweet Spot Bonus Damage: 70 >>> 75
+
+Gwen
+Q - Snip Snip! Base Damage Per Snip: 10/13.5/17/20.5/24 >>> 10/14/18/22/26
+E - Skip 'n Slash Bonus Attack Speed: 20/35/50/65/80% >>> 30/42.5/55/67.5/80%
+
+Hwei
+Q - Subject: Disaster QQ AP ratio: 70% AP >>> 80% AP
+Q - Subject: Disaster QW AP ratio: 25% AP >>> 30% AP
+Q - Subject: Disaster QE Slow: 30% >>> 35%
+E - Subject: Torment Cooldown: 13/12.5/12/11.5/11s >>> 12/11.5/11/10.5/10s
+
+Jax
+Q - Leap Strike Mana Cost: 65 >>> 50
+E - Counter Strike Target Max Health Damage: 3.5%/7% >>> 4%/8%
+
+Lee Sin
+Base AD Growth: 3.7 >>> 3.4
+Q1 - Sonic Wave Damage: 65/95/125/155/185 (+95% bonus AD) >>> 60/90/120/150/180 (+90% bonus AD)
+Q2 - Resonating Strike Damage: 65/95/125/155/185 (+95% bonus AD) >>> 60/90/120/150/180 (+90% bonus AD)
+
+Nocturne
+Q - Duskbringer Damage: 65/110/155/200/245 >>> 65/105/145/185/225
+
+Orianna
+Base Health: 585 >>> 565
+Passive - Clockwork Windup Damage Increase Per Stack: 20% >>> 15%
+R - Command: Shockwave Damage: 250/400/550 (+95% AP) >>> 225/350/475 (+110% AP)
+
+Ryze
+Base Health: 645 >>> 620
+Base AD: 58 >>> 55
+
+Sylas
+Q - Chain Lash Initial Damage: 40/60/80/100/120 (+40% AP) >>> 40/65/90/115/140 (+45% AP)
+W - Kingslayer Heal AP ratio: 20% AP >>> 30% AP
+
+Syndra
+Base Health: 563 >>> 583
+Q - Dark Sphere Damage: 80-220 (+65% AP) >>> 90-230 (+70% AP)
+
+Tristana
+Base AD Growth: 2.9 >>> 3.4
+Q - Rapid Fire Mana: 30/35/40/45/50 >>> 15/20/25/30/35
+
+Varus
+Passive - Living Vengeance On Champ Kill AD/AP: 25% of Total AS >>> 33% of Total AS
+Passive - Living Vengeance On Non-Champ Kill AS: +50% AS >>> +30% AS
+Q - Piercing Arrow bonus AD ratio: 100-150% >>> 80-120%
+W - Blighted Quiver On-Hit Damage: 8/17/26/35/44 >>> 4/13/22/31/40
+
+Xin Zhao
+Passive - Determination Healing: 3/4/5% Max HP (+45/55/80% AP) >>> 2/3.5/5% Max HP (+40/50/70% AP)
+W - Wind Becomes Lightning Mana Cost: 60/55/50/45/40 >>> 60
+E - Audacious Charge Mana Cost: 50 >>> 60
+
+Yuumi
+Passive - Feline Friendship Heal AP ratio: 25% AP >>> 30% AP
+E - Zoomies Shield AP ratio: 30% AP >>> 40% AP

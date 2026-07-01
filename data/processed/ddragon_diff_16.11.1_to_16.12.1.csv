@@ -1,0 +1,5 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Orianna,Orianna,hp,585,565,-20,-3.42,16.11.1,16.12.1
+Ryze,Ryze,hp,645,620,-25,-3.88,16.11.1,16.12.1
+Ryze,Ryze,attackdamage,58,55,-3,-5.17,16.11.1,16.12.1
+Syndra,Syndra,hp,563,583,20,3.55,16.11.1,16.12.1

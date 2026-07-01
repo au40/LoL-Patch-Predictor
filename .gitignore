@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Data caches (raw API pulls can be large / regenerable)
+data/raw/*.json
+data/raw/**/*.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

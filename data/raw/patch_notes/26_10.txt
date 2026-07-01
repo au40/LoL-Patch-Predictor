@@ -1,0 +1,62 @@
+Patch 26.10 — Champion changes (fetched from leagueoflegends.com; game patch 16.10)
+
+Ambessa
+Q Target Max Health Damage: 2/3/4/5/6% >>> 4/4.5/5/5.5/6%
+Q Bonus Monster Damage: 125 >>> 75
+R Healing Percentage: 10/12.5/15% >>> 15/17.5/20%
+R Healing Effectiveness vs Monsters: 40% >>> 25%
+
+Anivia
+Base Armor: 21 >>> 19
+Armor Growth: 4.5 >>> 4.1
+
+Ashe
+Q Total Damage: 110/117.5/125/132.5/140% AD >>> 110/115/120/125/130% AD
+
+Galio
+Q Mana Cost: 70/75/80/85/90 >>> 60/65/70/75/80
+E Total Damage: 90/130/170/210/250 (+90% AP) >>> 100/135/170/205/240 (+100% AP)
+R: Now scales with 100% bonus magic resistance (NEW)
+
+Lee Sin
+W Shield: 70/115/160/205/250 >>> 60/105/150/195/240
+W Cooldown: 12s non-champs / 6s champs >>> 7s all
+W Shield on non-champions: NEW
+E Magic Damage AD ratio: 100% AD >>> 90% AD
+R Unconditional Collateral: NEW
+
+Naafiri
+Q Minimum Bonus Physical Damage: 30/45/60/75/90 >>> 30/42.5/55/67.5/80
+Q Maximum Bonus Physical Damage: 60/90/120/150/180 >>> 60/85/110/135/160
+R Physical Damage: 150/250/350 >>> 150/225/300
+
+Quinn
+P Bonus Monster Damage: NEW (50)
+Q Bonus Monster Damage: NEW (50% increased to monsters)
+R Mana Cost: 100/50/0 >>> 50/25/0
+
+Shyvana
+Health per level: 100 >>> 95
+W Cooldown: 13/12/11/10/9 >>> 13/12.25/11.5/10.75/10
+W Shield: 75/95/115/135/155 >>> 60/80/100/120/140
+
+Smolder
+Base AD: 60 >>> 58
+Q Damage: 60/75/90/105/120 >>> 60/70/80/90/100
+Q Crit Increase: 50% >>> 75%
+W Explosion Physical Damage bonus AD ratio: 65% >>> 50%
+R Damage: 200/300/400 (+110% bonus AD) >>> 150/250/350 (+100% bonus AD)
+
+Wukong
+W Clone Damage: 30/35/40/45/50% >>> 40/45/50/55/60%
+W Clone Duration: 3.25 >>> 4
+E Bonus Attack Speed: 35/40/45/50/55% >>> 40/45/50/55/60%
+
+Zed
+P Max Health Damage: 6/8/10% >>> 5/7.5/10%
+E Damage bonus AD ratio: 80% >>> 70%
+
+Zeri
+Q Base Damage: 21/24/27/30/33 >>> 22/26/30/34/38
+Q Excess AS to AD conversion: 50% >>> 60%
+R Overcharged duration extend: 1.5s >>> 2.5s (bugfix)

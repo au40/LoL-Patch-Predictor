@@ -1,0 +1,36 @@
+Patch 26.11 — Champion changes (fetched from leagueoflegends.com; game patch 16.11)
+
+Brand
+Base Armor: 27 >>> 24
+
+Diana
+Monster Damage: 230% >>> 270%
+W - Pale Cascade Bonus Health: 9% >>> 11%
+
+Ekko
+Passive - Z-Drive Resonance Per-Enemy Cooldown: 5s >>> 4s
+
+Heimerdinger
+Q - H-28G Evolution Turret Attack Range: 530 >>> 550
+Q - H-28G Evolution Turret Vision Range: 585 >>> 650
+E - CH-2 Electron Storm Grenade Vision Duration: 1s >>> 1.25s
+
+Kassadin
+Q - Null Sphere Cooldown: 10/9.5/9/8.5/8 >>> 9/8.5/8/7.5/7
+W - Nether Blade Base Magic Damage: 20 (+10% AP) >>> 25 (+10% AP)
+
+Quinn
+Passive - Harrier Monster Damage: 50 >>> 75
+Q - Blinding Assault Monster Damage: 150% >>> 200%
+
+Smolder
+Passive - Dragon Practice Bonus Magic Damage on Q: reworked crit scaling
+Passive - Dragon Practice Bonus Magic Damage on E: reworked crit scaling
+
+Teemo
+Base Armor Growth: 4.95 >>> 4.5
+E - Toxic Shot bonus AD scaling: (+10%/+20% bonus AD) >>> (+5%/+10% bonus AD)
+
+Xin Zhao
+Passive - Determination Bonus Damage: added (+5/10/15/20% AP)
+Passive - Determination Heal Amount AP ratio: 50/65/90% AP >>> 45/55/80% AP

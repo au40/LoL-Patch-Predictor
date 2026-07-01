@@ -1,0 +1,4 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Brand,Brand,armor,27.0,24.0,-3.0,-11.11,16.10.1,16.11.1
+Smolder,Smolder,attackdamage,60.0,58.0,-2.0,-3.33,16.10.1,16.11.1
+Teemo,Teemo,armorperlevel,4.95,4.5,-0.45,-9.09,16.10.1,16.11.1

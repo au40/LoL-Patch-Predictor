@@ -1,0 +1,23 @@
+Champions
+
+Aatrox
+We're pulling back some of Aatrox's early lane strength.
+Base HP: 650 >>> 630
+Q - The Darkin Blade cooldown: 14/12/10/8/6 >>> 15/13/11/9/7
+
+Brand
+A little more sustain for our pyromaniac.
+Base Mana Regen: 9 >>> 11
+
+Cassiopeia
+Base HP per level: 104 >>> 98
+
+Ezreal
+E - Arcane Shift cooldown lowered.
+E cooldown: 25/22/19/16/13 >>> 23/20/17/14/11
+
+Lux
+Passive now deals bonus damage to champions below 50% health.
+
+Yasuo
+Bugfix: fixed an issue where Wind Wall occasionally blocked allied projectiles. (no stat change)

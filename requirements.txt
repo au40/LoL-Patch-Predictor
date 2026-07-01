@@ -1,0 +1,7 @@
+requests>=2.31
+pandas>=2.0
+numpy>=1.26
+python-dotenv>=1.0
+statsmodels>=0.14
+anthropic>=0.40
+streamlit>=1.30
