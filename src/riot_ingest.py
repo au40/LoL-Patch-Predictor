@@ -89,10 +89,13 @@ class RiotClient:
     def league_entries(self, queue: str, tier: str, division: str, page: int):
         return self._get(f"{self.platform}/lol/league/v4/entries/{queue}/{tier}/{division}", page=page)
 
-    def match_ids(self, puuid: str, count: int, start_time: int | None = None):
+    def match_ids(self, puuid: str, count: int, start_time: int | None = None,
+                  end_time: int | None = None):
         params = {"start": 0, "count": count, "type": "ranked"}
         if start_time is not None:
             params["startTime"] = start_time  # epoch seconds; only matches after this
+        if end_time is not None:
+            params["endTime"] = end_time      # and before this (for older-patch windows)
         return self._get(f"{self.region}/lol/match/v5/matches/by-puuid/{puuid}/ids", **params)
 
     def match(self, match_id: str):
@@ -123,16 +126,37 @@ def write_winrates(stats: dict, tag: str):
     return out, df
 
 
+def write_matchups(matchup_stats: dict, tag: str):
+    """Write lane-matchup win-rates (champion vs its lane opponent) to a SEPARATE file
+    under data/raw/matchups/ so it never collides with the model's win-rate schema in
+    data/raw/winrates/. Schema: patch, champion, role, opponent, games, wins, winrate."""
+    if not matchup_stats:
+        return None
+    rows = [
+        {"patch": p, "champion": c, "role": r, "opponent": o,
+         "games": s["games"], "wins": s["wins"], "winrate": round(s["wins"] / s["games"], 4)}
+        for (p, c, r, o), s in matchup_stats.items()
+    ]
+    df = pd.DataFrame(rows).sort_values(["patch", "role", "champion", "games"],
+                                        ascending=[True, True, True, False])
+    out = DATA_RAW / "matchups" / f"riot_matchups_{tag}.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(out, index=False)
+    return out, df
+
+
 def _state_path(tag: str) -> Path:
     return DATA_RAW / "winrates" / f"riot_{tag}.state.json"
 
 
-def save_state(stats: dict, seen_matches: set, tag: str) -> None:
-    """Persist raw counts + seen match IDs alongside each checkpoint so --resume
-    can continue exactly (no re-fetching, no double-counting)."""
+def save_state(stats: dict, seen_matches: set, tag: str, matchup_stats: dict | None = None) -> None:
+    """Persist raw counts + seen match IDs (+ lane matchups) alongside each checkpoint so
+    --resume can continue exactly (no re-fetching, no double-counting)."""
     state = {
         "stats": [[p, c, r, s["games"], s["wins"]] for (p, c, r), s in stats.items()],
         "seen_matches": list(seen_matches),
+        "matchups": [[p, c, r, o, s["games"], s["wins"]]
+                     for (p, c, r, o), s in (matchup_stats or {}).items()],
     }
     _state_path(tag).write_text(json.dumps(state), encoding="utf-8")
 
@@ -140,23 +164,27 @@ def save_state(stats: dict, seen_matches: set, tag: str) -> None:
 def load_prior(tag: str):
     """Load prior progress for --resume. Prefer the exact state sidecar; otherwise
     reconstruct counts from the CSV (seen-match list unknown -> sample a disjoint
-    ladder slice to avoid double-counting). Returns (stats, seen_matches, source)."""
+    ladder slice). Returns (stats, seen_matches, matchup_stats, source).
+    Old sidecars without a 'matchups' key load empty matchups (i.e. capture-forward)."""
     stats = defaultdict(lambda: {"games": 0, "wins": 0})
+    matchups = defaultdict(lambda: {"games": 0, "wins": 0})
     seen: set[str] = set()
     sp = _state_path(tag)
     if sp.exists():
         state = json.loads(sp.read_text(encoding="utf-8"))
         for p, c, r, g, w in state.get("stats", []):
             stats[(p, c, r)] = {"games": g, "wins": w}
-        return stats, set(state.get("seen_matches", [])), "state sidecar (exact)"
+        for p, c, r, o, g, w in state.get("matchups", []):
+            matchups[(p, c, r, o)] = {"games": g, "wins": w}
+        return stats, set(state.get("seen_matches", [])), matchups, "state sidecar (exact)"
     csv = DATA_RAW / "winrates" / f"riot_{tag}.csv"
     if csv.exists():
         df = pd.read_csv(csv, dtype={"patch": str, "champion": str})
         for r in df.itertuples():
             stats[(r.patch, r.champion, r.role)] = {
                 "games": int(r.games), "wins": int(round(r.winrate * r.games))}
-        return stats, seen, "CSV (no seen-match list -> use a disjoint ladder slice)"
-    return stats, seen, "nothing found (starting fresh)"
+        return stats, seen, matchups, "CSV (no seen-match list -> use a disjoint ladder slice)"
+    return stats, seen, matchups, "nothing found (starting fresh)"
 
 
 def main() -> None:
@@ -170,6 +198,10 @@ def main() -> None:
                              "on ancient matches. Default 5.")
     parser.add_argument("--all-patches", action="store_true",
                         help="disable recent-patch targeting; keep every patch found (noisy old tail)")
+    parser.add_argument("--patches", nargs="+", default=None,
+                        help="target SPECIFIC (incl. OLDER) patches, e.g. --patches 16.8 16.7 16.6 "
+                             "16.5 16.4. Auto-windows the pull to roughly when they were live "
+                             "(~2 weeks each). Overrides --recent-patches.")
     parser.add_argument("--queue", default="RANKED_SOLO_5x5")
     parser.add_argument("--tier", default="DIAMOND")
     parser.add_argument("--division", default="I")
@@ -198,7 +230,30 @@ def main() -> None:
     # Decide which patches to keep and how far back to pull.
     target_patches: set[str] | None = None
     start_time: int | None = None
-    if args.patch:
+    end_time: int | None = None
+    if args.patches:
+        # Explicit patch list (may be OLDER patches). Window the match-id pull to roughly
+        # when those patches were live, estimated from the ~2-week cadence with a generous
+        # buffer; the gameVersion filter below still does the precise selection.
+        target_patches = set(args.patches)
+        minors: list[str] = []
+        for v in get_versions():                 # newest first
+            mm = v.rsplit(".", 1)[0]
+            if mm not in minors:
+                minors.append(mm)
+        idx = {mm: k for k, mm in enumerate(minors)}   # 0 = newest patch
+        tgt = [idx[p] for p in args.patches if p in idx]
+        if not tgt:
+            print(f"ERROR: none of --patches {args.patches} match Data Dragon versions "
+                  f"(newest are {minors[:6]}).")
+            sys.exit(1)
+        now, day = int(time.time()), 86400
+        start_time = now - int((max(tgt) + 2) * 14 * day)             # buffer before oldest
+        end_time = min(now, now - int(max(0, min(tgt) - 1) * 14 * day))  # buffer after newest
+        print(f"Targeting patches {sorted(target_patches)} via date window "
+              f"{time.strftime('%Y-%m-%d', time.gmtime(start_time))} .. "
+              f"{time.strftime('%Y-%m-%d', time.gmtime(end_time))}")
+    elif args.patch:
         target_patches = {args.patch}
     elif not args.all_patches:
         recent: list[str] = []
@@ -239,15 +294,18 @@ def main() -> None:
 
     # 2-4. Pull matches, filter to patch, aggregate win-rate by (champion, role).
     if args.resume:
-        stats, seen_matches, source = load_prior(tag)
+        stats, seen_matches, matchup_stats, source = load_prior(tag)
         print(f"Resuming from {source}: {sum(s['games'] for s in stats.values())} "
-              f"champ-games, {len(seen_matches)} seen matches loaded.")
+              f"champ-games, {len(seen_matches)} seen matches, "
+              f"{len(matchup_stats)} matchup cells loaded.")
     else:
         seen_matches = set()
         stats = defaultdict(lambda: {"games": 0, "wins": 0})
+        matchup_stats = defaultdict(lambda: {"games": 0, "wins": 0})
     for i, puuid in enumerate(puuids, 1):
         try:
-            ids = client.match_ids(puuid, args.matches_per_player, start_time=start_time)
+            ids = client.match_ids(puuid, args.matches_per_player,
+                                   start_time=start_time, end_time=end_time)
         except requests.RequestException as exc:
             print(f"  [{i}/{len(puuids)}] match_ids failed, skipping player: {exc}")
             continue
@@ -263,30 +321,47 @@ def main() -> None:
             mpatch = patch_of(info.get("gameVersion", ""))
             if target_patches is not None and mpatch not in target_patches:
                 continue
-            for p in info.get("participants", []):
+            parts = info.get("participants", [])
+            # (teamId, position) -> champion, so we can find each player's lane opponent.
+            by_slot = {(p.get("teamId"), p.get("teamPosition", "")): p["championName"]
+                       for p in parts if p.get("teamPosition")}
+            for p in parts:
                 role = ROLE_MAP.get(p.get("teamPosition", ""), None)
                 if role is None:
                     continue
+                win = int(p["win"])
                 key = (mpatch, p["championName"], role)  # bucket by patch too
                 stats[key]["games"] += 1
-                stats[key]["wins"] += int(p["win"])
+                stats[key]["wins"] += win
+                # NEW: record the lane matchup (enemy in the same position).
+                opp = by_slot.get((200 if p.get("teamId") == 100 else 100,
+                                   p.get("teamPosition", "")))
+                if opp:
+                    mkey = (mpatch, p["championName"], role, opp)
+                    matchup_stats[mkey]["games"] += 1
+                    matchup_stats[mkey]["wins"] += win
         print(f"  [{i}/{len(puuids)}] processed; {len(seen_matches)} matches, "
               f"{sum(s['games'] for s in stats.values())} champ-games kept")
 
         # Checkpoint: save progress so far every N players.
         if args.checkpoint_every and i % args.checkpoint_every == 0:
             res = write_winrates(stats, tag)
-            save_state(stats, seen_matches, tag)
+            write_matchups(matchup_stats, tag)
+            save_state(stats, seen_matches, tag, matchup_stats)
             if res:
-                print(f"      [checkpoint] saved {len(res[1])} rows -> {res[0].name}")
+                print(f"      [checkpoint] saved {len(res[1])} rows + "
+                      f"{len(matchup_stats)} matchup cells")
 
-    save_state(stats, seen_matches, tag)
+    save_state(stats, seen_matches, tag, matchup_stats)
+    mres = write_matchups(matchup_stats, tag)
     res = write_winrates(stats, tag)
     if res is None:
         print("No matches captured. Try more players / matches, or a more recent run.")
         return
     out, df = res
     print(f"\nWrote {len(df)} champion-role win-rates -> {out}")
+    if mres:
+        print(f"Wrote {len(mres[1])} lane-matchup rows -> {mres[0]}")
     print("Patches captured (patch -> total games):",
           df.groupby("patch")["games"].sum().to_dict())
     print("Model-ready: run  python src/model.py --new <newer> --old <older> --min-games <N>")
