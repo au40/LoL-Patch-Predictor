@@ -1,0 +1,40 @@
+Patch 26.8 — Champion changes (fetched from leagueoflegends.com; game patch 16.8)
+
+Dr. Mundo
+Q monster damage cap: 300/375/450/525/600 >>> 250/325/400/475/550
+E monster damage cap: 200% >>> 140%
+
+Hwei
+Passive base damage: 35-230 >>> 40-285
+Passive slow stacking adjusted; bugfix
+
+Karma
+Base AD: 51 >>> 49
+AD Growth: 3.3 >>> 3.0
+E - Inspire mana cost: 50/55/60/65/70 >>> 60/65/70/75/80
+
+Lillia
+Passive monster damage cap: 65 >>> 70-180
+
+Lucian
+E cooldown: 18/17/16/15/14 >>> 16/15.5/15/14.5/14
+E mana cost: 40/30/20/10/0 >>> 32/24/16/8/0
+
+Mel
+Q initial explosion: 60/90/120/150/180 (+60% AP) >>> 60/85/110/135/160 (+55% AP)
+W cooldown: 35/32/29/26/23 >>> 38/35/32/29/26
+W bonus MS duration: 1.5 >>> 0.75s
+
+Tahm Kench
+Passive damage: 6-48 >>> 5-60
+Passive bonus HP scaling: 4.5% >>> 4%
+
+Yuumi
+R heal per wave: 30/40/50 (+10% AP) >>> 30/50/70 (+12% AP)
+R best friend enhanced heal: 30% >>> 30-60%
+
+Zilean
+W - Rewind: no longer levelable at 1
+
+Zyra
+W - Rampant Growth: level restricted

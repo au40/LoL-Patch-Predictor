@@ -99,6 +99,95 @@ def build_pool(min_games: int, boundaries=DEFAULT_BOUNDARIES) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+MONSTER_HINTS = ("monster", "minion", "jungle", "clear")
+
+
+def _is_monster_dmg(change: dict) -> bool:
+    """True if a damage change hits monsters/minions (jungle clear) rather than champion combat."""
+    blob = (change.get("field", "") + " " + change.get("target", "")).lower()
+    return any(h in blob for h in MONSTER_HINTS)
+
+
+def damage_scatter_table(min_games: int = 20, boundaries=DEFAULT_BOUNDARIES) -> pd.DataFrame:
+    """One row per champion-role-boundary that got a (nonzero) damage change, annotated with the
+    specific ability(ies) and whether it is monster/jungle-clear vs champion-combat damage.
+    Feeds the dashboard's damage-effect scatter (buffs trend toward higher win-rate)."""
+    wr = load_winrates()
+    rows = []
+    for new, old in boundaries:
+        panel = patch_boundary(wr, new, old, min_games=min_games)
+        path = DATA_PROCESSED / f"extracted_{new}.json"
+        if panel.empty or not path.exists():
+            continue
+        by_champ: dict[str, list] = {}
+        for c in json.loads(path.read_text(encoding="utf-8")).get("changes", []):
+            if categorize(c) == "damage":
+                by_champ.setdefault(c["champion"], []).append(c)
+        for r in panel.itertuples():
+            chs = by_champ.get(r.champion)
+            if not chs:
+                continue
+            mag = sum(_signed_magnitude(c) for c in chs)
+            if round(mag, 1) == 0:
+                continue
+            rows.append({
+                "patch": new, "champion": r.champion, "role": r.role,
+                "mag_damage": round(mag, 1),
+                "winrate_change_pp": round(r.delta * 100, 1),
+                "games": int(r.games_new),
+                "direction": "buff" if mag > 0 else "nerf",
+                "damage_type": "monster / jungle-clear" if any(_is_monster_dmg(c) for c in chs)
+                else "combat",
+                "abilities": "; ".join(f"{c.get('target', '?')} ({c.get('change_type', '')})"
+                                       for c in chs),
+            })
+    return pd.DataFrame(rows)
+
+
+def damage_split_fit(min_games: int = 20, boundaries=DEFAULT_BOUNDARIES) -> pd.DataFrame:
+    """Refit the per-stat-type model with `damage` split into combat vs monster buckets, and
+    return a small table of (coef_pp, p_value, n_champs) for each. Tests whether the damage
+    effect is champion combat power or mostly jungle-clear speed."""
+    cats = ["base_stat", "damage_combat", "damage_monster", "utility", "other"]
+
+    def cat2(change: dict) -> str:
+        base = categorize(change)
+        if base != "damage":
+            return base
+        return "damage_monster" if _is_monster_dmg(change) else "damage_combat"
+
+    wr = load_winrates()
+    zero = {f"mag_{c}": 0.0 for c in cats}
+    rows = []
+    for new, old in boundaries:
+        panel = patch_boundary(wr, new, old, min_games=min_games)
+        if panel.empty:
+            continue
+        path = DATA_PROCESSED / f"extracted_{new}.json"
+        feats: dict[str, dict] = {}
+        if path.exists():
+            by_champ: dict[str, list] = {}
+            for c in json.loads(path.read_text(encoding="utf-8")).get("changes", []):
+                by_champ.setdefault(c["champion"], []).append(c)
+            for champ, chs in by_champ.items():
+                f = dict(zero)
+                for c in chs:
+                    f[f"mag_{cat2(c)}"] += _signed_magnitude(c)
+                feats[champ] = f
+        for r in panel.itertuples():
+            rows.append({"role": r.role, "prior_winrate": r.wr_old, "delta": r.delta,
+                         "games_new": r.games_new, **feats.get(r.champion, zero)})
+    pool = pd.DataFrame(rows)
+    cols = [f"mag_{c}" for c in cats]
+    formula = "delta ~ " + " + ".join(cols) + " + prior_winrate + C(role)"
+    fit = smf.wls(formula, data=pool, weights=np.sqrt(pool["games_new"])).fit()
+    return pd.DataFrame([
+        {"bucket": c.replace("damage_", ""), "coef_pp": round(fit.params[f"mag_{c}"] * 100, 3),
+         "p_value": round(fit.pvalues[f"mag_{c}"], 3), "n_champs": int((pool[f"mag_{c}"] != 0).sum())}
+        for c in ("damage_combat", "damage_monster")
+    ])
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Per-stat-type magnitude model")
     ap.add_argument("--min-games", type=int, default=30)

@@ -1,0 +1,30 @@
+Patch 26.7 — Champion changes (fetched from leagueoflegends.com; game patch 16.7)
+
+Cassiopeia
+Base Mana: 450 >>> 480
+E - Twin Fang bonus magic damage: 20/43/66/89/112 >>> 20/45/70/95/120
+
+Graves
+Base Attack Damage: 68 >>> 66
+
+Kalista
+E - Rend bonus damage AD scaling: 20/25/30/35/40% AD >>> 20/27.5/35/42.5/50% AD
+
+Karma
+R - Mantra E (Defiance) shield: 50/100/150/200 (+45% AP) >>> 45/85/125/165 (+45% AP)
+
+Nami
+W - Ebb and Flow bounce modifier: -10% (+10% per 100 AP) >>> -20% (+15% per 100 AP)
+
+Ornn
+W - Bellows Breath brittle proc damage: 10-18% >>> 9-17%
+
+Rell
+E - Full Tilt move speed: 10%->25% >>> 15%->30%
+R - Magnet Storm damage: 120/200/280 (+110% AP) >>> 150/200/350 (+110% AP)
+
+Singed
+R - Insanity Potion bonus stats: 25/60/95 >>> 25/55/85
+
+Veigar
+R - Primordial Burst cooldown: 100/80/60 >>> 120/90/60

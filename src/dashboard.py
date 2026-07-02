@@ -25,8 +25,10 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT))
+import altair as alt  # noqa: E402
 from winrates import load_winrates  # noqa: E402
 import predict as P  # noqa: E402
+import magnitude_by_type as MBT  # noqa: E402
 
 DATA_PROCESSED = ROOT / "data" / "processed"
 
@@ -131,6 +133,56 @@ else:
             .sort_values("isolated_effect_pp"),
             width="stretch", hide_index=True,
         )
+
+# --------------------------------------------- 4. damage-change effect (Checkpoint-3 lead)
+st.subheader("④ Damage-change effect — the strongest change signal")
+st.caption(
+    "Each point is a champion-role in a patch where its **damage** changed: x = size of the "
+    "damage change (buffs → right), y = its win-rate change the next patch. Hover for the exact "
+    "ability. ● = champion-combat damage, ▲ = monster (jungle-clear) damage. "
+    "Re-uses the games filter above, so it re-renders as you move the slider or ingest more data."
+)
+
+dmg = MBT.damage_scatter_table(min_games)
+if dmg.empty:
+    st.info("No damage changes clear the games filter at this threshold. Lower the slider.")
+else:
+    pts = alt.Chart(dmg).mark_point(filled=True, opacity=0.78).encode(
+        x=alt.X("mag_damage:Q", title="damage change size (signed %, buffs → right)"),
+        y=alt.Y("winrate_change_pp:Q", title="win-rate change next patch (pp)"),
+        color=alt.Color("direction:N", title="direction",
+                        scale=alt.Scale(domain=["buff", "nerf"], range=["#2a78d6", "#e34948"])),
+        shape=alt.Shape("damage_type:N", title="damage type",
+                        scale=alt.Scale(domain=["combat", "monster / jungle-clear"],
+                                        range=["circle", "triangle-up"])),
+        size=alt.Size("games:Q", title="games", scale=alt.Scale(range=[40, 320])),
+        tooltip=[alt.Tooltip("champion:N"), alt.Tooltip("role:N"), alt.Tooltip("patch:N"),
+                 alt.Tooltip("mag_damage:Q", title="damage change %"),
+                 alt.Tooltip("winrate_change_pp:Q", title="win-rate Δ (pp)"),
+                 alt.Tooltip("games:Q"), alt.Tooltip("abilities:N", title="ability(ies)")],
+    )
+    trend = pts.transform_regression("mag_damage", "winrate_change_pp").mark_line(
+        color="#4a3aa7", size=2.5)
+    xrule = alt.Chart(pd.DataFrame({"v": [0]})).mark_rule(strokeDash=[4, 4], color="#999").encode(x="v:Q")
+    yrule = alt.Chart(pd.DataFrame({"v": [0]})).mark_rule(strokeDash=[4, 4], color="#999").encode(y="v:Q")
+    st.altair_chart((xrule + yrule + pts + trend).interactive(), width="stretch")
+
+    st.write("**Is it combat power or jungle-clear speed?** Refit with the damage feature split in two:")
+    try:
+        split = MBT.damage_split_fit(min_games)
+        d1, d2 = st.columns(2)
+        for col, (_, row) in zip((d1, d2), split.iterrows()):
+            sig = "significant" if row.p_value < 0.05 else "not significant"
+            col.metric(f"{row.bucket} damage", f"{row.coef_pp:+.3f} pp",
+                       f"p={row.p_value:.3f} · {int(row.n_champs)} champs · {sig}", delta_color="off")
+        st.caption("Monster/jungle-clear damage usually carries the stronger, steadier coefficient; "
+                   "pure combat damage is weaker and threshold-fragile — so the 'damage helps' signal "
+                   "is partly a faster-clear effect. (Monster rests on few champs; read with care.)")
+    except Exception as exc:  # noqa: BLE001
+        st.info(f"Split-fit needs more data at this threshold ({exc}). Lower the slider.")
+
+    with st.expander("See the underlying damage changes (one row per point)"):
+        st.dataframe(dmg.sort_values("mag_damage"), width="stretch", hide_index=True)
 
 st.divider()
 st.caption("Preliminary model - the signed change feature strengthens as patches/volume grow. "

@@ -41,7 +41,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import DATA_PROCESSED  # noqa: E402
 from winrates import load_winrates, patch_boundary  # noqa: E402
 
-DEFAULT_BOUNDARIES = [("16.9", "16.8"), ("16.10", "16.9"), ("16.11", "16.10"),
+DEFAULT_BOUNDARIES = [("16.5", "16.4"), ("16.6", "16.5"), ("16.7", "16.6"), ("16.8", "16.7"),
+                      ("16.9", "16.8"), ("16.10", "16.9"), ("16.11", "16.10"),
                       ("16.12", "16.11"), ("16.13", "16.12")]
 _DIR = {"buff": 1.0, "nerf": -1.0}   # adjust/new/removed -> 0 (direction unknown)
 MAG_CAP = 100.0                      # cap one change's |%| so a rework can't dominate the sum

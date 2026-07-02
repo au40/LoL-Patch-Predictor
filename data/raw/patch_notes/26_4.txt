@@ -1,0 +1,35 @@
+Patch 26.4 — Champion changes (fetched from leagueoflegends.com; game patch 16.4)
+
+Ambessa: Q bonus damage to monsters 150 >>> 125
+Annie: Q base damage 80/120/160/200/240 >>> 80/125/170/215/260; E cooldown 12-10 >>> 10
+Aphelios: Passive bonus AD 5/10/15/20/25/30 >>> 4/8/12/16/20/24
+Brand: Passive Ablaze monster damage 265% >>> 270%; non-epic monster cap 40 >>> 50
+Braum: R base damage 150/300/450 >>> 150/250/350; R cooldown 120/100/80 >>> 130/115/100
+Camille: E Hookshot attack speed QoL
+Darius: Passive monster damage 2x >>> 2.5x
+Fizz: W bonus monster damage 60 >>> 90
+Graves: E armor per stack 4/7/10/13/16 >>> 7/10/13/16/19; E MR per stack 2/3.5/5/6.5/8 >>> 3.5/5/6.5/8/9.5
+Gwen: Q base damage per snip 10/15/20/25/30 >>> 10/13.5/17/20.5/24; R base damage 35/65/95 >>> 30/50/70
+Hwei: WW max shield 100/125/150/175/200 >>> 100/140/180/220/260; R cooldown 140/115/80 >>> 120/100/80
+Illaoi: Passive tentacle base damage 9-180 >>> 9-200
+Jinx: Base Armor Growth 4.7 >>> 4.2
+Kassadin: Base Health Growth 119 >>> 113; E slow 50/60/70/80/90% >>> 50/55/60/65/70%
+Kayle: Q base damage 60/100/140/180/220 >>> 60/90/120/150/180
+Kennen: R cooldown 120/100/80 >>> 120 all ranks
+Lee Sin: W lifesteal/spellvamp changed to omnivamp
+Lux: Base Mana 480 >>> 440; Base Mana Regen 7 >>> 9; Q cooldown 11/10.5/10/9.5/9 >>> 10; W cooldown 14/13/12/11/10 >>> 12/11.5/11/10.5/10
+Maokai: Q bonus monster damage 120/130/140/150/160 >>> 140/150/160/170/180
+Naafiri: Base Health Regen 7.5 >>> 6; HP Regen Growth 0.7 >>> 0.6; E mana cost 35 >>> 40
+Qiyana: Base Health Growth 121 >>> 115
+Rengar: Q damage restructure 30-150 (+100-115% AD) >>> 20-160 (+105% AD)
+Rumble: Base Health 655 >>> 640; R max damage 700/1050/1400 >>> 600/1000/1400
+Ryze: R pathing bugfix
+Samira: Q life steal 80% >>> 100%; R life steal 80% >>> 100%
+Senna: Q +40% bonus AD >>> +60% bonus AD; W +70% bonus AD >>> +90% bonus AD
+Swain: W slow 50-70% >>> 50%; R demonflare damage 50% AP >>> 40% AP; R slow 75% >>> 50%
+Syndra: W base damage 70/105/140/175/210 >>> 70/100/130/160/190; R base damage 90/130/170 >>> 80/120/160
+Teemo: E monster damage 145% >>> 160%
+Twitch: Base Health Growth 104 >>> 98; Base Armor Growth 4.2 >>> 4
+Udyr: Q bonus damage on-hit 5/11/17/23/29/35 >>> 5/13/21/29/37/45; W base shield 45-120 >>> 45-145
+Xayah: Q mana cost 50 >>> 35; W cooldown 20/19/18/17/16 >>> 18/17/16/15/14; E mana cost 30 >>> 20
+Zac: Q damage per hit 40/55/70/85/100 >>> 60/90/120/150/180; R base damage lowered

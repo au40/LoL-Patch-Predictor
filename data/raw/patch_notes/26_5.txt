@@ -1,0 +1,49 @@
+Patch 26.5 — Champion changes (fetched from leagueoflegends.com; game patch 16.5)
+
+Akali
+W - Twilight Shroud restealth timing: by game time >>> by level
+
+Azir
+Health Growth: 119 >>> 108
+
+Garen
+Q - Decisive Strike MS duration: 1/1.65/2.3/2.95/3.6 >>> 1.4/1.95/2.5/3.05/3.6
+E - Judgment AD ratio: 38-50% AD >>> 40-52% AD
+
+Kha'Zix
+Move Speed: 350 >>> 345
+Q bonus AD: 110% >>> 105%
+
+Lee Sin
+Q - Sonic Wave base damage: 60/90/120/150/180 >>> 65/95/125/155/185
+
+Lillia
+Passive monster heal AP ratio: 9% >>> 15%
+R - Lilting Lullaby base damage: 100/150/200 >>> 150/200/250
+
+Mel
+Passive minion damage modifier: 0.6x >>> 0.5x
+Q base damage per bolt: 5/6/7/8/9 >>> 5/7/9/11/13
+R initial base damage: 100/150/200 >>> 125/200/275
+
+Neeko
+W - Shapeshifter cooldown now starts on clone expiration
+
+Nocturne
+Passive - Umbra Blades cooldown: 13 >>> 12
+Q - Duskbringer bonus move speed: 15-35% >>> 20-40%
+
+Orianna
+Q - Command: Attack cooldown: 6/5.25/4.5/3.75/3 >>> 7/6/5/4/3
+
+Taliyah
+Q base damage: 55/72.5/90/107.5/125 >>> 50/67.5/85/102.5/120
+
+Varus
+Q max damage AD ratio: 130-170% bonus AD >>> 150% bonus AD
+W on-hit: +25% AP >>> +25% AP +15% bonus AD
+
+Volibear
+Q bonus physical damage: 140% >>> 160%
+W - Frenzied Maul mana cost: 30/35/40/45/50 >>> 20/25/30/35/40
+E - Sky Splitter mana cost: 60 >>> 50
