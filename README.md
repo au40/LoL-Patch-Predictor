@@ -39,8 +39,7 @@ Completely untested by me currently. Currently just working through LLM directly
 python src/validate_extraction.py --extracted data/processed/extracted_16.13.json \
     --new 16.13.1 --old 16.12.1
 ```
-Reports precision/recall of the LLM's base-stat changes vs the Data Dragon diff — a
-concrete accuracy number for the write-up.
+Judges LLM extraction to data_dragon base stat changes.
 
 **4. Preliminary model (works now on sample data):**
 ```bash
@@ -55,7 +54,7 @@ python src/riot_ingest.py --patch 16.13 --tier DIAMOND --division I --pages 1 --
 Writes `data/raw/winrates/riot_16.13.csv` in the same schema the model reads, so real
 data drops straight into step 4. There is data included in the github though, so not necessary to run this and have a Riot API key.
 
-## The model (per Checkpoint-1 feedback)
+## The base model as of now (per Checkpoint-1 feedback) 
 
 For a champion `c` changed in patch `P`:
 - **Diff-in-differences:** `effect_c = [WR(c,P) - WR(c,P-1)] - baseline`, where `baseline`
@@ -63,6 +62,8 @@ For a champion `c` changed in patch `P`:
 - **Regression upgrade:** `delta ~ changed? + prior_winrate + role` (weighted by games).
   `prior_winrate` controls for regression-to-the-mean (Riot buffs weak champs / nerfs strong ones).
 - **Backtest:** leave-one-out prediction, reported as MAE vs. a predict-zero baseline.
+
+This will all quickly be outdated.
 
 ## Data layer note
 
