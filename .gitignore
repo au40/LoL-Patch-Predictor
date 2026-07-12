@@ -11,6 +11,8 @@ venv/
 # Data caches (raw API pulls can be large / regenerable)
 data/raw/*.json
 data/raw/**/*.json
+# ...but keep small ingestion state files
+!data/raw/**/*.state.json
 
 # OS / editor
 .DS_Store
