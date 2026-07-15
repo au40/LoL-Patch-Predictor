@@ -1,0 +1,56 @@
+champion,slot,ability_name,mechanism,strength
+Ahri,R,Spirit Rush,recasts granted on champion takedown,medium
+Amumu,E,Tantrum,cooldown reduced on being hit,medium
+AurelionSol,W,Astral Flight,cooldown reduced on enemy champion takedown,medium
+AurelionSol,Q,Breath of Light,no cooldown while flying via Astral Flight,high
+Azir,E,Shifting Sands,instantly readies new Sand Soldier on champion hit,medium
+Belveth,P,Death in Lavender,temporary attack speed after ability use,low
+Darius,R,Noxian Guillotine,cooldown refreshed on killing blow,high
+Diana,E,Lunar Rush,no cooldown when dashing to Moonlight target,high
+DrMundo,P,Goes Where He Pleases,cooldown reduced on cannister pickup,medium
+Draven,W,Blood Rush,cooldown refreshed on catching Spinning Axe,high
+Ezreal,Q,Mystic Shot,reduces all cooldowns on hit,medium
+Gnar,Q,Boomerang Throw / Boulder Toss,cooldown reduced on catch,medium
+Graves,E,Quickdraw,Basic attacks lower cooldown,medium
+Gwen,E,Skip 'n Slash,Cooldown refunded on enemy hit,medium
+Hecarim,Q,Rampage,Cooldown lowered on enemy damage,medium
+Irelia,Q,Bladesurge,Cooldown refreshes on marked target or kill,high
+Ivern,E,Triggerseed,Cooldown refreshes if shield hits no enemies,low
+KSante,Q,Ntofo Strikes,cooldown reduced when All Out,low
+KSante,E,Footwork,cooldown reduced when All Out,low
+Kaisa,W,Void Seeker,cooldown reduced on champion hit when upgraded,medium
+Karma,P,Gathering Fire,damaging abilities reduce Mantra cooldown,high
+Katarina,P,Voracity,cooldown reduction on enemy champion death,high
+Kayn,E,Shadow Step / Leap cooldown reset,cooldown reset on champion kill or assist with evolved Leap,high
+Khazix,Q,Taste Their Fear,cooldown refund on isolated targets with evolved Reaper Claws,medium
+Khazix,E,Leap,cooldown reset on champion kill or assist with evolved Wings,high
+Leblanc,Q,Sigil of Malice,cooldown refund on kill or detonation,medium
+LeeSin,E,Tempest / Cripple,Second cast available after hitting enemy,medium
+Lucian,E,Relentless Pursuit,Cooldown reduced on Lightslinger attacks,high
+Maokai,P,Sap Magic,cooldown reduced on spell cast or enemy spell hit,medium
+MasterYi,Q,Alpha Strike,cooldown reduced by basic attacks,high
+MasterYi,R,Highlander,cooldown reduced on kill or assist; duration extended on takedown,medium
+MissFortune,W,Strut,cooldown reduced by Love Tap basic attacks,low
+Naafiri,R,Hounds' Pursuit,reset on takedown with second cast available,high
+Nasus,R,Fury of the Sands,Reduces cooldown on Siphoning Strike while active,medium
+Nocturne,P,Umbra Blades,Basic attacks reduce passive cooldown,high
+Olaf,Q,Undertow,Cooldown resets on picking up the axe,high
+Pyke,R,Death From Below,ability reset on execute,high
+Rakan,E,Battle Dance,free recast for short duration,medium
+Ryze,Q,Overload,other basic abilities reset cooldown,high
+Shen,P,Ki Barrier,Shield cooldown reduced by affecting champions,medium
+Sivir,R,On The Hunt,Basic attacks reduce spell cooldowns,medium
+Sona,P,Power Chord: Accelerando,Ability use grants ability haste and reduces ultimate cooldown,high
+Swain,E,Nevermove,cooldown reduction during Demonic Ascension,medium
+Sylas,P,Petricite Burst,grants attack speed on spell cast,low
+Talon,Q,Noxian Diplomacy,cooldown refunded on kill,medium
+Taric,P,Bravado,basic attacks reduce spell cooldowns,medium
+Twitch,Q,Ambush,cooldown reset on enemy champion kill with Deadly Venom,high
+Udyr,P,Bridge Between,recasting abilities renews them with ultimate benefits,medium
+Vayne,R,Final Hour,reduced Tumble cooldown while active,medium
+Veigar,W,Dark Matter,cooldown reduced by stacks of Phenomenal Evil,medium
+Vex,P,Doom 'n Gloom,Consuming dash mark reduces empowered state cooldown,medium
+Yone,W,Spirit Cleave,cooldown scales with attack speed,medium
+Ziggs,P,Short Fuse,cooldown reduced whenever ability is used,medium
+Zilean,W,Rewind,Directly reduces cooldowns of other basic abilities,high
+Zyra,W,Rampant Growth,Cooldown recharge reduced on enemy kills,medium

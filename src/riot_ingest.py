@@ -101,6 +101,11 @@ class RiotClient:
     def match(self, match_id: str):
         return self._get(f"{self.region}/lol/match/v5/matches/{match_id}")
 
+    def match_timeline(self, match_id: str):
+        # Per-match event stream (SKILL_LEVEL_UP, ITEM_PURCHASED, ...); the only place
+        # skill-up order lives. Separate endpoint from match(), so it's a second call.
+        return self._get(f"{self.region}/lol/match/v5/matches/{match_id}/timeline")
+
 
 def patch_of(game_version: str) -> str:
     # gameVersion looks like "16.13.598.1234" -> "16.13"
