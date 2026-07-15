@@ -107,6 +107,71 @@ def normalize_champion(name: str, id_map: dict[str, str]) -> str:
     return id_map.get(re.sub(r"[^a-z0-9]", "", key), name)
 
 
+# --- Ability cooldowns (per-champion detail files) --------------------------------------
+# The summary champion.json above carries only base stats. Ability cooldowns live in the
+# per-champion detail file cdn/{version}/data/en_US/champion/{id}.json, whose `spells` array
+# is ordered [Q, W, E, R]. Passives have no cooldown. This is the data you need to weight a
+# damage change by how often its ability is cast (effective DPS ~= damage / cooldown).
+
+CHAMPION_DETAIL_DIR = DATA_RAW / "champion_details"
+_SLOTS = ("Q", "W", "E", "R")
+_SLOT_RE = re.compile(r"(?i)(?:^|[\s\-/])([QWER])\b")
+
+
+def _champion_ids(version: str) -> list[str]:
+    data = _get_json(f"{BASE}/cdn/{version}/data/en_US/champion.json", f"champion_{version}.json")
+    return list(data["data"].keys())
+
+
+def champion_spell_cooldowns(version: str = "16.13.1") -> dict[str, dict[str, list[float]]]:
+    """{champion_id: {'Q': [cd per rank], 'W': [...], 'E': [...], 'R': [...]}}.
+
+    Fetched from the per-champion detail files (each cached under data/raw/champion_details/,
+    plus one aggregated cache file), so the ~170-file pull only happens once per patch version.
+    Passives are omitted (no cooldown). Keys are Data Dragon ids — the same join key the
+    extractions are normalized to, so change['champion'] indexes straight in."""
+    agg = DATA_RAW / f"spell_cooldowns_{version}.json"
+    if agg.exists():
+        return json.loads(agg.read_text(encoding="utf-8"))
+    CHAMPION_DETAIL_DIR.mkdir(parents=True, exist_ok=True)
+    out: dict[str, dict[str, list[float]]] = {}
+    for cid in _champion_ids(version):
+        detail = _get_json(
+            f"{BASE}/cdn/{version}/data/en_US/champion/{cid}.json",
+            f"champion_details/{cid}_{version}.json",
+        )
+        spells = detail["data"][cid]["spells"]
+        out[cid] = {slot: (spells[i].get("cooldown") or []) for i, slot in enumerate(_SLOTS)}
+    agg.write_text(json.dumps(out), encoding="utf-8")
+    return out
+
+
+def spell_slot(target: str) -> str | None:
+    """Parse the ability slot from an extraction change's `target`: 'Q'/'W'/'E'/'R',
+    'PASSIVE', or None (e.g. 'Base Stats'). Passives are cast continuously, so your model
+    should treat their 'cooldown' specially rather than dropping them."""
+    t = str(target)
+    if re.search(r"(?i)\bpassive\b", t):
+        return "PASSIVE"
+    m = _SLOT_RE.search(t)
+    return m.group(1).upper() if m else None
+
+
+def change_cooldown(change: dict, cd_map: dict, rank: int = 1) -> float | None:
+    """Cooldown in seconds (at `rank`, 1-indexed) of the ability a change targets, using a
+    cd_map from champion_spell_cooldowns(). Returns None for passives, base-stat changes,
+    or abilities with no cooldown — your model decides how to treat those (e.g. give a
+    passive a high cast frequency instead of discarding it). Assumes change['champion'] is
+    already a Data Dragon id (extractions are normalized on save)."""
+    slot = spell_slot(change.get("target", ""))
+    if slot in (None, "PASSIVE"):
+        return None
+    arr = (cd_map.get(change.get("champion", "")) or {}).get(slot) or []
+    if not arr:
+        return None
+    return float(arr[min(max(rank, 1), len(arr)) - 1])
+
+
 def diff_stats(version_new: str, version_old: str) -> pd.DataFrame:
     """
     Base-stat changes from version_old -> version_new.
@@ -144,7 +209,27 @@ def main() -> None:
     parser.add_argument("--list", type=int, metavar="N", help="show N most recent patch versions")
     parser.add_argument("--diff", nargs=2, metavar=("NEW", "OLD"), help="diff two patch versions")
     parser.add_argument("--diff-latest", action="store_true", help="diff the two most recent patches")
+    parser.add_argument("--cooldowns", nargs="?", const="16.13.1", metavar="VERSION",
+                        help="fetch every champion's Q/W/E/R cooldowns for VERSION "
+                             "(default 16.13.1) and save a CSV")
     args = parser.parse_args()
+
+    if args.cooldowns:
+        version = args.cooldowns
+        cds = champion_spell_cooldowns(version)
+        rows = [{"champion": champ, "slot": slot,
+                 "cd_rank1": arr[0] if arr else None,
+                 "cd_maxrank": arr[-1] if arr else None,
+                 "cd_burn": "/".join(str(x) for x in arr)}
+                for champ, slots in cds.items() for slot, arr in slots.items()]
+        df = pd.DataFrame(rows)
+        out = DATA_PROCESSED / f"spell_cooldowns_{version}.csv"
+        df.to_csv(out, index=False)
+        print(f"Cooldowns for {len(cds)} champions (Q/W/E/R) at patch {version}. "
+              f"{int((df['cd_rank1'].notna()).sum())} ability rows with a cooldown.")
+        print(f"Saved -> {out.relative_to(out.parent.parent.parent)}\n")
+        print(df.head(12).to_string(index=False))
+        return
 
     if args.list:
         versions = get_versions()
