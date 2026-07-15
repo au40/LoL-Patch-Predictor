@@ -1,0 +1,212 @@
+{
+  "patch": "25.10",
+  "changes": [
+    {
+      "champion": "Chogath",
+      "target": "Base Stats",
+      "field": "Attack Speed",
+      "change_type": "buff",
+      "old": "0.625",
+      "new": "0.658",
+      "magnitude_pct": 5.28
+    },
+    {
+      "champion": "Chogath",
+      "target": "Q",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/140/200/260/320",
+      "new": "80/135/190/245/300",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Chogath",
+      "target": "E",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "2.5/2.75/3/3.25/3.5%",
+      "new": "2.5/2.85/3.2/3.55/3.9%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kayn",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "nerf",
+      "old": "109",
+      "new": "103",
+      "magnitude_pct": -5.5
+    },
+    {
+      "champion": "Lulu",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.9",
+      "new": "4.6",
+      "magnitude_pct": -6.12
+    },
+    {
+      "champion": "Lulu",
+      "target": "R",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "100/90/80",
+      "new": "120/100/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fiddlesticks",
+      "target": "Q",
+      "field": "Fear Duration",
+      "change_type": "nerf",
+      "old": "1.25/1.5/1.75/2/2.25",
+      "new": "1.2/1.4/1.6/1.8/2",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fiddlesticks",
+      "target": "Q",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "5/6/7/8/9%",
+      "new": "4/4.5/5/5.5/6%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fiddlesticks",
+      "target": "Q",
+      "field": "Empowered Damage",
+      "change_type": "nerf",
+      "old": "10/12/14/16/18%",
+      "new": "8/9/10/11/12%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fiddlesticks",
+      "target": "W",
+      "field": "Damage per second AP ratio",
+      "change_type": "buff",
+      "old": "+35% AP",
+      "new": "+40% AP",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Passive",
+      "field": "Packmate Monster Damage Multiplier",
+      "change_type": "nerf",
+      "old": "155%",
+      "new": "135%",
+      "magnitude_pct": -12.9
+    },
+    {
+      "champion": "Senna",
+      "target": "Passive",
+      "field": "Crit chance per 20 stacks",
+      "change_type": "buff",
+      "old": "8%",
+      "new": "10%",
+      "magnitude_pct": 25
+    },
+    {
+      "champion": "Senna",
+      "target": "Passive",
+      "field": "Soul drop rate",
+      "change_type": "buff",
+      "old": "8.4%",
+      "new": "14%",
+      "magnitude_pct": 66.67
+    },
+    {
+      "champion": "Senna",
+      "target": "Q",
+      "field": "Heal AP ratio",
+      "change_type": "nerf",
+      "old": "+60% AP",
+      "new": "+50% AP",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Smolder",
+      "target": "Passive",
+      "field": "Q damage per stack",
+      "change_type": "buff",
+      "old": "0.3",
+      "new": "0.4",
+      "magnitude_pct": 33.33
+    },
+    {
+      "champion": "Smolder",
+      "target": "Q",
+      "field": "burn damage per 100 stacks",
+      "change_type": "buff",
+      "old": "0.4%",
+      "new": "0.5%",
+      "magnitude_pct": 25
+    },
+    {
+      "champion": "Smolder",
+      "target": "E",
+      "field": "hit damage per stack",
+      "change_type": "buff",
+      "old": "0.1",
+      "new": "0.12",
+      "magnitude_pct": 20
+    },
+    {
+      "champion": "Vi",
+      "target": "Q",
+      "field": "Minimum Damage",
+      "change_type": "nerf",
+      "old": "45/70/95/120/145",
+      "new": "40/60/80/100/120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Vi",
+      "target": "Q",
+      "field": "Maximum Damage",
+      "change_type": "buff",
+      "old": "90/140/190/240/290",
+      "new": "100/150/200/250/300",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Vi",
+      "target": "R",
+      "field": "Mana",
+      "change_type": "buff",
+      "old": "100/125/150",
+      "new": "100",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Vi",
+      "target": "R",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "150/275/400",
+      "new": "150/250/350",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "XinZhao",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5",
+      "new": "4.4",
+      "magnitude_pct": -12
+    },
+    {
+      "champion": "Yuumi",
+      "target": "R",
+      "field": "Base Heal per Hit",
+      "change_type": "nerf",
+      "old": "35/50/65",
+      "new": "30/40/50",
+      "magnitude_pct": 0
+    }
+  ]
+}

@@ -23,6 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from config import ANTHROPIC_API_KEY, DATA_PROCESSED  # noqa: E402
+from datadragon import champion_id_map, normalize_champion  # noqa: E402
 
 # Default model. Opus is the most capable; for high-volume extraction across many
 # patches you can switch to a cheaper model to save cost (your call):
@@ -67,12 +68,12 @@ SYSTEM = (
 )
 
 
-def extract(patch_note_text: str, patch: str) -> dict:
+def extract(patch_note_text: str, patch: str, model: str = MODEL) -> dict:
     import anthropic
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY or None)
     response = client.messages.create(
-        model=MODEL,
+        model=model,
         max_tokens=16000,
         system=SYSTEM,
         output_config={"format": {"type": "json_schema", "schema": CHANGE_SCHEMA}},
@@ -89,6 +90,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="LLM patch-note extraction")
     parser.add_argument("--file", required=True, help="path to a patch-note .txt file")
     parser.add_argument("--patch", required=True, help="patch label, e.g. 16.13")
+    parser.add_argument("--model", default=MODEL, help=f"Anthropic model id (default {MODEL})")
     args = parser.parse_args()
 
     if not ANTHROPIC_API_KEY:
@@ -96,7 +98,13 @@ def main() -> None:
         sys.exit(1)
 
     text = Path(args.file).read_text(encoding="utf-8")
-    result = extract(text, args.patch)
+    result = extract(text, args.patch, model=args.model)
+
+    # Normalize champion names to Data Dragon ids so the extraction joins to win-rate data
+    # ('Cho'Gath' -> 'Chogath', 'Xin Zhao' -> 'XinZhao', 'Kai'Sa' -> 'Kaisa').
+    id_map = champion_id_map()
+    for c in result.get("changes", []):
+        c["champion"] = normalize_champion(c["champion"], id_map)
 
     changes = result.get("changes", [])
     print(f"Extracted {len(changes)} champion changes from patch {args.patch}:\n")

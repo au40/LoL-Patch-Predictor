@@ -1,0 +1,6 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Gwen,Gwen,armor,36.0,33.0,-3.0,-8.33,15.16.1,15.17.1
+Gwen,Gwen,attackspeedperlevel,2.25,2.5,0.25,11.11,15.16.1,15.17.1
+MasterYi,Master Yi,hp,669.0,655.0,-14.0,-2.09,15.16.1,15.17.1
+MissFortune,Miss Fortune,attackdamage,53.0,55.0,2.0,3.77,15.16.1,15.17.1
+Senna,Senna,attackspeedperlevel,2.0,3.0,1.0,50.0,15.16.1,15.17.1

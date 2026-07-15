@@ -1,0 +1,5 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Chogath,Cho'Gath,attackspeed,0.625,0.658,0.033,5.28,15.9.1,15.10.1
+Kayn,Kayn,hpperlevel,109.0,103.0,-6.0,-5.5,15.9.1,15.10.1
+Lulu,Lulu,armorperlevel,4.9,4.6,-0.3,-6.12,15.9.1,15.10.1
+XinZhao,Xin Zhao,armorperlevel,5.0,4.4,-0.6,-12.0,15.9.1,15.10.1

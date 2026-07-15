@@ -2,16 +2,104 @@
   "patch": "16.7",
   "source": "leagueoflegends.com patch 26.7 == game patch 16.7",
   "changes": [
-    {"champion": "Cassiopeia", "target": "Base Stats", "field": "Base Mana", "change_type": "buff", "old": "450", "new": "480", "magnitude_pct": 6.67},
-    {"champion": "Cassiopeia", "target": "E - Twin Fang", "field": "bonus magic damage", "change_type": "buff", "old": "20/43/66/89/112", "new": "20/45/70/95/120", "magnitude_pct": 0},
-    {"champion": "Graves", "target": "Base Stats", "field": "Base Attack Damage", "change_type": "nerf", "old": "68", "new": "66", "magnitude_pct": -2.94},
-    {"champion": "Kalista", "target": "E - Rend", "field": "bonus damage AD scaling", "change_type": "buff", "old": "20/25/30/35/40% AD", "new": "20/27.5/35/42.5/50% AD", "magnitude_pct": 0},
-    {"champion": "Karma", "target": "R - Mantra E (Defiance)", "field": "shield", "change_type": "nerf", "old": "50/100/150/200 (+45% AP)", "new": "45/85/125/165 (+45% AP)", "magnitude_pct": 0},
-    {"champion": "Nami", "target": "W - Ebb and Flow", "field": "bounce modifier", "change_type": "adjust", "old": "-10% (+10% per 100 AP)", "new": "-20% (+15% per 100 AP)", "magnitude_pct": 0},
-    {"champion": "Ornn", "target": "W - Bellows Breath", "field": "brittle proc damage", "change_type": "nerf", "old": "10-18%", "new": "9-17%", "magnitude_pct": 0},
-    {"champion": "Rell", "target": "E - Full Tilt", "field": "move speed", "change_type": "buff", "old": "10%->25%", "new": "15%->30%", "magnitude_pct": 0},
-    {"champion": "Rell", "target": "R - Magnet Storm", "field": "damage", "change_type": "buff", "old": "120/200/280 (+110% AP)", "new": "150/200/350 (+110% AP)", "magnitude_pct": 0},
-    {"champion": "Singed", "target": "R - Insanity Potion", "field": "bonus stats", "change_type": "nerf", "old": "25/60/95", "new": "25/55/85", "magnitude_pct": 0},
-    {"champion": "Veigar", "target": "R - Primordial Burst", "field": "cooldown", "change_type": "nerf", "old": "100/80/60", "new": "120/90/60", "magnitude_pct": 0}
+    {
+      "champion": "Cassiopeia",
+      "target": "Base Stats",
+      "field": "Base Mana",
+      "change_type": "buff",
+      "old": "450",
+      "new": "480",
+      "magnitude_pct": 6.67
+    },
+    {
+      "champion": "Cassiopeia",
+      "target": "E - Twin Fang",
+      "field": "bonus magic damage",
+      "change_type": "buff",
+      "old": "20/43/66/89/112",
+      "new": "20/45/70/95/120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Graves",
+      "target": "Base Stats",
+      "field": "Base Attack Damage",
+      "change_type": "nerf",
+      "old": "68",
+      "new": "66",
+      "magnitude_pct": -2.94
+    },
+    {
+      "champion": "Kalista",
+      "target": "E - Rend",
+      "field": "bonus damage AD scaling",
+      "change_type": "buff",
+      "old": "20/25/30/35/40% AD",
+      "new": "20/27.5/35/42.5/50% AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Karma",
+      "target": "R - Mantra E (Defiance)",
+      "field": "shield",
+      "change_type": "nerf",
+      "old": "50/100/150/200 (+45% AP)",
+      "new": "45/85/125/165 (+45% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nami",
+      "target": "W - Ebb and Flow",
+      "field": "bounce modifier",
+      "change_type": "adjust",
+      "old": "-10% (+10% per 100 AP)",
+      "new": "-20% (+15% per 100 AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ornn",
+      "target": "W - Bellows Breath",
+      "field": "brittle proc damage",
+      "change_type": "nerf",
+      "old": "10-18%",
+      "new": "9-17%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rell",
+      "target": "E - Full Tilt",
+      "field": "move speed",
+      "change_type": "buff",
+      "old": "10%->25%",
+      "new": "15%->30%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rell",
+      "target": "R - Magnet Storm",
+      "field": "damage",
+      "change_type": "buff",
+      "old": "120/200/280 (+110% AP)",
+      "new": "150/200/350 (+110% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Singed",
+      "target": "R - Insanity Potion",
+      "field": "bonus stats",
+      "change_type": "nerf",
+      "old": "25/60/95",
+      "new": "25/55/85",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Veigar",
+      "target": "R - Primordial Burst",
+      "field": "cooldown",
+      "change_type": "nerf",
+      "old": "100/80/60",
+      "new": "120/90/60",
+      "magnitude_pct": 0
+    }
   ]
 }

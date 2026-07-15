@@ -82,6 +82,31 @@ def get_champion_stats(version: str) -> pd.DataFrame:
     return df
 
 
+def champion_id_map(version: str = "16.13.1") -> dict[str, str]:
+    """Map any spelling of a champion -> its Data Dragon id (the win-rate join key).
+
+    Riot's patch notes say 'Cho'Gath' / 'Xin Zhao' / 'Kai'Sa'; the model joins on the
+    Data Dragon id 'Chogath' / 'XinZhao' / 'Kaisa'. We index both the id and the display
+    name, plus an alphanumeric-stripped form of each, so 'Kai'Sa', 'kaisa', and 'KaiSa'
+    all resolve. Built from the (cached) champion.json, so no network hit if it's local."""
+    df = get_champion_stats(version)
+    m: dict[str, str] = {}
+    for r in df.itertuples():
+        cid, name = r.champion, r.name
+        for key in (cid, name):
+            m[key.lower()] = cid
+            m[re.sub(r"[^a-z0-9]", "", key.lower())] = cid
+    return m
+
+
+def normalize_champion(name: str, id_map: dict[str, str]) -> str:
+    """Resolve a champion name to its Data Dragon id; return the original if unknown."""
+    key = name.lower()
+    if key in id_map:
+        return id_map[key]
+    return id_map.get(re.sub(r"[^a-z0-9]", "", key), name)
+
+
 def diff_stats(version_new: str, version_old: str) -> pd.DataFrame:
     """
     Base-stat changes from version_old -> version_new.

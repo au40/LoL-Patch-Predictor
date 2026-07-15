@@ -46,9 +46,19 @@ from config import DATA_PROCESSED  # noqa: E402
 from winrates import load_winrates, patch_boundary  # noqa: E402
 
 # (new, old) patch pairs, OLDEST boundary first. Each new patch needs extracted_<new>.json.
-DEFAULT_BOUNDARIES = [("16.5", "16.4"), ("16.6", "16.5"), ("16.7", "16.6"), ("16.8", "16.7"),
-                      ("16.9", "16.8"), ("16.10", "16.9"), ("16.11", "16.10"),
-                      ("16.12", "16.11"), ("16.13", "16.12")]
+# Only truly-consecutive pairs with win-rate data on both sides; the 15.4/15.9 win-rate gaps
+# and 15.2/15.3 (no patch notes) are skipped so a boundary never spans two patches.
+DEFAULT_BOUNDARIES = [
+    ("15.6", "15.5"), ("15.7", "15.6"), ("15.8", "15.7"),
+    ("15.11", "15.10"), ("15.12", "15.11"), ("15.13", "15.12"), ("15.14", "15.13"),
+    ("15.15", "15.14"), ("15.16", "15.15"), ("15.17", "15.16"), ("15.18", "15.17"),
+    ("15.19", "15.18"), ("15.20", "15.19"), ("15.21", "15.20"), ("15.22", "15.21"),
+    ("15.23", "15.22"), ("15.24", "15.23"),
+    ("16.1", "15.24"), ("16.2", "16.1"), ("16.3", "16.2"), ("16.4", "16.3"),
+    ("16.5", "16.4"), ("16.6", "16.5"), ("16.7", "16.6"), ("16.8", "16.7"),
+    ("16.9", "16.8"), ("16.10", "16.9"), ("16.11", "16.10"),
+    ("16.12", "16.11"), ("16.13", "16.12"),
+]
 
 FORMULA = "delta ~ net_buff + has_base_stat + prior_winrate + C(role)"
 

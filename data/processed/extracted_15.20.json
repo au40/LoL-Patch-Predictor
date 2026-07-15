@@ -1,0 +1,293 @@
+{
+  "patch": "15.20",
+  "changes": [
+    {
+      "champion": "Anivia",
+      "target": "Q - Crystallize",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "12/11/10/9/8",
+      "new": "11/10/9/8/7",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Anivia",
+      "target": "E - Shatter",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "50/75/100/125/150",
+      "new": "55/80/105/130/155",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "W - Clockwork Soldier",
+      "field": "AP Ratio",
+      "change_type": "adjust",
+      "old": "+40/45/50/55/60%",
+      "new": "+30/40/60/60/70%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "W - Clockwork Soldier",
+      "field": "Recharge Rate",
+      "change_type": "nerf",
+      "old": "10/9/8/7/6",
+      "new": "12/10.5/9/7.5/6",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "E - Traverse",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/100/140/180/220 (+40% AP)",
+      "new": "70/110/150/190/230 (+60% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Briar",
+      "target": "Passive - Demand",
+      "field": "Maximum Stacks",
+      "change_type": "nerf",
+      "old": "7",
+      "new": "5",
+      "magnitude_pct": -28.57
+    },
+    {
+      "champion": "Camille",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5",
+      "new": "4.5",
+      "magnitude_pct": -10
+    },
+    {
+      "champion": "Camille",
+      "target": "W - Hookshot",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "17/15.5/14/12.5/11",
+      "new": "15/14/13/12/11",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Camille",
+      "target": "W - Hookshot",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "50/75/100/125/150",
+      "new": "60/85/110/135/160",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "W - Seastone Trident",
+      "field": "Passive Damage over Time",
+      "change_type": "buff",
+      "old": "20/30/40/50/60 (+30% AP)",
+      "new": "30/45/60/75/90 (+25% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "W - Seastone Trident",
+      "field": "Active Burst",
+      "change_type": "buff",
+      "old": "50/70/90/110/130",
+      "new": "50/75/100/125/150",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "W - Seastone Trident",
+      "field": "On-Hit",
+      "change_type": "buff",
+      "old": "10/15/20/25/30 (+35% AP)",
+      "new": "20/25/30/35/40 (+30% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "R - Chum the Waters",
+      "field": "Guppy Damage",
+      "change_type": "buff",
+      "old": "150/250/350 (+80% AP)",
+      "new": "180/300/420 (+60% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "R - Chum the Waters",
+      "field": "Chomper Damage",
+      "change_type": "buff",
+      "old": "225/325/425 (+100% AP)",
+      "new": "225/375/525 (+75% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "R - Chum the Waters",
+      "field": "Gigalodon Damage",
+      "change_type": "buff",
+      "old": "300/400/500 (+120% AP)",
+      "new": "270/450/630 (+90% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Graves",
+      "target": "Q - End of the Line",
+      "field": "Initial Damage",
+      "change_type": "buff",
+      "old": "45/65/85/105/125 (+80% bonus AD)",
+      "new": "50/75/100/125/150 (+65% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Graves",
+      "target": "Q - End of the Line",
+      "field": "Secondary Damage",
+      "change_type": "buff",
+      "old": "85/120/155/190/225 (+40/65/90/115/140% bonus AD)",
+      "new": "80/125/170/215/260 (+55/70/85/100/115% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Katarina",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "buff",
+      "old": "28",
+      "new": "32",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Malphite",
+      "target": "Base Stats",
+      "field": "Base Armor",
+      "change_type": "buff",
+      "old": "37",
+      "new": "40",
+      "magnitude_pct": 8.11
+    },
+    {
+      "champion": "Malphite",
+      "target": "E - Ground Slam",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "70/110/150/190/230",
+      "new": "80/120/160/200/240",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Orianna",
+      "target": "W - Defiant Dance",
+      "field": "Damage",
+      "change_type": "adjust",
+      "old": "70/120/170/220/270 (+70% AP)",
+      "new": "70/110/150/190/230 (+80% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Pantheon",
+      "target": "Q - Spear Shot",
+      "field": "Monster Damage Modifier",
+      "change_type": "buff",
+      "old": "0.75x",
+      "new": "0.8x",
+      "magnitude_pct": 6.67
+    },
+    {
+      "champion": "Pantheon",
+      "target": "W - Aegis Assault",
+      "field": "Minion/Monster Damage Cap",
+      "change_type": "buff",
+      "old": "120",
+      "new": "150",
+      "magnitude_pct": 25
+    },
+    {
+      "champion": "Veigar",
+      "target": "W - Darkmatter",
+      "field": "AP Ratio",
+      "change_type": "buff",
+      "old": "+60/70/80/90/100%",
+      "new": "+70/80/90/100/110%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "Passive - Frenzied Maul",
+      "field": "AP Ratio",
+      "change_type": "nerf",
+      "old": "50%",
+      "new": "45%",
+      "magnitude_pct": -10
+    },
+    {
+      "champion": "Volibear",
+      "target": "E - Maiming Bite",
+      "field": "AP Ratio",
+      "change_type": "nerf",
+      "old": "80%",
+      "new": "70%",
+      "magnitude_pct": -12.5
+    },
+    {
+      "champion": "Warwick",
+      "target": "Base Stats",
+      "field": "Attack Damage Growth",
+      "change_type": "nerf",
+      "old": "2.75",
+      "new": "2.5",
+      "magnitude_pct": -9.09
+    },
+    {
+      "champion": "Warwick",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "nerf",
+      "old": "2.3%",
+      "new": "2%",
+      "magnitude_pct": -13.04
+    },
+    {
+      "champion": "MonkeyKing",
+      "target": "Q - Stormbreak",
+      "field": "Bonus Damage Bonus AD Ratio",
+      "change_type": "nerf",
+      "old": "55%",
+      "new": "50%",
+      "magnitude_pct": -9.09
+    },
+    {
+      "champion": "MonkeyKing",
+      "target": "W - Warrior Trickster",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "20/19/18/17/16",
+      "new": "22/21/20/19/18",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MonkeyKing",
+      "target": "W - Warrior Trickster",
+      "field": "Clone Damage",
+      "change_type": "nerf",
+      "old": "35/40/45/50/55%",
+      "new": "30/35/40/45/50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MonkeyKing",
+      "target": "E - Nimbus Strike",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "80/110/140/170/200",
+      "new": "80/120/160/200/240",
+      "magnitude_pct": 0
+    }
+  ]
+}

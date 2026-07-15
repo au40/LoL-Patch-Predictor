@@ -1,0 +1,167 @@
+{
+  "patch": "15.22",
+  "changes": [
+    {
+      "champion": "Akshan",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "630",
+      "new": "610",
+      "magnitude_pct": -3.17
+    },
+    {
+      "champion": "Akshan",
+      "target": "Q - Avengerum",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "8/7.25/6.5/5.75/5",
+      "new": "9/8/7/6/5",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "AurelionSol",
+      "target": "Base Stats",
+      "field": "Movement Speed",
+      "change_type": "buff",
+      "old": "335",
+      "new": "340",
+      "magnitude_pct": 1.49
+    },
+    {
+      "champion": "AurelionSol",
+      "target": "Q - Celestial Expansion",
+      "field": "Burst Damage",
+      "change_type": "buff",
+      "old": "55/65/75/85/95",
+      "new": "60/70/80/90/100",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Blitzcrank",
+      "target": "E - Power Fist",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "9/8/7/6/5",
+      "new": "7/6.5/6/5.5/5",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Leblanc",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "nerf",
+      "old": "111",
+      "new": "108",
+      "magnitude_pct": -2.7
+    },
+    {
+      "champion": "Leblanc",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.7",
+      "new": "4.2",
+      "magnitude_pct": -10.64
+    },
+    {
+      "champion": "Skarner",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "3",
+      "new": "4",
+      "magnitude_pct": 33.33
+    },
+    {
+      "champion": "Skarner",
+      "target": "Q - Crystal Slash",
+      "field": "Bonus AD Ratio",
+      "change_type": "buff",
+      "old": "80%",
+      "new": "90%",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Skarner",
+      "target": "Q - Crystal Slash",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "13/11.5/10/8.5/7",
+      "new": "8/7/6/5/4",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Skarner",
+      "target": "R - Impale",
+      "field": "Cast Time",
+      "change_type": "nerf",
+      "old": "0.65",
+      "new": "0.75",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Talon",
+      "target": "Passive - Blade's End",
+      "field": "Damage to Monsters",
+      "change_type": "nerf",
+      "old": "110%",
+      "new": "100%",
+      "magnitude_pct": -9.09
+    },
+    {
+      "champion": "Volibear",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "buff",
+      "old": "31",
+      "new": "35",
+      "magnitude_pct": 12.9
+    },
+    {
+      "champion": "Volibear",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "buff",
+      "old": "60",
+      "new": "62",
+      "magnitude_pct": 3.33
+    },
+    {
+      "champion": "Volibear",
+      "target": "Q - Thundering Maul",
+      "field": "Minimum Movement Speed",
+      "change_type": "adjust",
+      "old": "12/16/20/24/28%",
+      "new": "12/15.5/19/22.5/26%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "Q - Thundering Maul",
+      "field": "Maximum Movement Speed",
+      "change_type": "nerf",
+      "old": "24/32/40/48/56%",
+      "new": "24/31/38/45/52%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "E - Frenzied Maul",
+      "field": "Damage Cap",
+      "change_type": "adjust",
+      "old": "650",
+      "new": "190/305/420/535/650 (+70% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yone",
+      "target": "Q - Mortal Steel",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "20/45/70/95/120",
+      "new": "25/50/75/100/125",
+      "magnitude_pct": 0
+    }
+  ]
+}

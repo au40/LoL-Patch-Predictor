@@ -1,0 +1,203 @@
+{
+  "patch": "15.14",
+  "changes": [
+    {
+      "champion": "Azir",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "buff",
+      "old": "550",
+      "new": "575",
+      "magnitude_pct": 4.55
+    },
+    {
+      "champion": "Azir",
+      "target": "W - Shurima's Legacy",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "40/45/50/55/60%",
+      "new": "45/50/55/60/65%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Braum",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "47",
+      "new": "42",
+      "magnitude_pct": -10.64
+    },
+    {
+      "champion": "Briar",
+      "target": "R - Snack Attack",
+      "field": "CC Cleanse",
+      "change_type": "adjust",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Darius",
+      "target": "Q - Decimate",
+      "field": "Missing Health Heal",
+      "change_type": "buff",
+      "old": "15/30/45%",
+      "new": "17/34/51%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fiora",
+      "target": "R - Grand Challenge",
+      "field": "Heal per Second",
+      "change_type": "buff",
+      "old": "40/60/70/80/100%",
+      "new": "100%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "W - Seastone Trident",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "7/6.5/6/5.5/5",
+      "new": "7/6/5/4/3",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "W - Seastone Trident",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "90%",
+      "new": "95%",
+      "magnitude_pct": 5.56
+    },
+    {
+      "champion": "Kled",
+      "target": "Passive - Skaarl, the Cowardly Lizard",
+      "field": "Dismounted Autoattack Damage",
+      "change_type": "buff",
+      "old": "80%",
+      "new": "85/90/95/100%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kled",
+      "target": "Q - Beartrap on a Rope",
+      "field": "Mounted AD ratio",
+      "change_type": "nerf",
+      "old": "65%",
+      "new": "60%",
+      "magnitude_pct": -7.69
+    },
+    {
+      "champion": "Kled",
+      "target": "Q - Beartrap on a Rope",
+      "field": "Dismounted Ammo Charge Time",
+      "change_type": "buff",
+      "old": "20-7.5s",
+      "new": "18/16/14/12/10s",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kled",
+      "target": "W - Violent Tendencies",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "11/9.5/8/6.5/5",
+      "new": "13/12/11/10/9",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kled",
+      "target": "E - Jousting",
+      "field": "Damage AD ratio",
+      "change_type": "nerf",
+      "old": "65%",
+      "new": "55%",
+      "magnitude_pct": -15.38
+    },
+    {
+      "champion": "LeeSin",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "nerf",
+      "old": "69",
+      "new": "66",
+      "magnitude_pct": -4.35
+    },
+    {
+      "champion": "Riven",
+      "target": "Passive - Runic Acuity",
+      "field": "AD Ratio",
+      "change_type": "nerf",
+      "old": "30-60%",
+      "new": "30-50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sett",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5.2",
+      "new": "4.7",
+      "magnitude_pct": -9.62
+    },
+    {
+      "champion": "TwistedFate",
+      "target": "Q - Wild Cards",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "70/115/160/205/250",
+      "new": "60/105/150/195/240",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yasuo",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "nerf",
+      "old": "3",
+      "new": "2.5",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Yuumi",
+      "target": "R - Final Ascension",
+      "field": "Heal per Hit",
+      "change_type": "nerf",
+      "old": "15% AP",
+      "new": "10% AP",
+      "magnitude_pct": -33.33
+    },
+    {
+      "champion": "Ziggs",
+      "target": "R - Mega Inferno Bomb",
+      "field": "Maximum Center Damage",
+      "change_type": "buff",
+      "old": "300/450/600",
+      "new": "300/500/700",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zoe",
+      "target": "Q - Paddle Star!",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "7-50",
+      "new": "2-50",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zoe",
+      "target": "W - Spell Thief",
+      "field": "Total Damage",
+      "change_type": "nerf",
+      "old": "75/105/135/165/195",
+      "new": "60/90/120/150/180",
+      "magnitude_pct": 0
+    }
+  ]
+}

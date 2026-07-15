@@ -1,0 +1,16 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Belveth,Bel'Veth,hpperlevel,99.0,105.0,6.0,6.06,16.2.1,16.3.1
+Braum,Braum,hp,630.0,610.0,-20.0,-3.17,16.2.1,16.3.1
+Briar,Briar,hpperlevel,95.0,100.0,5.0,5.26,16.2.1,16.3.1
+Briar,Briar,armorperlevel,4.2,4.5,0.3,7.14,16.2.1,16.3.1
+Draven,Draven,attackdamageperlevel,3.0,3.4,0.4,13.33,16.2.1,16.3.1
+Ezreal,Ezreal,attackdamageperlevel,3.25,3.75,0.5,15.38,16.2.1,16.3.1
+Heimerdinger,Heimerdinger,hpperlevel,101.0,105.0,4.0,3.96,16.2.1,16.3.1
+Nilah,Nilah,armorperlevel,4.5,4.2,-0.3,-6.67,16.2.1,16.3.1
+Nilah,Nilah,attackdamage,60.0,58.0,-2.0,-3.33,16.2.1,16.3.1
+Trundle,Trundle,armorperlevel,3.9,4.5,0.6,15.38,16.2.1,16.3.1
+Trundle,Trundle,attackdamageperlevel,4.0,4.5,0.5,12.5,16.2.1,16.3.1
+Tryndamere,Tryndamere,attackdamageperlevel,4.0,4.5,0.5,12.5,16.2.1,16.3.1
+Varus,Varus,armorperlevel,4.6,4.0,-0.6,-13.04,16.2.1,16.3.1
+Vi,Vi,hpperlevel,99.0,105.0,6.0,6.06,16.2.1,16.3.1
+Vi,Vi,attackdamageperlevel,3.0,3.5,0.5,16.67,16.2.1,16.3.1

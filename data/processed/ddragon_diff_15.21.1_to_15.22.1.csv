@@ -1,0 +1,8 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Akshan,Akshan,hp,630.0,610.0,-20.0,-3.17,15.21.1,15.22.1
+AurelionSol,Aurelion Sol,movespeed,335.0,340.0,5.0,1.49,15.21.1,15.22.1
+Leblanc,LeBlanc,hpperlevel,111.0,108.0,-3.0,-2.7,15.21.1,15.22.1
+Leblanc,LeBlanc,armorperlevel,4.7,4.2,-0.5,-10.64,15.21.1,15.22.1
+Skarner,Skarner,attackdamageperlevel,3.0,4.0,1.0,33.33,15.21.1,15.22.1
+Volibear,Volibear,armor,31.0,35.0,4.0,12.9,15.21.1,15.22.1
+Volibear,Volibear,attackdamage,60.0,62.0,2.0,3.33,15.21.1,15.22.1

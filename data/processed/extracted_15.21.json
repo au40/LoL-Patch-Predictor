@@ -1,0 +1,302 @@
+{
+  "patch": "15.21",
+  "changes": [
+    {
+      "champion": "Bard",
+      "target": "W - Caretaker's Shrine",
+      "field": "Minimum Heal AP Scaling",
+      "change_type": "buff",
+      "old": "+30% AP",
+      "new": "+40% AP",
+      "magnitude_pct": 33.33
+    },
+    {
+      "champion": "Bard",
+      "target": "W - Caretaker's Shrine",
+      "field": "Maximum Heal AP Scaling",
+      "change_type": "buff",
+      "old": "+60% AP",
+      "new": "+70% AP",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Bard",
+      "target": "W - Caretaker's Shrine",
+      "field": "Movement Speed per 100 AP",
+      "change_type": "buff",
+      "old": "+5% per 100 AP",
+      "new": "+6% per 100 AP",
+      "magnitude_pct": 20
+    },
+    {
+      "champion": "Diana",
+      "target": "Passive - Moonsilver Blade",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "300%",
+      "new": "280%",
+      "magnitude_pct": -6.67
+    },
+    {
+      "champion": "DrMundo",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "buff",
+      "old": "3.7",
+      "new": "4.5",
+      "magnitude_pct": 21.62
+    },
+    {
+      "champion": "DrMundo",
+      "target": "E - Blaze Reaction",
+      "field": "Minimum Active Damage Bonus HP",
+      "change_type": "nerf",
+      "old": "+7% Bonus HP",
+      "new": "+5% Bonus HP",
+      "magnitude_pct": -28.57
+    },
+    {
+      "champion": "Ezreal",
+      "target": "Base Stats",
+      "field": "Attack Damage Growth",
+      "change_type": "buff",
+      "old": "2.75",
+      "new": "3.25",
+      "magnitude_pct": 18.18
+    },
+    {
+      "champion": "Graves",
+      "target": "Base Stats",
+      "field": "Magic Resistance",
+      "change_type": "nerf",
+      "old": "32",
+      "new": "30",
+      "magnitude_pct": -6.25
+    },
+    {
+      "champion": "Graves",
+      "target": "Base Stats",
+      "field": "Magic Resistance Growth",
+      "change_type": "nerf",
+      "old": "2.05",
+      "new": "1.3",
+      "magnitude_pct": -36.59
+    },
+    {
+      "champion": "Graves",
+      "target": "E - Quick Draw",
+      "field": "MR per stack",
+      "change_type": "adjust",
+      "old": "2/3.5/5/6.5/8",
+      "new": "2/3.5/5/6.5/8",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Graves",
+      "target": "E - Quick Draw",
+      "field": "Max MR",
+      "change_type": "adjust",
+      "old": "16/28/40/52/64",
+      "new": "16/28/40/52/64",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "buff",
+      "old": "600",
+      "new": "625",
+      "magnitude_pct": 4.17
+    },
+    {
+      "champion": "Gwen",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "buff",
+      "old": "100",
+      "new": "125",
+      "magnitude_pct": 25
+    },
+    {
+      "champion": "Gwen",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "nerf",
+      "old": "2.5%",
+      "new": "2.25%",
+      "magnitude_pct": -10
+    },
+    {
+      "champion": "Gwen",
+      "target": "Passive - Thousand Cuts",
+      "field": "AP Scaling",
+      "change_type": "buff",
+      "old": "+0.55% per 100 AP",
+      "new": "+0.6% per 100 AP",
+      "magnitude_pct": 9.09
+    },
+    {
+      "champion": "Gwen",
+      "target": "Q - Snip Snip!",
+      "field": "AP Scaling",
+      "change_type": "buff",
+      "old": "+2% AP",
+      "new": "+5% AP",
+      "magnitude_pct": 150
+    },
+    {
+      "champion": "Gwen",
+      "target": "W - Hallowed Mist",
+      "field": "Armor/MR",
+      "change_type": "buff",
+      "old": "22 (+7% AP)",
+      "new": "22/24/26/28/30 (+7% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "W - Hallowed Mist",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "24/22.5/21/19.5/18",
+      "new": "22/21/20/19/18",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "E - Skip 'n Slash",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "8/11/14/17/20",
+      "new": "15",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "E - Skip 'n Slash",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "12/11/10/9/8",
+      "new": "13/12.5/12/11.5/11",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "R - Needlework",
+      "field": "AP Scaling",
+      "change_type": "buff",
+      "old": "+8% AP",
+      "new": "+10% AP",
+      "magnitude_pct": 25
+    },
+    {
+      "champion": "Gwen",
+      "target": "R - Needlework",
+      "field": "Slow",
+      "change_type": "buff",
+      "old": "30/45/60%",
+      "new": "40/50/60%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kalista",
+      "target": "Base Stats",
+      "field": "Attack Damage Growth",
+      "change_type": "buff",
+      "old": "4.25",
+      "new": "4.75",
+      "magnitude_pct": 11.76
+    },
+    {
+      "champion": "KogMaw",
+      "target": "Q - Caustic Spittle",
+      "field": "Passive Attack Speed",
+      "change_type": "nerf",
+      "old": "10/15/20/25/30%",
+      "new": "5/10/15/20/25%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Morgana",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5",
+      "new": "4.2",
+      "magnitude_pct": -16
+    },
+    {
+      "champion": "Qiyana",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "nerf",
+      "old": "124",
+      "new": "121",
+      "magnitude_pct": -2.42
+    },
+    {
+      "champion": "Qiyana",
+      "target": "Q - Elemental Wrath",
+      "field": "Bonus AD Scaling",
+      "change_type": "nerf",
+      "old": "+90% Bonus AD",
+      "new": "+85% Bonus AD",
+      "magnitude_pct": -5.56
+    },
+    {
+      "champion": "Quinn",
+      "target": "Q - Blinding Assault",
+      "field": "Damage Bonus AD Scaling",
+      "change_type": "adjust",
+      "old": "+80/90/100/110/120% Bonus AD",
+      "new": "+80/85/90/95/100% Bonus AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Quinn",
+      "target": "R - Behind Enemy Lines",
+      "field": "Damage",
+      "change_type": "adjust",
+      "old": "70% Total AD",
+      "new": "60/90/120 (+35% Bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yone",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "buff",
+      "old": "60",
+      "new": "62",
+      "magnitude_pct": 3.33
+    },
+    {
+      "champion": "Yunara",
+      "target": "W - Mane Event",
+      "field": "Initial Damage",
+      "change_type": "buff",
+      "old": "5/30/55/80/105",
+      "new": "55/95/135/175/215 (+85% Bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yunara",
+      "target": "W - Mane Event",
+      "field": "DPS Scaling",
+      "change_type": "adjust",
+      "old": "+40% Total AD",
+      "new": "+51% Bonus AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yunara",
+      "target": "E - Turbo Slam",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "7.5",
+      "new": "9",
+      "magnitude_pct": 20
+    }
+  ]
+}

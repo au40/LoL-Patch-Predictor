@@ -1,0 +1,410 @@
+{
+  "patch": "15.23",
+  "changes": [
+    {
+      "champion": "Aatrox",
+      "target": "Passive",
+      "field": "Monster Damage Cap",
+      "change_type": "adjust",
+      "old": "100",
+      "new": "100-320",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aatrox",
+      "target": "Q - The Darkin Blade",
+      "field": "Bonus Monster Damage",
+      "change_type": "buff",
+      "old": "0",
+      "new": "40 flat",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ahri",
+      "target": "W - Fox-Fire",
+      "field": "Subsequent hit damage",
+      "change_type": "buff",
+      "old": "30%",
+      "new": "40%",
+      "magnitude_pct": 33.33
+    },
+    {
+      "champion": "Ahri",
+      "target": "W - Fox-Fire",
+      "field": "Maximum single-target hit damage",
+      "change_type": "buff",
+      "old": "64/96/128/160/192 (+64% AP)",
+      "new": "72/108/144/180/216 (+72% AP)",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Ambessa",
+      "target": "Q - Sword and Sorcery",
+      "field": "Monster Damage",
+      "change_type": "buff",
+      "old": "+125",
+      "new": "+150",
+      "magnitude_pct": 20
+    },
+    {
+      "champion": "Ashe",
+      "target": "Q - Frost Shot",
+      "field": "Attack Speed",
+      "change_type": "nerf",
+      "old": "25/37.5/50/62.5/75%",
+      "new": "20/30/40/50/60%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Caitlyn",
+      "target": "Passive - Headshot",
+      "field": "Champion Damage Increase",
+      "change_type": "nerf",
+      "old": "60/90/120% total AD",
+      "new": "60/80/100% total AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Caitlyn",
+      "target": "Passive - Headshot",
+      "field": "Non-Champion Damage Increase",
+      "change_type": "nerf",
+      "old": "110/115/120% total AD",
+      "new": "110% total AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Chogath",
+      "target": "E - Feast",
+      "field": "Monster Damage",
+      "change_type": "buff",
+      "old": "20/40/60/80/100 (+30% AP)",
+      "new": "100/150/200/250/300 (+30% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "DrMundo",
+      "target": "E - Blinding Powder",
+      "field": "Bonus Attack Damage from Maximum Health",
+      "change_type": "buff",
+      "old": "2/2.2/2.4/2.6/2.8%",
+      "new": "2/2.3/2.6/2.9/3.2%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "buff",
+      "old": "22",
+      "new": "26",
+      "magnitude_pct": 18.18
+    },
+    {
+      "champion": "Fizz",
+      "target": "Passive - Nimble Fighter",
+      "field": "Damage increase against jungle monsters",
+      "change_type": "buff",
+      "old": "",
+      "new": "10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "W - Seastone Trident",
+      "field": "Active and on-hit damage to monsters",
+      "change_type": "buff",
+      "old": "",
+      "new": "60 damage",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Fizz",
+      "target": "R - Chum the Waters",
+      "field": "Cooldown",
+      "change_type": "adjust",
+      "old": "100/85/70",
+      "new": "120/100/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - To the Skies! / Shock Blast",
+      "field": "Bonus Monster Damage",
+      "change_type": "buff",
+      "old": "0",
+      "new": "50 flat",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - To the Skies! / Shock Blast",
+      "field": "Cannon Q Bonus Monster Damage",
+      "change_type": "buff",
+      "old": "0",
+      "new": "50 flat",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jhin",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "buff",
+      "old": "59",
+      "new": "61",
+      "magnitude_pct": 3.39
+    },
+    {
+      "champion": "Jhin",
+      "target": "Passive - Whisper",
+      "field": "Move Speed on Crit",
+      "change_type": "buff",
+      "old": "14% (+.4% AS)",
+      "new": "14% (+.44% AS)",
+      "magnitude_pct": 10
+    },
+    {
+      "champion": "Jhin",
+      "target": "W - Deadly Flourish",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/95/130/165/200 (+50% AD)",
+      "new": "70/105/140/175/210 (+50% AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jinx",
+      "target": "R - Super Mega Death Rocket!",
+      "field": "Maximum Damage",
+      "change_type": "nerf",
+      "old": "300/450/600 (+155% Bonus AD)",
+      "new": "250/400/550 (+130% Bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kaisa",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "27",
+      "new": "25",
+      "magnitude_pct": -7.41
+    },
+    {
+      "champion": "Kaisa",
+      "target": "R - Infernal End",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "120/90/60",
+      "new": "130/100/70",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "QE - Spiraling Despair / Fleeting Feet",
+      "field": "Hit Damage",
+      "change_type": "nerf",
+      "old": "20/40/60/80/100 (+30% AP)",
+      "new": "20/35/50/65/80 (+30% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "QE - Spiraling Despair / Fleeting Feet",
+      "field": "Damage over time",
+      "change_type": "adjust",
+      "old": "50/100/150/200/250 (+50% AP)",
+      "new": "50/87.5/125/162.5/200 (+60% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Malphite",
+      "target": "W - Granite Shield",
+      "field": "Monster Modifier",
+      "change_type": "buff",
+      "old": "1x",
+      "new": "2x",
+      "magnitude_pct": 100
+    },
+    {
+      "champion": "Mel",
+      "target": "Passive - Discover Thyself",
+      "field": "Damage per spell",
+      "change_type": "buff",
+      "old": "24-99 (+9% AP)",
+      "new": "24-150 (+15% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "E - Bound Infinity",
+      "field": "Root Duration",
+      "change_type": "nerf",
+      "old": "1.25/1.5/1.75/2/2.25",
+      "new": "1.2/1.3/1.4/1.5/1.6",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MissFortune",
+      "target": "R - Bullet Time",
+      "field": "Damage per wave",
+      "change_type": "buff",
+      "old": "75% Total AD (+25% AP)",
+      "new": "80% Total AD (+25% AP)",
+      "magnitude_pct": 6.67
+    },
+    {
+      "champion": "Ornn",
+      "target": "W - Bellows Breath",
+      "field": "Active Monster Damage Cap",
+      "change_type": "buff",
+      "old": "155/180/205/230/255",
+      "new": "260/320/380/440/500",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ornn",
+      "target": "W - Bellows Breath",
+      "field": "Passive Monster Damage Cap",
+      "change_type": "buff",
+      "old": "250",
+      "new": "260/320/380/440/500",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "RekSai",
+      "target": "Passive - Fury of the Void",
+      "field": "Fury gained on minion hit",
+      "change_type": "nerf",
+      "old": "20%",
+      "new": "16%",
+      "magnitude_pct": -20
+    },
+    {
+      "champion": "RekSai",
+      "target": "Passive - Fury of the Void",
+      "field": "Max HP healed",
+      "change_type": "adjust",
+      "old": "10-20%",
+      "new": "9-20%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Riven",
+      "target": "Passive - Runic Valor",
+      "field": "Bonus Monster Damage",
+      "change_type": "buff",
+      "old": "0",
+      "new": "50 flat",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sion",
+      "target": "Q - Decimating Smash",
+      "field": "Monster Modifier",
+      "change_type": "buff",
+      "old": "150%",
+      "new": "165%",
+      "magnitude_pct": 10
+    },
+    {
+      "champion": "Skarner",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "4",
+      "new": "5",
+      "magnitude_pct": 25
+    },
+    {
+      "champion": "Skarner",
+      "target": "Q - Crystal Slash",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "8/7/6/5/4",
+      "new": "8/6.75/5.5/4.25/3",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Skarner",
+      "target": "Q - Crystal Slash",
+      "field": "Target Max HP Damage",
+      "change_type": "buff",
+      "old": "8%",
+      "new": "9%",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Swain",
+      "target": "E - Vision of Empire",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "80/120/160/200/240 (+70% AP)",
+      "new": "90/130/170/210/250 (+70% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Swain",
+      "target": "E - Vision of Empire",
+      "field": "Mana",
+      "change_type": "buff",
+      "old": "60/65/70/75/80",
+      "new": "50/55/60/65/70",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Tristana",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "2.5",
+      "new": "2.9",
+      "magnitude_pct": 16
+    },
+    {
+      "champion": "Vladimir",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "607",
+      "new": "600",
+      "magnitude_pct": -1.15
+    },
+    {
+      "champion": "Vladimir",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "27",
+      "new": "24",
+      "magnitude_pct": -11.11
+    },
+    {
+      "champion": "Volibear",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "buff",
+      "old": "62",
+      "new": "65",
+      "magnitude_pct": 4.84
+    },
+    {
+      "champion": "Xayah",
+      "target": "Passive - Clean Cuts",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "30/40/50% AD",
+      "new": "35/45/55% AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zeri",
+      "target": "R - Spark Pack",
+      "field": "Move Speed per Stack",
+      "change_type": "buff",
+      "old": ".5%",
+      "new": "1%",
+      "magnitude_pct": 100
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Patch 25.15 — Champion changes (fetched from leagueoflegends.com; game patch 15.15)
+
+Alistar: Base Armor 47 >>> 40
+Bel'Veth: Passive Attack Speed per stack 0.28-1% >>> 0.28-1.1%; Q Damage to Champions 10/15/20/25/30 >>> 0/5/10/15/20
+Braum: Base Armor 42 >>> 35; Armor Growth 5.2 >>> 5
+Corki: Q Damage 70/120/170/220/270 (+120% bonus AD) >>> 70/115/160/205/250 (+130% bonus AD); R Damage 90/170/250 (+80% bonus AD) >>> 90/170/250 (+85% bonus AD)
+Illaoi: Passive Damage AD ratio 100% >>> 105%; E Tentacle Attack Timer 5/4/3 >>> 4/3.5/3; E Vessel Duration 10 >>> 3
+Irelia: Health Regen 6 >>> 3.5
+Kled: Passive Dismounted Resistances 1-2% bonus HP >>> 4 (+1% bonus HP) - 10 (+2.5% bonus HP)
+Master Yi: Q Damage 30/60/90/120/150 (+50% total AD) >>> 20/40/60/80/100 (+70% total AD); Q Monster Damage 95/150/205/260/315 (+50% total AD) >>> 80/125/170/215/260 (+70% total AD)
+Nilah: Base AD 58 >>> 60; Attack Speed Growth 3% >>> 2.25%
+Pantheon: Q Monster Damage 105% >>> 90%
+Quinn: Q Damage 20/40/60/80/100 (+80/90/100/110/120% total AD) >>> 65/100/135/170/205 (+80/90/100/110/120% bonus AD)
+Rek'Sai: Base Armor 36 >>> 35; Armor Growth 4.95 >>> 4.5; W Knock-up lockout 10 >>> 10/9/8/7/6; E Empowered Damage 100% total AD (+8/9.5/11/12.5/14% max HP) >>> 100/135/170/205/240 (+80% bonus AD); E Unempowered Damage 100% total AD >>> 80/108/136/164/192 (+64% bonus AD); E Cooldown 10 >>> 6; R Damage 150/300/450 (+100% bonus AD) (+25/30/35% missing HP) >>> 150/250/350 (+100% bonus AD) (+15/20/25% max HP); R Cooldown 100/90/80 >>> 120/100/80
+Rell: W Shield 25/50/75/100/125 (+13% max HP) >>> 20/40/60/80/100 (+13% max HP)

@@ -1,0 +1,17 @@
+Patch 25.17 — Champion changes (fetched from leagueoflegends.com; game patch 15.17)
+
+Gwen: Base Armor 36 >>> 33; Attack Speed Growth 2.25% >>> 2.5%; R Initial Slow 60% >>> 30/45/60%; R Subsequent Slows 25% >>> 15/20/25%
+Irelia: W Minimum Damage AP ratio 40% >>> 50%; W Maximum Damage AP ratio 120% >>> 150%; E Cooldown 16/15/14/13/12 >>> 16/14.5/13/11.5/10; E Damage AP ratio 80% >>> 100%
+Kassadin: Q Damage AP ratio 60% >>> 70%; E Damage AP ratio 65% >>> 70%
+Kayn: Q Mana Cost 50 >>> 40; W Mana Cost 60/65/70/75/80 >>> 40/45/50/55/60
+Kog'Maw: Q Damage AP ratio 80% >>> 90%; W Damage On-Hit 1% per 100 AP >>> 1.5% per 100 AP; R Minimum Damage AP ratio 35% >>> 35/40/45%
+Master Yi: Base Health 669 >>> 655; Q On-hit damage modifier 75% >>> 65%
+Miss Fortune: Base AD 53 >>> 55
+Morgana: W Mana Cost 70/85/100/115/130 >>> 70/80/90/100/110; W Minimum DPS 14/28/42/56/70 >>> 18/31/44/57/70
+Nilah: Q Secondary monster damage 10% total AD >>> 100% total AD
+Rumble: Passive Overheated Damage target max HP 5% >>> 4%; Q Damage Over 3 Seconds 60/90/120/150/180 >>> 60/85/110/135/160
+Senna: Attack Speed Growth 2% >>> 2.6%; Q Heal 40/55/70/85/100 >>> 40/60/80/100/120
+Sett: E Bonus Monster Damage 100 >>> 125-250
+Singed: Q Duration 2.2s >>> 2s; Q Max damage ticks per application 9 >>> 8
+Teemo: R Trap Opacity 30% >>> 50%
+Vayne: W Monster Damage 6/7/8/9/10% max HP capped at 200 >>> 140/155/170/185/200 flat damage

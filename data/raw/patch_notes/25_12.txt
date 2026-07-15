@@ -1,0 +1,29 @@
+Patch 25.12 — Champion changes (fetched from leagueoflegends.com; game patch 15.12)
+
+Aatrox: Passive Healing Ratio vs Champions 80% >>> 100%; Passive Healing Ratio vs Minions 20% >>> 25%; E Champion Damage Healing Ratio 16% (+0.9% per 100 bonus HP) >>> 16% (+1.1% per 100 bonus HP)
+Ahri: E Charm Duration 1.2/1.4/1.6/1.8/2 >>> 1.2/1.35/1.5/1.65/1.8; R Cooldown 130/115/100 >>> 140/120/100
+Aphelios: Level 1 Attack Speed 0.640 >>> 0.665; Severum Onslaught Movement Speed 20% >>> 25%; Calibrum Moonshot Damage 60-160 (+42-60% bonus AD) >>> 70-160 (+42-60% bonus AD)
+Aurora: Base Magic Resistance 30 >>> 32; R Damage 175/275/375 (+60% AP) >>> 175/275/375 (+70% AP)
+Azir: Movement Speed 335 >>> 330; Attack Speed per Level 6% >>> 5.5%
+Bard: Base Movement Speed 330 >>> 335
+Bel'Veth: R Cast Range 275 >>> 175/275/375/450
+Garen: E Damage 4/8/12/16/20 (+36/38/40/42/44% AD) >>> 4/7/10/13/16 (+36/39/42/45/48% AD)
+Gwen: Base Health 620 >>> 600; W Cooldown 22/21/20/19/18 >>> 24/22.5/21/19.5/18
+Jax: Passive Bonus Attack Speed per Stack 3.5/5/6.5/8/9.5/11% >>> 5/6.5/8/9.5/11/12.5%
+Kalista: Base Health 580 >>> 560; Q Cooldown 8 >>> 9
+LeBlanc: E Damage 80/120/160/200/240 (+80% AP) >>> 80/120/160/200/240 (+85% AP); R Cooldown 50/40/30 >>> 45/35/25
+Lee Sin: E Cooldown 9 >>> 8; E Slow Amount 20/35/50/65/80% >>> 35/45/55/65/75%
+Mordekaiser: Q Damage 0-45 (+80/110/140/170/200) (+70% AP) >>> 0-45 (+80/115/150/185/220) (+70% AP)
+Neeko: Q Damage 80/125/170/215/260 (+50% AP) >>> 60/110/160/210/260 (+60% AP); W Bonus Magic Damage 40/75/110/145/180 >>> 30/65/100/135/170
+Nidalee: E Swipe Damage (+40% AP) >>> (+55% AP)
+Rammus: Base Armor 40 >>> 35; Armor Growth 5.5 >>> 4.5; Level 1 Attack Speed 0.656 >>> 0.7; Base Attack Damage 55 >>> 65; Q Damage 80/110/140/170/200 >>> 80/120/160/200/240; W Duration 6 >>> 7; R Cooldown 90 >>> 120/105/90; R Initial Damage 100/175/250 (+60% AP) >>> 150/250/350 (+60% AP); R Slow 15/17.5/20% per stack >>> 30/40/50%
+Rumble: E Slow 15/20/25/30/35% >>> 10/15/20/25/30%; E Enhanced Slow 22.5/30/37.5/45/52.5% >>> 15/22.5/30/37.5/45%
+Samira: Passive Style Bonus Movement Speed per Stack 2/2.5/3/3.5% >>> 2.75/3/3.25/3.5%; Q Damage 0/5/10/15/20 (+95/102.5/110/117.5/125% AD) >>> 5/10/15/20/25 (+95/102.5/110/117.5/125% AD)
+Senna: Passive Soul Drop Chance per Minion Kill 14% >>> 10%
+Shen: E Damage 60/85/110/135/160 (+15% bonus HP) >>> 60/85/110/135/160 (+11% bonus HP)
+Taliyah: Base Magic Resist 30 >>> 28; Q Empowered Damage 190% >>> 180%
+Twisted Fate: E Bonus Attack Speed 10/20/30/40/50% >>> 15/25/35/45/55%; R Cooldown 180/150/120 >>> 160/130/100
+Varus: Base Armor 27 >>> 24
+Vi: W Target Max Health Damage 4/5.5/7/8.5/10% (+2.857% bonus AD) >>> 4/5/6/7/8 (+3.5% bonus AD); W Bonus Attack Speed 30/37.5/45/52.5/60% >>> 30/35/40/45/50%; E Bonus Damage 0/15/30/45/60 (+120% AD) (+100% AP) >>> 10/30/50/70/90 (+110% AD) (+100% AP)
+Yorick: Q Damage 30/55/80/105/130 (+50% AD) >>> 30/50/70/90/110 (+50% AD)
+Zeri: R Damage 175/275/375 (+85% bonus AD) (+110% AP) >>> 200/300/400 (+100% bonus AD) (+110% AP); R Chain Lightning Damage 30% AD >>> 40% AD

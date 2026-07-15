@@ -2,23 +2,167 @@
   "patch": "16.8",
   "source": "leagueoflegends.com patch 26.8 == game patch 16.8",
   "changes": [
-    {"champion": "DrMundo", "target": "Q - Infected Bonesaw", "field": "monster damage cap", "change_type": "nerf", "old": "300/375/450/525/600", "new": "250/325/400/475/550", "magnitude_pct": 0},
-    {"champion": "DrMundo", "target": "E - Blunt Force Trauma", "field": "monster damage cap", "change_type": "nerf", "old": "200%", "new": "140%", "magnitude_pct": -30.0},
-    {"champion": "Hwei", "target": "Passive - Signature of the Visionary", "field": "base damage", "change_type": "buff", "old": "35-230", "new": "40-285", "magnitude_pct": 0},
-    {"champion": "Karma", "target": "Base Stats", "field": "Base Attack Damage", "change_type": "nerf", "old": "51", "new": "49", "magnitude_pct": -3.92},
-    {"champion": "Karma", "target": "Base Stats", "field": "Attack Damage growth (per level)", "change_type": "nerf", "old": "3.3", "new": "3.0", "magnitude_pct": -9.09},
-    {"champion": "Karma", "target": "E - Inspire", "field": "mana cost", "change_type": "nerf", "old": "50/55/60/65/70", "new": "60/65/70/75/80", "magnitude_pct": 0},
-    {"champion": "Lillia", "target": "Passive - Dream-Laden Bough", "field": "monster damage cap", "change_type": "buff", "old": "65", "new": "70-180", "magnitude_pct": 0},
-    {"champion": "Lucian", "target": "E - Relentless Pursuit", "field": "cooldown", "change_type": "buff", "old": "18/17/16/15/14", "new": "16/15.5/15/14.5/14", "magnitude_pct": 0},
-    {"champion": "Lucian", "target": "E - Relentless Pursuit", "field": "mana cost", "change_type": "buff", "old": "40/30/20/10/0", "new": "32/24/16/8/0", "magnitude_pct": 0},
-    {"champion": "Mel", "target": "Q - Radiant Volley", "field": "initial explosion damage", "change_type": "nerf", "old": "60/90/120/150/180 (+60% AP)", "new": "60/85/110/135/160 (+55% AP)", "magnitude_pct": 0},
-    {"champion": "Mel", "target": "W - Rebuttal", "field": "cooldown", "change_type": "nerf", "old": "35/32/29/26/23", "new": "38/35/32/29/26", "magnitude_pct": 0},
-    {"champion": "Mel", "target": "W - Rebuttal", "field": "bonus MS duration", "change_type": "nerf", "old": "1.5s", "new": "0.75s", "magnitude_pct": -50.0},
-    {"champion": "TahmKench", "target": "Passive - An Acquired Taste", "field": "damage", "change_type": "adjust", "old": "6-48", "new": "5-60", "magnitude_pct": 0},
-    {"champion": "TahmKench", "target": "Passive - An Acquired Taste", "field": "bonus HP scaling", "change_type": "nerf", "old": "4.5%", "new": "4%", "magnitude_pct": -11.11},
-    {"champion": "Yuumi", "target": "R - Final Chapter", "field": "heal per wave", "change_type": "buff", "old": "30/40/50 (+10% AP)", "new": "30/50/70 (+12% AP)", "magnitude_pct": 0},
-    {"champion": "Yuumi", "target": "R - Final Chapter", "field": "best friend enhanced heal", "change_type": "buff", "old": "30%", "new": "30-60%", "magnitude_pct": 0},
-    {"champion": "Zilean", "target": "W - Rewind", "field": "level availability", "change_type": "nerf", "old": "levelable at 1", "new": "not levelable at 1", "magnitude_pct": 0},
-    {"champion": "Zyra", "target": "W - Rampant Growth", "field": "level availability", "change_type": "nerf", "old": "levelable", "new": "restricted", "magnitude_pct": 0}
+    {
+      "champion": "DrMundo",
+      "target": "Q - Infected Bonesaw",
+      "field": "monster damage cap",
+      "change_type": "nerf",
+      "old": "300/375/450/525/600",
+      "new": "250/325/400/475/550",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "DrMundo",
+      "target": "E - Blunt Force Trauma",
+      "field": "monster damage cap",
+      "change_type": "nerf",
+      "old": "200%",
+      "new": "140%",
+      "magnitude_pct": -30.0
+    },
+    {
+      "champion": "Hwei",
+      "target": "Passive - Signature of the Visionary",
+      "field": "base damage",
+      "change_type": "buff",
+      "old": "35-230",
+      "new": "40-285",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Karma",
+      "target": "Base Stats",
+      "field": "Base Attack Damage",
+      "change_type": "nerf",
+      "old": "51",
+      "new": "49",
+      "magnitude_pct": -3.92
+    },
+    {
+      "champion": "Karma",
+      "target": "Base Stats",
+      "field": "Attack Damage growth (per level)",
+      "change_type": "nerf",
+      "old": "3.3",
+      "new": "3.0",
+      "magnitude_pct": -9.09
+    },
+    {
+      "champion": "Karma",
+      "target": "E - Inspire",
+      "field": "mana cost",
+      "change_type": "nerf",
+      "old": "50/55/60/65/70",
+      "new": "60/65/70/75/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lillia",
+      "target": "Passive - Dream-Laden Bough",
+      "field": "monster damage cap",
+      "change_type": "buff",
+      "old": "65",
+      "new": "70-180",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lucian",
+      "target": "E - Relentless Pursuit",
+      "field": "cooldown",
+      "change_type": "buff",
+      "old": "18/17/16/15/14",
+      "new": "16/15.5/15/14.5/14",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lucian",
+      "target": "E - Relentless Pursuit",
+      "field": "mana cost",
+      "change_type": "buff",
+      "old": "40/30/20/10/0",
+      "new": "32/24/16/8/0",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "Q - Radiant Volley",
+      "field": "initial explosion damage",
+      "change_type": "nerf",
+      "old": "60/90/120/150/180 (+60% AP)",
+      "new": "60/85/110/135/160 (+55% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "W - Rebuttal",
+      "field": "cooldown",
+      "change_type": "nerf",
+      "old": "35/32/29/26/23",
+      "new": "38/35/32/29/26",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "W - Rebuttal",
+      "field": "bonus MS duration",
+      "change_type": "nerf",
+      "old": "1.5s",
+      "new": "0.75s",
+      "magnitude_pct": -50.0
+    },
+    {
+      "champion": "TahmKench",
+      "target": "Passive - An Acquired Taste",
+      "field": "damage",
+      "change_type": "adjust",
+      "old": "6-48",
+      "new": "5-60",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "TahmKench",
+      "target": "Passive - An Acquired Taste",
+      "field": "bonus HP scaling",
+      "change_type": "nerf",
+      "old": "4.5%",
+      "new": "4%",
+      "magnitude_pct": -11.11
+    },
+    {
+      "champion": "Yuumi",
+      "target": "R - Final Chapter",
+      "field": "heal per wave",
+      "change_type": "buff",
+      "old": "30/40/50 (+10% AP)",
+      "new": "30/50/70 (+12% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yuumi",
+      "target": "R - Final Chapter",
+      "field": "best friend enhanced heal",
+      "change_type": "buff",
+      "old": "30%",
+      "new": "30-60%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zilean",
+      "target": "W - Rewind",
+      "field": "level availability",
+      "change_type": "nerf",
+      "old": "levelable at 1",
+      "new": "not levelable at 1",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zyra",
+      "target": "W - Rampant Growth",
+      "field": "level availability",
+      "change_type": "nerf",
+      "old": "levelable",
+      "new": "restricted",
+      "magnitude_pct": 0
+    }
   ]
 }

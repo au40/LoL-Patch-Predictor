@@ -1,0 +1,27 @@
+Patch 25.16 — Champion changes (fetched from leagueoflegends.com; game patch 15.16)
+
+Brand: Passive Per Tick Damage to Monsters 240% >>> 260%; Q Ablaze Stun Duration 1.5 >>> 1.75; R Cooldown 110/100/90 >>> 100/90/80
+Gnar: Q Cooldown 20/17.5/15/12.5/10 >>> 16/14.5/13/11.5/10
+Illaoi: Passive Total AD Ratio 105% >>> 110%; Passive Spawn Cooldown 20-7.25 >>> 18-7
+Jarvan IV: Armor Growth 5.2 >>> 4.6
+Kalista: AD growth 4 >>> 4.25; E Initial Damage AP Ratio 20% >>> 65%; E Subsequent Damage AP Ratio 20% >>> 50%
+Lulu: E Cooldown 8 >>> 10/9.5/9/8.5/8; E Base Damage 80/120/160/200/240 >>> 70/110/150/190/230; E Shield 80/120/160/200/240 (+55% AP) >>> 70/110/150/190/230 (+50% AP)
+Mordekaiser: Q Damage AD Ratio 0% >>> 120% bonus AD
+Morgana: W Minimum Damage 60/115/170/225/280 (+85% AP) >>> 70/140/210/280/350 (+100% AP); W Maximum Damage 162/310.5/459/607.5/756 (+229.5% AP) >>> 140/280/420/560/700 (+200% AP)
+Nautilus: E Monster Damage 150% modifier >>> first hit 125/165/205/245/285 (+50% AP) bonus damage to monsters
+Nocturne: Armor Growth 4.7 >>> 4.2; Q Bonus AD 20/30/40/50/60 >>> 15/25/35/45/55
+Qiyana: Q Base Damage 60/90/120/150/180 >>> 70/100/130/160/190; W Bonus Attack Speed 5/10/15/20/25% >>> 15/20/25/30/35%
+Rek'Sai: Base Attack Damage 58 >>> 62
+Rell: W Shield 20/40/60/80/100 (+13% Max Health) >>> 20/40/60/80/100 (+11% Max Health)
+Rumble: Q Damage 60/90/120/150/180 (+110% AP) (+6/6.8/7.6/8.4/9.2% target max HP) >>> 60/90/120/150/180 (+100% AP) (+6/6.5/7/7.5/8% target max HP); R Tick Rate 0.5 >>> 0.25
+Shaco: Passive Bonus AD Ratio 30% >>> 25%; Q Bonus AD Ratio 65% >>> 60%; Q Cooldown 12/11.5/11/10.5/10 >>> 13/12.5/12/11.5/11
+Singed: Q Poison Refresh Rate 0.5 >>> 0.25
+Sion: Passive Health Lost per Tick 2.3-24.4 >>> 2-19; E Armor Reduction 20% >>> 25%; R Bonus AD Ratio 40-80% >>> 60-120%
+Sylas: Passive Monster Damage Modifier 100% >>> 150%
+Trundle: W Bonus Attack Speed 30/50/70/90/110% >>> 30/45/60/75/90%; W Cooldown 16/15/14/13/12 >>> 18/17/16/15/14
+Varus: Q Base Damage 90/160/230/300/370 >>> 80/150/220/290/360; W Bonus Magic Damage On-Hit 6/12/18/24/30 >>> 6/14/22/30/38; E Damage 60/100/140/180/220 (+100% bonus AD) >>> 60/90/120/150/180 (+90% bonus AD)
+Viego: Attack Speed Growth 2.5% >>> 2.25%; Q Damage 15/30/45/60/75 >>> 25/40/55/70/85; Q Critical Strike Multiplier 100% >>> 75%
+Warwick: Base Attack Damage 60 >>> 65; Passive Bonus On-Hit Damage 12-46 >>> 6-46
+Xin Zhao: Base Health 640 >>> 620; Q Flat Bonus Damage per Hit 20/35/50/65/80 >>> 15/30/45/60/75
+Yuumi: Q Empowered Base Damage 80/140/200/260/320/380 >>> 80/135/190/245/300/355; W Heal and Shield Power 5/7.5/10/12.5/15% >>> 4/5/6/7/8%; W Heal On-Hit 3/5/7/9/11 (+4% AP) >>> 3/4/5/6/7 (+3% AP)
+Zyra: E Cooldown 12 >>> 11; R Base Damage 180/265/350 >>> 200/300/400

@@ -1,0 +1,21 @@
+Patch 25.08 — Champion changes (fetched from leagueoflegends.com; game patch 15.8)
+
+Ahri: Armor Growth 4.7 >>> 4.2; W Damage 45/70/95/120/145 (+30% AP) >>> 40/60/80/100/120 (+40% AP); W Cooldown 9/8/7/6/5 >>> 10/9/8/7/6; E Damage (+75% AP) >>> (+85% AP)
+Annie: Health Growth 102 >>> 96; Q Damage (+75% AP) >>> (+80% AP); W Damage 70/115/160/205/250 >>> 70/120/170/220/270; W Cooldown 8 >>> 7; R Flame Aura 20/30/40 (+12% AP) >>> 8/12/16 (+4% AP); R Tibbers Auto Attack 50/75/100 (+15% AP) >>> 30/45/60 (+10% AP)
+Blitzcrank: Passive Shield 30% Max Mana >>> 35% Max Mana; Q Damage 105/150/195/240/285 >>> 110/160/210/260/310
+Brand: Passive Ablaze damage to monsters 215% >>> 240%
+Gwen: E On-Hit Damage 12/14/16/18/20 (+25% AP) >>> 8/11/14/17/20 (+25% AP)
+Hwei: Passive Damage 30-180 >>> 35-230; R Explosion 200/300/400 >>> 200/325/450
+Lulu: Base Health 595 >>> 565
+Mel: Base Health 600 >>> 630; Passive Damage per Stack 5-20 >>> 8-25
+Renekton: R Damage 30/60/90 >>> 30/75/120
+Shen: Q Slow 15/20/25/30/35% >>> 25/30/35/40/45%; W Cooldown 18/16.5/15/13.5/12 >>> 16/14.5/13/11.5/10
+Singed: Passive Per-target Cooldown 10 >>> 8
+Sona: Q Bolt Damage 50/80/110/140/170 >>> 50/85/120/155/190
+Syndra: W Slow 25/30/35/40/45% >>> 25%; E Damage 75/115/155/195/235 (+45% AP) >>> 60/95/130/165/200 (+60% AP); R Damage per Sphere 100/140/180 (+17% AP) >>> 90/130/170 (+20% AP)
+Tristana: R Damage 275/325/375 >>> 225/275/325
+Xerath: Passive Cooldown Refund 2.5s >>> 3.5s; Q Damage 70/110/150/190/230 >>> 75/115/155/195/235
+Zeri: R Chain Lightning 25% Total AD >>> 30% Total AD
+Yone: W Damage (+10/11/12/13/14% max HP) >>> (+8/9/10/11/12% max HP)
+Yorick: Passive Monster Damage Taken 60% >>> 100%; E Damage formula changed to 6/6.5/7/7.5/8% max HP (+3% per 100 AP)
+Yuumi: Passive Heal 25-110 >>> 20-110; E Shield 80/105/130/155/180 >>> 65/90/115/140/165

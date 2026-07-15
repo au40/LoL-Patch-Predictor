@@ -1,0 +1,149 @@
+{
+  "patch": "15.13",
+  "changes": [
+    {
+      "champion": "Briar",
+      "target": "W - Frenzied Attacks",
+      "field": "Mechanic",
+      "change_type": "adjust",
+      "old": "Can be canceled",
+      "new": "Cannot be canceled",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Briar",
+      "target": "E",
+      "field": "Cast Time",
+      "change_type": "buff",
+      "old": "0.25",
+      "new": "0.15",
+      "magnitude_pct": -40
+    },
+    {
+      "champion": "Fiddlesticks",
+      "target": "W",
+      "field": "Damage per second AP ratio",
+      "change_type": "buff",
+      "old": "40%",
+      "new": "45%",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Gangplank",
+      "target": "Q - Parrrley",
+      "field": "Mana Cost",
+      "change_type": "nerf",
+      "old": "55/50/45/40/35",
+      "new": "50/45/40/35/30",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gangplank",
+      "target": "R - Cannon Barrage",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "170/150/130",
+      "new": "160/140/120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Irelia",
+      "target": "Passive - Ionian Fervor",
+      "field": "Attack Speed per stack",
+      "change_type": "buff",
+      "old": "7.5%-25%",
+      "new": "10%-25%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Irelia",
+      "target": "Passive - Ionian Fervor",
+      "field": "Max Attack Speed",
+      "change_type": "buff",
+      "old": "30%-100%",
+      "new": "40%-100%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kindred",
+      "target": "R - Lamb's Respite",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "180/150/120",
+      "new": "160/140/120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nidalee",
+      "target": "Q - Javelin Toss",
+      "field": "Damage increase based on range",
+      "change_type": "buff",
+      "old": "0-200%",
+      "new": "0-225%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rammus",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "buff",
+      "old": "94",
+      "new": "100",
+      "magnitude_pct": 6.38
+    },
+    {
+      "champion": "Rammus",
+      "target": "W - Defensive Ball Curl",
+      "field": "Bonus Armor/Magic Resist",
+      "change_type": "buff",
+      "old": "27",
+      "new": "27/32/37/42/47",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ryze",
+      "target": "W - Rune Prison",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "70/100/130/160/190",
+      "new": "60/90/120/150/180",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ryze",
+      "target": "W - Rune Prison",
+      "field": "Mana",
+      "change_type": "nerf",
+      "old": "40/55/70/85/100",
+      "new": "50/60/70/80/90",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "TwistedFate",
+      "target": "R - Destiny",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "160/130/100",
+      "new": "170/140/110",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Vi",
+      "target": "Passive - Blast Shield",
+      "field": "Shield",
+      "change_type": "nerf",
+      "old": "14% Max HP",
+      "new": "12% Max HP",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Yorick",
+      "target": "Base Stats",
+      "field": "Base Armor",
+      "change_type": "nerf",
+      "old": "39",
+      "new": "36",
+      "magnitude_pct": -7.69
+    }
+  ]
+}

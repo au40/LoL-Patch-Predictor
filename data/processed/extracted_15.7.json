@@ -1,0 +1,320 @@
+{
+  "patch": "15.7",
+  "changes": [
+    {
+      "champion": "Brand",
+      "target": "Passive",
+      "field": "Blaze damage cap per tick vs non-epic monsters",
+      "change_type": "buff",
+      "old": "7.5/15/22.5",
+      "new": "10/20/30",
+      "magnitude_pct": 33.33
+    },
+    {
+      "champion": "Brand",
+      "target": "Passive",
+      "field": "Explosion Damage Cap to Monsters",
+      "change_type": "buff",
+      "old": "250/325/400/475",
+      "new": "270/355/440/525",
+      "magnitude_pct": 8.0
+    },
+    {
+      "champion": "Darius",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "39",
+      "new": "37",
+      "magnitude_pct": -5.13
+    },
+    {
+      "champion": "Darius",
+      "target": "E - Apprehend",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "24/21.5/19/16.5/14",
+      "new": "26/23.5/21/18.5/16",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "Q - Snip Snip!",
+      "field": "Final Snip Damage",
+      "change_type": "nerf",
+      "old": "70/95/120/145/170",
+      "new": "60/85/110/135/160",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Gwen",
+      "target": "W - Hallowed Mist",
+      "field": "Resists",
+      "change_type": "adjust",
+      "old": "25",
+      "new": "22 (+7% AP)",
+      "magnitude_pct": -12.0
+    },
+    {
+      "champion": "Ivern",
+      "target": "Q - Rootcaller",
+      "field": "Root Duration",
+      "change_type": "buff",
+      "old": "1.2/1.4/1.6/1.8/2",
+      "new": "1.6/1.7/1.8/1.9/2",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lillia",
+      "target": "E - Trample",
+      "field": "Damage AP ratio",
+      "change_type": "nerf",
+      "old": "60%",
+      "new": "50%",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Lulu",
+      "target": "Q - Glitterlance",
+      "field": "Minimum Damage",
+      "change_type": "nerf",
+      "old": "70/105/140/175/210",
+      "new": "60/95/130/165/200",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Lulu",
+      "target": "Q - Glitterlance",
+      "field": "Maximum Damage",
+      "change_type": "nerf",
+      "old": "105/157.5/210/262.5/315",
+      "new": "90/142.5/195/247.5/300",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Lulu",
+      "target": "W - Whimsy",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "18/17.5/17/16.5/16",
+      "new": "18",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "635",
+      "new": "610",
+      "magnitude_pct": -3.94
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "30",
+      "new": "28",
+      "magnitude_pct": -6.67
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Passive",
+      "field": "Damage to Monsters",
+      "change_type": "nerf",
+      "old": "165%",
+      "new": "155%",
+      "magnitude_pct": -6.06
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Q - Fang Strike",
+      "field": "Damage to Minions",
+      "change_type": "buff",
+      "old": "80%",
+      "new": "100%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Naafiri",
+      "target": "W - Eviscerate",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "20/19.5/19/18.5/18",
+      "new": "22/21/20/19/18",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Olaf",
+      "target": "E - Reckless Swing",
+      "field": "Cast Time",
+      "change_type": "buff",
+      "old": ".25s",
+      "new": ".25-.175s",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Shaco",
+      "target": "Passive",
+      "field": "Backstab Damage bonus AD",
+      "change_type": "buff",
+      "old": "25%",
+      "new": "30%",
+      "magnitude_pct": 20.0
+    },
+    {
+      "champion": "Shaco",
+      "target": "Q - Deceive",
+      "field": "bonus AD",
+      "change_type": "buff",
+      "old": "60%",
+      "new": "65%",
+      "magnitude_pct": 8.33
+    },
+    {
+      "champion": "Shen",
+      "target": "Q - Twilight Assault",
+      "field": "Damage to structures",
+      "change_type": "buff",
+      "old": "",
+      "new": "flat damage",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Singed",
+      "target": "Passive",
+      "field": "Per-Target Cooldown",
+      "change_type": "nerf",
+      "old": "8",
+      "new": "10",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Singed",
+      "target": "Q - Poison Trail",
+      "field": "AP ratio",
+      "change_type": "buff",
+      "old": "40%",
+      "new": "42.5%",
+      "magnitude_pct": 6.25
+    },
+    {
+      "champion": "Singed",
+      "target": "R - Insanity Potion",
+      "field": "Bonus Stats",
+      "change_type": "nerf",
+      "old": "30/65/100",
+      "new": "25/60/95",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Trundle",
+      "target": "E - Frozen Domain",
+      "field": "Slow",
+      "change_type": "buff",
+      "old": "30/34/38/42/46%",
+      "new": "34/38/42/46/50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Trundle",
+      "target": "E - Frozen Domain",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "24/22/20/18/16",
+      "new": "21/19.5/18/16.5/15",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "W - Volcanic Bite",
+      "field": "Empowered Damage Amp",
+      "change_type": "adjust",
+      "old": "50%",
+      "new": "50% (+15% Bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Xerath",
+      "target": "Q - Arcanopulse",
+      "field": "AP ratio",
+      "change_type": "buff",
+      "old": "85%",
+      "new": "90%",
+      "magnitude_pct": 5.88
+    },
+    {
+      "champion": "Xerath",
+      "target": "W - Eye of Destruction",
+      "field": "AP ratio bonus AP",
+      "change_type": "buff",
+      "old": "60%",
+      "new": "65%",
+      "magnitude_pct": 8.33
+    },
+    {
+      "champion": "Xerath",
+      "target": "W - Eye of Destruction",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "60/95/130/165/200",
+      "new": "50/85/120/155/190",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Xerath",
+      "target": "E - Shocking Orb",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "80/110/140/170/200",
+      "new": "70/100/130/160/190",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Xerath",
+      "target": "R - Rite of the Arcane",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "180/230/280",
+      "new": "170/220/270",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Xerath",
+      "target": "R - Rite of the Arcane",
+      "field": "AP ratio",
+      "change_type": "buff",
+      "old": "40%",
+      "new": "45%",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Yone",
+      "target": "Passive",
+      "field": "critical strike damage reduction",
+      "change_type": "removed",
+      "old": "present",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yone",
+      "target": "E - Soul Unbound",
+      "field": "crowd control cleanse",
+      "change_type": "removed",
+      "old": "present",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yorick",
+      "target": "Multiple",
+      "field": "Major rework",
+      "change_type": "adjust",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Galio,Galio,hp,632.0,600.0,-32.0,-5.06,15.2.1,15.3.1
+Jax,Jax,hpperlevel,100.0,103.0,3.0,3.0,15.2.1,15.3.1
+Jax,Jax,mpregen,7.6,8.2,0.6,7.89,15.2.1,15.3.1
+MissFortune,Miss Fortune,armor,28.0,25.0,-3.0,-10.71,15.2.1,15.3.1
+MissFortune,Miss Fortune,armorperlevel,4.2,4.0,-0.2,-4.76,15.2.1,15.3.1
+Rell,Rell,hp,640.0,620.0,-20.0,-3.12,15.2.1,15.3.1
+Rell,Rell,armorperlevel,4.3,4.0,-0.3,-6.98,15.2.1,15.3.1
+Skarner,Skarner,armorperlevel,4.8,4.5,-0.3,-6.25,15.2.1,15.3.1
+Thresh,Thresh,hp,600.0,620.0,20.0,3.33,15.2.1,15.3.1
+Viego,Viego,attackdamage,60.0,57.0,-3.0,-5.0,15.2.1,15.3.1

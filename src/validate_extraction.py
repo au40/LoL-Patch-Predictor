@@ -36,7 +36,7 @@ except Exception:
     pass
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from datadragon import diff_stats  # noqa: E402
+from datadragon import diff_stats, champion_id_map, normalize_champion  # noqa: E402
 
 # Map Data Dragon stat keys to the words the LLM is likely to emit in `field`.
 STAT_ALIASES = {
@@ -46,12 +46,15 @@ STAT_ALIASES = {
     "armor": ["armor"],
     "armorperlevel": ["armor growth", "armor per level"],
     "attackspeed": ["attack speed"],
+    "attackspeedperlevel": ["attack speed growth", "attack speed per level"],
     "movespeed": ["move speed", "movement speed", "ms"],
     "mp": ["mana"],
+    "mpperlevel": ["mana growth", "mana per level"],
     "mpregen": ["mana regen", "mana regeneration"],
     "hpregen": ["health regen", "hp regen", "health regeneration"],
-    "hpperlevel": ["hp per level", "health per level", "hp growth"],
-    "spellblock": ["magic resist", "mr", "spell block"],
+    "hpperlevel": ["hp per level", "health per level", "hp growth", "health growth"],
+    "spellblock": ["magic resist", "mr", "spell block", "magic resist growth"],
+    "spellblockperlevel": ["magic resist growth", "magic resist per level", "mr growth"],
 }
 
 
@@ -76,13 +79,18 @@ def main() -> None:
     extracted = json.loads(Path(args.extracted).read_text(encoding="utf-8")).get("changes", [])
     notes_text = Path(args.notes).read_text(encoding="utf-8").lower() if args.notes else None
 
+    # Normalize the extraction's champion spelling to Data Dragon ids before comparing,
+    # so 'Cho'Gath' / 'Xin Zhao' match the truth's 'Chogath' / 'XinZhao' (older extraction
+    # files may predate on-save normalization).
+    id_map = champion_id_map(args.new)
     matched, claimed_base = set(), 0
     for c in extracted:
         if "base" not in c["target"].lower():
             continue  # only grading base-stat changes here
         claimed_base += 1
+        champ_id = normalize_champion(c["champion"], id_map)
         for champ, stat in truth_pairs:
-            if c["champion"] == champ and field_matches_stat(c["field"], stat):
+            if champ_id == champ and field_matches_stat(c["field"], stat):
                 matched.add((champ, stat))
 
     tp = len(matched)

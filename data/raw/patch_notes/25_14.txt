@@ -1,0 +1,17 @@
+Patch 25.14 — Champion changes (fetched from leagueoflegends.com; game patch 15.14)
+
+Azir: Base Health 550 >>> 575; W Damage AP ratio (+40/45/50/55/60% AP) >>> (+45/50/55/60/65% AP)
+Braum: Base Armor 47 >>> 42
+Briar: R CC Cleanse updated
+Darius: Q Missing Health Heal 15/30/45% >>> 17/34/51%
+Fiora: R Heal per Second 40/60/70/80/100% >>> 100% always
+Fizz: W Cooldown 7/6.5/6/5.5/5 >>> 7/6/5/4/3; E Damage AP ratio +90% >>> +95%
+Kled: Passive Dismounted Autoattack Damage 80% >>> 85/90/95/100%; Mounted Q AD ratio 65% >>> 60%; Dismounted Q Ammo Charge Time 20-7.5s >>> 18/16/14/12/10s; W Cooldown 11/9.5/8/6.5/5 >>> 13/12/11/10/9; E Damage AD ratio 65% >>> 55%
+Lee Sin: Base AD 69 >>> 66
+Riven: Passive AD Ratio 30-60% >>> 30-50%
+Sett: Armor Growth 5.2 >>> 4.7
+Twisted Fate: Q Damage 70/115/160/205/250 >>> 60/105/150/195/240
+Yasuo: AD Growth 3 >>> 2.5
+Yuumi: R Heal per Hit (+15% AP) >>> (+10% AP)
+Ziggs: R Maximum Center Damage 300/450/600 >>> 300/500/700
+Zoe: Q Damage 7-50 >>> 2-50; W Total Damage 75/105/135/165/195 >>> 60/90/120/150/180

@@ -1,0 +1,16 @@
+Patch 26.2 — Champion changes (fetched from leagueoflegends.com; game patch 16.2)
+
+Aatrox: Passive Bonus Magic Damage 4-8% >>> 4-10%; Q Bonus Damage to Monsters 15 >>> 25
+Ashe: Attack Damage Growth 3 >>> 3.5
+Gwen: Passive Monster Damage Cap 5 (+10% AP) >>> 3 (+5% AP)
+Jayce: Q Bonus Damage to Monsters 50 >>> 25
+Lillia: Passive Heal Against Large Monsters 39 (+15% AP) >>> 39 (+9% AP); Q AP Ratio 35% >>> 30%
+Malphite: W Monster Damage 2x >>> 1.8x; E Damage 80/120/160/200/240 (+60% AP) (+40% armor) >>> 60/95/130/165/200 (+60% AP) (+40% armor); E Mana Cost 50 >>> 50/55/60/65/70; R Cooldown 130/105/80 >>> 130/115/100
+Master Yi: Armor Growth 4.2 >>> 4.5; Q On-Hit Damage Mod 65% >>> 75%
+Nunu & Willump: Q Cooldown 12/11/10/9/8 >>> 13/12/11/10/9; W Maximum Damage 180/225/270/315/360 (+150% AP) >>> 150/195/240/285/330 (+150% AP); E Damage per Hit 16/24/32/40/48 (+15% AP) >>> 14/21/28/35/42 (+15% AP)
+Sivir: Attack Speed Growth 2% >>> 1.6%; Armor Growth 4.45 >>> 4.0
+Smolder: Armor Growth 4.7 >>> 4.0
+Taliyah: Q Bonus Damage to Monsters 20 >>> 20/25/30/35/40; E Monster Damage Modifier 190% >>> 225%
+Varus: Q Maximum Charge Base Damage 80/150/220/290/360 >>> 80/160/240/320/400; W On-Hit Base Damage 6/14/22/30/38 >>> 8/17/26/35/44
+Viego: Attack Speed Growth 2.25% >>> 2.75%
+Zed: Passive Monster Damage 1.8x >>> 1.2x

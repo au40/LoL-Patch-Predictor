@@ -1,0 +1,9 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Fizz,Fizz,armor,22.0,26.0,4.0,18.18,15.22.1,15.23.1
+Jhin,Jhin,attackdamage,59.0,61.0,2.0,3.39,15.22.1,15.23.1
+Kaisa,Kai'Sa,armor,27.0,25.0,-2.0,-7.41,15.22.1,15.23.1
+Skarner,Skarner,attackdamageperlevel,4.0,5.0,1.0,25.0,15.22.1,15.23.1
+Tristana,Tristana,attackdamageperlevel,2.5,2.9,0.4,16.0,15.22.1,15.23.1
+Vladimir,Vladimir,hp,607.0,600.0,-7.0,-1.15,15.22.1,15.23.1
+Vladimir,Vladimir,armor,27.0,24.0,-3.0,-11.11,15.22.1,15.23.1
+Volibear,Volibear,attackdamage,62.0,65.0,3.0,4.84,15.22.1,15.23.1

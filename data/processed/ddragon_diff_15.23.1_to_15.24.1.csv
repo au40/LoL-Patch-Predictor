@@ -1,0 +1,5 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Braum,Braum,hp,610.0,630.0,20.0,3.28,15.23.1,15.24.1
+MasterYi,Master Yi,hp,655.0,640.0,-15.0,-2.29,15.23.1,15.24.1
+MasterYi,Master Yi,attackdamageperlevel,2.8,2.5,-0.3,-10.71,15.23.1,15.24.1
+Nasus,Nasus,hp,631.0,650.0,19.0,3.01,15.23.1,15.24.1

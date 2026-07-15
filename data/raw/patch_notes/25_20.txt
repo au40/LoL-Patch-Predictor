@@ -1,0 +1,16 @@
+Patch 25.20 — Champion changes (fetched from leagueoflegends.com; game patch 15.20)
+
+Anivia: Q Cooldown 12/11/10/9/8 >>> 11/10/9/8/7; E Base Damage 50/75/100/125/150 >>> 55/80/105/130/155
+Azir: W AP Ratio +40/45/50/55/60% >>> +30/40/60/60/70%; W Recharge Rate 10/9/8/7/6 >>> 12/10.5/9/7.5/6; E Damage 60/100/140/180/220 (+40% AP) >>> 70/110/150/190/230 (+60% AP)
+Briar: Passive Maximum Stacks 7 >>> 5
+Camille: Armor Growth 5 >>> 4.5; W Cooldown 17/15.5/14/12.5/11 >>> 15/14/13/12/11; W Base Damage 50/75/100/125/150 >>> 60/85/110/135/160
+Fizz: W Passive Damage over Time 20/30/40/50/60 (+30% AP) >>> 30/45/60/75/90 (+25% AP); W Active Burst 50/70/90/110/130 >>> 50/75/100/125/150; W On-Hit 10/15/20/25/30 (+35% AP) >>> 20/25/30/35/40 (+30% AP); R Guppy 150/250/350 (+80% AP) >>> 180/300/420 (+60% AP); R Chomper 225/325/425 (+100% AP) >>> 225/375/525 (+75% AP); R Gigalodon 300/400/500 (+120% AP) >>> 270/450/630 (+90% AP)
+Graves: Q Initial 45/65/85/105/125 (+80% bonus AD) >>> 50/75/100/125/150 (+65% bonus AD); Q Secondary 85/120/155/190/225 (+40/65/90/115/140% bonus AD) >>> 80/125/170/215/260 (+55/70/85/100/115% bonus AD)
+Katarina: Armor 28 >>> 32
+Malphite: Base Armor 37 >>> 40; E Base Damage 70/110/150/190/230 >>> 80/120/160/200/240
+Orianna: W Damage 70/120/170/220/270 (+70% AP) >>> 70/110/150/190/230 (+80% AP)
+Pantheon: Q Monster Damage Modifier 0.75x >>> 0.8x; W Minion/Monster Damage Cap 120 >>> 150
+Veigar: W AP Ratio +60/70/80/90/100% >>> +70/80/90/100/110%
+Volibear: Passive AP Ratio 50% >>> 45%; E AP Ratio 80% >>> 70%
+Warwick: Attack Damage Growth 2.75 >>> 2.5; Attack Speed Growth 2.3% >>> 2%
+Wukong: Q Bonus Damage Bonus AD Ratio 55% >>> 50%; W Cooldown 20/19/18/17/16 >>> 22/21/20/19/18; W Clone Damage 35/40/45/50/55% >>> 30/35/40/45/50%; E Base Damage 80/110/140/170/200 >>> 80/120/160/200/240

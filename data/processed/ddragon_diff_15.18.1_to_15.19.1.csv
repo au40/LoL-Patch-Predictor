@@ -1,0 +1,10 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Caitlyn,Caitlyn,attackdamage,60.0,62.0,2.0,3.33,15.18.1,15.19.1
+Jax,Jax,hp,665.0,650.0,-15.0,-2.26,15.18.1,15.19.1
+LeeSin,Lee Sin,armorperlevel,4.9,4.5,-0.4,-8.16,15.18.1,15.19.1
+Seraphine,Seraphine,hpperlevel,90.0,95.0,5.0,5.56,15.18.1,15.19.1
+Seraphine,Seraphine,mpperlevel,25.0,40.0,15.0,60.0,15.18.1,15.19.1
+Syndra,Syndra,hpperlevel,104.0,100.0,-4.0,-3.85,15.18.1,15.19.1
+Syndra,Syndra,armorperlevel,4.6,4.0,-0.6,-13.04,15.18.1,15.19.1
+Yunara,Yunara,hp,575.0,590.0,15.0,2.61,15.18.1,15.19.1
+Yunara,Yunara,attackdamage,53.0,55.0,2.0,3.77,15.18.1,15.19.1

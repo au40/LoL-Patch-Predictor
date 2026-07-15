@@ -1,0 +1,9 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Ashe,Ashe,attackdamageperlevel,2.95,3.45,0.5,16.95,15.17.1,15.18.1
+Azir,Azir,attackspeedperlevel,5.5,5.0,-0.5,-9.09,15.17.1,15.18.1
+Cassiopeia,Cassiopeia,mp,400.0,450.0,50.0,12.5,15.17.1,15.18.1
+Qiyana,Qiyana,armorperlevel,4.7,4.5,-0.2,-4.26,15.17.1,15.18.1
+Qiyana,Qiyana,attackdamage,66.0,64.0,-2.0,-3.03,15.17.1,15.18.1
+Senna,Senna,attackspeedperlevel,3.0,2.6,-0.4,-13.33,15.17.1,15.18.1
+Yunara,Yunara,hp,600.0,575.0,-25.0,-4.17,15.17.1,15.18.1
+Yunara,Yunara,attackdamage,56.0,53.0,-3.0,-5.36,15.17.1,15.18.1

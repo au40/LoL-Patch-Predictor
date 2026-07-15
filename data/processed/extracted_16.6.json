@@ -2,24 +2,176 @@
   "patch": "16.6",
   "source": "leagueoflegends.com patch 26.6 == game patch 16.6 (Cassiopeia excluded - notes say it did not ship to live)",
   "changes": [
-    {"champion": "Ahri", "target": "Q - Orb of Deception", "field": "damage per pass", "change_type": "nerf", "old": "40/65/90/115/140", "new": "35/60/85/110/135", "magnitude_pct": 0},
-    {"champion": "Azir", "target": "Q - Conquering Sands", "field": "AP ratio", "change_type": "buff", "old": "35% AP", "new": "35/40/45/50/55% AP", "magnitude_pct": 0},
-    {"champion": "Azir", "target": "W - Arise!", "field": "damage", "change_type": "buff", "old": "0-45", "new": "0-72", "magnitude_pct": 0},
-    {"champion": "Lissandra", "target": "Base Stats", "field": "Armor growth (per level)", "change_type": "nerf", "old": "4.9", "new": "4.2", "magnitude_pct": -14.29},
-    {"champion": "Lissandra", "target": "Q - Ice Shard", "field": "cooldown", "change_type": "buff", "old": "8/7/6/5/4", "new": "7/6/5/4/3", "magnitude_pct": 0},
-    {"champion": "Olaf", "target": "Base Stats", "field": "Base Attack Speed", "change_type": "buff", "old": "0.694", "new": "0.72", "magnitude_pct": 3.75},
-    {"champion": "Olaf", "target": "Q - Undertow", "field": "slow amount", "change_type": "buff", "old": "25/30/40/45%", "new": "30/40/45/50%", "magnitude_pct": 0},
-    {"champion": "Olaf", "target": "E - Reckless Swing", "field": "damage to self", "change_type": "nerf", "old": "30%", "new": "40%", "magnitude_pct": 33.33},
-    {"champion": "Pyke", "target": "Base Stats", "field": "Base Armor", "change_type": "nerf", "old": "43", "new": "37", "magnitude_pct": -13.95},
-    {"champion": "Shen", "target": "Q - Twilight Assault", "field": "monster damage cap", "change_type": "nerf", "old": "120/140/160/180/200", "new": "100/125/150/175/200", "magnitude_pct": 0},
-    {"champion": "Skarner", "target": "Q - Shattered Earth", "field": "mana cost", "change_type": "buff", "old": "45", "new": "30", "magnitude_pct": -33.33},
-    {"champion": "Skarner", "target": "Q - Shattered Earth", "field": "third attack max health damage", "change_type": "buff", "old": "9%", "new": "11%", "magnitude_pct": 22.22},
-    {"champion": "Tryndamere", "target": "Base Stats", "field": "Attack Speed ratio", "change_type": "buff", "old": "0.694", "new": "0.725", "magnitude_pct": 4.47},
-    {"champion": "Zaahen", "target": "W - Dreaded Return", "field": "secondary damage", "change_type": "nerf", "old": "40/60/80/100/120", "new": "30/50/70/90/110", "magnitude_pct": 0},
-    {"champion": "Zaahen", "target": "E - Aureate Rush", "field": "bonus monster damage", "change_type": "nerf", "old": "75", "new": "50", "magnitude_pct": -33.33},
-    {"champion": "Shyvana", "target": "Passive", "field": "armor/MR per stack", "change_type": "nerf", "old": "0.4", "new": "0.3", "magnitude_pct": -25.0},
-    {"champion": "Shyvana", "target": "W - Dragon Form", "field": "heal", "change_type": "nerf", "old": "100-250", "new": "75-200", "magnitude_pct": 0},
-    {"champion": "Shyvana", "target": "E", "field": "damage", "change_type": "nerf", "old": "80/120/160/200/240", "new": "80/110/140/170/200", "magnitude_pct": 0},
-    {"champion": "Shyvana", "target": "R", "field": "fear duration", "change_type": "nerf", "old": "1s", "new": "0.75s", "magnitude_pct": -25.0}
+    {
+      "champion": "Ahri",
+      "target": "Q - Orb of Deception",
+      "field": "damage per pass",
+      "change_type": "nerf",
+      "old": "40/65/90/115/140",
+      "new": "35/60/85/110/135",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "Q - Conquering Sands",
+      "field": "AP ratio",
+      "change_type": "buff",
+      "old": "35% AP",
+      "new": "35/40/45/50/55% AP",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "W - Arise!",
+      "field": "damage",
+      "change_type": "buff",
+      "old": "0-45",
+      "new": "0-72",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lissandra",
+      "target": "Base Stats",
+      "field": "Armor growth (per level)",
+      "change_type": "nerf",
+      "old": "4.9",
+      "new": "4.2",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Lissandra",
+      "target": "Q - Ice Shard",
+      "field": "cooldown",
+      "change_type": "buff",
+      "old": "8/7/6/5/4",
+      "new": "7/6/5/4/3",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Olaf",
+      "target": "Base Stats",
+      "field": "Base Attack Speed",
+      "change_type": "buff",
+      "old": "0.694",
+      "new": "0.72",
+      "magnitude_pct": 3.75
+    },
+    {
+      "champion": "Olaf",
+      "target": "Q - Undertow",
+      "field": "slow amount",
+      "change_type": "buff",
+      "old": "25/30/40/45%",
+      "new": "30/40/45/50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Olaf",
+      "target": "E - Reckless Swing",
+      "field": "damage to self",
+      "change_type": "nerf",
+      "old": "30%",
+      "new": "40%",
+      "magnitude_pct": 33.33
+    },
+    {
+      "champion": "Pyke",
+      "target": "Base Stats",
+      "field": "Base Armor",
+      "change_type": "nerf",
+      "old": "43",
+      "new": "37",
+      "magnitude_pct": -13.95
+    },
+    {
+      "champion": "Shen",
+      "target": "Q - Twilight Assault",
+      "field": "monster damage cap",
+      "change_type": "nerf",
+      "old": "120/140/160/180/200",
+      "new": "100/125/150/175/200",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Skarner",
+      "target": "Q - Shattered Earth",
+      "field": "mana cost",
+      "change_type": "buff",
+      "old": "45",
+      "new": "30",
+      "magnitude_pct": -33.33
+    },
+    {
+      "champion": "Skarner",
+      "target": "Q - Shattered Earth",
+      "field": "third attack max health damage",
+      "change_type": "buff",
+      "old": "9%",
+      "new": "11%",
+      "magnitude_pct": 22.22
+    },
+    {
+      "champion": "Tryndamere",
+      "target": "Base Stats",
+      "field": "Attack Speed ratio",
+      "change_type": "buff",
+      "old": "0.694",
+      "new": "0.725",
+      "magnitude_pct": 4.47
+    },
+    {
+      "champion": "Zaahen",
+      "target": "W - Dreaded Return",
+      "field": "secondary damage",
+      "change_type": "nerf",
+      "old": "40/60/80/100/120",
+      "new": "30/50/70/90/110",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zaahen",
+      "target": "E - Aureate Rush",
+      "field": "bonus monster damage",
+      "change_type": "nerf",
+      "old": "75",
+      "new": "50",
+      "magnitude_pct": -33.33
+    },
+    {
+      "champion": "Shyvana",
+      "target": "Passive",
+      "field": "armor/MR per stack",
+      "change_type": "nerf",
+      "old": "0.4",
+      "new": "0.3",
+      "magnitude_pct": -25.0
+    },
+    {
+      "champion": "Shyvana",
+      "target": "W - Dragon Form",
+      "field": "heal",
+      "change_type": "nerf",
+      "old": "100-250",
+      "new": "75-200",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Shyvana",
+      "target": "E",
+      "field": "damage",
+      "change_type": "nerf",
+      "old": "80/120/160/200/240",
+      "new": "80/110/140/170/200",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Shyvana",
+      "target": "R",
+      "field": "fear duration",
+      "change_type": "nerf",
+      "old": "1s",
+      "new": "0.75s",
+      "magnitude_pct": -25.0
+    }
   ]
 }

@@ -1,0 +1,30 @@
+Patch 26.3 — Champion changes (fetched from leagueoflegends.com; game patch 16.3)
+
+Ahri: W Cooldown 10/9/8/7/6 >>> 9/8/7/6/5
+Bel'Veth: Health Growth 99 >>> 105; R True Damage 6/8/10 >>> 6/10/14
+Braum: Health 630 >>> 610; Q Damage 75/125/175/225/275 >>> 75/120/165/210/255
+Briar: Health Growth 95 >>> 100; Armor Growth 4.2 >>> 4.5; Q/W/E/R Health Cost 6% >>> 5%
+Diana: Passive Monster Damage 280% >>> 230%
+Draven: AD Growth 3 >>> 3.4
+Ekko: Passive AP Ratio 90% >>> 80%; Passive Monster Damage 300% >>> 270%
+Ezreal: AD Growth 3.25 >>> 3.75; E Damage Bonus AD 50% >>> 60%
+Hecarim: Q Damage 60/85/110/135/160 >>> 60/90/120/150/180; Q Amp 3% (+4% per 100 AD) >>> 3% (+3% per 100 AD)
+Heimerdinger: Health Growth 101 >>> 105; W Initial Hit 40/65/90/115/140 >>> 50/75/100/125/150
+Jayce: Q Skies 60/105/150/195/240/285 >>> 60/110/160/210/260/310; Q Shock 80/126/172/218/264/310 >>> 80/121/162/203/244/285; R Shred 10/15/20/25% >>> 20/25/30/35%
+Kayn: Q Damage 75/100/125/150/175 >>> 75/105/135/165/195
+Maokai: Q Damage 65/110/155/200/245 >>> 75/120/165/210/255
+Mel: Attack Speed Ratio 0.4 >>> 0.625; Passive Projectile 8-50 (+5% AP) >>> 8-25 (+3% AP); E Root Damage 60/100/140/180/220 >>> 60/105/150/195/240; R AP Ratio 3.5% >>> 4%
+Naafiri: Passive Packmate Monster Damage 1.35x >>> 1.55x
+Nilah: AD 60 >>> 58; Armor Growth 4.5 >>> 4.2
+Nunu: W Max Damage 150/195/240/285/330 >>> 180/225/270/315/360; E Base Damage 14/21/28/35/42 >>> 15/22.5/30/37.5/45
+Riven: Passive AD Ratio 30-50% >>> 30-45%; Q Bonus AD 65/70/75/80/85% >>> 60/65/70/75/80%
+Ryze: W Damage (+70% AP) (+4% Bonus Mana) >>> (+60% AP) (+3% Bonus Mana)
+Trundle: Armor Growth 3.9 >>> 4.5; AD Growth 4 >>> 4.5
+Tryndamere: AD Growth 4 >>> 4.5
+Varus: Armor Growth 4.6 >>> 4; W On-hit (+35% AP) >>> (+25% AP); W Max Health Damage (+1.5% per 100 AP) >>> (+1.3% per 100 AP)
+Vi: Health Growth 99 >>> 105; AD Growth 3 >>> 3.5
+Volibear: Q Bonus Damage 10/30/50/70/90 >>> 10/20/30/40/50; E Cooldown 14 >>> 16; E Non-champion Damage Cap 190/305/420/535/650 >>> 150/265/380/495/610
+Xin Zhao: Passive Heal 3/3.5/4% >>> 3/4/5%; E Attack Speed 40/45/50/55/60% >>> 40/50/60/70/80%
+Yone: Q Damage (+105% Total AD) >>> (+110% Total AD)
+Zaahen: Q Monster Modifier 1.75x >>> 2x; E Bonus Monster Damage 50 >>> 75
+Zed: Passive Monster Damage 1.2x >>> 0.5x; Epic Monster Cap 300 >>> 100

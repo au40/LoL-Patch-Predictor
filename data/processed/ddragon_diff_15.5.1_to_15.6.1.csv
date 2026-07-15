@@ -1,0 +1,15 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Corki,Corki,armor,30.0,27.0,-3.0,-10.0,15.5.1,15.6.1
+Ezreal,Ezreal,armorperlevel,4.7,4.2,-0.5,-10.64,15.5.1,15.6.1
+Gwen,Gwen,hp,620.0,650.0,30.0,4.84,15.5.1,15.6.1
+Gwen,Gwen,hpperlevel,115.0,110.0,-5.0,-4.35,15.5.1,15.6.1
+Kaisa,Kai'Sa,armor,25.0,27.0,2.0,8.0,15.5.1,15.6.1
+Kaisa,Kai'Sa,hpregen,3.5,4.0,0.5,14.29,15.5.1,15.6.1
+MasterYi,Master Yi,armorperlevel,4.7,4.2,-0.5,-10.64,15.5.1,15.6.1
+Naafiri,Naafiri,hpperlevel,120.0,105.0,-15.0,-12.5,15.5.1,15.6.1
+Naafiri,Naafiri,armorperlevel,4.7,4.2,-0.5,-10.64,15.5.1,15.6.1
+Naafiri,Naafiri,attackdamage,55.0,57.0,2.0,3.64,15.5.1,15.6.1
+Naafiri,Naafiri,attackdamageperlevel,2.1,2.0,-0.1,-4.76,15.5.1,15.6.1
+Singed,Singed,hpperlevel,99.0,96.0,-3.0,-3.03,15.5.1,15.6.1
+Singed,Singed,attackspeed,0.625,0.7,0.075,12.0,15.5.1,15.6.1
+TwistedFate,Twisted Fate,armor,21.0,24.0,3.0,14.29,15.5.1,15.6.1

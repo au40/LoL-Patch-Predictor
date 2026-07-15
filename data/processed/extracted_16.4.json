@@ -2,54 +2,446 @@
   "patch": "16.4",
   "source": "leagueoflegends.com patch 26.4 == game patch 16.4",
   "changes": [
-    {"champion": "Ambessa", "target": "Q", "field": "bonus damage to monsters", "change_type": "nerf", "old": "150", "new": "125", "magnitude_pct": -16.67},
-    {"champion": "Annie", "target": "Q", "field": "base damage", "change_type": "buff", "old": "80/120/160/200/240", "new": "80/125/170/215/260", "magnitude_pct": 0},
-    {"champion": "Annie", "target": "E", "field": "cooldown", "change_type": "buff", "old": "12/11.5/11/10.5/10", "new": "10", "magnitude_pct": 0},
-    {"champion": "Aphelios", "target": "Passive", "field": "bonus AD per level", "change_type": "nerf", "old": "5/10/15/20/25/30", "new": "4/8/12/16/20/24", "magnitude_pct": 0},
-    {"champion": "Brand", "target": "Passive - Ablaze", "field": "monster damage", "change_type": "buff", "old": "265%", "new": "270%", "magnitude_pct": 1.89},
-    {"champion": "Braum", "target": "R", "field": "base damage", "change_type": "nerf", "old": "150/300/450", "new": "150/250/350", "magnitude_pct": 0},
-    {"champion": "Braum", "target": "R", "field": "cooldown", "change_type": "nerf", "old": "120/100/80", "new": "130/115/100", "magnitude_pct": 0},
-    {"champion": "Darius", "target": "Passive", "field": "monster damage", "change_type": "buff", "old": "2x", "new": "2.5x", "magnitude_pct": 25.0},
-    {"champion": "Fizz", "target": "W", "field": "bonus monster damage", "change_type": "buff", "old": "60", "new": "90", "magnitude_pct": 50.0},
-    {"champion": "Graves", "target": "E", "field": "armor per stack", "change_type": "buff", "old": "4/7/10/13/16", "new": "7/10/13/16/19", "magnitude_pct": 0},
-    {"champion": "Graves", "target": "E", "field": "MR per stack", "change_type": "buff", "old": "2/3.5/5/6.5/8", "new": "3.5/5/6.5/8/9.5", "magnitude_pct": 0},
-    {"champion": "Gwen", "target": "Q - Snip Snip!", "field": "base damage per snip", "change_type": "nerf", "old": "10/15/20/25/30", "new": "10/13.5/17/20.5/24", "magnitude_pct": 0},
-    {"champion": "Gwen", "target": "R", "field": "base damage per needle", "change_type": "nerf", "old": "35/65/95", "new": "30/50/70", "magnitude_pct": 0},
-    {"champion": "Hwei", "target": "WW", "field": "max shield value", "change_type": "buff", "old": "100/125/150/175/200", "new": "100/140/180/220/260", "magnitude_pct": 0},
-    {"champion": "Hwei", "target": "R", "field": "cooldown", "change_type": "buff", "old": "140/115/80", "new": "120/100/80", "magnitude_pct": 0},
-    {"champion": "Illaoi", "target": "Passive", "field": "tentacle base damage", "change_type": "buff", "old": "9-180", "new": "9-200", "magnitude_pct": 0},
-    {"champion": "Jinx", "target": "Base Stats", "field": "Armor growth (per level)", "change_type": "nerf", "old": "4.7", "new": "4.2", "magnitude_pct": -10.64},
-    {"champion": "Kassadin", "target": "Base Stats", "field": "Health growth (per level)", "change_type": "nerf", "old": "119", "new": "113", "magnitude_pct": -5.04},
-    {"champion": "Kassadin", "target": "E", "field": "slow", "change_type": "nerf", "old": "50/60/70/80/90%", "new": "50/55/60/65/70%", "magnitude_pct": 0},
-    {"champion": "Kayle", "target": "Q", "field": "base damage", "change_type": "nerf", "old": "60/100/140/180/220", "new": "60/90/120/150/180", "magnitude_pct": 0},
-    {"champion": "Kennen", "target": "R", "field": "cooldown", "change_type": "nerf", "old": "120/100/80", "new": "120", "magnitude_pct": 0},
-    {"champion": "Lux", "target": "Base Stats", "field": "Base Mana", "change_type": "nerf", "old": "480", "new": "440", "magnitude_pct": -8.33},
-    {"champion": "Lux", "target": "Base Stats", "field": "Base Mana Regeneration", "change_type": "buff", "old": "7", "new": "9", "magnitude_pct": 28.57},
-    {"champion": "Lux", "target": "Q", "field": "cooldown", "change_type": "buff", "old": "11/10.5/10/9.5/9", "new": "10", "magnitude_pct": 0},
-    {"champion": "Maokai", "target": "Q", "field": "bonus monster damage", "change_type": "buff", "old": "120/130/140/150/160", "new": "140/150/160/170/180", "magnitude_pct": 0},
-    {"champion": "Naafiri", "target": "Base Stats", "field": "Base Health Regeneration", "change_type": "nerf", "old": "7.5", "new": "6", "magnitude_pct": -20.0},
-    {"champion": "Naafiri", "target": "Base Stats", "field": "Health Regen growth", "change_type": "nerf", "old": "0.7", "new": "0.6", "magnitude_pct": -14.29},
-    {"champion": "Naafiri", "target": "E", "field": "mana cost", "change_type": "nerf", "old": "35", "new": "40", "magnitude_pct": 14.29},
-    {"champion": "Qiyana", "target": "Base Stats", "field": "Health growth (per level)", "change_type": "nerf", "old": "121", "new": "115", "magnitude_pct": -4.96},
-    {"champion": "Rengar", "target": "Q", "field": "damage / AD ratio", "change_type": "adjust", "old": "30/60/90/120/150 (+100-115% AD)", "new": "20/55/90/125/160 (+105% AD)", "magnitude_pct": 0},
-    {"champion": "Rumble", "target": "Base Stats", "field": "Base Health", "change_type": "nerf", "old": "655", "new": "640", "magnitude_pct": -2.29},
-    {"champion": "Rumble", "target": "R", "field": "maximum damage", "change_type": "nerf", "old": "700/1050/1400", "new": "600/1000/1400", "magnitude_pct": 0},
-    {"champion": "Samira", "target": "Q", "field": "life steal effectiveness", "change_type": "buff", "old": "80%", "new": "100%", "magnitude_pct": 25.0},
-    {"champion": "Samira", "target": "R", "field": "life steal effectiveness", "change_type": "buff", "old": "80%", "new": "100%", "magnitude_pct": 25.0},
-    {"champion": "Senna", "target": "Q", "field": "damage / bonus AD ratio", "change_type": "buff", "old": "30/60/90/120/150 (+40% bonus AD)", "new": "30/55/80/105/130 (+60% bonus AD)", "magnitude_pct": 0},
-    {"champion": "Senna", "target": "W", "field": "damage / bonus AD ratio", "change_type": "buff", "old": "70/115/160/205/250 (+70% bonus AD)", "new": "70/110/150/190/230 (+90% bonus AD)", "magnitude_pct": 0},
-    {"champion": "Swain", "target": "W", "field": "slow", "change_type": "nerf", "old": "50/55/60/65/70%", "new": "50%", "magnitude_pct": 0},
-    {"champion": "Swain", "target": "R - Demonflare", "field": "damage scaling", "change_type": "nerf", "old": "50% AP", "new": "40% AP", "magnitude_pct": -20.0},
-    {"champion": "Syndra", "target": "W", "field": "base damage", "change_type": "nerf", "old": "70/105/140/175/210", "new": "70/100/130/160/190", "magnitude_pct": 0},
-    {"champion": "Syndra", "target": "R", "field": "base damage", "change_type": "nerf", "old": "90/130/170", "new": "80/120/160", "magnitude_pct": 0},
-    {"champion": "Teemo", "target": "E - Toxic Shot", "field": "monster damage", "change_type": "buff", "old": "145%", "new": "160%", "magnitude_pct": 10.34},
-    {"champion": "Twitch", "target": "Base Stats", "field": "Health growth (per level)", "change_type": "nerf", "old": "104", "new": "98", "magnitude_pct": -5.77},
-    {"champion": "Twitch", "target": "Base Stats", "field": "Armor growth (per level)", "change_type": "nerf", "old": "4.2", "new": "4", "magnitude_pct": -4.76},
-    {"champion": "Udyr", "target": "Q", "field": "bonus damage on-hit", "change_type": "buff", "old": "5/11/17/23/29/35", "new": "5/13/21/29/37/45", "magnitude_pct": 0},
-    {"champion": "Udyr", "target": "W", "field": "base shield strength", "change_type": "buff", "old": "45/60/75/90/105/120", "new": "45/65/85/105/125/145", "magnitude_pct": 0},
-    {"champion": "Xayah", "target": "Q", "field": "mana cost", "change_type": "buff", "old": "50", "new": "35", "magnitude_pct": -30.0},
-    {"champion": "Xayah", "target": "W", "field": "cooldown", "change_type": "buff", "old": "20/19/18/17/16", "new": "18/17/16/15/14", "magnitude_pct": 0},
-    {"champion": "Zac", "target": "Q", "field": "damage per hit", "change_type": "buff", "old": "40/55/70/85/100", "new": "60/90/120/150/180", "magnitude_pct": 0},
-    {"champion": "Zac", "target": "R", "field": "base damage", "change_type": "nerf", "old": "140/210/280 -> 350/525/700", "new": "120/190/260 -> 300/475/650", "magnitude_pct": 0}
+    {
+      "champion": "Ambessa",
+      "target": "Q",
+      "field": "bonus damage to monsters",
+      "change_type": "nerf",
+      "old": "150",
+      "new": "125",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Annie",
+      "target": "Q",
+      "field": "base damage",
+      "change_type": "buff",
+      "old": "80/120/160/200/240",
+      "new": "80/125/170/215/260",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Annie",
+      "target": "E",
+      "field": "cooldown",
+      "change_type": "buff",
+      "old": "12/11.5/11/10.5/10",
+      "new": "10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aphelios",
+      "target": "Passive",
+      "field": "bonus AD per level",
+      "change_type": "nerf",
+      "old": "5/10/15/20/25/30",
+      "new": "4/8/12/16/20/24",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Brand",
+      "target": "Passive - Ablaze",
+      "field": "monster damage",
+      "change_type": "buff",
+      "old": "265%",
+      "new": "270%",
+      "magnitude_pct": 1.89
+    },
+    {
+      "champion": "Braum",
+      "target": "R",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "150/300/450",
+      "new": "150/250/350",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Braum",
+      "target": "R",
+      "field": "cooldown",
+      "change_type": "nerf",
+      "old": "120/100/80",
+      "new": "130/115/100",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Darius",
+      "target": "Passive",
+      "field": "monster damage",
+      "change_type": "buff",
+      "old": "2x",
+      "new": "2.5x",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Fizz",
+      "target": "W",
+      "field": "bonus monster damage",
+      "change_type": "buff",
+      "old": "60",
+      "new": "90",
+      "magnitude_pct": 50.0
+    },
+    {
+      "champion": "Graves",
+      "target": "E",
+      "field": "armor per stack",
+      "change_type": "buff",
+      "old": "4/7/10/13/16",
+      "new": "7/10/13/16/19",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Graves",
+      "target": "E",
+      "field": "MR per stack",
+      "change_type": "buff",
+      "old": "2/3.5/5/6.5/8",
+      "new": "3.5/5/6.5/8/9.5",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "Q - Snip Snip!",
+      "field": "base damage per snip",
+      "change_type": "nerf",
+      "old": "10/15/20/25/30",
+      "new": "10/13.5/17/20.5/24",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "R",
+      "field": "base damage per needle",
+      "change_type": "nerf",
+      "old": "35/65/95",
+      "new": "30/50/70",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "WW",
+      "field": "max shield value",
+      "change_type": "buff",
+      "old": "100/125/150/175/200",
+      "new": "100/140/180/220/260",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "R",
+      "field": "cooldown",
+      "change_type": "buff",
+      "old": "140/115/80",
+      "new": "120/100/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Illaoi",
+      "target": "Passive",
+      "field": "tentacle base damage",
+      "change_type": "buff",
+      "old": "9-180",
+      "new": "9-200",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jinx",
+      "target": "Base Stats",
+      "field": "Armor growth (per level)",
+      "change_type": "nerf",
+      "old": "4.7",
+      "new": "4.2",
+      "magnitude_pct": -10.64
+    },
+    {
+      "champion": "Kassadin",
+      "target": "Base Stats",
+      "field": "Health growth (per level)",
+      "change_type": "nerf",
+      "old": "119",
+      "new": "113",
+      "magnitude_pct": -5.04
+    },
+    {
+      "champion": "Kassadin",
+      "target": "E",
+      "field": "slow",
+      "change_type": "nerf",
+      "old": "50/60/70/80/90%",
+      "new": "50/55/60/65/70%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kayle",
+      "target": "Q",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "60/100/140/180/220",
+      "new": "60/90/120/150/180",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kennen",
+      "target": "R",
+      "field": "cooldown",
+      "change_type": "nerf",
+      "old": "120/100/80",
+      "new": "120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lux",
+      "target": "Base Stats",
+      "field": "Base Mana",
+      "change_type": "nerf",
+      "old": "480",
+      "new": "440",
+      "magnitude_pct": -8.33
+    },
+    {
+      "champion": "Lux",
+      "target": "Base Stats",
+      "field": "Base Mana Regeneration",
+      "change_type": "buff",
+      "old": "7",
+      "new": "9",
+      "magnitude_pct": 28.57
+    },
+    {
+      "champion": "Lux",
+      "target": "Q",
+      "field": "cooldown",
+      "change_type": "buff",
+      "old": "11/10.5/10/9.5/9",
+      "new": "10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Maokai",
+      "target": "Q",
+      "field": "bonus monster damage",
+      "change_type": "buff",
+      "old": "120/130/140/150/160",
+      "new": "140/150/160/170/180",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Base Stats",
+      "field": "Base Health Regeneration",
+      "change_type": "nerf",
+      "old": "7.5",
+      "new": "6",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Base Stats",
+      "field": "Health Regen growth",
+      "change_type": "nerf",
+      "old": "0.7",
+      "new": "0.6",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Naafiri",
+      "target": "E",
+      "field": "mana cost",
+      "change_type": "nerf",
+      "old": "35",
+      "new": "40",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Qiyana",
+      "target": "Base Stats",
+      "field": "Health growth (per level)",
+      "change_type": "nerf",
+      "old": "121",
+      "new": "115",
+      "magnitude_pct": -4.96
+    },
+    {
+      "champion": "Rengar",
+      "target": "Q",
+      "field": "damage / AD ratio",
+      "change_type": "adjust",
+      "old": "30/60/90/120/150 (+100-115% AD)",
+      "new": "20/55/90/125/160 (+105% AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rumble",
+      "target": "Base Stats",
+      "field": "Base Health",
+      "change_type": "nerf",
+      "old": "655",
+      "new": "640",
+      "magnitude_pct": -2.29
+    },
+    {
+      "champion": "Rumble",
+      "target": "R",
+      "field": "maximum damage",
+      "change_type": "nerf",
+      "old": "700/1050/1400",
+      "new": "600/1000/1400",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Samira",
+      "target": "Q",
+      "field": "life steal effectiveness",
+      "change_type": "buff",
+      "old": "80%",
+      "new": "100%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Samira",
+      "target": "R",
+      "field": "life steal effectiveness",
+      "change_type": "buff",
+      "old": "80%",
+      "new": "100%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Senna",
+      "target": "Q",
+      "field": "damage / bonus AD ratio",
+      "change_type": "buff",
+      "old": "30/60/90/120/150 (+40% bonus AD)",
+      "new": "30/55/80/105/130 (+60% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Senna",
+      "target": "W",
+      "field": "damage / bonus AD ratio",
+      "change_type": "buff",
+      "old": "70/115/160/205/250 (+70% bonus AD)",
+      "new": "70/110/150/190/230 (+90% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Swain",
+      "target": "W",
+      "field": "slow",
+      "change_type": "nerf",
+      "old": "50/55/60/65/70%",
+      "new": "50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Swain",
+      "target": "R - Demonflare",
+      "field": "damage scaling",
+      "change_type": "nerf",
+      "old": "50% AP",
+      "new": "40% AP",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Syndra",
+      "target": "W",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "70/105/140/175/210",
+      "new": "70/100/130/160/190",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Syndra",
+      "target": "R",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "90/130/170",
+      "new": "80/120/160",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Teemo",
+      "target": "E - Toxic Shot",
+      "field": "monster damage",
+      "change_type": "buff",
+      "old": "145%",
+      "new": "160%",
+      "magnitude_pct": 10.34
+    },
+    {
+      "champion": "Twitch",
+      "target": "Base Stats",
+      "field": "Health growth (per level)",
+      "change_type": "nerf",
+      "old": "104",
+      "new": "98",
+      "magnitude_pct": -5.77
+    },
+    {
+      "champion": "Twitch",
+      "target": "Base Stats",
+      "field": "Armor growth (per level)",
+      "change_type": "nerf",
+      "old": "4.2",
+      "new": "4",
+      "magnitude_pct": -4.76
+    },
+    {
+      "champion": "Udyr",
+      "target": "Q",
+      "field": "bonus damage on-hit",
+      "change_type": "buff",
+      "old": "5/11/17/23/29/35",
+      "new": "5/13/21/29/37/45",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Udyr",
+      "target": "W",
+      "field": "base shield strength",
+      "change_type": "buff",
+      "old": "45/60/75/90/105/120",
+      "new": "45/65/85/105/125/145",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Xayah",
+      "target": "Q",
+      "field": "mana cost",
+      "change_type": "buff",
+      "old": "50",
+      "new": "35",
+      "magnitude_pct": -30.0
+    },
+    {
+      "champion": "Xayah",
+      "target": "W",
+      "field": "cooldown",
+      "change_type": "buff",
+      "old": "20/19/18/17/16",
+      "new": "18/17/16/15/14",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zac",
+      "target": "Q",
+      "field": "damage per hit",
+      "change_type": "buff",
+      "old": "40/55/70/85/100",
+      "new": "60/90/120/150/180",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zac",
+      "target": "R",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "140/210/280 -> 350/525/700",
+      "new": "120/190/260 -> 300/475/650",
+      "magnitude_pct": 0
+    }
   ]
 }

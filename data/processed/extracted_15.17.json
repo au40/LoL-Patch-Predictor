@@ -1,0 +1,275 @@
+{
+  "patch": "15.17",
+  "changes": [
+    {
+      "champion": "Gwen",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "36",
+      "new": "33",
+      "magnitude_pct": -8.33
+    },
+    {
+      "champion": "Gwen",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "buff",
+      "old": "2.25%",
+      "new": "2.5%",
+      "magnitude_pct": 11.11
+    },
+    {
+      "champion": "Gwen",
+      "target": "R - Needlework",
+      "field": "Initial Slow",
+      "change_type": "nerf",
+      "old": "60%",
+      "new": "30/45/60%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "R - Needlework",
+      "field": "Subsequent Slows",
+      "change_type": "nerf",
+      "old": "25%",
+      "new": "15/20/25%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Irelia",
+      "target": "W - Defiant Dance",
+      "field": "Minimum Damage AP ratio",
+      "change_type": "buff",
+      "old": "40%",
+      "new": "50%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Irelia",
+      "target": "W - Defiant Dance",
+      "field": "Maximum Damage AP ratio",
+      "change_type": "buff",
+      "old": "120%",
+      "new": "150%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Irelia",
+      "target": "E - Flawless Duet",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "16/15/14/13/12",
+      "new": "16/14.5/13/11.5/10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Irelia",
+      "target": "E - Flawless Duet",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "80%",
+      "new": "100%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Kassadin",
+      "target": "Q - Null Sphere",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "60%",
+      "new": "70%",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Kassadin",
+      "target": "E - Force Pulse",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "65%",
+      "new": "70%",
+      "magnitude_pct": 7.69
+    },
+    {
+      "champion": "Kayn",
+      "target": "Q - Reaping Slash",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "50",
+      "new": "40",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Kayn",
+      "target": "W - Blade's Reach",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "60/65/70/75/80",
+      "new": "40/45/50/55/60",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "KogMaw",
+      "target": "Q - Caustic Spittle",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "80%",
+      "new": "90%",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "KogMaw",
+      "target": "W - Bio-Arcane Barrage",
+      "field": "Damage On-Hit",
+      "change_type": "buff",
+      "old": "1% per 100 AP",
+      "new": "1.5% per 100 AP",
+      "magnitude_pct": 50.0
+    },
+    {
+      "champion": "KogMaw",
+      "target": "R - Living Artillery",
+      "field": "Minimum Damage AP ratio",
+      "change_type": "buff",
+      "old": "35%",
+      "new": "35/40/45%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MasterYi",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "669",
+      "new": "655",
+      "magnitude_pct": -2.09
+    },
+    {
+      "champion": "MasterYi",
+      "target": "Q - Alpha Strike",
+      "field": "On-hit damage modifier",
+      "change_type": "nerf",
+      "old": "75%",
+      "new": "65%",
+      "magnitude_pct": -13.33
+    },
+    {
+      "champion": "MissFortune",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "buff",
+      "old": "53",
+      "new": "55",
+      "magnitude_pct": 3.77
+    },
+    {
+      "champion": "Morgana",
+      "target": "W - Tormented Shadow",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "70/85/100/115/130",
+      "new": "70/80/90/100/110",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Morgana",
+      "target": "W - Tormented Shadow",
+      "field": "Minimum DPS",
+      "change_type": "buff",
+      "old": "14/28/42/56/70",
+      "new": "18/31/44/57/70",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nilah",
+      "target": "Q - Formless Blade",
+      "field": "Secondary monster damage",
+      "change_type": "buff",
+      "old": "10% total AD",
+      "new": "100% total AD",
+      "magnitude_pct": 900.0
+    },
+    {
+      "champion": "Rumble",
+      "target": "Passive - Junkyard Titan",
+      "field": "Overheated Damage target max HP",
+      "change_type": "nerf",
+      "old": "5%",
+      "new": "4%",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Rumble",
+      "target": "Q - Flamespitter",
+      "field": "Damage Over 3 Seconds",
+      "change_type": "buff",
+      "old": "60/90/120/150/180",
+      "new": "60/85/110/135/160",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Senna",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "buff",
+      "old": "2%",
+      "new": "2.6%",
+      "magnitude_pct": 30.0
+    },
+    {
+      "champion": "Senna",
+      "target": "Q - Piercing Darkness",
+      "field": "Heal",
+      "change_type": "buff",
+      "old": "40/55/70/85/100",
+      "new": "40/60/80/100/120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sett",
+      "target": "E - Facebreaker",
+      "field": "Bonus Monster Damage",
+      "change_type": "buff",
+      "old": "100",
+      "new": "125-250",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Singed",
+      "target": "Q - Poison Trail",
+      "field": "Duration",
+      "change_type": "nerf",
+      "old": "2.2s",
+      "new": "2s",
+      "magnitude_pct": -9.09
+    },
+    {
+      "champion": "Singed",
+      "target": "Q - Poison Trail",
+      "field": "Max damage ticks per application",
+      "change_type": "nerf",
+      "old": "9",
+      "new": "8",
+      "magnitude_pct": -11.11
+    },
+    {
+      "champion": "Teemo",
+      "target": "R - Noxious Trap",
+      "field": "Trap Opacity",
+      "change_type": "adjust",
+      "old": "30%",
+      "new": "50%",
+      "magnitude_pct": 66.67
+    },
+    {
+      "champion": "Vayne",
+      "target": "W - Silver Bolts",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "6/7/8/9/10% max HP capped at 200",
+      "new": "140/155/170/185/200 flat damage",
+      "magnitude_pct": 0
+    }
+  ]
+}

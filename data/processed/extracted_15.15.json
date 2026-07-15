@@ -1,0 +1,248 @@
+{
+  "patch": "15.15",
+  "changes": [
+    {
+      "champion": "Alistar",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "47",
+      "new": "40",
+      "magnitude_pct": -14.89
+    },
+    {
+      "champion": "Belveth",
+      "target": "Passive",
+      "field": "Attack Speed per stack",
+      "change_type": "buff",
+      "old": "0.28-1%",
+      "new": "0.28-1.1%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Belveth",
+      "target": "Q - Void Reap",
+      "field": "Damage to Champions",
+      "change_type": "nerf",
+      "old": "10/15/20/25/30",
+      "new": "0/5/10/15/20",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Braum",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "42",
+      "new": "35",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Braum",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5.2",
+      "new": "5",
+      "magnitude_pct": -3.85
+    },
+    {
+      "champion": "Corki",
+      "target": "Q - Phosphorus Bomb",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "70/120/170/220/270 (+120% bonus AD)",
+      "new": "70/115/160/205/250 (+130% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Corki",
+      "target": "R - Missile Barrage",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "90/170/250 (+80% bonus AD)",
+      "new": "90/170/250 (+85% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Illaoi",
+      "target": "Passive",
+      "field": "Damage AD ratio",
+      "change_type": "buff",
+      "old": "100%",
+      "new": "105%",
+      "magnitude_pct": 5.0
+    },
+    {
+      "champion": "Illaoi",
+      "target": "E - Test of Spirit",
+      "field": "Tentacle Attack Timer",
+      "change_type": "buff",
+      "old": "5/4/3",
+      "new": "4/3.5/3",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Illaoi",
+      "target": "E - Test of Spirit",
+      "field": "Vessel Duration",
+      "change_type": "nerf",
+      "old": "10",
+      "new": "3",
+      "magnitude_pct": -70.0
+    },
+    {
+      "champion": "Irelia",
+      "target": "Base Stats",
+      "field": "Health Regen",
+      "change_type": "nerf",
+      "old": "6",
+      "new": "3.5",
+      "magnitude_pct": -41.67
+    },
+    {
+      "champion": "Kled",
+      "target": "Passive",
+      "field": "Dismounted Resistances",
+      "change_type": "buff",
+      "old": "1-2% bonus HP",
+      "new": "4 (+1% bonus HP) - 10 (+2.5% bonus HP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MasterYi",
+      "target": "Q - Alpha Strike",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "30/60/90/120/150 (+50% total AD)",
+      "new": "20/40/60/80/100 (+70% total AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MasterYi",
+      "target": "Q - Alpha Strike",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "95/150/205/260/315 (+50% total AD)",
+      "new": "80/125/170/215/260 (+70% total AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nilah",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "buff",
+      "old": "58",
+      "new": "60",
+      "magnitude_pct": 3.45
+    },
+    {
+      "champion": "Nilah",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "nerf",
+      "old": "3%",
+      "new": "2.25%",
+      "magnitude_pct": -25.0
+    },
+    {
+      "champion": "Pantheon",
+      "target": "Q - Comet Spear",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "105%",
+      "new": "90%",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Quinn",
+      "target": "Q - Blinding Assault",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "20/40/60/80/100 (+80/90/100/110/120% total AD)",
+      "new": "65/100/135/170/205 (+80/90/100/110/120% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "RekSai",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "36",
+      "new": "35",
+      "magnitude_pct": -2.78
+    },
+    {
+      "champion": "RekSai",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.95",
+      "new": "4.5",
+      "magnitude_pct": -9.09
+    },
+    {
+      "champion": "RekSai",
+      "target": "W - Unburrow",
+      "field": "Knock-up lockout",
+      "change_type": "buff",
+      "old": "10",
+      "new": "10/9/8/7/6",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "RekSai",
+      "target": "E - Furious Bite",
+      "field": "Empowered Damage",
+      "change_type": "adjust",
+      "old": "100% total AD (+8/9.5/11/12.5/14% max HP)",
+      "new": "100/135/170/205/240 (+80% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "RekSai",
+      "target": "E - Furious Bite",
+      "field": "Unempowered Damage",
+      "change_type": "buff",
+      "old": "100% total AD",
+      "new": "80/108/136/164/192 (+64% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "RekSai",
+      "target": "E - Furious Bite",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "10",
+      "new": "6",
+      "magnitude_pct": -40.0
+    },
+    {
+      "champion": "RekSai",
+      "target": "R - Void Rush",
+      "field": "Damage",
+      "change_type": "adjust",
+      "old": "150/300/450 (+100% bonus AD) (+25/30/35% missing HP)",
+      "new": "150/250/350 (+100% bonus AD) (+15/20/25% max HP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "RekSai",
+      "target": "R - Void Rush",
+      "field": "Cooldown",
+      "change_type": "adjust",
+      "old": "100/90/80",
+      "new": "120/100/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rell",
+      "target": "W - Ferromancy",
+      "field": "Shield",
+      "change_type": "nerf",
+      "old": "25/50/75/100/125 (+13% max HP)",
+      "new": "20/40/60/80/100 (+13% max HP)",
+      "magnitude_pct": 0
+    }
+  ]
+}

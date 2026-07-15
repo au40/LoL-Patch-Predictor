@@ -1,0 +1,29 @@
+Patch 25.23 — Champion changes (fetched from leagueoflegends.com; game patch 15.23)
+
+Aatrox: Passive Monster Damage Cap 100 >>> 100-320; Q Bonus Monster Damage 0 >>> 40 flat
+Ahri: W Subsequent hit damage 30% >>> 40%; W Maximum single-target hit damage 64/96/128/160/192 (+64% AP) >>> 72/108/144/180/216 (+72% AP)
+Ambessa: Q Monster Damage +125 >>> +150
+Ashe: Q Attack Speed 25/37.5/50/62.5/75% >>> 20/30/40/50/60%
+Caitlyn: Passive Champion Damage Increase 60/90/120% total AD >>> 60/80/100% total AD; Passive Non-Champion Damage Increase 110/115/120% total AD >>> 110% total AD
+Cho'Gath: E Monster Damage 20/40/60/80/100 (+30% AP) >>> 100/150/200/250/300 (+30% AP)
+Dr. Mundo: E Bonus Attack Damage from Maximum Health 2/2.2/2.4/2.6/2.8% >>> 2/2.3/2.6/2.9/3.2%
+Fizz: Base Armor 22 >>> 26; Passive increased by 10 against jungle monsters; W Active and on-hit damage +60 damage to monsters; R Cooldown 100/85/70 >>> 120/100/80
+Jayce: Q Bonus Monster Damage 0 >>> 50 flat; Cannon Q Bonus Monster Damage 0 >>> 50 flat
+Jhin: Base AD 59 >>> 61; Passive Move Speed on Crit 14% (+.4% AS) >>> 14% (+.44% AS); W Damage 60/95/130/165/200 (+50% AD) >>> 70/105/140/175/210 (+50% AD)
+Jinx: R Maximum Damage 300/450/600 (+155% Bonus AD) >>> 250/400/550 (+130% Bonus AD)
+Kai'Sa: Base Armor 27 >>> 25; R Cooldown 120/90/60 >>> 130/100/70
+Hwei: QE Hit Damage 20/40/60/80/100 (+30% AP) >>> 20/35/50/65/80 (+30% AP); QE Damage over time 50/100/150/200/250 (+50% AP) >>> 50/87.5/125/162.5/200 (+60% AP)
+Malphite: W Monster Modifier 1x >>> 2x
+Mel: Passive Damage per spell 24-99 (+9% AP) >>> 24-150 (+15% AP); E Root Duration 1.25/1.5/1.75/2/2.25 >>> 1.2/1.3/1.4/1.5/1.6
+Miss Fortune: R Damage per wave 75% Total AD (+25% AP) >>> 80% Total AD (+25% AP)
+Ornn: W Active Monster Damage Cap 155/180/205/230/255 >>> 260/320/380/440/500; W Passive Monster Damage Cap 250 >>> 260/320/380/440/500
+Rek'Sai: Passive Fury gained on minion hit 20% >>> 16%; Passive Max HP healed 10-20% >>> 9-20%
+Riven: Passive Bonus Monster Damage 0 >>> 50 flat
+Sion: Q Monster Modifier 150% >>> 165%
+Skarner: AD Growth 4 >>> 5; Q Cooldown 8/7/6/5/4 >>> 8/6.75/5.5/4.25/3; Q Target Max HP Damage 8% >>> 9%
+Swain: E Damage 80/120/160/200/240 (+70% AP) >>> 90/130/170/210/250 (+70% AP); E Mana 60/65/70/75/80 >>> 50/55/60/65/70
+Tristana: AD Growth 2.5 >>> 2.9
+Vladimir: Base Health 607 >>> 600; Base Armor 27 >>> 24
+Volibear: Base Attack Damage 62 >>> 65
+Xayah: Passive Damage 30/40/50% AD >>> 35/45/55% AD
+Zeri: R Move Speed per Stack .5% >>> 1%

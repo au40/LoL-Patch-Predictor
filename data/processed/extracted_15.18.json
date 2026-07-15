@@ -1,0 +1,365 @@
+{
+  "patch": "15.18",
+  "changes": [
+    {
+      "champion": "Amumu",
+      "target": "Q - Bandage Toss",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "16/15.5/15/14.5/14",
+      "new": "16/15/14/13/12",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Amumu",
+      "target": "Q - Bandage Toss",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "45/50/55/60/65",
+      "new": "50",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Annie",
+      "target": "W - Incinerate",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "70/115/160/205/250",
+      "new": "70/110/150/190/230",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Annie",
+      "target": "R - Summon Tibbers",
+      "field": "Magic Penetration",
+      "change_type": "nerf",
+      "old": "15/17.5/20%",
+      "new": "10/15/20%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "Base Stats",
+      "field": "Attack Damage Growth",
+      "change_type": "buff",
+      "old": "2.95",
+      "new": "3.45",
+      "magnitude_pct": 16.95
+    },
+    {
+      "champion": "Aurora",
+      "target": "Passive",
+      "field": "Base %MaxHP",
+      "change_type": "nerf",
+      "old": "2.5%",
+      "new": "1%",
+      "magnitude_pct": -60.0
+    },
+    {
+      "champion": "Aurora",
+      "target": "Passive",
+      "field": "AP Ratio",
+      "change_type": "buff",
+      "old": "2% per 100",
+      "new": "2.7% per 100",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "nerf",
+      "old": "5.5%",
+      "new": "5.0%",
+      "magnitude_pct": -9.09
+    },
+    {
+      "champion": "Azir",
+      "target": "W - Arise!",
+      "field": "AP Ratio",
+      "change_type": "nerf",
+      "old": "45/50/55/60/65%",
+      "new": "40/45/50/55/60%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Briar",
+      "target": "Q - Head Slam",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "60/90/120/150/180",
+      "new": "60/85/110/135/160",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Briar",
+      "target": "Q - Head Slam",
+      "field": "Damage Type",
+      "change_type": "adjust",
+      "old": "Magic",
+      "new": "Physical",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Briar",
+      "target": "R - Blood Frenzy",
+      "field": "Damage",
+      "change_type": "adjust",
+      "old": "150/250/350 (+50% bonus AD) (+120% AP)",
+      "new": "150/250/350 (+130% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Briar",
+      "target": "R - Blood Frenzy",
+      "field": "Range",
+      "change_type": "buff",
+      "old": "10000",
+      "new": "12000",
+      "magnitude_pct": 20.0
+    },
+    {
+      "champion": "Cassiopeia",
+      "target": "Base Stats",
+      "field": "Mana",
+      "change_type": "buff",
+      "old": "400",
+      "new": "450",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Cassiopeia",
+      "target": "E - Twin Fang",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "20/40/60/80/100",
+      "new": "20/43/66/89/112",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Galio",
+      "target": "Passive",
+      "field": "AP Ratio",
+      "change_type": "nerf",
+      "old": "45%",
+      "new": "40%",
+      "magnitude_pct": -11.11
+    },
+    {
+      "champion": "Galio",
+      "target": "Q - Winds of War",
+      "field": "%MaxHP Damage",
+      "change_type": "nerf",
+      "old": "2.5%",
+      "new": "2%",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Garen",
+      "target": "E - Judgment",
+      "field": "AD Ratio",
+      "change_type": "buff",
+      "old": "36/39/42/45/48%",
+      "new": "38/41/44/47/50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "Passive",
+      "field": "AP Ratio",
+      "change_type": "buff",
+      "old": "30%",
+      "new": "35%",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Hwei",
+      "target": "WQ - Spiraling Despair",
+      "field": "Movement Speed",
+      "change_type": "buff",
+      "old": "20/22.5/25/27.5/30%",
+      "new": "30/32.5/35/37.5/40%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "E - Devastating Blow",
+      "field": "AP Ratio",
+      "change_type": "buff",
+      "old": "60%",
+      "new": "65%",
+      "magnitude_pct": 8.33
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - Shock Blast",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/110/160/210/260/310",
+      "new": "80/126/172/218/264/310",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Illaoi",
+      "target": "W - Violent Tendril",
+      "field": "%MaxHP Damage",
+      "change_type": "nerf",
+      "old": "4%",
+      "new": "3.5%",
+      "magnitude_pct": -12.5
+    },
+    {
+      "champion": "Illaoi",
+      "target": "E - Test of Spirit",
+      "field": "Duration",
+      "change_type": "buff",
+      "old": "3s",
+      "new": "4s",
+      "magnitude_pct": 33.33
+    },
+    {
+      "champion": "Qiyana",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "nerf",
+      "old": "66",
+      "new": "64",
+      "magnitude_pct": -3.03
+    },
+    {
+      "champion": "Qiyana",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.7",
+      "new": "4.5",
+      "magnitude_pct": -4.26
+    },
+    {
+      "champion": "Qiyana",
+      "target": "Passive",
+      "field": "Bonus Damage",
+      "change_type": "nerf",
+      "old": "30%",
+      "new": "25%",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Sylas",
+      "target": "Passive",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "150%",
+      "new": "130%",
+      "magnitude_pct": -13.33
+    },
+    {
+      "champion": "Taliyah",
+      "target": "Q - Threaded Volley",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "65/70/75/80/85",
+      "new": "55/60/65/70/75",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Taliyah",
+      "target": "Q - Threaded Volley (Second Cast)",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "20",
+      "new": "10",
+      "magnitude_pct": -50.0
+    },
+    {
+      "champion": "Taliyah",
+      "target": "Q - Threaded Volley",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "56/74.5/93/111.5/130",
+      "new": "55/72.5/90/107.5/125",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Taliyah",
+      "target": "E - Unraveled Earth",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "90/95/100/105/110",
+      "new": "90",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Taliyah",
+      "target": "E - Unraveled Earth",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "25/45/65/85/105",
+      "new": "25/40/55/70/85",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Velkoz",
+      "target": "E - Tectonic Disruption",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "14/13.5/13/12.5/12",
+      "new": "12/11.5/11/10.5/10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Velkoz",
+      "target": "R - Life Form Disintegration Ray",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "450/625/800",
+      "new": "450/700/925",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "Passive",
+      "field": "Attack Speed AP Ratio",
+      "change_type": "nerf",
+      "old": "4% (20%)",
+      "new": "3% (17.5%)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yunara",
+      "target": "Base Stats",
+      "field": "HP",
+      "change_type": "nerf",
+      "old": "600",
+      "new": "575",
+      "magnitude_pct": -4.17
+    },
+    {
+      "champion": "Yunara",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "nerf",
+      "old": "56",
+      "new": "53",
+      "magnitude_pct": -5.36
+    },
+    {
+      "champion": "Yunara",
+      "target": "E - Soaring Slash",
+      "field": "Movement Speed",
+      "change_type": "nerf",
+      "old": "50/55/60/65/70%",
+      "new": "30/35/40/45/50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yunara",
+      "target": "E - Soaring Slash",
+      "field": "Duration",
+      "change_type": "adjust",
+      "old": "varies",
+      "new": "1.5s",
+      "magnitude_pct": 0
+    }
+  ]
+}

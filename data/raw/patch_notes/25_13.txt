@@ -1,0 +1,13 @@
+Patch 25.13 — Champion changes (fetched from leagueoflegends.com; game patch 15.13)
+
+Briar: W frenzied attacks can no longer be canceled; E Cast Time .25 >>> .15
+Fiddlesticks: W Damage per second AP ratio 40% >>> 45%
+Gangplank: Q Mana Cost 55/50/45/40/35 >>> 50/45/40/35/30; R Cooldown 170/150/130 >>> 160/140/120
+Irelia: Passive Attack Speed per stack 7.5%-25% >>> 10%-25%; Max Attack Speed 30%-100% >>> 40%-100%
+Kindred: R Cooldown 180/150/120 >>> 160/140/120
+Nidalee: Q Damage increase based on range 0-200% >>> 0-225%
+Rammus: Health Growth 94 >>> 100; W Bonus Armor/Magic Resist 27 >>> 27/32/37/42/47
+Ryze: W Damage 70/100/130/160/190 >>> 60/90/120/150/180; W Mana 40/55/70/85/100 >>> 50/60/70/80/90
+Twisted Fate: R Cooldown 160/130/100 >>> 170/140/110
+Vi: Passive Shield 14% Max HP >>> 12% Max HP
+Yorick: Base Armor 39 >>> 36

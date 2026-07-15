@@ -1,0 +1,7 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Azir,Azir,hp,550.0,575.0,25.0,4.55,15.13.1,15.14.1
+Braum,Braum,armor,47.0,42.0,-5.0,-10.64,15.13.1,15.14.1
+Briar,Briar,attackdamageperlevel,3.0,2.5,-0.5,-16.67,15.13.1,15.14.1
+LeeSin,Lee Sin,attackdamage,69.0,66.0,-3.0,-4.35,15.13.1,15.14.1
+Sett,Sett,armorperlevel,5.2,4.7,-0.5,-9.62,15.13.1,15.14.1
+Yasuo,Yasuo,attackdamageperlevel,3.0,2.5,-0.5,-16.67,15.13.1,15.14.1

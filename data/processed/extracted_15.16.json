@@ -1,0 +1,455 @@
+{
+  "patch": "15.16",
+  "changes": [
+    {
+      "champion": "Brand",
+      "target": "Passive",
+      "field": "Per Tick Damage to Monsters",
+      "change_type": "buff",
+      "old": "240%",
+      "new": "260%",
+      "magnitude_pct": 8.33
+    },
+    {
+      "champion": "Brand",
+      "target": "Q - Ablaze",
+      "field": "Stun Duration",
+      "change_type": "buff",
+      "old": "1.5",
+      "new": "1.75",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Brand",
+      "target": "R - Pyroclasm",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "110/100/90",
+      "new": "100/90/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gnar",
+      "target": "Q - Boomerang Throw",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "20/17.5/15/12.5/10",
+      "new": "16/14.5/13/11.5/10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Illaoi",
+      "target": "Passive",
+      "field": "Total AD Ratio",
+      "change_type": "buff",
+      "old": "105%",
+      "new": "110%",
+      "magnitude_pct": 4.76
+    },
+    {
+      "champion": "Illaoi",
+      "target": "Passive",
+      "field": "Spawn Cooldown",
+      "change_type": "buff",
+      "old": "20-7.25",
+      "new": "18-7",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "JarvanIV",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5.2",
+      "new": "4.6",
+      "magnitude_pct": -11.54
+    },
+    {
+      "champion": "Kalista",
+      "target": "Base Stats",
+      "field": "AD growth",
+      "change_type": "buff",
+      "old": "4",
+      "new": "4.25",
+      "magnitude_pct": 6.25
+    },
+    {
+      "champion": "Kalista",
+      "target": "E - Rend",
+      "field": "Initial Damage AP Ratio",
+      "change_type": "buff",
+      "old": "20%",
+      "new": "65%",
+      "magnitude_pct": 225.0
+    },
+    {
+      "champion": "Kalista",
+      "target": "E - Rend",
+      "field": "Subsequent Damage AP Ratio",
+      "change_type": "buff",
+      "old": "20%",
+      "new": "50%",
+      "magnitude_pct": 150.0
+    },
+    {
+      "champion": "Lulu",
+      "target": "E - Help, Pix!",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "8",
+      "new": "10/9.5/9/8.5/8",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lulu",
+      "target": "E - Help, Pix!",
+      "field": "Base Damage",
+      "change_type": "nerf",
+      "old": "80/120/160/200/240",
+      "new": "70/110/150/190/230",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lulu",
+      "target": "E - Help, Pix!",
+      "field": "Shield",
+      "change_type": "nerf",
+      "old": "80/120/160/200/240 (+55% AP)",
+      "new": "70/110/150/190/230 (+50% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mordekaiser",
+      "target": "Q - Obliterate",
+      "field": "Damage AD Ratio",
+      "change_type": "buff",
+      "old": "0%",
+      "new": "120% bonus AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Morgana",
+      "target": "W - Tormented Shadow",
+      "field": "Minimum Damage",
+      "change_type": "buff",
+      "old": "60/115/170/225/280 (+85% AP)",
+      "new": "70/140/210/280/350 (+100% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Morgana",
+      "target": "W - Tormented Shadow",
+      "field": "Maximum Damage",
+      "change_type": "nerf",
+      "old": "162/310.5/459/607.5/756 (+229.5% AP)",
+      "new": "140/280/420/560/700 (+200% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nautilus",
+      "target": "E - Riptide",
+      "field": "Monster Damage",
+      "change_type": "adjust",
+      "old": "150% modifier",
+      "new": "first hit 125/165/205/245/285 (+50% AP) bonus damage to monsters",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nocturne",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.7",
+      "new": "4.2",
+      "magnitude_pct": -10.64
+    },
+    {
+      "champion": "Nocturne",
+      "target": "Q - Duskbringer",
+      "field": "Bonus AD",
+      "change_type": "nerf",
+      "old": "20/30/40/50/60",
+      "new": "15/25/35/45/55",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Qiyana",
+      "target": "Q - Terrashape",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "60/90/120/150/180",
+      "new": "70/100/130/160/190",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Qiyana",
+      "target": "W - Elemental Wrath",
+      "field": "Bonus Attack Speed",
+      "change_type": "buff",
+      "old": "5/10/15/20/25%",
+      "new": "15/20/25/30/35%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "RekSai",
+      "target": "Base Stats",
+      "field": "Base Attack Damage",
+      "change_type": "buff",
+      "old": "58",
+      "new": "62",
+      "magnitude_pct": 6.9
+    },
+    {
+      "champion": "Rell",
+      "target": "W - Ferromancy: Crash Down",
+      "field": "Shield",
+      "change_type": "nerf",
+      "old": "20/40/60/80/100 (+13% Max Health)",
+      "new": "20/40/60/80/100 (+11% Max Health)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rumble",
+      "target": "Q - Flamespitter",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "60/90/120/150/180 (+110% AP) (+6/6.8/7.6/8.4/9.2% target max HP)",
+      "new": "60/90/120/150/180 (+100% AP) (+6/6.5/7/7.5/8% target max HP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rumble",
+      "target": "R - Crowstorm",
+      "field": "Tick Rate",
+      "change_type": "buff",
+      "old": "0.5",
+      "new": "0.25",
+      "magnitude_pct": -50.0
+    },
+    {
+      "champion": "Shaco",
+      "target": "Passive",
+      "field": "Bonus AD Ratio",
+      "change_type": "nerf",
+      "old": "30%",
+      "new": "25%",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Shaco",
+      "target": "Q - Deceive",
+      "field": "Bonus AD Ratio",
+      "change_type": "nerf",
+      "old": "65%",
+      "new": "60%",
+      "magnitude_pct": -7.69
+    },
+    {
+      "champion": "Shaco",
+      "target": "Q - Deceive",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "12/11.5/11/10.5/10",
+      "new": "13/12.5/12/11.5/11",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Singed",
+      "target": "Q - Poison Trail",
+      "field": "Poison Refresh Rate",
+      "change_type": "buff",
+      "old": "0.5",
+      "new": "0.25",
+      "magnitude_pct": -50.0
+    },
+    {
+      "champion": "Sion",
+      "target": "Passive",
+      "field": "Health Lost per Tick",
+      "change_type": "buff",
+      "old": "2.3-24.4",
+      "new": "2-19",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sion",
+      "target": "E - Roar of the Slayer",
+      "field": "Armor Reduction",
+      "change_type": "buff",
+      "old": "20%",
+      "new": "25%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Sion",
+      "target": "R - Decimating Smash",
+      "field": "Bonus AD Ratio",
+      "change_type": "buff",
+      "old": "40-80%",
+      "new": "60-120%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sylas",
+      "target": "Passive",
+      "field": "Monster Damage Modifier",
+      "change_type": "buff",
+      "old": "100%",
+      "new": "150%",
+      "magnitude_pct": 50.0
+    },
+    {
+      "champion": "Trundle",
+      "target": "W - Frozen Domain",
+      "field": "Bonus Attack Speed",
+      "change_type": "nerf",
+      "old": "30/50/70/90/110%",
+      "new": "30/45/60/75/90%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Trundle",
+      "target": "W - Frozen Domain",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "16/15/14/13/12",
+      "new": "18/17/16/15/14",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "Q - Piercing Arrow",
+      "field": "Base Damage",
+      "change_type": "nerf",
+      "old": "90/160/230/300/370",
+      "new": "80/150/220/290/360",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "W - Blighted Quiver",
+      "field": "Bonus Magic Damage On-Hit",
+      "change_type": "buff",
+      "old": "6/12/18/24/30",
+      "new": "6/14/22/30/38",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "E - Hail of Arrows",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "60/100/140/180/220 (+100% bonus AD)",
+      "new": "60/90/120/150/180 (+90% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Viego",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "nerf",
+      "old": "2.5%",
+      "new": "2.25%",
+      "magnitude_pct": -10.0
+    },
+    {
+      "champion": "Viego",
+      "target": "Q - Echoing Slash",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "15/30/45/60/75",
+      "new": "25/40/55/70/85",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Viego",
+      "target": "Q - Echoing Slash",
+      "field": "Critical Strike Multiplier",
+      "change_type": "nerf",
+      "old": "100%",
+      "new": "75%",
+      "magnitude_pct": -25.0
+    },
+    {
+      "champion": "Warwick",
+      "target": "Base Stats",
+      "field": "Base Attack Damage",
+      "change_type": "buff",
+      "old": "60",
+      "new": "65",
+      "magnitude_pct": 8.33
+    },
+    {
+      "champion": "Warwick",
+      "target": "Passive",
+      "field": "Bonus On-Hit Damage",
+      "change_type": "nerf",
+      "old": "12-46",
+      "new": "6-46",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "XinZhao",
+      "target": "Base Stats",
+      "field": "Base Health",
+      "change_type": "nerf",
+      "old": "640",
+      "new": "620",
+      "magnitude_pct": -3.13
+    },
+    {
+      "champion": "XinZhao",
+      "target": "Q - Three Talon Strike",
+      "field": "Flat Bonus Damage per Hit",
+      "change_type": "nerf",
+      "old": "20/35/50/65/80",
+      "new": "15/30/45/60/75",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yuumi",
+      "target": "Q - Prowling Projectile",
+      "field": "Empowered Base Damage",
+      "change_type": "nerf",
+      "old": "80/140/200/260/320/380",
+      "new": "80/135/190/245/300/355",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yuumi",
+      "target": "W - Zoomies",
+      "field": "Heal and Shield Power",
+      "change_type": "nerf",
+      "old": "5/7.5/10/12.5/15%",
+      "new": "4/5/6/7/8%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yuumi",
+      "target": "W - Zoomies",
+      "field": "Heal On-Hit",
+      "change_type": "nerf",
+      "old": "3/5/7/9/11 (+4% AP)",
+      "new": "3/4/5/6/7 (+3% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zyra",
+      "target": "E - Grasping Roots",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "12",
+      "new": "11",
+      "magnitude_pct": -8.33
+    },
+    {
+      "champion": "Zyra",
+      "target": "R - Stranglethorns",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "180/265/350",
+      "new": "200/300/400",
+      "magnitude_pct": 0
+    }
+  ]
+}

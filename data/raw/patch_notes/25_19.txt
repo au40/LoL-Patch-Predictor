@@ -1,0 +1,19 @@
+Patch 25.19 — Champion changes (fetched from leagueoflegends.com; game patch 15.19)
+
+Ahri: R Damage per hit 60/90/120 (+35% AP) >>> 75/125/175 (+35% AP)
+Brand: Passive Monster Damage Modifier 2.6x >>> 2.65x; W Damage (+60% AP) >>> (+70% AP); R Damage per hit (+25% AP) >>> (+30% AP)
+Caitlyn: Base AD 60 >>> 62
+Corki: Q Damage 70/115/160/205/250 (+130% AD) >>> 60/105/150/195/240 (+125% AD)
+Diana: Passive Monster Modifier 2.6x >>> 3x
+Draven: W Attack Speed 20/25/30/35/40% >>> 30/35/40/45/50%; R Damage 175/275/375 >>> 200/300/400
+Jax: Base HP 665 >>> 650; R Initial armor gain 25/50/75 >>> 45/60/75
+Jinx: Q Bonus Range 80/110/140/170/200 >>> 100/125/150/175/200; E Damage 70/120/170/220/270 >>> 90/140/190/240/290
+LeBlanc: W Damage (+70% AP) >>> (+80% AP); R Distortion Damage (+75% AP) >>> (+80% AP)
+Lee Sin: Armor Growth 4.9 >>> 4.5; Q Damage 55/80/105/130/155 (+155% Bonus AD) >>> 60/90/120/150/180 (+95% Bonus AD)
+Lillia: R Bonus Damage 100/150/200 (+40% AP) >>> 150/200/250 (+45% AP); R Cooldown 150/130/110 >>> 140/120/100
+Mel: Passive Bonus Damage per spell 24-75 (+3% AP) >>> 24-99 (+9% AP); Max Bonus Damage 75-225 (+9% AP) >>> 72-297 (+27% AP)
+Pantheon: Q Monster Modifier 0.9x >>> 0.75x; W Minion/Monster damage cap 200 >>> 120
+Poppy: Q Max Health damage cap 75/105/135/165/195 >>> 50/80/110/140/170; R Cooldown on interrupted channel 15 >>> 30
+Seraphine: Mana Growth 25 >>> 40; HP Growth 90 >>> 95; W Healing 3/3.5/4/4.5/5% >>> 8/10/12/14/16%
+Sivir: Q Initial Damage (+100% bonus AD) >>> (+85% bonus AD)
+Syndra: Health Growth 104 >>> 100; Armor Growth 4.6 >>> 4; Q Damage 75/110/145/180/215 (+60% AP) >>> 80/115/150/185/220 (+65% AP); E Cooldown 17 >>> 15

@@ -1,0 +1,10 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Ashe,Ashe,attackdamageperlevel,3.0,3.5,0.5,16.67,16.1.1,16.2.1
+MasterYi,Master Yi,armorperlevel,4.2,4.5,0.3,7.14,16.1.1,16.2.1
+Nilah,Nilah,attackspeedperlevel,2.0,1.25,-0.75,-37.5,16.1.1,16.2.1
+Quinn,Quinn,attackdamageperlevel,2.7,3.2,0.5,18.52,16.1.1,16.2.1
+Rammus,Rammus,hp,675.0,645.0,-30.0,-4.44,16.1.1,16.2.1
+Sivir,Sivir,armorperlevel,4.45,4.0,-0.45,-10.11,16.1.1,16.2.1
+Sivir,Sivir,attackspeedperlevel,2.0,1.6,-0.4,-20.0,16.1.1,16.2.1
+Smolder,Smolder,armorperlevel,4.7,4.0,-0.7,-14.89,16.1.1,16.2.1
+Viego,Viego,attackspeedperlevel,2.25,2.75,0.5,22.22,16.1.1,16.2.1

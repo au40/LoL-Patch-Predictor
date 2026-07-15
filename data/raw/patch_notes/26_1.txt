@@ -1,0 +1,30 @@
+Patch 26.1 — Champion changes (fetched from leagueoflegends.com; game patch 16.1)
+
+Aphelios: Passive Lethality per E rank 5.5 >>> 4.5; Calibrum bonus damage per mark 15 (+20% bonus AD) >>> 15 (+10% bonus AD); Severum Onslaught damage (+22/25/28/31/34/37/40% bonus AD) >>> (+19/22.5/26/29.5/33/36.5/40% total AD); Infernum Duskwave (25/31.67/38.33/45/51.67/58.33/65 +56/60/64/68/72/76/80% bonus AD) >>> (20/35/50/65/80/95/110 +10/11/12/13/14/15/16% bonus AD); Crescendum Sentry (35/50/65/80/95/110/125 +42/45/48/51/54/57/60% bonus AD) >>> (35/50/65/80/95/110/125 +30/32/34/36/38/40/42% bonus AD)
+Caitlyn: Passive Headshot crit scaling (0-148.75/182.75% total AD) >>> (0-100/130% total AD)
+Cassiopeia: Base movement speed 328 >>> 335
+Draven: AD growth 3.6 >>> 3; W attack speed 30/35/40/45/50% >>> 20/25/30/35/40%
+Elise: Q monster damage cap 75/100/125/150/175 >>> 65/85/105/125/145 (+90% AP); Q max damage 115/170/225/280/335 >>> 105/155/205/255/305 (+90% AP)
+Gangplank: E bonus champion damage 75/105/135/165/195 >>> 75/95/115/135/155
+Garen: E crit ratio 80% >>> 30% bonus
+Graves: Passive crit scaling 35% >>> 50% bonus; max damage on crit 1.8x >>> 2x
+Jax: Passive gains additional 1.5% attack speed per stack at level 19
+Jhin: Multiplicative crit damage mod 86% >>> 75%
+Jinx: Attack speed growth 1.4% >>> 1%; R max flat damage 250/400/550 (+130% bonus AD) >>> 200/350/500 (+120% bonus AD)
+Kayle: Passive attack speed per stack (6% +1% per 100 AP) >>> 6%; Q mana 70/75/80/85/90 >>> 60/70/80/90/100; Q slow 26/32/38/44/50% >>> 25/30/35/40/45%
+Kindred: E monster cap 300 >>> 200
+Lucian: AD growth 2.9 >>> 2.5; attack speed growth 3.3% >>> 2.5%; Q damage (85/115/145/175/205 +60/75/90/105/120% bonus AD) >>> (80/115/150/185/220 +100% bonus AD)
+Miss Fortune: R damage (80% total AD +25% AP) >>> (20/30/40 +60% total AD +25% AP)
+Nilah: Attack speed growth 2% >>> 1.25%; Q active damage (5/10/15/20/25 +90/95/100/105/110% total AD) >>> (0/10/20/30/40 +100% total AD); R mana 80 >>> 100
+Quinn: AD growth 2.7 >>> 3.2; Passive base cooldown 8 >>> 7; Passive damage (10-95 +16-50% total AD) >>> (15-120 +40% bonus AD)
+Rammus: Base health 675 >>> 645; W magic resist 27/32/37/42/47 >>> 20/25/30/35/40
+Samira: Q non-crit damage (5/10/15/20/25 +95/102.5/110/117.5/125% total AD) >>> (0/5/10/15/20 +110% total AD); R non-crit (5/15/25 +45% total AD) >>> (20/40/60 +30% total AD)
+Senna: Crit damage 100% of total >>> 90%
+Shaco: Passive damage (+25% bonus AD) >>> (+20% bonus AD)
+Sivir: Q damage (+85% bonus AD) >>> (+70% bonus AD)
+Tristana: E non-crit (60/70/80/90/100 +100/110/120/130/140% bonus AD) >>> (60/85/110/135/160 +80% bonus AD)
+Tryndamere: Q bonus AD (5/10/15/20/25 + up to 15/25/35/45/55) >>> (0 +20/35/50/65/80); W slow 30/37.5/45/52.5/60% >>> 30/35/40/45/50%; W slow duration 2.5 >>> 3.25; E damage (75/105/135/165/195 +130% bonus AD) >>> (70/105/140/175/210 +100% bonus AD)
+Twitch: Attack speed growth 3.38% >>> 3%; AD growth 3.1 >>> 3; Q bonus attack speed 45/50/55/60/65% >>> 40/45/50/55/60%
+Xayah: E damage (55/65/75/85/95 +60% bonus AD) >>> (50/65/80/95/110 +40% bonus AD)
+Yunara: Q attack speed 25/35/45/55/65% >>> 20/30/40/50/60%; R+W damage (175/350/525 +150% bonus AD) >>> (160/320/480 +120% bonus AD)
+Zeri: W damage (+130% total AD) >>> (+120% total AD); E damage (20/22/24/26/28 +12% bonus AD) >>> (17/19/21/23/25 +10% bonus AD); R active (200/300/400 +100% bonus AD) >>> (150/250/350 +100% bonus AD)

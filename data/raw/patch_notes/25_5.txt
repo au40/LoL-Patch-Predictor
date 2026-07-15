@@ -1,0 +1,15 @@
+Patch 25.05 — Champion changes (fetched from leagueoflegends.com; game patch 15.5)
+
+Ambessa: E damage 40/65/90/115/140 (+60% bonus AD) >>> 40/60/80/100/120 (+60% bonus AD)
+Aphelios: Attack Speed Ratio 0.640 >>> 0.658
+Ashe: R damage 250/450/650 >>> 200/400/600
+Aurora: E damage 70/110/150/190/230 (+80% AP) >>> 70/110/150/190/230 (+70% AP); R slow 75% >>> 50%
+Cho'Gath: Q damage 80/145/210/275/340 >>> 80/140/200/260/320; W damage 80/135/190/245/300 >>> 80/130/180/230/280; E damage scaling 3% >>> 2.5/2.75/3/3.25/3.5%
+Elise: Human Q damage 40/75/110/145/180 >>> 40/70/100/130/160; Spider Q damage 60/90/120/150/180 >>> 50/80/110/140/180
+K'Sante: Passive mark damage 20 (+1-2% max HP) >>> 12 (+1-2% max HP); W true damage 10-100% >>> 10-80%
+Dr. Mundo: Health 613 >>> 640
+Poppy: HP growth 104 >>> 110; Passive shield 13/15.5/18% >>> 11-20%; E damage 100/140/180/220/260 >>> 80/120/160/200/240
+Seraphine: Q max damage bonus 60% >>> 75%
+Skarner: Q slow duration 1.25s >>> 1s; Q final damage +10% max HP >>> +8%; E cooldown 20/19/18/17/16 >>> 22/21/20/19/18
+Yorick: R maiden monster damage cap 100 >>> 50
+Zed: E damage 65/90/115/140/165 (+65% bonus AD) >>> 70/95/120/145/170 (+80% bonus AD)

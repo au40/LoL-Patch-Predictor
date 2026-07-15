@@ -1,0 +1,15 @@
+Patch 25.21 — Champion changes (fetched from leagueoflegends.com; game patch 15.21)
+
+Bard: W Minimum Heal +30% AP >>> +40% AP; W Maximum Heal +60% AP >>> +70% AP; W Movement Speed +5% per 100 AP >>> +6% per 100 AP
+Diana: Passive Monster Damage 300% >>> 280%
+Dr. Mundo: Armor Growth 3.7 >>> 4.5; E Minimum Active Damage +7% Bonus HP >>> +5% Bonus HP
+Ezreal: Attack Damage Growth 2.75 >>> 3.25
+Graves: Magic Resistance 32 >>> 30; Magic Resistance Growth 2.05 >>> 1.3; E MR per stack 2/3.5/5/6.5/8; E Max MR 16/28/40/52/64
+Gwen: Health 600 >>> 625; Health Growth 100 >>> 125; Attack Speed Growth 2.5% >>> 2.25%; Passive +0.55% per 100 AP >>> +0.6% per 100 AP; Q +2% AP >>> +5% AP; W Armor/MR 22 (+7% AP) >>> 22/24/26/28/30 (+7% AP); W Cooldown 24/22.5/21/19.5/18 >>> 22/21/20/19/18; E Damage 8/11/14/17/20 >>> 15; E Cooldown 12/11/10/9/8 >>> 13/12.5/12/11.5/11; R Damage +8% AP >>> +10% AP; R Slow 30/45/60% >>> 40/50/60%
+Kalista: Attack Damage Growth 4.25 >>> 4.75
+Kog'Maw: Q Passive Attack Speed 10/15/20/25/30% >>> 5/10/15/20/25%
+Morgana: Armor Growth 5 >>> 4.2
+Qiyana: Health Growth 124 >>> 121; Q Damage +90% Bonus AD >>> +85% Bonus AD
+Quinn: Q Damage +80/90/100/110/120% Bonus AD >>> +80/85/90/95/100% Bonus AD; R Damage 70% Total AD >>> 60/90/120 (+35% Bonus AD)
+Yone: Attack Damage 60 >>> 62
+Yunara: W Initial Damage 5/30/55/80/105 >>> 55/95/135/175/215 (+85% Bonus AD); W DPS +40% Total AD >>> +51% Bonus AD; E Cooldown 7.5 >>> 9

@@ -1,0 +1,482 @@
+{
+  "patch": "16.3",
+  "changes": [
+    {
+      "champion": "Ahri",
+      "target": "W - Fox-Fire",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "10/9/8/7/6",
+      "new": "9/8/7/6/5",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Belveth",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "buff",
+      "old": "99",
+      "new": "105",
+      "magnitude_pct": 6.06
+    },
+    {
+      "champion": "Belveth",
+      "target": "R - Void Cascade",
+      "field": "True Damage",
+      "change_type": "buff",
+      "old": "6/8/10",
+      "new": "6/10/14",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Braum",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "630",
+      "new": "610",
+      "magnitude_pct": -3.17
+    },
+    {
+      "champion": "Braum",
+      "target": "Q - Winter's Bite",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "75/125/175/225/275",
+      "new": "75/120/165/210/255",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Briar",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "buff",
+      "old": "95",
+      "new": "100",
+      "magnitude_pct": 5.26
+    },
+    {
+      "champion": "Briar",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "buff",
+      "old": "4.2",
+      "new": "4.5",
+      "magnitude_pct": 7.14
+    },
+    {
+      "champion": "Briar",
+      "target": "Q - Head Rush",
+      "field": "Health Cost",
+      "change_type": "buff",
+      "old": "6%",
+      "new": "5%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Diana",
+      "target": "Passive - Moonlight Vigil",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "280%",
+      "new": "230%",
+      "magnitude_pct": -17.86
+    },
+    {
+      "champion": "Draven",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "3",
+      "new": "3.4",
+      "magnitude_pct": 13.33
+    },
+    {
+      "champion": "Ekko",
+      "target": "Passive - Timey Wimey",
+      "field": "AP Ratio",
+      "change_type": "nerf",
+      "old": "90%",
+      "new": "80%",
+      "magnitude_pct": -11.11
+    },
+    {
+      "champion": "Ekko",
+      "target": "Passive - Timey Wimey",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "300%",
+      "new": "270%",
+      "magnitude_pct": -10
+    },
+    {
+      "champion": "Ezreal",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "3.25",
+      "new": "3.75",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Ezreal",
+      "target": "E - Arcane Shift",
+      "field": "Damage Bonus AD",
+      "change_type": "buff",
+      "old": "50%",
+      "new": "60%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hecarim",
+      "target": "Q - Rampage",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/85/110/135/160",
+      "new": "60/90/120/150/180",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hecarim",
+      "target": "Q - Rampage",
+      "field": "Amp",
+      "change_type": "nerf",
+      "old": "3% (+4% per 100 AD)",
+      "new": "3% (+3% per 100 AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Heimerdinger",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "buff",
+      "old": "101",
+      "new": "105",
+      "magnitude_pct": 3.96
+    },
+    {
+      "champion": "Heimerdinger",
+      "target": "W - Hextech Micro-Rockets",
+      "field": "Initial Hit",
+      "change_type": "buff",
+      "old": "40/65/90/115/140",
+      "new": "50/75/100/125/150",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - To the Skies",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/105/150/195/240/285",
+      "new": "60/110/160/210/260/310",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - Shock Blast",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/126/172/218/264/310",
+      "new": "80/121/162/203/244/285",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "R - Mercury Hammer",
+      "field": "Shred",
+      "change_type": "buff",
+      "old": "10/15/20/25%",
+      "new": "20/25/30/35%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kayn",
+      "target": "Q - Reaping Slash",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "75/100/125/150/175",
+      "new": "75/105/135/165/195",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Maokai",
+      "target": "Q - Bramble Smash",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "65/110/155/200/245",
+      "new": "75/120/165/210/255",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "Base Stats",
+      "field": "Attack Speed Ratio",
+      "change_type": "buff",
+      "old": "0.4",
+      "new": "0.625",
+      "magnitude_pct": 56.25
+    },
+    {
+      "champion": "Mel",
+      "target": "Passive - Accelerating Force",
+      "field": "Projectile",
+      "change_type": "nerf",
+      "old": "8-50 (+5% AP)",
+      "new": "8-25 (+3% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "E - Blooming Blaze",
+      "field": "Root Damage",
+      "change_type": "buff",
+      "old": "60/100/140/180/220",
+      "new": "60/105/150/195/240",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "R - Destiny, Ascension",
+      "field": "AP Ratio",
+      "change_type": "buff",
+      "old": "3.5%",
+      "new": "4%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Naafiri",
+      "target": "Passive - We Are More",
+      "field": "Packmate Monster Damage",
+      "change_type": "buff",
+      "old": "1.35x",
+      "new": "1.55x",
+      "magnitude_pct": 14.81
+    },
+    {
+      "champion": "Nilah",
+      "target": "Base Stats",
+      "field": "AD",
+      "change_type": "nerf",
+      "old": "60",
+      "new": "58",
+      "magnitude_pct": -3.33
+    },
+    {
+      "champion": "Nilah",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.5",
+      "new": "4.2",
+      "magnitude_pct": -6.67
+    },
+    {
+      "champion": "Nunu",
+      "target": "W - Biggest Snowball Ever!",
+      "field": "Max Damage",
+      "change_type": "buff",
+      "old": "150/195/240/285/330",
+      "new": "180/225/270/315/360",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nunu",
+      "target": "E - Volatile Spikes",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "14/21/28/35/42",
+      "new": "15/22.5/30/37.5/45",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Riven",
+      "target": "Passive - Runic Acuity",
+      "field": "AD Ratio",
+      "change_type": "nerf",
+      "old": "30-50%",
+      "new": "30-45%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Riven",
+      "target": "Q - Broken Wings",
+      "field": "Bonus AD",
+      "change_type": "nerf",
+      "old": "65/70/75/80/85%",
+      "new": "60/65/70/75/80%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ryze",
+      "target": "W - Rune Prison",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "(+70% AP) (+4% Bonus Mana)",
+      "new": "(+60% AP) (+3% Bonus Mana)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Trundle",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "buff",
+      "old": "3.9",
+      "new": "4.5",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Trundle",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "4",
+      "new": "4.5",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Tryndamere",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "4",
+      "new": "4.5",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Varus",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.6",
+      "new": "4",
+      "magnitude_pct": -13.04
+    },
+    {
+      "champion": "Varus",
+      "target": "W - Piercing Arrow",
+      "field": "On-hit",
+      "change_type": "nerf",
+      "old": "(+35% AP)",
+      "new": "(+25% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "W - Piercing Arrow",
+      "field": "Max Health Damage",
+      "change_type": "nerf",
+      "old": "(+1.5% per 100 AP)",
+      "new": "(+1.3% per 100 AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Vi",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "buff",
+      "old": "99",
+      "new": "105",
+      "magnitude_pct": 6.06
+    },
+    {
+      "champion": "Vi",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "3",
+      "new": "3.5",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Volibear",
+      "target": "Q - Thundering Smash",
+      "field": "Bonus Damage",
+      "change_type": "nerf",
+      "old": "10/30/50/70/90",
+      "new": "10/20/30/40/50",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "E - Majestic Roar",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "14",
+      "new": "16",
+      "magnitude_pct": -12.5
+    },
+    {
+      "champion": "Volibear",
+      "target": "E - Majestic Roar",
+      "field": "Non-champion Damage Cap",
+      "change_type": "nerf",
+      "old": "190/305/420/535/650",
+      "new": "150/265/380/495/610",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "XinZhao",
+      "target": "Passive - Determination",
+      "field": "Heal",
+      "change_type": "buff",
+      "old": "3/3.5/4%",
+      "new": "3/4/5%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "XinZhao",
+      "target": "E - Audacious Charge",
+      "field": "Attack Speed",
+      "change_type": "buff",
+      "old": "40/45/50/55/60%",
+      "new": "40/50/60/70/80%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yone",
+      "target": "Q - Mortal Steel",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "(+105% Total AD)",
+      "new": "(+110% Total AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zaahen",
+      "target": "Q - Void Cleaver",
+      "field": "Monster Modifier",
+      "change_type": "buff",
+      "old": "1.75x",
+      "new": "2x",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Zaahen",
+      "target": "E - Void Spike",
+      "field": "Bonus Monster Damage",
+      "change_type": "buff",
+      "old": "50",
+      "new": "75",
+      "magnitude_pct": 50
+    },
+    {
+      "champion": "Zed",
+      "target": "Passive - Contempt for the Weak",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "1.2x",
+      "new": "0.5x",
+      "magnitude_pct": -58.33
+    },
+    {
+      "champion": "Zed",
+      "target": "Passive - Contempt for the Weak",
+      "field": "Epic Monster Cap",
+      "change_type": "nerf",
+      "old": "300",
+      "new": "100",
+      "magnitude_pct": -66.67
+    }
+  ]
+}

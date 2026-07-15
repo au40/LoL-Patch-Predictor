@@ -1,0 +1,7 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Annie,Annie,armor,19.0,23.0,4.0,21.05,15.10.1,15.11.1
+Annie,Annie,armorperlevel,4.7,4.0,-0.7,-14.89,15.10.1,15.11.1
+Chogath,Cho'Gath,armorperlevel,5.0,4.5,-0.5,-10.0,15.10.1,15.11.1
+Kassadin,Kassadin,armor,19.0,21.0,2.0,10.53,15.10.1,15.11.1
+Smolder,Smolder,armor,26.0,24.0,-2.0,-7.69,15.10.1,15.11.1
+Smolder,Smolder,hpregen,4.5,3.75,-0.75,-16.67,15.10.1,15.11.1

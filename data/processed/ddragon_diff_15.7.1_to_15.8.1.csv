@@ -1,0 +1,5 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Ahri,Ahri,armorperlevel,4.7,4.2,-0.5,-10.64,15.7.1,15.8.1
+Annie,Annie,hpperlevel,102.0,96.0,-6.0,-5.88,15.7.1,15.8.1
+Lulu,Lulu,hp,595.0,565.0,-30.0,-5.04,15.7.1,15.8.1
+Mel,Mel,hp,600.0,630.0,30.0,5.0,15.7.1,15.8.1

@@ -1,0 +1,20 @@
+Patch 25.18 — Champion changes (fetched from leagueoflegends.com; game patch 15.18)
+
+Amumu: Q Cooldown 16/15.5/15/14.5/14 >>> 16/15/14/13/12; Q Mana 45/50/55/60/65 >>> 50
+Annie: W Damage 70/115/160/205/250 >>> 70/110/150/190/230; R Magic Pen 15/17.5/20% >>> 10/15/20%
+Ashe: AD Growth 2.95 >>> 3.45
+Aurora: Passive Base %MaxHP 2.5% >>> 1%; Passive AP Ratio 2% per 100 >>> 2.7% per 100
+Azir: Attack Speed Growth 5.5% >>> 5.0%; W AP Ratio 45/50/55/60/65% >>> 40/45/50/55/60%
+Briar: Q Damage 60/90/120/150/180 >>> 60/85/110/135/160; Q Type Magic >>> Physical; R Damage 150/250/350 (+50% bonus AD) (+120% AP) >>> 150/250/350 (+130% AP); R Range 10000 >>> 12000
+Cassiopeia: Base Mana 400 >>> 450; E Damage 20/40/60/80/100 >>> 20/43/66/89/112
+Galio: Passive AP 45% >>> 40%; Q %MaxHP 2.5% >>> 2%
+Garen: E AD Ratio 36/39/42/45/48% >>> 38/41/44/47/50%
+Hwei: Passive AP 30% >>> 35%; WQ Movement Speed 20/22.5/25/27.5/30% >>> 30/32.5/35/37.5/40%; E AP 60% >>> 65%
+Jayce: Q Damage 60/110/160/210/260/310 >>> 80/126/172/218/264/310
+Illaoi: W %MaxHP 4% >>> 3.5%; E Duration 3s >>> 4s
+Qiyana: Base AD 66 >>> 64; Armor Growth 4.7 >>> 4.5; Passive 30% >>> 25%
+Sylas: Passive Monster Damage 150% >>> 130%
+Taliyah: Q Mana 65/70/75/80/85 >>> 55/60/65/70/75; Q2 Mana 20 >>> 10; Q Damage 56/74.5/93/111.5/130 >>> 55/72.5/90/107.5/125; E Mana 90/95/100/105/110 >>> 90; E Damage 25/45/65/85/105 >>> 25/40/55/70/85
+Vel'Koz: E Cooldown 14/13.5/13/12.5/12 >>> 12/11.5/11/10.5/10; R Damage 450/625/800 >>> 450/700/925
+Volibear: Passive Attack Speed AP 4% (20%) >>> 3% (17.5%)
+Yunara: Base HP 600 >>> 575; Base AD 56 >>> 53; E Movement Speed 50/55/60/65/70% >>> 30/35/40/45/50%; E Duration varies >>> 1.5s

@@ -1,0 +1,3 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Rammus,Rammus,hpperlevel,94,100,6,6.38,15.12.1,15.13.1
+Yorick,Yorick,armor,39,36,-3,-7.69,15.12.1,15.13.1

@@ -1,0 +1,302 @@
+{
+  "patch": "15.19",
+  "changes": [
+    {
+      "champion": "Ahri",
+      "target": "R - Spirit Rush",
+      "field": "Damage per hit",
+      "change_type": "buff",
+      "old": "60/90/120 (+35% AP)",
+      "new": "75/125/175 (+35% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Brand",
+      "target": "Passive - Blaze",
+      "field": "Monster Damage Modifier",
+      "change_type": "buff",
+      "old": "2.6x",
+      "new": "2.65x",
+      "magnitude_pct": 1.92
+    },
+    {
+      "champion": "Brand",
+      "target": "W - Pillar of Flame",
+      "field": "AP Scaling",
+      "change_type": "buff",
+      "old": "+60% AP",
+      "new": "+70% AP",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Brand",
+      "target": "R - Pyroclasm",
+      "field": "AP Scaling per hit",
+      "change_type": "buff",
+      "old": "+25% AP",
+      "new": "+30% AP",
+      "magnitude_pct": 20
+    },
+    {
+      "champion": "Caitlyn",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "buff",
+      "old": "60",
+      "new": "62",
+      "magnitude_pct": 3.33
+    },
+    {
+      "champion": "Corki",
+      "target": "Q - Phosphorus Bomb",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "70/115/160/205/250 (+130% AD)",
+      "new": "60/105/150/195/240 (+125% AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Diana",
+      "target": "Passive - Moonsilver Blade",
+      "field": "Monster Modifier",
+      "change_type": "buff",
+      "old": "2.6x",
+      "new": "3x",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Draven",
+      "target": "W - Blood Rush",
+      "field": "Attack Speed",
+      "change_type": "buff",
+      "old": "20/25/30/35/40%",
+      "new": "30/35/40/45/50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Draven",
+      "target": "R - Whirling Death",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "175/275/375",
+      "new": "200/300/400",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jax",
+      "target": "Base Stats",
+      "field": "HP",
+      "change_type": "nerf",
+      "old": "665",
+      "new": "650",
+      "magnitude_pct": -2.26
+    },
+    {
+      "champion": "Jax",
+      "target": "R - Grandmaster's Might",
+      "field": "Initial armor gain",
+      "change_type": "buff",
+      "old": "25/50/75",
+      "new": "45/60/75",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jinx",
+      "target": "Q - Switcheroo!",
+      "field": "Bonus Range",
+      "change_type": "buff",
+      "old": "80/110/140/170/200",
+      "new": "100/125/150/175/200",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jinx",
+      "target": "E - Flame Chompers!",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "70/120/170/220/270",
+      "new": "90/140/190/240/290",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Leblanc",
+      "target": "W - Distortion",
+      "field": "AP Scaling",
+      "change_type": "buff",
+      "old": "+70% AP",
+      "new": "+80% AP",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Leblanc",
+      "target": "R - Mimic",
+      "field": "Distortion AP Scaling",
+      "change_type": "buff",
+      "old": "+75% AP",
+      "new": "+80% AP",
+      "magnitude_pct": 6.67
+    },
+    {
+      "champion": "LeeSin",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.9",
+      "new": "4.5",
+      "magnitude_pct": -8.16
+    },
+    {
+      "champion": "LeeSin",
+      "target": "Q - Sonic Wave",
+      "field": "Damage",
+      "change_type": "adjust",
+      "old": "55/80/105/130/155 (+155% Bonus AD)",
+      "new": "60/90/120/150/180 (+95% Bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lillia",
+      "target": "R - Blooming Blows",
+      "field": "Bonus Damage",
+      "change_type": "buff",
+      "old": "100/150/200 (+40% AP)",
+      "new": "150/200/250 (+45% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lillia",
+      "target": "R - Blooming Blows",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "150/130/110",
+      "new": "140/120/100",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "Passive - Firmware Update",
+      "field": "Bonus Damage per spell",
+      "change_type": "buff",
+      "old": "24-75 (+3% AP)",
+      "new": "24-99 (+9% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "Passive - Firmware Update",
+      "field": "Max Bonus Damage",
+      "change_type": "buff",
+      "old": "75-225 (+9% AP)",
+      "new": "72-297 (+27% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Pantheon",
+      "target": "Q - Spear Shot",
+      "field": "Monster Modifier",
+      "change_type": "nerf",
+      "old": "0.9x",
+      "new": "0.75x",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Pantheon",
+      "target": "W - Aegis Assault",
+      "field": "Minion/Monster damage cap",
+      "change_type": "nerf",
+      "old": "200",
+      "new": "120",
+      "magnitude_pct": -40
+    },
+    {
+      "champion": "Poppy",
+      "target": "Q - Hammer Shock",
+      "field": "Max Health damage cap",
+      "change_type": "nerf",
+      "old": "75/105/135/165/195",
+      "new": "50/80/110/140/170",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Poppy",
+      "target": "R - Keeper's Verdict",
+      "field": "Cooldown on interrupted channel",
+      "change_type": "nerf",
+      "old": "15",
+      "new": "30",
+      "magnitude_pct": 100
+    },
+    {
+      "champion": "Seraphine",
+      "target": "Base Stats",
+      "field": "Mana Growth",
+      "change_type": "buff",
+      "old": "25",
+      "new": "40",
+      "magnitude_pct": 60
+    },
+    {
+      "champion": "Seraphine",
+      "target": "Base Stats",
+      "field": "HP Growth",
+      "change_type": "buff",
+      "old": "90",
+      "new": "95",
+      "magnitude_pct": 5.56
+    },
+    {
+      "champion": "Seraphine",
+      "target": "W - Surround Sound",
+      "field": "Healing",
+      "change_type": "buff",
+      "old": "3/3.5/4/4.5/5%",
+      "new": "8/10/12/14/16%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sivir",
+      "target": "Q - Fleet Footwork",
+      "field": "Initial Damage bonus AD Scaling",
+      "change_type": "nerf",
+      "old": "+100% bonus AD",
+      "new": "+85% bonus AD",
+      "magnitude_pct": -15
+    },
+    {
+      "champion": "Syndra",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "nerf",
+      "old": "104",
+      "new": "100",
+      "magnitude_pct": -3.85
+    },
+    {
+      "champion": "Syndra",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.6",
+      "new": "4",
+      "magnitude_pct": -13.04
+    },
+    {
+      "champion": "Syndra",
+      "target": "Q - Dark Sphere",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "75/110/145/180/215 (+60% AP)",
+      "new": "80/115/150/185/220 (+65% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Syndra",
+      "target": "E - Scatter the Weak",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "17",
+      "new": "15",
+      "magnitude_pct": -11.76
+    }
+  ]
+}

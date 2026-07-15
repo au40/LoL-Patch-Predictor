@@ -1,0 +1,2 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+MasterYi,Master Yi,attackdamageperlevel,2.5,2.8,0.3,12.0,15.1.1,15.2.1

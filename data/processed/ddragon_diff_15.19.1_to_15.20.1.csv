@@ -1,0 +1,6 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Camille,Camille,armorperlevel,5.0,4.5,-0.5,-10.0,15.19.1,15.20.1
+Katarina,Katarina,armor,28.0,32.0,4.0,14.29,15.19.1,15.20.1
+Malphite,Malphite,armor,37.0,40.0,3.0,8.11,15.19.1,15.20.1
+Warwick,Warwick,attackdamageperlevel,2.75,2.5,-0.25,-9.09,15.19.1,15.20.1
+Warwick,Warwick,attackspeedperlevel,2.3,2.0,-0.3,-13.04,15.19.1,15.20.1

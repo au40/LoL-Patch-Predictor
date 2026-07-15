@@ -1,0 +1,293 @@
+{
+  "patch": "15.11",
+  "changes": [
+    {
+      "champion": "Aatrox",
+      "target": "Passive",
+      "field": "Max HP Damage",
+      "change_type": "nerf",
+      "old": "4-12%",
+      "new": "4-8%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aatrox",
+      "target": "Q - The Darkin Blade",
+      "field": "Sweet Spot Damage",
+      "change_type": "buff",
+      "old": "160%",
+      "new": "170%",
+      "magnitude_pct": 6.25
+    },
+    {
+      "champion": "Aatrox",
+      "target": "W - Infernal Chains",
+      "field": "Damage Type",
+      "change_type": "adjust",
+      "old": "Magic",
+      "new": "Physical",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Annie",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "buff",
+      "old": "19",
+      "new": "23",
+      "magnitude_pct": 21.05
+    },
+    {
+      "champion": "Annie",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.7",
+      "new": "4",
+      "magnitude_pct": -14.89
+    },
+    {
+      "champion": "Annie",
+      "target": "W - Incinerate",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "70/120/170/220/270 (+85% AP)",
+      "new": "70/115/160/205/250 (+80% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "Q - Frost Shot",
+      "field": "Structure Stacking",
+      "change_type": "buff",
+      "old": "",
+      "new": "Can now build stacks when attacking structures",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Chogath",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5",
+      "new": "4.5",
+      "magnitude_pct": -10
+    },
+    {
+      "champion": "Diana",
+      "target": "Passive - Moonlight",
+      "field": "Monster Damage",
+      "change_type": "buff",
+      "old": "225%",
+      "new": "260%",
+      "magnitude_pct": 15.56
+    },
+    {
+      "champion": "Elise",
+      "target": "Passive - Spider Swarm",
+      "field": "Spider Form Bonus Damage AP Ratio",
+      "change_type": "nerf",
+      "old": "20%",
+      "new": "15%",
+      "magnitude_pct": -25
+    },
+    {
+      "champion": "Garen",
+      "target": "W - Courage",
+      "field": "Cooldown",
+      "change_type": "adjust",
+      "old": "23/21/19/17/15",
+      "new": "22/19.5/17/14.5/12",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Garen",
+      "target": "W - Courage",
+      "field": "Damage Reduction",
+      "change_type": "nerf",
+      "old": "30%",
+      "new": "25/29/33/37/41%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Garen",
+      "target": "E - Judgment",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "9",
+      "new": "9/8.25/7.5/6.75/6",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Garen",
+      "target": "E - Judgment",
+      "field": "Crit Modifier",
+      "change_type": "nerf",
+      "old": "150%",
+      "new": "140%",
+      "magnitude_pct": -6.67
+    },
+    {
+      "champion": "Garen",
+      "target": "R - Demacian Justice",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "150/300/450",
+      "new": "150/250/350",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kassadin",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "buff",
+      "old": "19",
+      "new": "21",
+      "magnitude_pct": 10.53
+    },
+    {
+      "champion": "Kassadin",
+      "target": "E - Plasma Fission",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/90/120/150/180",
+      "new": "70/100/130/160/190",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kassadin",
+      "target": "R - Riftwalk",
+      "field": "AP Ratio",
+      "change_type": "nerf",
+      "old": "10%",
+      "new": "7%",
+      "magnitude_pct": -30
+    },
+    {
+      "champion": "Lucian",
+      "target": "E - Relentless Pursuit",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "16/15.5/15/14.5/14",
+      "new": "18/17/16/15/14",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rengar",
+      "target": "R - Thrill of the Hunt",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "110/100/90",
+      "new": "100/90/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ryze",
+      "target": "W - Rune Prison",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/110/140/170/200",
+      "new": "70/100/130/160/190",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ryze",
+      "target": "Passive - Realm Warp",
+      "field": "Overload Damage",
+      "change_type": "buff",
+      "old": "40/70/100%",
+      "new": "50/75/100%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sivir",
+      "target": "W - Ricochet",
+      "field": "Bounce Damage AD Ratio",
+      "change_type": "buff",
+      "old": "30/35/40/45/50% AD",
+      "new": "40/42.5/45/47.5/50% AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Samira",
+      "target": "Q - Pistol Shot",
+      "field": "Lifesteal Effectiveness",
+      "change_type": "buff",
+      "old": "66.66%",
+      "new": "80%",
+      "magnitude_pct": 19.95
+    },
+    {
+      "champion": "Samira",
+      "target": "W - Blade Whirl",
+      "field": "Damage per hit",
+      "change_type": "nerf",
+      "old": "+60% bonus AD",
+      "new": "+50% bonus AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Samira",
+      "target": "R - Inferno Trigger",
+      "field": "Lifesteal Effectiveness",
+      "change_type": "buff",
+      "old": "50%",
+      "new": "80%",
+      "magnitude_pct": 60
+    },
+    {
+      "champion": "Smolder",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "26",
+      "new": "24",
+      "magnitude_pct": -7.69
+    },
+    {
+      "champion": "Smolder",
+      "target": "Base Stats",
+      "field": "Health Regen",
+      "change_type": "nerf",
+      "old": "4.5",
+      "new": "3.75",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "TwistedFate",
+      "target": "Q - Wild Cards",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "60/105/150/195/240",
+      "new": "70/115/160/205/250",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Twitch",
+      "target": "E - Contaminate",
+      "field": "AP Ratio per Stack",
+      "change_type": "buff",
+      "old": "30%",
+      "new": "35%",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Udyr",
+      "target": "R - Awakened Phoenix",
+      "field": "Empowered Basic Attack Damage",
+      "change_type": "buff",
+      "old": "10-30 (+30% AP)",
+      "new": "10-40 (+35% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Udyr",
+      "target": "R - Awakened Phoenix",
+      "field": "Storm Damage per Second",
+      "change_type": "buff",
+      "old": "20/34/48/62/76/90",
+      "new": "20/36/52/68/84/100",
+      "magnitude_pct": 0
+    }
+  ]
+}

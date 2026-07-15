@@ -2,27 +2,203 @@
   "patch": "16.5",
   "source": "leagueoflegends.com patch 26.5 == game patch 16.5",
   "changes": [
-    {"champion": "Akali", "target": "W - Twilight Shroud", "field": "restealth timing", "change_type": "adjust", "old": "by game time", "new": "by level", "magnitude_pct": 0},
-    {"champion": "Azir", "target": "Base Stats", "field": "Health growth (per level)", "change_type": "nerf", "old": "119", "new": "108", "magnitude_pct": -9.24},
-    {"champion": "Garen", "target": "Q - Decisive Strike", "field": "move speed duration", "change_type": "buff", "old": "1/1.65/2.3/2.95/3.6", "new": "1.4/1.95/2.5/3.05/3.6", "magnitude_pct": 0},
-    {"champion": "Garen", "target": "E - Judgment", "field": "AD ratio", "change_type": "buff", "old": "38-50% AD", "new": "40-52% AD", "magnitude_pct": 0},
-    {"champion": "Khazix", "target": "Base Stats", "field": "Move Speed", "change_type": "nerf", "old": "350", "new": "345", "magnitude_pct": -1.43},
-    {"champion": "Khazix", "target": "Q - Taste Their Fear", "field": "bonus AD", "change_type": "nerf", "old": "110%", "new": "105%", "magnitude_pct": -4.55},
-    {"champion": "LeeSin", "target": "Q - Sonic Wave", "field": "base damage", "change_type": "buff", "old": "60/90/120/150/180", "new": "65/95/125/155/185", "magnitude_pct": 0},
-    {"champion": "Lillia", "target": "Passive - Dream-Laden Bough", "field": "monster heal AP ratio", "change_type": "buff", "old": "9%", "new": "15%", "magnitude_pct": 66.67},
-    {"champion": "Lillia", "target": "R - Lilting Lullaby", "field": "base damage", "change_type": "buff", "old": "100/150/200", "new": "150/200/250", "magnitude_pct": 0},
-    {"champion": "Mel", "target": "Passive - Searing Brilliance", "field": "minion damage modifier", "change_type": "nerf", "old": "0.6x", "new": "0.5x", "magnitude_pct": -16.67},
-    {"champion": "Mel", "target": "Q - Radiant Volley", "field": "base damage per bolt", "change_type": "buff", "old": "5/6/7/8/9", "new": "5/7/9/11/13", "magnitude_pct": 0},
-    {"champion": "Mel", "target": "R - Golden Eclipse", "field": "initial base damage", "change_type": "buff", "old": "100/150/200", "new": "125/200/275", "magnitude_pct": 0},
-    {"champion": "Neeko", "target": "W - Shapeshifter", "field": "cooldown start timing", "change_type": "adjust", "old": "on cast", "new": "on clone expiration", "magnitude_pct": 0},
-    {"champion": "Nocturne", "target": "Passive - Umbra Blades", "field": "cooldown", "change_type": "buff", "old": "13", "new": "12", "magnitude_pct": -7.69},
-    {"champion": "Nocturne", "target": "Q - Duskbringer", "field": "bonus move speed", "change_type": "buff", "old": "15/20/25/30/35%", "new": "20/25/30/35/40%", "magnitude_pct": 0},
-    {"champion": "Orianna", "target": "Q - Command: Attack", "field": "cooldown", "change_type": "nerf", "old": "6/5.25/4.5/3.75/3", "new": "7/6/5/4/3", "magnitude_pct": 0},
-    {"champion": "Taliyah", "target": "Q - Threaded Volley", "field": "base damage", "change_type": "nerf", "old": "55/72.5/90/107.5/125", "new": "50/67.5/85/102.5/120", "magnitude_pct": 0},
-    {"champion": "Varus", "target": "Q - Piercing Arrow", "field": "max damage AD ratio", "change_type": "nerf", "old": "130-170% bonus AD", "new": "150% bonus AD", "magnitude_pct": 0},
-    {"champion": "Varus", "target": "W - Blighted Quiver", "field": "on-hit damage", "change_type": "buff", "old": "+25% AP", "new": "+25% AP +15% bonus AD", "magnitude_pct": 0},
-    {"champion": "Volibear", "target": "Q - Thundering Smash", "field": "bonus physical damage", "change_type": "buff", "old": "140%", "new": "160%", "magnitude_pct": 14.29},
-    {"champion": "Volibear", "target": "W - Frenzied Maul", "field": "mana cost", "change_type": "buff", "old": "30/35/40/45/50", "new": "20/25/30/35/40", "magnitude_pct": 0},
-    {"champion": "Volibear", "target": "E - Sky Splitter", "field": "mana cost", "change_type": "buff", "old": "60", "new": "50", "magnitude_pct": -16.67}
+    {
+      "champion": "Akali",
+      "target": "W - Twilight Shroud",
+      "field": "restealth timing",
+      "change_type": "adjust",
+      "old": "by game time",
+      "new": "by level",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "Base Stats",
+      "field": "Health growth (per level)",
+      "change_type": "nerf",
+      "old": "119",
+      "new": "108",
+      "magnitude_pct": -9.24
+    },
+    {
+      "champion": "Garen",
+      "target": "Q - Decisive Strike",
+      "field": "move speed duration",
+      "change_type": "buff",
+      "old": "1/1.65/2.3/2.95/3.6",
+      "new": "1.4/1.95/2.5/3.05/3.6",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Garen",
+      "target": "E - Judgment",
+      "field": "AD ratio",
+      "change_type": "buff",
+      "old": "38-50% AD",
+      "new": "40-52% AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Khazix",
+      "target": "Base Stats",
+      "field": "Move Speed",
+      "change_type": "nerf",
+      "old": "350",
+      "new": "345",
+      "magnitude_pct": -1.43
+    },
+    {
+      "champion": "Khazix",
+      "target": "Q - Taste Their Fear",
+      "field": "bonus AD",
+      "change_type": "nerf",
+      "old": "110%",
+      "new": "105%",
+      "magnitude_pct": -4.55
+    },
+    {
+      "champion": "LeeSin",
+      "target": "Q - Sonic Wave",
+      "field": "base damage",
+      "change_type": "buff",
+      "old": "60/90/120/150/180",
+      "new": "65/95/125/155/185",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lillia",
+      "target": "Passive - Dream-Laden Bough",
+      "field": "monster heal AP ratio",
+      "change_type": "buff",
+      "old": "9%",
+      "new": "15%",
+      "magnitude_pct": 66.67
+    },
+    {
+      "champion": "Lillia",
+      "target": "R - Lilting Lullaby",
+      "field": "base damage",
+      "change_type": "buff",
+      "old": "100/150/200",
+      "new": "150/200/250",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "Passive - Searing Brilliance",
+      "field": "minion damage modifier",
+      "change_type": "nerf",
+      "old": "0.6x",
+      "new": "0.5x",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Mel",
+      "target": "Q - Radiant Volley",
+      "field": "base damage per bolt",
+      "change_type": "buff",
+      "old": "5/6/7/8/9",
+      "new": "5/7/9/11/13",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "R - Golden Eclipse",
+      "field": "initial base damage",
+      "change_type": "buff",
+      "old": "100/150/200",
+      "new": "125/200/275",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Neeko",
+      "target": "W - Shapeshifter",
+      "field": "cooldown start timing",
+      "change_type": "adjust",
+      "old": "on cast",
+      "new": "on clone expiration",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nocturne",
+      "target": "Passive - Umbra Blades",
+      "field": "cooldown",
+      "change_type": "buff",
+      "old": "13",
+      "new": "12",
+      "magnitude_pct": -7.69
+    },
+    {
+      "champion": "Nocturne",
+      "target": "Q - Duskbringer",
+      "field": "bonus move speed",
+      "change_type": "buff",
+      "old": "15/20/25/30/35%",
+      "new": "20/25/30/35/40%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Orianna",
+      "target": "Q - Command: Attack",
+      "field": "cooldown",
+      "change_type": "nerf",
+      "old": "6/5.25/4.5/3.75/3",
+      "new": "7/6/5/4/3",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Taliyah",
+      "target": "Q - Threaded Volley",
+      "field": "base damage",
+      "change_type": "nerf",
+      "old": "55/72.5/90/107.5/125",
+      "new": "50/67.5/85/102.5/120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "Q - Piercing Arrow",
+      "field": "max damage AD ratio",
+      "change_type": "nerf",
+      "old": "130-170% bonus AD",
+      "new": "150% bonus AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "W - Blighted Quiver",
+      "field": "on-hit damage",
+      "change_type": "buff",
+      "old": "+25% AP",
+      "new": "+25% AP +15% bonus AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "Q - Thundering Smash",
+      "field": "bonus physical damage",
+      "change_type": "buff",
+      "old": "140%",
+      "new": "160%",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Volibear",
+      "target": "W - Frenzied Maul",
+      "field": "mana cost",
+      "change_type": "buff",
+      "old": "30/35/40/45/50",
+      "new": "20/25/30/35/40",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Volibear",
+      "target": "E - Sky Splitter",
+      "field": "mana cost",
+      "change_type": "buff",
+      "old": "60",
+      "new": "50",
+      "magnitude_pct": -16.67
+    }
   ]
 }

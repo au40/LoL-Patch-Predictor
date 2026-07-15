@@ -1,0 +1,9 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+Alistar,Alistar,armor,47.0,40.0,-7.0,-14.89,15.14.1,15.15.1
+Braum,Braum,armor,42.0,35.0,-7.0,-16.67,15.14.1,15.15.1
+Braum,Braum,armorperlevel,5.2,5.0,-0.2,-3.85,15.14.1,15.15.1
+Irelia,Irelia,hpregen,6.0,3.5,-2.5,-41.67,15.14.1,15.15.1
+Nilah,Nilah,attackdamage,58.0,60.0,2.0,3.45,15.14.1,15.15.1
+Nilah,Nilah,attackspeedperlevel,3.0,2.25,-0.75,-25.0,15.14.1,15.15.1
+RekSai,Rek'Sai,armor,36.0,35.0,-1.0,-2.78,15.14.1,15.15.1
+RekSai,Rek'Sai,armorperlevel,4.95,4.5,-0.45,-9.09,15.14.1,15.15.1

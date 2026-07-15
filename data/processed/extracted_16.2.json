@@ -1,0 +1,230 @@
+{
+  "patch": "16.2",
+  "changes": [
+    {
+      "champion": "Aatrox",
+      "target": "Passive",
+      "field": "Bonus Magic Damage",
+      "change_type": "buff",
+      "old": "4-8%",
+      "new": "4-10%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aatrox",
+      "target": "Q - Dark Flight",
+      "field": "Bonus Damage to Monsters",
+      "change_type": "buff",
+      "old": "15",
+      "new": "25",
+      "magnitude_pct": 66.67
+    },
+    {
+      "champion": "Ashe",
+      "target": "Base Stats",
+      "field": "Attack Damage Growth",
+      "change_type": "buff",
+      "old": "3",
+      "new": "3.5",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Gwen",
+      "target": "Passive",
+      "field": "Monster Damage Cap",
+      "change_type": "nerf",
+      "old": "5 (+10% AP)",
+      "new": "3 (+5% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - To the Skies!",
+      "field": "Bonus Damage to Monsters",
+      "change_type": "nerf",
+      "old": "50",
+      "new": "25",
+      "magnitude_pct": -50.0
+    },
+    {
+      "champion": "Lillia",
+      "target": "Passive",
+      "field": "Heal Against Large Monsters",
+      "change_type": "nerf",
+      "old": "39 (+15% AP)",
+      "new": "39 (+9% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lillia",
+      "target": "Q - Flowery Path",
+      "field": "AP Ratio",
+      "change_type": "nerf",
+      "old": "35%",
+      "new": "30%",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Malphite",
+      "target": "W - Thunderclap",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "2x",
+      "new": "1.8x",
+      "magnitude_pct": -10.0
+    },
+    {
+      "champion": "Malphite",
+      "target": "E - Ground Slam",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/120/160/200/240 (+60% AP) (+40% armor)",
+      "new": "60/95/130/165/200 (+60% AP) (+40% armor)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Malphite",
+      "target": "E - Ground Slam",
+      "field": "Mana Cost",
+      "change_type": "nerf",
+      "old": "50",
+      "new": "50/55/60/65/70",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Malphite",
+      "target": "R - Unstoppable Force",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "130/105/80",
+      "new": "130/115/100",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MasterYi",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "buff",
+      "old": "4.2",
+      "new": "4.5",
+      "magnitude_pct": 7.14
+    },
+    {
+      "champion": "MasterYi",
+      "target": "Q - Alpha Strike",
+      "field": "On-Hit Damage Mod",
+      "change_type": "buff",
+      "old": "65%",
+      "new": "75%",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Nunu",
+      "target": "Q - Consume",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "12/11/10/9/8",
+      "new": "13/12/11/10/9",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nunu",
+      "target": "W - Biggest Snowball Ever!",
+      "field": "Maximum Damage",
+      "change_type": "nerf",
+      "old": "180/225/270/315/360 (+150% AP)",
+      "new": "150/195/240/285/330 (+150% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Nunu",
+      "target": "E - Snowball Barrage",
+      "field": "Damage per Hit",
+      "change_type": "nerf",
+      "old": "16/24/32/40/48 (+15% AP)",
+      "new": "14/21/28/35/42 (+15% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sivir",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "nerf",
+      "old": "2%",
+      "new": "1.6%",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Sivir",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.45",
+      "new": "4.0",
+      "magnitude_pct": -10.11
+    },
+    {
+      "champion": "Smolder",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.7",
+      "new": "4.0",
+      "magnitude_pct": -14.89
+    },
+    {
+      "champion": "Taliyah",
+      "target": "Q - Threaded Volley",
+      "field": "Bonus Damage to Monsters",
+      "change_type": "buff",
+      "old": "20",
+      "new": "20/25/30/35/40",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Taliyah",
+      "target": "E - Unraveled Earth",
+      "field": "Monster Damage Modifier",
+      "change_type": "buff",
+      "old": "190%",
+      "new": "225%",
+      "magnitude_pct": 18.42
+    },
+    {
+      "champion": "Varus",
+      "target": "Q - Piercing Arrow",
+      "field": "Maximum Charge Base Damage",
+      "change_type": "buff",
+      "old": "80/150/220/290/360",
+      "new": "80/160/240/320/400",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "W - Blighted Quiver",
+      "field": "On-Hit Base Damage",
+      "change_type": "buff",
+      "old": "6/14/22/30/38",
+      "new": "8/17/26/35/44",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Viego",
+      "target": "Base Stats",
+      "field": "Attack Speed Growth",
+      "change_type": "buff",
+      "old": "2.25%",
+      "new": "2.75%",
+      "magnitude_pct": 22.22
+    },
+    {
+      "champion": "Zed",
+      "target": "Passive",
+      "field": "Monster Damage",
+      "change_type": "nerf",
+      "old": "1.8x",
+      "new": "1.2x",
+      "magnitude_pct": -33.33
+    }
+  ]
+}

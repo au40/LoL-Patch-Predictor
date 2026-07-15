@@ -1,0 +1,12 @@
+Patch 25.10 — Champion changes (fetched from leagueoflegends.com; game patch 15.10)
+
+Cho'Gath: Level 1 Attack Speed 0.625 >>> 0.658; Q Damage 80/140/200/260/320 >>> 80/135/190/245/300; E Damage 2.5/2.75/3/3.25/3.5% >>> 2.5/2.85/3.2/3.55/3.9%
+Kayn: Health Growth 109 >>> 103
+Lulu: Armor Growth 4.9 >>> 4.6; R Cooldown 100/90/80 >>> 120/100/80
+Fiddlesticks: Q Fear Duration 1.25/1.5/1.75/2/2.25 >>> 1.2/1.4/1.6/1.8/2; Q Damage 5/6/7/8/9% >>> 4/4.5/5/5.5/6%; Q Empowered Damage 10/12/14/16/18% >>> 8/9/10/11/12%; W Damage per second +35% AP >>> +40% AP
+Naafiri: Packmate Monster Damage Multiplier 155% >>> 135%
+Senna: Crit chance per 20 stacks 8% >>> 10%; Soul drop rate 8.4% >>> 14%; Q Heal +60% AP >>> +50% AP
+Smolder: Passive Q damage per stack 0.3 >>> 0.4; Q burn damage per 100 stacks 0.4% >>> 0.5%; E hit damage per stack 0.1 >>> 0.12
+Vi: Q Minimum Damage 45/70/95/120/145 >>> 40/60/80/100/120; Q Maximum Damage 90/140/190/240/290 >>> 100/150/200/250/300; R Mana 100/125/150 >>> 100; R Damage 150/275/400 >>> 150/250/350
+Xin Zhao: Armor Growth 5 >>> 4.4
+Yuumi: R Base Heal per Hit 35/50/65 >>> 30/40/50

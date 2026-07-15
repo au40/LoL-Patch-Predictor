@@ -1,0 +1,8 @@
+champion,name,stat,old,new,delta,pct_change,from_patch,to_patch
+JarvanIV,Jarvan IV,armorperlevel,5.2,4.6,-0.6,-11.54,15.15.1,15.16.1
+Kalista,Kalista,attackdamageperlevel,4.0,4.25,0.25,6.25,15.15.1,15.16.1
+Nocturne,Nocturne,armorperlevel,4.7,4.2,-0.5,-10.64,15.15.1,15.16.1
+RekSai,Rek'Sai,attackdamage,58.0,62.0,4.0,6.9,15.15.1,15.16.1
+Viego,Viego,attackspeedperlevel,2.5,2.25,-0.25,-10.0,15.15.1,15.16.1
+Warwick,Warwick,attackdamage,60.0,65.0,5.0,8.33,15.15.1,15.16.1
+XinZhao,Xin Zhao,hp,640.0,620.0,-20.0,-3.12,15.15.1,15.16.1

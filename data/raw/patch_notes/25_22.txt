@@ -1,0 +1,10 @@
+Patch 25.22 — Champion changes (fetched from leagueoflegends.com; game patch 15.22)
+
+Akshan: Base Health 630 >>> 610; Q Cooldown 8/7.25/6.5/5.75/5 >>> 9/8/7/6/5
+Aurelion Sol: Movement Speed 335 >>> 340; Q Burst Damage 55/65/75/85/95 (+30% AP) >>> 60/70/80/90/100 (+30% AP)
+Blitzcrank: E Cooldown 9/8/7/6/5 >>> 7/6.5/6/5.5/5
+LeBlanc: Health Growth 111 >>> 108; Armor Growth 4.7 >>> 4.2
+Skarner: AD Growth 3 >>> 4; Q Bonus AD Ratio 80% >>> 90%; Q Cooldown 13/11.5/10/8.5/7 >>> 8/7/6/5/4; R Cast Time 0.65 >>> 0.75
+Talon: Passive Damage to Monsters 110% >>> 100%
+Volibear: Base Armor 31 >>> 35; Base Attack Damage 60 >>> 62; Q Minimum Movement Speed 12/16/20/24/28% >>> 12/15.5/19/22.5/26%; Q Maximum Movement Speed 24/32/40/48/56% >>> 24/31/38/45/52%; E Damage Cap 650 >>> 190/305/420/535/650 (+70% AP)
+Yone: Q Base Damage 20/45/70/95/120 >>> 25/50/75/100/125

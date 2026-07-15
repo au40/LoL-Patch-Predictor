@@ -1,0 +1,329 @@
+{
+  "patch": "15.8",
+  "changes": [
+    {
+      "champion": "Ahri",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "4.7",
+      "new": "4.2",
+      "magnitude_pct": -10.64
+    },
+    {
+      "champion": "Ahri",
+      "target": "W - Fox-Fire",
+      "field": "Damage",
+      "change_type": "adjust",
+      "old": "45/70/95/120/145 (+30% AP)",
+      "new": "40/60/80/100/120 (+40% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ahri",
+      "target": "W - Fox-Fire",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "9/8/7/6/5",
+      "new": "10/9/8/7/6",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ahri",
+      "target": "E - Enchant",
+      "field": "AP Ratio",
+      "change_type": "buff",
+      "old": "+75% AP",
+      "new": "+85% AP",
+      "magnitude_pct": 13.33
+    },
+    {
+      "champion": "Annie",
+      "target": "Base Stats",
+      "field": "Health Growth",
+      "change_type": "nerf",
+      "old": "102",
+      "new": "96",
+      "magnitude_pct": -5.88
+    },
+    {
+      "champion": "Annie",
+      "target": "Q - Disintegrate",
+      "field": "AP Ratio",
+      "change_type": "buff",
+      "old": "+75% AP",
+      "new": "+80% AP",
+      "magnitude_pct": 6.67
+    },
+    {
+      "champion": "Annie",
+      "target": "W - Incinerate",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "70/115/160/205/250",
+      "new": "70/120/170/220/270",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Annie",
+      "target": "W - Incinerate",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "8",
+      "new": "7",
+      "magnitude_pct": -12.5
+    },
+    {
+      "champion": "Annie",
+      "target": "R - Summon Tibbers",
+      "field": "Flame Aura Damage",
+      "change_type": "nerf",
+      "old": "20/30/40 (+12% AP)",
+      "new": "8/12/16 (+4% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Annie",
+      "target": "R - Summon Tibbers",
+      "field": "Tibbers Auto Attack Damage",
+      "change_type": "nerf",
+      "old": "50/75/100 (+15% AP)",
+      "new": "30/45/60 (+10% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Blitzcrank",
+      "target": "Passive - Mana Shield",
+      "field": "Shield",
+      "change_type": "buff",
+      "old": "30% Max Mana",
+      "new": "35% Max Mana",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Blitzcrank",
+      "target": "Q - Rocket Grab",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "105/150/195/240/285",
+      "new": "110/160/210/260/310",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Brand",
+      "target": "Passive - Blaze",
+      "field": "Damage to Monsters",
+      "change_type": "buff",
+      "old": "215%",
+      "new": "240%",
+      "magnitude_pct": 11.63
+    },
+    {
+      "champion": "Gwen",
+      "target": "E - Skip 'n Slash",
+      "field": "On-Hit Damage",
+      "change_type": "nerf",
+      "old": "12/14/16/18/20 (+25% AP)",
+      "new": "8/11/14/17/20 (+25% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "Passive - Signature Spellbook",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "30-180",
+      "new": "35-230",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "R - Spiraling Despair",
+      "field": "Explosion Damage",
+      "change_type": "buff",
+      "old": "200/300/400",
+      "new": "200/325/450",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lulu",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "595",
+      "new": "565",
+      "magnitude_pct": -5.04
+    },
+    {
+      "champion": "Mel",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "buff",
+      "old": "600",
+      "new": "630",
+      "magnitude_pct": 5.0
+    },
+    {
+      "champion": "Mel",
+      "target": "Passive - Ascended",
+      "field": "Damage per Stack",
+      "change_type": "buff",
+      "old": "5-20",
+      "new": "8-25",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Renekton",
+      "target": "R - Ascension",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "30/60/90",
+      "new": "30/75/120",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Shen",
+      "target": "Q - Twilight Assault",
+      "field": "Slow",
+      "change_type": "buff",
+      "old": "15/20/25/30/35%",
+      "new": "25/30/35/40/45%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Shen",
+      "target": "W - Spirit's Refuge",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "18/16.5/15/13.5/12",
+      "new": "16/14.5/13/11.5/10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Singed",
+      "target": "Passive - Noxious Slime",
+      "field": "Per-target Cooldown",
+      "change_type": "buff",
+      "old": "10",
+      "new": "8",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Sona",
+      "target": "Q - Power Chord: Staccato",
+      "field": "Bolt Damage",
+      "change_type": "buff",
+      "old": "50/80/110/140/170",
+      "new": "50/85/120/155/190",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Syndra",
+      "target": "W - Scatter the Weak",
+      "field": "Slow",
+      "change_type": "nerf",
+      "old": "25/30/35/40/45%",
+      "new": "25%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Syndra",
+      "target": "E - Spell Fragments",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "75/115/155/195/235 (+45% AP)",
+      "new": "60/95/130/165/200 (+60% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Syndra",
+      "target": "R - Unleash Power",
+      "field": "Damage per Sphere",
+      "change_type": "buff",
+      "old": "100/140/180 (+17% AP)",
+      "new": "90/130/170 (+20% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Tristana",
+      "target": "R - Buster Shot",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "275/325/375",
+      "new": "225/275/325",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Xerath",
+      "target": "Passive - Mana Surge",
+      "field": "Cooldown Refund",
+      "change_type": "buff",
+      "old": "2.5s",
+      "new": "3.5s",
+      "magnitude_pct": 40.0
+    },
+    {
+      "champion": "Xerath",
+      "target": "Q - Arcanopulse",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "70/110/150/190/230",
+      "new": "75/115/155/195/235",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Zeri",
+      "target": "R - SPARK PACK",
+      "field": "Chain Lightning Damage",
+      "change_type": "buff",
+      "old": "25% Total AD",
+      "new": "30% Total AD",
+      "magnitude_pct": 20.0
+    },
+    {
+      "champion": "Yone",
+      "target": "W - Spirit Cleave",
+      "field": "Max HP Damage",
+      "change_type": "nerf",
+      "old": "+10/11/12/13/14% max HP",
+      "new": "+8/9/10/11/12% max HP",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yorick",
+      "target": "Passive - Shepherd of Souls",
+      "field": "Monster Damage Taken",
+      "change_type": "buff",
+      "old": "60%",
+      "new": "100%",
+      "magnitude_pct": 66.67
+    },
+    {
+      "champion": "Yorick",
+      "target": "E - Mourning Mist",
+      "field": "Damage",
+      "change_type": "new",
+      "old": "",
+      "new": "6/6.5/7/7.5/8% max HP (+3% per 100 AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yuumi",
+      "target": "Passive - Bop 'n' Block",
+      "field": "Heal",
+      "change_type": "nerf",
+      "old": "25-110",
+      "new": "20-110",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yuumi",
+      "target": "E - Zoomies",
+      "field": "Shield",
+      "change_type": "nerf",
+      "old": "80/105/130/155/180",
+      "new": "65/90/115/140/165",
+      "magnitude_pct": 0
+    }
+  ]
+}
