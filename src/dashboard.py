@@ -29,6 +29,10 @@ import altair as alt  # noqa: E402
 from winrates import load_winrates  # noqa: E402
 import predict as P  # noqa: E402
 import magnitude_by_type as MBT  # noqa: E402
+from magnitude import _signed_magnitude  # noqa: E402
+from datadragon import champion_spell_cooldowns, change_cooldown  # noqa: E402
+
+_CD_MAP = champion_spell_cooldowns()
 
 DATA_PROCESSED = ROOT / "data" / "processed"
 
@@ -183,6 +187,80 @@ else:
 
     with st.expander("See the underlying damage changes (one row per point)"):
         st.dataframe(dmg.sort_values("mag_damage"), width="stretch", hide_index=True)
+
+# -------------------------------- ⑤ damage x cooldown (does cast frequency matter?)
+st.subheader("⑤ Damage effect by ability cooldown — does cast frequency matter?")
+st.caption(
+    "The hypothesis: a damage buff on a low-cooldown (spammed) spell should move win-rate more than "
+    "the same buff on a long-cooldown ult. If true, the **low-cooldown** trend would be steeper than "
+    "the **high-cooldown** one. Each point is a champion-role's damage change; colour = the fastest-cast "
+    "damaged ability's cooldown. Uses the games filter above — slide it up to test the low-data theory."
+)
+
+
+def _damage_cooldown_table(min_games: int) -> pd.DataFrame:
+    rows = []
+    for new, old in MBT.DEFAULT_BOUNDARIES:
+        panel = MBT.patch_boundary(wr, new, old, min_games=min_games)
+        path = DATA_PROCESSED / f"extracted_{new}.json"
+        if panel.empty or not path.exists():
+            continue
+        by_champ: dict[str, list] = {}
+        for c in json.loads(path.read_text(encoding="utf-8")).get("changes", []):
+            if MBT.categorize(c) == "damage":
+                by_champ.setdefault(c["champion"], []).append(c)
+        for r in panel.itertuples():
+            chs = by_champ.get(r.champion)
+            if not chs:
+                continue
+            mag = sum(_signed_magnitude(c) for c in chs)
+            if round(mag, 1) == 0:
+                continue
+            real = [cd for cd in (change_cooldown(c, _CD_MAP) for c in chs) if cd not in (None, 0)]
+            cd = min(real) if real else None  # fastest-cast damaged ability
+            tier = "no cooldown" if cd is None else ("low (<=10s)" if cd <= 10 else "high (>10s)")
+            abilities = "; ".join(f"{c.get('target', '?')} ({c.get('change_type', '')})" for c in chs)
+            rows.append({"champion": r.champion, "role": r.role, "patch": new,
+                         "mag_damage": round(mag, 1), "winrate_change_pp": round(r.delta * 100, 1),
+                         "cooldown": cd, "tier": tier, "games": int(r.games_new),
+                         "abilities": abilities})
+    return pd.DataFrame(rows)
+
+
+dct = _damage_cooldown_table(min_games)
+if dct.empty:
+    st.info("No damage changes clear the games filter at this threshold. Lower the slider.")
+else:
+    base = alt.Chart(dct)
+    pts = base.mark_point(filled=True, opacity=0.7).encode(
+        x=alt.X("mag_damage:Q", title="damage change size (signed %, buffs -> right)"),
+        y=alt.Y("winrate_change_pp:Q", title="win-rate change next patch (pp)"),
+        color=alt.Color("tier:N", title="ability cooldown",
+                        scale=alt.Scale(domain=["low (<=10s)", "high (>10s)", "no cooldown"],
+                                        range=["#eb6834", "#2a78d6", "#b4b2a9"])),
+        size=alt.Size("games:Q", title="games", scale=alt.Scale(range=[40, 320])),
+        tooltip=[alt.Tooltip("champion:N"), alt.Tooltip("role:N"), alt.Tooltip("patch:N"),
+                 alt.Tooltip("cooldown:Q", title="cooldown (s)"),
+                 alt.Tooltip("mag_damage:Q", title="damage change %"),
+                 alt.Tooltip("winrate_change_pp:Q", title="win-rate change (pp)"),
+                 alt.Tooltip("games:Q"),
+                 alt.Tooltip("abilities:N", title="ability(ies)")],
+    )
+    trends = base.transform_filter(alt.datum.tier != "no cooldown").transform_regression(
+        "mag_damage", "winrate_change_pp", groupby=["tier"]).mark_line(size=2.5).encode(
+        x="mag_damage:Q", y="winrate_change_pp:Q",
+        color=alt.Color("tier:N", legend=None,
+                        scale=alt.Scale(domain=["low (<=10s)", "high (>10s)"],
+                                        range=["#eb6834", "#2a78d6"])))
+    xr = alt.Chart(pd.DataFrame({"v": [0]})).mark_rule(strokeDash=[4, 4], color="#999").encode(x="v:Q")
+    yr = alt.Chart(pd.DataFrame({"v": [0]})).mark_rule(strokeDash=[4, 4], color="#999").encode(y="v:Q")
+    st.altair_chart((xr + yr + pts + trends).interactive(), width="stretch")
+    st.caption(
+        "The two trend lines come out **nearly parallel** — a damage buff moves win-rate about the same "
+        "whether the ability is spammed or on a long cooldown. That's why weighting damage by cooldown "
+        "didn't help the model: cast frequency doesn't organise the win-rate response. Grey points are "
+        "passives / zero-cooldown abilities (no cooldown to weight by)."
+    )
 
 st.divider()
 st.caption("Preliminary model - the signed change feature strengthens as patches/volume grow. "
