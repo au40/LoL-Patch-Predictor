@@ -30,6 +30,7 @@ import statsmodels.formula.api as smf  # noqa: E402
 from winrates import load_winrates  # noqa: E402
 import predict as P  # noqa: E402
 import magnitude_by_type as MBT  # noqa: E402
+import pickrate as PR  # noqa: E402
 from magnitude import _signed_magnitude  # noqa: E402
 from datadragon import (champion_spell_cooldowns, change_cooldown,  # noqa: E402
                         champion_icons, champion_names, champion_id_map, normalize_champion)
@@ -284,6 +285,18 @@ def _art() -> tuple[dict[str, str], dict[str, str], dict[str, str]]:
 ICONS, NAMES, _ID_MAP = _art()
 
 
+@st.cache_data(show_spinner="Building the pick-rate panel…")
+def _pick_panel(min_games: int) -> pd.DataFrame:
+    return PR.build_panel(min_games)
+
+
+@st.cache_resource(show_spinner=False)
+def _pick_fit(min_games: int):
+    """Fitted pick-rate model. cache_resource, not cache_data — a statsmodels results
+    object is a live object, not a serialisable value."""
+    return PR.fit(_pick_panel(min_games))
+
+
 def _icon(champ: str) -> str | None:
     """Icon URL for a win-rate row's champion, or None if we have no art for it.
 
@@ -399,6 +412,33 @@ else:
                        f"at {prior * 100:.1f}% the model expects this champion to drift toward average "
                        f"whether or not Riot touches it. Damage is the part you're actually buying.")
 
+            # --- the same change, scored against the outcome that IS predictable -------
+            st.markdown("**…and what it does to how often the champion gets *played*:**")
+            ppanel = _pick_panel(min_games)
+            mine = ppanel[(ppanel["champion"] == champ) & (ppanel["role"] == role)]
+            if mine.empty:
+                st.info(f"{_label(champ)} {role} isn't in the pick-rate panel (needs a pick share "
+                        f"in two consecutive patches above the games filter).")
+            else:
+                cur = mine.sort_values("t").iloc[-1]
+                # Direction comes from the slider's SIGN only — magnitude is deliberately
+                # ignored, because it tests null and hurts out-of-sample accuracy.
+                direction = "buff" if mag > 0 else "nerf" if mag < 0 else "none"
+                pk = PR.predict_change(_pick_fit(min_games), float(cur["pick"]), role,
+                                       direction, float(cur["y"]))
+                q1, q2, q3 = st.columns(3)
+                q1.metric("Pick share now", f"{cur['pick'] * 100:.2f}%",
+                          f"patch {cur['patch']}", delta_color="off")
+                q2.metric("Pick share next patch", f"{pk['new_pick'] * 100:.2f}%",
+                          f"{pk['pct_change']:+.1f}%")
+                q3.metric("Change treated as", direction,
+                          "magnitude ignored — by design", delta_color="off")
+                st.caption(
+                    f"95% CI: {pk['pct_low']:+.1f}% to {pk['pct_high']:+.1f}%. Move the damage "
+                    f"slider and watch this number ignore everything except which side of zero "
+                    f"you're on — that's the finding. Buffed champions gain ~24% pick share and "
+                    f"nerfed ones lose ~11%, but **how big** the change is predicts nothing.")
+
         # sweep the same prediction across the whole slider range
         sweep = pd.DataFrame([{**{f"mag_{c}": 0.0 for c in MBT.CATEGORIES}, "mag_damage": m,
                                "prior_winrate": prior, "role": role}
@@ -428,6 +468,58 @@ else:
                    "wide because the damage coefficient is fit on relatively few changed champions "
                    "— read the direction, not the third decimal.")
 
+# ------------------------------- ⑦ pick rate — the outcome patch notes actually predict
+st.subheader("⑦ Pick rate — the outcome patch notes actually predict")
+st.caption(
+    "Win-rate is a dead end and we can now say why with a number: **97.8% of a champion's "
+    "patch-to-patch win-rate movement is binomial sampling noise**, and a model that knew every "
+    "champion's true strength would still miss by 4.43pp at min_games=20 — which is where the "
+    "model above already sits. Pick share is the opposite: measured against every game played "
+    "rather than one champion's handful, it is ~98% signal (lag-1 autocorrelation 0.93 vs "
+    "win-rate's 0.03) — and patch notes move it."
+)
+
+ppanel = _pick_panel(min_games)
+if ppanel.empty or ppanel["changed"].sum() < 20:
+    st.info("Not enough changed champions in the pick-rate panel at this games filter.")
+else:
+    eff = PR.effects(ppanel)
+    e1, e2, e3 = st.columns(3)
+    for col, (_, r) in zip((e1, e2), eff.iterrows()):
+        col.metric(f"{r['direction']} champions", f"{r['pick_share_change_pct']:+.1f}% pick share",
+                   f"95% CI [{r['ci_low']:+.1f}, {r['ci_high']:+.1f}] · n={int(r['n_obs'])}",
+                   delta_color="off")
+    bt = PR.backtest(ppanel)
+    if not bt.empty:
+        wins = int((bt["gain_pp"] > 0).sum())
+        e3.metric("Walk-forward folds improved", f"{wins}/{len(bt)}",
+                  f"MAE {bt['mae_reversion_pct'].mean():.1f}% → "
+                  f"{bt['mae_model_pct'].mean():.1f}%")
+
+        st.write("**Held-out accuracy per patch** — train on every earlier patch, predict this "
+                 "one. Bars below zero are folds where the patch notes made things worse.")
+        ch = alt.Chart(bt).mark_bar().encode(
+            x=alt.X("patch:N", title="predicted patch", sort=list(bt["patch"])),
+            y=alt.Y("gain_pp:Q", title="MAE improvement vs reversion (pp of log pick-share)"),
+            color=alt.condition(alt.datum.gain_pp > 0, alt.value("#2a78d6"), alt.value("#e34948")),
+            tooltip=[alt.Tooltip("patch:N"), alt.Tooltip("n_changed:Q", title="changed champs"),
+                     alt.Tooltip("mae_reversion_pct:Q", title="reversion MAE %"),
+                     alt.Tooltip("mae_model_pct:Q", title="model MAE %"),
+                     alt.Tooltip("gain_pp:Q", title="gain (pp)")],
+        )
+        rule = alt.Chart(pd.DataFrame({"v": [0]})).mark_rule(color="#999").encode(y="v:Q")
+        st.altair_chart(ch + rule, width="stretch")
+
+    st.info(
+        "**The mechanism is attention, not power.** Given a champion was announced as changed, "
+        "the SIZE of the change adds nothing (`mag_damage` p=0.80) and putting magnitudes back in "
+        "makes out-of-sample accuracy *worse*. Players read the notes and pick what got buffed, "
+        "roughly regardless of how much — and buffs move picks about twice as hard as nerfs. "
+        "So the deliverable predicts what people **play**, not how well they perform."
+    )
+    with st.expander("Per-fold backtest numbers"):
+        st.dataframe(bt, width="stretch", hide_index=True)
+
 st.divider()
-st.caption("Preliminary model - the signed change feature strengthens as patches/volume grow. "
-           "Full magnitude-aware model + user-facing prediction UI are Checkpoint 3.")
+st.caption("Win-rate prediction is closed — it sits at the sampling-noise floor. The live "
+           "Checkpoint-3 result is the pick-rate model in ⑦: patch notes predict what people play.")
