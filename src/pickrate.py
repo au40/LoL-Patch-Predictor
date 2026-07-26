@@ -16,9 +16,13 @@ autocorrelation 0.93 vs win-rate's 0.03). And it responds to patch notes:
 Out-of-sample (walk-forward, train on patches < t and predict t), adding buff/nerf flags
 cuts MAE on changed champions from 31.4% to 27.9% and improves 15 of 16 folds.
 
-What drives it is the ANNOUNCEMENT, not the size: given that a champion was announced as
-changed, the magnitude adds nothing (mag_damage p=0.80) and including magnitudes makes
-out-of-sample accuracy worse. So this predicts what people PLAY, not how well they perform.
+What drives it is HOW MUCH OF THE CHAMPION GOT TOUCHED, not how hard. The magnitude of a
+change adds nothing (mag_damage p=0.80) and including magnitudes makes out-of-sample
+accuracy worse -- but the COUNT of buff/nerf lines does carry signal (net_buff p=0.03, and
+it beats the bare flags out-of-sample 28.22% vs 28.68% MAE). A champion with five buff
+bullets moves more than one with a single line, regardless of the numbers in them. Read
+that as prominence in the notes rather than power: five bullets look like a bigger deal.
+So this predicts what people PLAY, not how well they perform.
 
 But it is NOT a fad -- see persistence(). Tracking champions that were not touched again,
 a buff still shows +15% three patches later, and a nerf DEEPENS from -13% to -27%. Players
@@ -68,15 +72,45 @@ MIN_TOTAL_GAMES = 5000
 # The winning specification. `lp1` is the reversion control (log pick-share last patch),
 # `mom1` the prior patch's change (kills the "Riot buffs already-declining champs" story).
 # Magnitudes are deliberately ABSENT — they test null and hurt out-of-sample.
-FORMULA = "y ~ lp1 + C(role) + buffed + nerfed + mom1"
+FORMULA = "y ~ lp1 + C(role) + buffed + nerfed + mom1 + net_buff"
 FORMULA_BASE = "y ~ lp1 + C(role)"          # reversion-only baseline
 
+# Effect sizes are reported WITHOUT net_buff. With the count in the model, `buffed` becomes
+# "the jump from unchanged to buffed, holding the number of buff lines fixed" (+15%), which
+# is not the question a reader is asking. Dropping it gives the total marginal effect of
+# appearing in the notes as buffed (+24%). Same data, different question -- prediction wants
+# the count, interpretation wants the flag alone.
+FORMULA_EFFECTS = "y ~ lp1 + C(role) + buffed + nerfed + mom1"
 
-def build_panel(min_games: int = 20) -> pd.DataFrame:
+
+def _step_width(prev_patch: str, patch: str) -> int:
+    """How many real patches separate these two, as an integer (1 = truly consecutive).
+
+    Season rollover counts as 1: 15.24 -> 16.1 is one patch apart even though the numbers
+    jump. Anything we can't reason about (a multi-season jump) returns a large number so
+    the adjacency guard rejects it rather than guessing."""
+    pmaj, pmin = _pk(prev_patch)
+    nmaj, nmin = _pk(patch)
+    if pmaj == nmaj:
+        return nmin - pmin
+    if nmaj == pmaj + 1 and nmin == 1:
+        return 1
+    return 99
+
+
+def build_panel(min_games: int = 20, require_adjacent: bool = True) -> pd.DataFrame:
     """One row per (champion, role, patch) that also appears in the previous patch.
 
-    Columns: y (Δlog pick-share, the outcome), lp1, mom1, buffed, nerfed, plus the
-    magnitude features so callers can re-test them. Champion names are normalized to
+    ADJACENCY GUARD (`require_adjacent`, on by default): only keep steps that span exactly
+    one real patch. Without it a gap in the data gets modelled as a normal step -- the
+    outcome then covers two patches of player behaviour while the features cover one, so
+    champions changed in the skipped patch are mislabelled `changed=0` and pollute the
+    control group, while champions changed in the visible patch get credited with two
+    patches of movement. Both errors at once. Pass False to inspect what's being excluded;
+    the `step_width` column is kept either way.
+
+    Columns: y (Δlog pick-share, the outcome), lp1, mom1, buffed, nerfed, step_width, plus
+    the magnitude features so callers can re-test them. Champion names are normalized to
     Data Dragon ids so this joins to every other table in the project."""
     idm = champion_id_map()
     wr = load_winrates()
@@ -84,19 +118,33 @@ def build_panel(min_games: int = 20) -> pd.DataFrame:
 
     tot = wr.groupby("patch")["games"].sum().rename("tot")
     wr = wr.join(tot, on="patch")
+
+    # Index t over EVERY patch we have data for, BEFORE the volume filter. Indexing the
+    # survivors instead would renumber them, closing the hole a dropped patch leaves and
+    # silently gluing its neighbours into one "consecutive" step.
+    all_patches = sorted(wr["patch"].unique(), key=_pk)
+    tix = {p: i for i, p in enumerate(all_patches)}
+
     wr = wr[wr["tot"] >= MIN_TOTAL_GAMES].copy()
     wr["pick"] = wr["games"] / wr["tot"]
-
-    patches = sorted(wr["patch"].unique(), key=_pk)
-    tix = {p: i for i, p in enumerate(patches)}
     wr["t"] = wr["patch"].map(tix)
+    patches = sorted(wr["patch"].unique(), key=_pk)
 
     base = wr[["champion", "role", "t", "patch", "pick", "games", "winrate"]]
-    prev = base[["champion", "role", "t", "pick", "games", "winrate"]].copy()
+    prev = base[["champion", "role", "t", "patch", "pick", "games", "winrate"]].copy()
     prev["t"] += 1
-    prev = prev.rename(columns={"pick": "pick_l1", "games": "g_l1", "winrate": "wr_l1"})
+    prev = prev.rename(columns={"patch": "patch_l1", "pick": "pick_l1",
+                                "games": "g_l1", "winrate": "wr_l1"})
     p = base.merge(prev, on=["champion", "role", "t"], how="inner")
     p = p[(p["games"] >= min_games) & (p["g_l1"] >= min_games)].copy()
+
+    # How many real patches does this "one step" actually span? Holes left by patches
+    # missing from the data entirely (not merely thin) survive the re-indexing above,
+    # so check the patch numbers themselves.
+    p["step_width"] = [_step_width(a, b) for a, b in zip(p["patch_l1"], p["patch"])]
+    if require_adjacent:
+        p = p[p["step_width"] == 1].copy()
+
     p["y"] = np.log(p["pick"]) - np.log(p["pick_l1"])
     p["lp1"] = np.log(p["pick_l1"])
 
@@ -150,7 +198,7 @@ def fit(panel: pd.DataFrame, formula: str = FORMULA):
 
 def effects(panel: pd.DataFrame) -> pd.DataFrame:
     """Buff/nerf effect sizes as percent change in pick-share, with 95% CIs."""
-    f = fit(panel)
+    f = fit(panel, FORMULA_EFFECTS)
     ci = f.conf_int()
     return pd.DataFrame([
         {"direction": k,
@@ -233,14 +281,19 @@ def persistence(panel: pd.DataFrame, horizons: int = 4) -> pd.DataFrame:
 
 
 def predict_change(fitted, pick_prev: float, role: str, direction: str,
-                   momentum: float = 0.0) -> dict:
+                   momentum: float = 0.0, n_changes: int = 1) -> dict:
     """Predicted pick-share change for one champion-role under a hypothetical patch note.
 
     `direction` is 'buff', 'nerf' or 'none'; `pick_prev` is its current pick share (0..1).
-    Returns the multiplicative change and the resulting share, with a 95% interval."""
+    `n_changes` is how many separate buff/nerf lines the champion gets -- the count carries
+    real signal (a champion with five buff bullets moves more than one with a single line)
+    even though the SIZE of each change does not. Returns the multiplicative change and the
+    resulting share, with a 95% interval."""
+    sign = 1 if direction == "buff" else -1 if direction == "nerf" else 0
     row = pd.DataFrame([{
         "lp1": np.log(max(pick_prev, 1e-9)), "role": role, "mom1": momentum,
         "buffed": int(direction == "buff"), "nerfed": int(direction == "nerf"),
+        "net_buff": sign * max(n_changes, 0),
     }])
     pred = fitted.get_prediction(row)
     y = float(pred.predicted_mean[0])
@@ -261,6 +314,21 @@ def main() -> None:
     print(f"Panel: {len(panel)} champion-role-patch rows, {panel['t'].nunique()} patches, "
           f"{int(panel['changed'].sum())} with patch-note changes "
           f"({int(panel['buffed'].sum())} buffed / {int(panel['nerfed'].sum())} nerfed)\n")
+
+    # Show what the adjacency guard is holding back -- these rows come back automatically
+    # once the missing/thin patches are ingested.
+    unguarded = build_panel(args.min_games, require_adjacent=False)
+    gaps = unguarded[unguarded["step_width"] != 1]
+    if not gaps.empty:
+        print("Adjacency guard is EXCLUDING these non-consecutive steps "
+              "(ingest the missing patch to recover them):")
+        g = (gaps.groupby(["patch_l1", "patch"])
+             .agg(rows=("y", "size"), changed=("changed", "sum"),
+                  spans=("step_width", "first")).reset_index())
+        for r in g.itertuples():
+            print(f"    {r.patch_l1:>6} -> {r.patch:<6} spans {r.spans} patches | "
+                  f"{r.rows:>4} rows, {int(r.changed):>3} changed")
+        print(f"    total held back: {len(gaps)} rows, {int(gaps['changed'].sum())} changed\n")
 
     print("Effect on pick share the patch AFTER a change (clustered by champion):")
     print(effects(panel).to_string(index=False))

@@ -511,10 +511,13 @@ else:
         st.altair_chart(ch + rule, width="stretch")
 
     st.info(
-        "**It's the announcement, not the size.** Given a champion was announced as changed, "
-        "the magnitude of the change adds nothing (`mag_damage` p=0.80) and putting magnitudes "
-        "back in makes out-of-sample accuracy *worse*. So this predicts what people **play**, "
-        "not how well they perform."
+        "**It's how much got touched, not how hard.** The *magnitude* of a change adds nothing "
+        "(`mag_damage` p=0.80) and putting magnitudes back in makes out-of-sample accuracy "
+        "*worse* — but the **count** of buff/nerf lines does carry signal (`net_buff` p=0.03, "
+        "and it beats the bare flags out-of-sample). A champion with five buff bullets moves "
+        "more than one with a single line, regardless of the numbers in them. Read that as "
+        "prominence in the patch notes rather than power. So this predicts what people "
+        "**play**, not how well they perform."
     )
 
     # --- how long does it last? (tests whether the above is just a fad) ---------------
