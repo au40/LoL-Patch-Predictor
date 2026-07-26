@@ -1,0 +1,185 @@
+{
+  "patch": "15.2",
+  "changes": [
+    {
+      "champion": "Cassiopeia",
+      "target": "Passive",
+      "field": "Triumphant movement speed per level",
+      "change_type": "nerf",
+      "old": "6",
+      "new": "5",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Evelynn",
+      "target": "E - Whiplash",
+      "field": "Movement speed",
+      "change_type": "buff",
+      "old": "30%",
+      "new": "30/35/40/45/50%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Evelynn",
+      "target": "R - Last Dance",
+      "field": "Unempowered AP ratio",
+      "change_type": "buff",
+      "old": "+65% AP",
+      "new": "+75% AP",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Evelynn",
+      "target": "R - Last Dance",
+      "field": "Empowered AP ratio",
+      "change_type": "buff",
+      "old": "+156% AP",
+      "new": "+180% AP",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Irelia",
+      "target": "W - Defiant Dance",
+      "field": "Minimum damage",
+      "change_type": "nerf",
+      "old": "10/25/40/55/70 (+40% total AD)",
+      "new": "10/20/30/40/50 (+40% total AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Irelia",
+      "target": "W - Defiant Dance",
+      "field": "Maximum damage",
+      "change_type": "nerf",
+      "old": "30/75/120/165/210 (+120% total AD)",
+      "new": "30/60/90/120/150 (+120% total AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Irelia",
+      "target": "E - Flawless Duet",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/125/170/215/260 (+80% AP)",
+      "new": "70/110/150/190/230 (+80% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Irelia",
+      "target": "R - Vanguard's Edge",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "125/250/375 (+70% AP)",
+      "new": "125/200/275 (+70% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kayn",
+      "target": "Passive",
+      "field": "Shadow Assassin bonus magic damage",
+      "change_type": "buff",
+      "old": "15-45%",
+      "new": "25-45%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Malzahar",
+      "target": "W - Void Swarm",
+      "field": "Voidling damage updates on level up",
+      "change_type": "buff",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MasterYi",
+      "target": "Base Stats",
+      "field": "Attack Damage growth",
+      "change_type": "buff",
+      "old": "2.5",
+      "new": "2.8",
+      "magnitude_pct": 12
+    },
+    {
+      "champion": "MasterYi",
+      "target": "E - Wuju Style",
+      "field": "On-hit true damage bonus AD ratio",
+      "change_type": "buff",
+      "old": "+30% bonus AD",
+      "new": "+35% bonus AD",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Smolder",
+      "target": "Q - Harpoon Missile",
+      "field": "Damage scaling Infinity Edge interaction",
+      "change_type": "buff",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "TahmKench",
+      "target": "Q - Tongue Lash",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/130/180/230/280",
+      "new": "75/120/165/210/255",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Viktor",
+      "target": "Q - Hex Tech Tracer",
+      "field": "Empowered attack bonus damage AP ratio",
+      "change_type": "nerf",
+      "old": "+60% AP",
+      "new": "+50% AP",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Viktor",
+      "target": "R - Chaos Storm",
+      "field": "Damage per tick AP ratio",
+      "change_type": "nerf",
+      "old": "+45% AP",
+      "new": "+35% AP",
+      "magnitude_pct": -22.22
+    },
+    {
+      "champion": "Yuumi",
+      "target": "Passive",
+      "field": "Heal AP ratio",
+      "change_type": "buff",
+      "old": "+15% AP",
+      "new": "+25% AP",
+      "magnitude_pct": 66.67
+    },
+    {
+      "champion": "Yuumi",
+      "target": "Passive",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "20-10",
+      "new": "20-8",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yuumi",
+      "target": "R - Final Chapter",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "+20% AP",
+      "new": "+25% AP",
+      "magnitude_pct": 25
+    },
+    {
+      "champion": "Yuumi",
+      "target": "R - Final Chapter",
+      "field": "Max damage over 5 waves AP ratio",
+      "change_type": "buff",
+      "old": "+40% AP",
+      "new": "+50% AP",
+      "magnitude_pct": 25
+    }
+  ]
+}

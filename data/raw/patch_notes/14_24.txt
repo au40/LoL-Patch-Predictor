@@ -1,0 +1,20 @@
+Patch 14.24 — Champion changes (fetched from leagueoflegends.com; game patch 14.24)
+
+Ambessa: W shield duration 2 >>> 1.5 seconds; W shield value 85-350 (+175% bonus AD) >>> 50-320 (+150% bonus AD); E damage (+40/50/60/70/80% bonus AD) >>> (+40/45/50/55/60% bonus AD)
+Corki: E damage 100/150/200/250/300 (+250% bonus AD) >>> 80/130/180/230/280 (+240% bonus AD)
+Elise: Base Health 650 >>> 620
+Graves: Q secondary damage 85/120/155/190/225 (+40/70/100/130/160% bonus AD) >>> 85/120/155/190/225 (+40/65/90/115/140% bonus AD)
+LeBlanc: Q damage 70/95/120/145/170 (+40% AP) >>> 65/90/115/140/165 (+40% AP)
+Master Yi: Q critical strike scaling 35%, 49% with IE >>> 56.25%, 86.25% with IE
+Dr. Mundo: E bonus AD 2/2.25/2.5/2.75/3% max health >>> 2/2.2/2.4/2.6/2.8% max health
+Poppy: Base Armor 38 >>> 35; Armor growth 4.7 >>> 5; Q damage 40/60/80/100/120 (+90% bonus AD) >>> 30/55/80/105/130 (+100% bonus AD)
+Rell: Base Health 610 >>> 640; Passive resistances stolen 2% >>> 3%; Passive minimum steal 1-2 >>> 1.5-3; W shield 15/40/65/90/115 (+12% max health) >>> 25/50/75/100/125 (+13% max health)
+Riven: E shield 80/105/130/155/180 (+110% bonus AD) >>> 70/95/120/145/170 (+110% bonus AD)
+Rumble: Q damage (+100% AP) >>> (+110% AP); W shield (+25% AP) >>> (+30% AP)
+Swain: Base Armor 26 >>> 25; Armor growth 5.2 >>> 4.7
+Talon: Base MR 39 >>> 36; Passive monster damage 120% >>> 110%
+Tahm Kench: Base Armor 42 >>> 39
+Twitch: Q attack speed duration 5 >>> 6 seconds; Q attack speed 40/45/50/55/60% >>> 45/50/55/60/65%
+Viktor: Hex fragments from cannons 5 >>> 10; Hex fragments from takedowns 25 >>> 20; Q shield 25-105 >>> 40-115; W slow 30/33/37/40/45 >>> 33/36/39/42/45; E mana 70/80/90/100/110 >>> 60/70/80/90/100; R gains evolution upgrade
+Warwick: Base AD 65 >>> 63; Q range 350 >>> 365; W duration 0.75 >>> 2 seconds
+Yuumi: Q mana 50/60/70/80/90/100 >>> 50/55/60/65/70/75; Q min damage 60/90/120/150/180/210 >>> 60/95/130/165/200/235; Q max damage 80/135/190/245/300/355 >>> 80/140/200/260/320/380

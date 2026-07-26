@@ -1,0 +1,311 @@
+{
+  "patch": "14.23",
+  "changes": [
+    {
+      "champion": "Ambessa",
+      "target": "Q - Sundering Slam",
+      "field": "Cast window",
+      "change_type": "buff",
+      "old": "3.5",
+      "new": "4",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Aurora",
+      "target": "Passive",
+      "field": "Movement speed",
+      "change_type": "removed",
+      "old": "present",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aurora",
+      "target": "Q - Void Hammer",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "8/7.5/7/6.5/6",
+      "new": "9/8.5/8/7.5/7",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aurora",
+      "target": "Q - Void Hammer",
+      "field": "Range",
+      "change_type": "buff",
+      "old": "850",
+      "new": "900",
+      "magnitude_pct": 5.88
+    },
+    {
+      "champion": "Aurora",
+      "target": "Q - Void Hammer",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "40/65/90/115/140",
+      "new": "45/70/95/120/145",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aurora",
+      "target": "W - Vivid Bloom",
+      "field": "Bonus movement speed on cast",
+      "change_type": "new",
+      "old": "",
+      "new": "20/25/30/35/40%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aurora",
+      "target": "E - Unraveling Orb",
+      "field": "Range",
+      "change_type": "buff",
+      "old": "800",
+      "new": "825",
+      "magnitude_pct": 3.13
+    },
+    {
+      "champion": "Aurora",
+      "target": "R - Heartbound",
+      "field": "Duration",
+      "change_type": "buff",
+      "old": "1.5/2/2.5",
+      "new": "2.5/3.25/4",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aurora",
+      "target": "R - Heartbound",
+      "field": "Trapping mechanic",
+      "change_type": "removed",
+      "old": "present",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Aurora",
+      "target": "R - Heartbound",
+      "field": "Grants movement speed instead",
+      "change_type": "new",
+      "old": "",
+      "new": "yes",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Azir",
+      "target": "W - Arise!",
+      "field": "Damage AP ratio",
+      "change_type": "buff",
+      "old": "+35/40/45/50/55% AP",
+      "new": "+40/45/50/55/60% AP",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Caitlyn",
+      "target": "R - Ace in the Hole",
+      "field": "Damage scaling (bonus AD)",
+      "change_type": "nerf",
+      "old": "+150% bonus AD",
+      "new": "+100% bonus AD",
+      "magnitude_pct": -33.33
+    },
+    {
+      "champion": "Jinx",
+      "target": "Base Stats",
+      "field": "Attack Damage growth",
+      "change_type": "buff",
+      "old": "2.9",
+      "new": "3.15",
+      "magnitude_pct": 8.62
+    },
+    {
+      "champion": "Jinx",
+      "target": "W - Zap!",
+      "field": "Damage (total AD)",
+      "change_type": "nerf",
+      "old": "+160% total AD",
+      "new": "+140% total AD",
+      "magnitude_pct": -12.5
+    },
+    {
+      "champion": "Khazix",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "36",
+      "new": "32",
+      "magnitude_pct": -11.11
+    },
+    {
+      "champion": "Khazix",
+      "target": "W - Void Spike",
+      "field": "Evolved slow",
+      "change_type": "nerf",
+      "old": "75%",
+      "new": "60%",
+      "magnitude_pct": -20
+    },
+    {
+      "champion": "KogMaw",
+      "target": "Q - Caustic Spittle",
+      "field": "Shred",
+      "change_type": "nerf",
+      "old": "23/25/27/29/31%",
+      "new": "16/20/24/28/32%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "KogMaw",
+      "target": "E - Void Ooze",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "75/120/165/210/255",
+      "new": "70/110/150/190/230",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MasterYi",
+      "target": "R - Highlander",
+      "field": "Attack speed",
+      "change_type": "buff",
+      "old": "25/35/45%",
+      "new": "25/45/65%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MissFortune",
+      "target": "Q - Double Up",
+      "field": "Mana cost",
+      "change_type": "buff",
+      "old": "43/46/49/52/55",
+      "new": "40",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rammus",
+      "target": "Q - Powerball",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "16/13.5/11/8.5/6",
+      "new": "12/10.5/9/7.5/6",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rell",
+      "target": "Base Stats and Abilities",
+      "field": "Multiple adjustments",
+      "change_type": "adjust",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rell",
+      "target": "Crowd Control",
+      "field": "Reduced crowd control",
+      "change_type": "nerf",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rell",
+      "target": "Abilities",
+      "field": "New on-hit damage",
+      "change_type": "new",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rengar",
+      "target": "R - Thrill of the Hunt",
+      "field": "Armor shred",
+      "change_type": "buff",
+      "old": "12/18/24",
+      "new": "15/20/25",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rengar",
+      "target": "R - Thrill of the Hunt",
+      "field": "Bonus damage",
+      "change_type": "buff",
+      "old": "50% total AD",
+      "new": "100% total AD",
+      "magnitude_pct": 100
+    },
+    {
+      "champion": "Shyvana",
+      "target": "Base Stats",
+      "field": "Magic Resist growth",
+      "change_type": "nerf",
+      "old": "2.05",
+      "new": "1.5",
+      "magnitude_pct": -26.83
+    },
+    {
+      "champion": "Shyvana",
+      "target": "E - Flame Breath",
+      "field": "Damage AP scaling",
+      "change_type": "nerf",
+      "old": "+80% AP",
+      "new": "+70% AP",
+      "magnitude_pct": -12.5
+    },
+    {
+      "champion": "Skarner",
+      "target": "Q - Crystal Slash",
+      "field": "Bonus health scaling",
+      "change_type": "nerf",
+      "old": "+4% bonus health",
+      "new": "+3% bonus health",
+      "magnitude_pct": -25
+    },
+    {
+      "champion": "Smolder",
+      "target": "Q, W, E, R",
+      "field": "Comprehensive adjustments",
+      "change_type": "adjust",
+      "old": "",
+      "new": "",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "TahmKench",
+      "target": "Passive",
+      "field": "AP scaling per 100 bonus health",
+      "change_type": "nerf",
+      "old": "+2% AP per 100 bonus health",
+      "new": "+1.5% AP per 100 bonus health",
+      "magnitude_pct": -25
+    },
+    {
+      "champion": "TahmKench",
+      "target": "R - Abyssal Voyage",
+      "field": "Shield AP scaling",
+      "change_type": "nerf",
+      "old": "+150% AP",
+      "new": "+100% AP",
+      "magnitude_pct": -33.33
+    },
+    {
+      "champion": "Teemo",
+      "target": "E - Toxic Shot",
+      "field": "Monster damage",
+      "change_type": "nerf",
+      "old": "150%",
+      "new": "125%",
+      "magnitude_pct": -16.67
+    },
+    {
+      "champion": "Zac",
+      "target": "Q - Stretching Strikes",
+      "field": "Maximum health scaling",
+      "change_type": "nerf",
+      "old": "+4% max health",
+      "new": "+3% max health",
+      "magnitude_pct": -25
+    }
+  ]
+}

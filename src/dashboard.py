@@ -511,12 +511,41 @@ else:
         st.altair_chart(ch + rule, width="stretch")
 
     st.info(
-        "**The mechanism is attention, not power.** Given a champion was announced as changed, "
-        "the SIZE of the change adds nothing (`mag_damage` p=0.80) and putting magnitudes back in "
-        "makes out-of-sample accuracy *worse*. Players read the notes and pick what got buffed, "
-        "roughly regardless of how much — and buffs move picks about twice as hard as nerfs. "
-        "So the deliverable predicts what people **play**, not how well they perform."
+        "**It's the announcement, not the size.** Given a champion was announced as changed, "
+        "the magnitude of the change adds nothing (`mag_damage` p=0.80) and putting magnitudes "
+        "back in makes out-of-sample accuracy *worse*. So this predicts what people **play**, "
+        "not how well they perform."
     )
+
+    # --- how long does it last? (tests whether the above is just a fad) ---------------
+    pers = PR.persistence(ppanel)
+    if not pers.empty:
+        st.write("**But it isn't a fad — and buffs and nerfs behave completely differently.**")
+        band = alt.Chart(pers).mark_area(opacity=0.18).encode(
+            x=alt.X("patches_after:O", title="patches after the change"),
+            y=alt.Y("ci_low:Q", title="pick-share change vs the patch before (%)"),
+            y2="ci_high:Q",
+            color=alt.Color("direction:N", scale=alt.Scale(domain=["buff", "nerf"],
+                                                           range=["#2a78d6", "#e34948"])))
+        line = alt.Chart(pers).mark_line(point=True, size=3).encode(
+            x="patches_after:O", y=alt.Y("pick_share_change_pct:Q"),
+            color=alt.Color("direction:N", title="direction",
+                            scale=alt.Scale(domain=["buff", "nerf"],
+                                            range=["#2a78d6", "#e34948"])),
+            tooltip=[alt.Tooltip("direction:N"), alt.Tooltip("patches_after:O"),
+                     alt.Tooltip("pick_share_change_pct:Q", title="pick-share change %"),
+                     alt.Tooltip("ci_low:Q"), alt.Tooltip("ci_high:Q"),
+                     alt.Tooltip("n_obs:Q", title="champions")])
+        zero = alt.Chart(pd.DataFrame({"v": [0]})).mark_rule(color="#999").encode(y="v:Q")
+        st.altair_chart(band + zero + line, width="stretch")
+        st.caption(
+            "Champions that were **not** touched again in the interim, so this is one change "
+            "decaying rather than several stacking. A buffed champion spikes and mostly stays "
+            "(+15% even three patches later); a nerfed one bleeds players *gradually*, deepening "
+            "from −13% to −27%. The buff-beats-nerf asymmetry at the patch of the change "
+            "**reverses** by +3. Players rush to a buff and stay; they give up on a nerf slowly."
+        )
+
     with st.expander("Per-fold backtest numbers"):
         st.dataframe(bt, width="stretch", hide_index=True)
 

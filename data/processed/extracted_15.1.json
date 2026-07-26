@@ -1,0 +1,248 @@
+{
+  "patch": "15.1",
+  "changes": [
+    {
+      "champion": "Ashe",
+      "target": "Passive - Frost Shot",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "115% + Crit%",
+      "new": "100% + Crit%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "Passive - Frost Shot",
+      "field": "Condition",
+      "change_type": "buff",
+      "old": "slowed by Frost Shot",
+      "new": "always",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "Q - Volley",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "105/110/115/120/125%",
+      "new": "110/115/120/125/130%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "Q - Volley",
+      "field": "Attack Speed",
+      "change_type": "buff",
+      "old": "25/32.5/40/47.5/55%",
+      "new": "25/35/45/55/65%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "W - Volley",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "20/35/50/65/80 (+100% total AD)",
+      "new": "60/95/130/165/200 (+100% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "JarvanIV",
+      "target": "Base Stats",
+      "field": "Armor growth",
+      "change_type": "nerf",
+      "old": "5.2",
+      "new": "4.7",
+      "magnitude_pct": -9.615
+    },
+    {
+      "champion": "JarvanIV",
+      "target": "Q - Dragon Strike",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/120/160/200/240 (+140% bonus AD)",
+      "new": "70/110/150/190/230 (+140% bonus AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kalista",
+      "target": "Base Stats",
+      "field": "Mana regen growth",
+      "change_type": "buff",
+      "old": "0.4",
+      "new": "0.8",
+      "magnitude_pct": 100
+    },
+    {
+      "champion": "Kalista",
+      "target": "Q - Pierce",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "20/85/150/215/280 (+105% total AD)",
+      "new": "10/75/140/205/270 (+105% total AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kalista",
+      "target": "Q - Pierce",
+      "field": "Mana cost",
+      "change_type": "nerf",
+      "old": "50/55/60/65/70",
+      "new": "60/65/70/75/80",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kalista",
+      "target": "E - Rend",
+      "field": "Damage per additional stack",
+      "change_type": "nerf",
+      "old": "8/12/16/20/24 (+25/30/35/40/45% total AD)",
+      "new": "7/14/21/28/35 (+20/25/30/35/40% total AD)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Kayle",
+      "target": "Base Stats",
+      "field": "Attack speed growth",
+      "change_type": "nerf",
+      "old": "1.5%",
+      "new": "1%",
+      "magnitude_pct": -33.333
+    },
+    {
+      "champion": "Kayle",
+      "target": "Base Stats",
+      "field": "Attack Damage growth",
+      "change_type": "nerf",
+      "old": "2.5",
+      "new": "2",
+      "magnitude_pct": -20
+    },
+    {
+      "champion": "Kayle",
+      "target": "W - Celestial Blessing",
+      "field": "Movement speed",
+      "change_type": "nerf",
+      "old": "24-40% (+8% AP)",
+      "new": "24-32% (+8% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Seraphine",
+      "target": "Base Stats",
+      "field": "Health growth",
+      "change_type": "buff",
+      "old": "90",
+      "new": "95",
+      "magnitude_pct": 5.556
+    },
+    {
+      "champion": "Seraphine",
+      "target": "E - Surround Sound",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "70-190 (+50% AP)",
+      "new": "70-210 (+60% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Twitch",
+      "target": "W - Venom Cask",
+      "field": "Slow amount",
+      "change_type": "buff",
+      "old": "30/35/40/45/50% (+5% per 100 AP)",
+      "new": "30/35/40/45/50% (+6% per 100 AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "Base Stats",
+      "field": "Mana",
+      "change_type": "nerf",
+      "old": "360",
+      "new": "320",
+      "magnitude_pct": -11.111
+    },
+    {
+      "champion": "Varus",
+      "target": "Q - Pierce",
+      "field": "Mana cost",
+      "change_type": "buff",
+      "old": "65/70/75/80/85",
+      "new": "50/55/60/65/70",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "W - Blighted Quiver",
+      "field": "On-hit damage",
+      "change_type": "nerf",
+      "old": "8/13/18/23/28",
+      "new": "6/12/18/24/30",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Varus",
+      "target": "E - Hail of Arrows",
+      "field": "Mana cost",
+      "change_type": "nerf",
+      "old": "80",
+      "new": "90",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Vex",
+      "target": "Passive - Void Corruption",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "40-150 (+25% AP)",
+      "new": "40-150 (+40% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Vex",
+      "target": "W - Looming Darkness",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "80-240 (+30% AP)",
+      "new": "80-240 (+50% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Viktor",
+      "target": "Base Stats",
+      "field": "Health growth",
+      "change_type": "nerf",
+      "old": "100",
+      "new": "92",
+      "magnitude_pct": -8
+    },
+    {
+      "champion": "Viktor",
+      "target": "R - Chaos Storm",
+      "field": "Damage per tick",
+      "change_type": "nerf",
+      "old": "65/105/145 (+45% AP)",
+      "new": "60/100/140 (+40% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ziggs",
+      "target": "Q - Bouncing Bomb",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "85/135/185/235/285 (+65% AP)",
+      "new": "85/135/185/235/285 (+75% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ziggs",
+      "target": "W - Satchel Charge",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "20/18/16/14/12",
+      "new": "18/16/14/12/10",
+      "magnitude_pct": 0
+    }
+  ]
+}

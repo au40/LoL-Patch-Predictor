@@ -1,0 +1,230 @@
+{
+  "patch": "15.9",
+  "changes": [
+    {
+      "champion": "Annie",
+      "target": "Q - Disintegrate",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "70/105/140/175/210 (+80% AP)",
+      "new": "80/120/160/200/240 (+80% AP)",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Annie",
+      "target": "W - Incinerate",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "90/95/100/105/110",
+      "new": "70/75/80/85/90",
+      "magnitude_pct": -22.22
+    },
+    {
+      "champion": "Annie",
+      "target": "R - Summon Tibbers",
+      "field": "Passive Magic Penetration",
+      "change_type": "buff",
+      "old": "10/12.5/15%",
+      "new": "15/17.5/20%",
+      "magnitude_pct": 50.0
+    },
+    {
+      "champion": "Ashe",
+      "target": "Q - Ranger's Focus",
+      "field": "AD Ratio",
+      "change_type": "adjust",
+      "old": "111/117/123/129/135%",
+      "new": "110/117.5/125/132.5/140%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "Q - Ranger's Focus",
+      "field": "Bonus Attack Speed",
+      "change_type": "buff",
+      "old": "25/35/45/55/65%",
+      "new": "25/37.5/50/67.5/75%",
+      "magnitude_pct": 15.38
+    },
+    {
+      "champion": "Gwen",
+      "target": "Base Stats",
+      "field": "Armor Growth",
+      "change_type": "nerf",
+      "old": "5.2",
+      "new": "4.9",
+      "magnitude_pct": -5.77
+    },
+    {
+      "champion": "Gwen",
+      "target": "Passive - A Thousand Cuts",
+      "field": "Monster Damage Cap",
+      "change_type": "nerf",
+      "old": "5 (+15% AP)",
+      "new": "5 (+10% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gwen",
+      "target": "Q - Snip Snip!",
+      "field": "Damage per Snip AP Ratio",
+      "change_type": "nerf",
+      "old": "+5% AP",
+      "new": "+2% AP",
+      "magnitude_pct": -60.0
+    },
+    {
+      "champion": "Gwen",
+      "target": "Q - Snip Snip!",
+      "field": "Maximum Damage AP Ratio",
+      "change_type": "nerf",
+      "old": "+60% AP",
+      "new": "+45% AP",
+      "magnitude_pct": -25.0
+    },
+    {
+      "champion": "KSante",
+      "target": "W - Unbound Assault",
+      "field": "Base Damage",
+      "change_type": "buff",
+      "old": "40/60/80/100/120",
+      "new": "45/75/105/135/165",
+      "magnitude_pct": 37.5
+    },
+    {
+      "champion": "Kalista",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "600",
+      "new": "580",
+      "magnitude_pct": -3.33
+    },
+    {
+      "champion": "Kalista",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "nerf",
+      "old": "59",
+      "new": "57",
+      "magnitude_pct": -3.39
+    },
+    {
+      "champion": "Kalista",
+      "target": "Base Stats",
+      "field": "AD Growth",
+      "change_type": "buff",
+      "old": "3.25",
+      "new": "4",
+      "magnitude_pct": 23.08
+    },
+    {
+      "champion": "Kalista",
+      "target": "E - Rend",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "10/20/30/40/50 (+70% AD) (+20% AP)",
+      "new": "5/15/25/35/45 (+70% AD) (+20% AP)",
+      "magnitude_pct": -50.0
+    },
+    {
+      "champion": "Leona",
+      "target": "Passive - Sunlight",
+      "field": "Duration",
+      "change_type": "buff",
+      "old": "1.5",
+      "new": "2.5",
+      "magnitude_pct": 66.67
+    },
+    {
+      "champion": "Leona",
+      "target": "Q - Shield of Daybreak",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "35/40/45/50/55",
+      "new": "30/35/40/45/50",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Leona",
+      "target": "E - Zenith Blade",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "60",
+      "new": "40/45/50/55/60",
+      "magnitude_pct": -33.33
+    },
+    {
+      "champion": "Morgana",
+      "target": "E - Black Shield",
+      "field": "Shield Strength",
+      "change_type": "buff",
+      "old": "80/135/190/245/300 (+70% AP)",
+      "new": "100/155/210/265/320 (+70% AP)",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Morgana",
+      "target": "R - Soul Shackles",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "175/250/325 (+80% AP)",
+      "new": "200/275/350 (+80% AP)",
+      "magnitude_pct": 14.29
+    },
+    {
+      "champion": "Morgana",
+      "target": "R - Soul Shackles",
+      "field": "Bonus Movement Speed",
+      "change_type": "buff",
+      "old": "10/35/60%",
+      "new": "20/40/60%",
+      "magnitude_pct": 100.0
+    },
+    {
+      "champion": "Naafiri",
+      "target": "W - Eviscerate",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "22/21/20/19/18",
+      "new": "26/24/22/20/18",
+      "magnitude_pct": 18.18
+    },
+    {
+      "champion": "Naafiri",
+      "target": "E - Hound's Leap",
+      "field": "Damage Bonus AD Ratio",
+      "change_type": "nerf",
+      "old": "+50% bonus AD",
+      "new": "+40% bonus AD",
+      "magnitude_pct": -20.0
+    },
+    {
+      "champion": "Orianna",
+      "target": "Q - Command: Attack",
+      "field": "Mana Cost",
+      "change_type": "buff",
+      "old": "30/35/40/45/50",
+      "new": "35",
+      "magnitude_pct": -12.0
+    },
+    {
+      "champion": "Shen",
+      "target": "Q - Twilight Assault",
+      "field": "Empowered Bonus Magic Damage AP Ratio",
+      "change_type": "buff",
+      "old": "+4/4.5/5/5.5/6%",
+      "new": "+5/5.5/6/6.5/7%",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Yorick",
+      "target": "Passive - Sheperd of Souls",
+      "field": "Mist Walker Damage to Monsters",
+      "change_type": "nerf",
+      "old": "70%",
+      "new": "60%",
+      "magnitude_pct": -14.29
+    }
+  ]
+}

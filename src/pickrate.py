@@ -16,10 +16,14 @@ autocorrelation 0.93 vs win-rate's 0.03). And it responds to patch notes:
 Out-of-sample (walk-forward, train on patches < t and predict t), adding buff/nerf flags
 cuts MAE on changed champions from 31.4% to 27.9% and improves 15 of 16 folds.
 
-The mechanism is ATTENTION, not power: given that a champion was announced as changed, the
-SIZE of the change adds nothing (mag_damage p=0.80) and including magnitudes makes
-out-of-sample accuracy worse. Players read the notes and pick what got buffed, roughly
-regardless of how much. So this predicts what people PLAY, not how well they perform.
+What drives it is the ANNOUNCEMENT, not the size: given that a champion was announced as
+changed, the magnitude adds nothing (mag_damage p=0.80) and including magnitudes makes
+out-of-sample accuracy worse. So this predicts what people PLAY, not how well they perform.
+
+But it is NOT a fad -- see persistence(). Tracking champions that were not touched again,
+a buff still shows +15% three patches later, and a nerf DEEPENS from -13% to -27%. Players
+rush to a buffed champion and mostly stay; they abandon a nerfed one gradually. The
+buff>nerf asymmetry at the patch of the change therefore REVERSES by +3 patches.
 
 No leakage: patch notes are public when the patch ships, so the features for patch t are
 genuinely known before patch t's pick rates exist.
@@ -180,6 +184,52 @@ def backtest(panel: pd.DataFrame, first_test_frac: float = 0.5) -> pd.DataFrame:
                      "mae_model_pct": round(full.mean() * 100, 2),
                      "gain_pp": round((base.mean() - full.mean()) * 100, 2)})
     return pd.DataFrame(rows)
+
+
+def persistence(panel: pd.DataFrame, horizons: int = 4) -> pd.DataFrame:
+    """How long does the pick-rate shift last? Effect at k patches after the change,
+    measured against the patch BEFORE it.
+
+    Only counts champions that were NOT touched again in the interim, so this is the decay
+    of one change rather than the sum of several. The answer is not what you'd guess from
+    the magnitude-null: buffs spike then partly settle, while nerfs COMPOUND — by +3 patches
+    a nerf outweighs a buff. So the shift is durable, not a fad."""
+    pick = {(r.champion, r.role, r.t): r.pick for r in panel.itertuples()}
+    chg = {(r.champion, r.role, r.t): (r.buffed, r.nerfed) for r in panel.itertuples()}
+    rows = []
+    for r in panel.itertuples():
+        if not (r.buffed or r.nerfed):
+            continue
+        base = pick.get((r.champion, r.role, r.t - 1))
+        if not base:
+            continue
+        for k in range(horizons):
+            nxt = pick.get((r.champion, r.role, r.t + k))
+            if not nxt:
+                continue
+            if any(sum(chg.get((r.champion, r.role, r.t + j), (0, 0))) > 0
+                   for j in range(1, k + 1)):
+                continue   # touched again -- not a clean read on the original change
+            rows.append({"champion": r.champion, "k": k,
+                         "direction": "buff" if r.buffed else "nerf",
+                         "y": np.log(nxt) - np.log(base)})
+    ev = pd.DataFrame(rows)
+    out = []
+    for k in range(horizons):
+        for d in ("buff", "nerf"):
+            s = ev[(ev["k"] == k) & (ev["direction"] == d)]
+            if len(s) < 10:
+                continue
+            f = smf.ols("y ~ 1", data=s).fit(cov_type="cluster",
+                                             cov_kwds={"groups": s["champion"]})
+            m = f.params["Intercept"]
+            ci = f.conf_int().loc["Intercept"]
+            out.append({"patches_after": k, "direction": d,
+                        "pick_share_change_pct": round((np.exp(m) - 1) * 100, 1),
+                        "ci_low": round((np.exp(ci[0]) - 1) * 100, 1),
+                        "ci_high": round((np.exp(ci[1]) - 1) * 100, 1),
+                        "n_obs": len(s)})
+    return pd.DataFrame(out)
 
 
 def predict_change(fitted, pick_prev: float, role: str, direction: str,

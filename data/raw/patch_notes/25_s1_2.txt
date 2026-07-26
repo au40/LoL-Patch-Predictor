@@ -1,0 +1,14 @@
+Patch 25.S1.2 — Champion changes (fetched from leagueoflegends.com; game patch 15.2)
+Mapping verified against Data Dragon 15.1.1 -> 15.2.1 (Master Yi AD growth 2.5 -> 2.8 matches
+that step and no other).
+
+Cassiopeia: Passive Triumphant movement speed per level 6 >>> 5
+Evelynn: E movement speed 30% >>> 30/35/40/45/50%; R unempowered AP ratio (+65% AP) >>> (+75% AP); R empowered AP ratio (+156% AP) >>> (+180% AP)
+Irelia: W minimum damage 10/25/40/55/70 (+40% total AD) >>> 10/20/30/40/50 (+40% total AD); W maximum damage 30/75/120/165/210 (+120% total AD) >>> 30/60/90/120/150 (+120% total AD); E damage 80/125/170/215/260 (+80% AP) >>> 70/110/150/190/230 (+80% AP); R damage 125/250/375 (+70% AP) >>> 125/200/275 (+70% AP)
+Kayn: Passive Shadow Assassin bonus magic damage 15-45% >>> 25-45%
+Malzahar: W Voidling damage now updates when leveling up
+Master Yi: Attack Damage growth 2.5 >>> 2.8; E on-hit true damage 20/25/30/35/40 (+30% bonus AD) >>> 20/25/30/35/40 (+35% bonus AD)
+Smolder: Q damage scaling now benefits from Infinity Edge
+Tahm Kench: Q damage 80/130/180/230/280 >>> 75/120/165/210/255
+Viktor: Q empowered attack bonus damage AP ratio (+60% AP) >>> (+50% AP); R damage per tick AP ratio (+45% AP) >>> (+35% AP)
+Yuumi: Passive heal 25-110 (+15% AP) >>> 25-110 (+25% AP); Passive cooldown 20-10 >>> 20-8; R damage 75/100/125 (+20% AP) >>> 75/125/175 (+25% AP); R max damage over 5 waves 75-250 (+40% AP) >>> 75-350 (+50% AP)
