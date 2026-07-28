@@ -1,0 +1,338 @@
+{
+  "patch": "15.3",
+  "changes": [
+    {
+      "champion": "Cassiopeia",
+      "target": "Q - Noxious Blast",
+      "field": "AP scaling",
+      "change_type": "nerf",
+      "old": "70%",
+      "new": "65%",
+      "magnitude_pct": -7.14
+    },
+    {
+      "champion": "Cassiopeia",
+      "target": "W - Miasma",
+      "field": "AP scaling",
+      "change_type": "nerf",
+      "old": "15% AP",
+      "new": "10 AP",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Evelynn",
+      "target": "E - Allure",
+      "field": "Basic damage",
+      "change_type": "buff",
+      "old": "55/70/85/100/115",
+      "new": "60/90/120/150/180",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Evelynn",
+      "target": "E - Allure",
+      "field": "AP scaling on max HP",
+      "change_type": "adjust",
+      "old": "1.5% AP",
+      "new": "1.5% per 100 AP",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Evelynn",
+      "target": "E - Allure",
+      "field": "Empowered damage",
+      "change_type": "buff",
+      "old": "75/100/125/150/175",
+      "new": "80/120/160/200/240",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Evelynn",
+      "target": "E - Allure",
+      "field": "Empowered AP scaling on max HP",
+      "change_type": "adjust",
+      "old": "2.5% AP",
+      "new": "2.5% per 100 AP",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Galio",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "632",
+      "new": "600",
+      "magnitude_pct": -5.06
+    },
+    {
+      "champion": "Kayn",
+      "target": "Q - Reaping Slash",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "75/95/115/135/155",
+      "new": "75/100/125/150/175",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jax",
+      "target": "Base Stats",
+      "field": "Health growth",
+      "change_type": "buff",
+      "old": "100",
+      "new": "103",
+      "magnitude_pct": 3.0
+    },
+    {
+      "champion": "Jax",
+      "target": "Base Stats",
+      "field": "Mana regen",
+      "change_type": "buff",
+      "old": "7.6",
+      "new": "8.2",
+      "magnitude_pct": 7.89
+    },
+    {
+      "champion": "Jax",
+      "target": "R - Grandmaster's Might",
+      "field": "3-hit damage",
+      "change_type": "buff",
+      "old": "70/120/170",
+      "new": "75/130/185",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - To the Skies!",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/110/160/210/260/310",
+      "new": "60/105/150/195/240/285",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - To the Skies!",
+      "field": "Bonus AD scaling",
+      "change_type": "buff",
+      "old": "120%",
+      "new": "135%",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - Shock Blast",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/115/170/225/280/335",
+      "new": "60/110/160/210/260/310",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "Q - Shock Blast",
+      "field": "Bonus AD scaling",
+      "change_type": "buff",
+      "old": "125%",
+      "new": "140%",
+      "magnitude_pct": 12.0
+    },
+    {
+      "champion": "Jayce",
+      "target": "W - Hyper Charge",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "40/55/70/85/100/115",
+      "new": "35/50/65/80/95/110",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "R - Transform / Mercury Hammer",
+      "field": "Empowered basic attack damage",
+      "change_type": "nerf",
+      "old": "25/65/105/145",
+      "new": "25/60/100/130",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "R - Transform / Mercury Hammer",
+      "field": "Bonus AD scaling",
+      "change_type": "buff",
+      "old": "25%",
+      "new": "30%",
+      "magnitude_pct": 20.0
+    },
+    {
+      "champion": "MissFortune",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "nerf",
+      "old": "28",
+      "new": "25",
+      "magnitude_pct": -10.71
+    },
+    {
+      "champion": "MissFortune",
+      "target": "Base Stats",
+      "field": "Armor growth",
+      "change_type": "nerf",
+      "old": "4.2",
+      "new": "4",
+      "magnitude_pct": -4.76
+    },
+    {
+      "champion": "Nasus",
+      "target": "Passive - Soul Eater",
+      "field": "Life steal",
+      "change_type": "buff",
+      "old": "9/15/21%",
+      "new": "12/18/24%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Quinn",
+      "target": "W - Heightened Senses",
+      "field": "Attack speed",
+      "change_type": "buff",
+      "old": "28/36/44/52/60%",
+      "new": "28/41/54/67/80%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rakan",
+      "target": "W - Grand Entrance",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "16/14.5/13/11.5/10",
+      "new": "14/13/12/11/10",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Rell",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "nerf",
+      "old": "640",
+      "new": "620",
+      "magnitude_pct": -3.13
+    },
+    {
+      "champion": "Rell",
+      "target": "Base Stats",
+      "field": "Armor growth",
+      "change_type": "nerf",
+      "old": "4.3",
+      "new": "4",
+      "magnitude_pct": -7.0
+    },
+    {
+      "champion": "Samira",
+      "target": "E - Flame Crest",
+      "field": "Attack speed duration",
+      "change_type": "buff",
+      "old": "3 seconds",
+      "new": "5 seconds",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Skarner",
+      "target": "Base Stats",
+      "field": "Armor growth",
+      "change_type": "nerf",
+      "old": "4.8",
+      "new": "4.5",
+      "magnitude_pct": -6.25
+    },
+    {
+      "champion": "Skarner",
+      "target": "E - Impale",
+      "field": "Stun duration",
+      "change_type": "nerf",
+      "old": "1.5 seconds",
+      "new": "1 second",
+      "magnitude_pct": -33.33
+    },
+    {
+      "champion": "Swain",
+      "target": "Passive - Demonflesh",
+      "field": "Max health per Soul Fragment",
+      "change_type": "buff",
+      "old": "12",
+      "new": "15",
+      "magnitude_pct": 25.0
+    },
+    {
+      "champion": "Swain",
+      "target": "E - Nevermove",
+      "field": "Damage AP scaling",
+      "change_type": "buff",
+      "old": "60%",
+      "new": "70%",
+      "magnitude_pct": 16.67
+    },
+    {
+      "champion": "Teemo",
+      "target": "E - Toxic Shot",
+      "field": "On-hit damage",
+      "change_type": "nerf",
+      "old": "14/27/40/53/66",
+      "new": "9/23/37/51/65",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Thresh",
+      "target": "Base Stats",
+      "field": "Health",
+      "change_type": "buff",
+      "old": "600",
+      "new": "620",
+      "magnitude_pct": 3.33
+    },
+    {
+      "champion": "Thresh",
+      "target": "E - Flay",
+      "field": "Basic attack damage per Soul",
+      "change_type": "buff",
+      "old": "1.5 per Soul",
+      "new": "1.7 per Soul",
+      "magnitude_pct": 13.33
+    },
+    {
+      "champion": "Thresh",
+      "target": "E - Flay",
+      "field": "Total AD scaling",
+      "change_type": "buff",
+      "old": "up to 80/110/140/170/200%",
+      "new": "up to 90/120/150/180/210%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Viego",
+      "target": "Base Stats",
+      "field": "Attack Damage",
+      "change_type": "nerf",
+      "old": "60",
+      "new": "57",
+      "magnitude_pct": -5.0
+    },
+    {
+      "champion": "MonkeyKing",
+      "target": "W - Warrior Trickster",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "18/17/16/15/14",
+      "new": "20/19/18/17/16",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "MonkeyKing",
+      "target": "E - Nimbus Strike",
+      "field": "Attack speed",
+      "change_type": "nerf",
+      "old": "40/45/50/55/60%",
+      "new": "35/40/45/50/55%",
+      "magnitude_pct": 0
+    }
+  ]
+}

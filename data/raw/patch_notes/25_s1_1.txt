@@ -1,0 +1,17 @@
+Patch 25.S1.1 — Champion changes (fetched from leagueoflegends.com; game patch 15.1)
+Note: 2025 Season 1 opening patches use the "S1" slug (patch-25-s1-1-notes), not 25.01.
+Mapping verified against Data Dragon 14.24.1 -> 15.1.1 (partial: 2/7 base-stat claims match;
+the other steps match 0/7, so 15.1 is the only candidate). Season-start patch, so some listed
+values disagree with Data Dragon (e.g. notes say Viktor health growth 100 >>> 92, DDragon shows
+104 -> 100) — left verbatim as published rather than reconciled.
+
+Ashe: Passive Frost Shot damage 115% + Crit% >>> 100% + Crit%; Passive Frost Shot condition slowed by Frost Shot >>> always; Q damage 105/110/115/120/125% >>> 110/115/120/125/130%; Q attack speed 25/32.5/40/47.5/55% >>> 25/35/45/55/65%; W damage 20/35/50/65/80 (+100% total AD) >>> 60/95/130/165/200 (+100% bonus AD)
+Jarvan IV: Armor growth 5.2 >>> 4.7; Q damage 80/120/160/200/240 (+140% bonus AD) >>> 70/110/150/190/230 (+140% bonus AD)
+Kalista: Mana regen growth 0.4 >>> 0.8; Q damage 20/85/150/215/280 (+105% total AD) >>> 10/75/140/205/270 (+105% total AD); Q mana cost 50/55/60/65/70 >>> 60/65/70/75/80; E damage per additional stack 8/12/16/20/24 (+25/30/35/40/45% total AD) >>> 7/14/21/28/35 (+20/25/30/35/40% total AD)
+Kayle: Attack speed growth 1.5% >>> 1%; Attack Damage growth 2.5 >>> 2; W movement speed 24-40% (+8% AP) >>> 24-32% (+8% AP)
+Seraphine: Health growth 90 >>> 95; E damage 70-190 (+50% AP) >>> 70-210 (+60% AP)
+Twitch: W slow amount 30/35/40/45/50% (+5% per 100 AP) >>> 30/35/40/45/50% (+6% per 100 AP)
+Varus: Mana 360 >>> 320; Q mana cost 65/70/75/80/85 >>> 50/55/60/65/70; W on-hit damage 8/13/18/23/28 >>> 6/12/18/24/30; E mana cost 80 >>> 90
+Vex: Passive damage 40-150 (+25% AP) >>> 40-150 (+40% AP); W damage 80-240 (+30% AP) >>> 80-240 (+50% AP)
+Viktor: Health growth 100 >>> 92; R damage per tick 65/105/145 (+45% AP) >>> 60/100/140 (+40% AP)
+Ziggs: Q damage 85/135/185/235/285 (+65% AP) >>> 85/135/185/235/285 (+75% AP); W cooldown 20/18/16/14/12 >>> 18/16/14/12/10 seconds

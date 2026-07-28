@@ -1,0 +1,20 @@
+Patch 14.23 — Champion changes (fetched from leagueoflegends.com; game patch 14.23)
+
+Ambessa: Q Sundering Slam cast window 3.5 >>> 4 seconds
+Aurora: Passive movement speed removed; Q cooldown 8/7.5/7/6.5/6 >>> 9/8.5/8/7.5/7; Q range 850 >>> 900; Q damage 40/65/90/115/140 >>> 45/70/95/120/145; W grants 20/25/30/35/40% bonus movement speed on cast; E range 800 >>> 825; R duration 1.5/2/2.5 >>> 2.5/3.25/4, trapping removed, grants movement speed instead
+Azir: W damage AP ratio (+35/40/45/50/55% AP) >>> (+40/45/50/55/60% AP)
+Caitlyn: R damage scaling (+150% bonus AD) >>> (+100% bonus AD)
+Jinx: Attack Damage growth 2.9 >>> 3.15; W damage (+160% total AD) >>> (+140% total AD)
+Kha'Zix: Base Armor 36 >>> 32; W evolved slow 75% >>> 60%
+Kog'Maw: Q shred 23/25/27/29/31% >>> 16/20/24/28/32%; E damage 75/120/165/210/255 >>> 70/110/150/190/230
+Master Yi: R attack speed 25/35/45% >>> 25/45/65%
+Miss Fortune: Q mana cost 43/46/49/52/55 >>> 40 all ranks
+Rammus: Q cooldown 16/13.5/11/8.5/6 >>> 12/10.5/9/7.5/6 seconds
+Rell: Multiple base stat and ability adjustments including reduced crowd control and new on-hit damage
+Rengar: R armor shred 12/18/24 >>> 15/20/25; R bonus damage 50% >>> 100% total AD
+Shyvana: MR growth 2.05 >>> 1.5; E damage AP scaling (+80% AP) >>> (+70% AP)
+Skarner: Q bonus health scaling (+4% bonus health) >>> (+3% bonus health)
+Smolder: Comprehensive Q, W, E, R adjustments reducing stack dependency and increasing gold scaling
+Tahm Kench: Passive AP scaling (+2% AP per 100 bonus health) >>> (+1.5% AP per 100 bonus health); R shield (+150% AP) >>> (+100% AP)
+Teemo: E monster damage 150% >>> 125%
+Zac: Q maximum health scaling (+4% max health) >>> (+3% max health)

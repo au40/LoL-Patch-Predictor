@@ -1,0 +1,20 @@
+Patch 25.04 — Champion changes (fetched from leagueoflegends.com; game patch 15.4)
+Mapping verified against Data Dragon: all 3 base-stat claims match 15.3.1 -> 15.4.1 and 0 match
+any neighbouring step.
+
+Ashe: Q total damage per flurry 110/115/120/125/130% AD >>> 111/117/123/129/135% AD; W AD ratio 100% bonus AD >>> 110% bonus AD; R damage 200/400/600 (+120% AP) >>> 250/450/650 (+120% AP); R secondary target damage 50% >>> 100%
+Diana: Passive monster damage 300% >>> 225%; Q damage 60/95/130/165/200 (+70% AP) >>> 70/105/140/175/210 (+70% AP); W maximum damage 54/90/126/162/198 (+54% AP) >>> 60/96/132/168/204 (+54% AP)
+Ekko: Q damage 70/85/100/115/130 (+30% AP) >>> 80/95/110/125/140 (+30% AP)
+Elise: W (human) damage 60/105/150/195/240 (+95% AP) >>> 60/100/140/180/220 (+75% AP); W (spider) cooldown 10 >>> 6 seconds; W (spider) bonus attack speed 60/70/80/90/100% >>> 60/75/90/105/120%; R spiderling damage 8/14/20/26 (+15% AP) >>> 10/20/30/40 (+15% AP)
+Gangplank: Base AD growth 3.7 >>> 4.2
+Hwei: Passive damage 35-180 (+35% AP) >>> 35-180 (+30% AP); QW damage 80/100/120/140/160 (+25% AP) >>> 60/85/110/135/160 (+25% AP); WE damage 25/35/45/55/65 (+20% AP) >>> 20/30/40/50/60 (+15% AP)
+Jayce: W set attack speed 2.67 >>> 3.0
+Kalista: W target max health damage 14/15/16/17/18% >>> 10/12/14/16/18%
+Kog'Maw: Q damage 90/140/190/240/290 (+70% AP) >>> 80/125/170/215/260 (+80% AP)
+Lulu: W bonus attack speed 25/27.5/30/32.5/35% >>> 20/22.5/25/27.5/30%; W cooldown 17/16.5/16/15.5/15 >>> 18/17.5/17/16.5/16 seconds; E base damage/shield strength 80/125/170/215/260 >>> 80/120/160/200/240
+Mel: Q cast range 1000 >>> 950; Q projectile speed 5000 >>> 4500; W duration 1 >>> 0.75 seconds; W mana cost 60/45/30/15/0 >>> 80/60/40/20/0; W reflected damage 40/47.5/55/62.5/70% >>> 40/45/50/55/60%; E root duration 1.75/1.88/2/2.13/2.25 >>> 1.25/1.5/1.75/2/2.25 seconds; E direct hit damage 60/100/140/180/220 (+50% AP) >>> 60/105/150/195/240 (+60% AP); R damage per Overwhelm stack 4/7/10 (+2.5% AP) >>> 4/7/10 (+3.5% AP)
+Nautilus: Q damage 70/115/160/205/250 (+90% AP) >>> 85/130/175/220/265 (+90% AP)
+Sion: Base Armor 32 >>> 36; Health regeneration 7.5 >>> 9
+Teemo: E monster damage 125% >>> 145%
+Warwick: Q mana cost 70/75/80/85/90 >>> 80/85/90/95/100
+Yasuo: Passive critical damage reduction 10% >>> removed

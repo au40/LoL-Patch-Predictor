@@ -1,0 +1,329 @@
+{
+  "patch": "15.4",
+  "changes": [
+    {
+      "champion": "Ashe",
+      "target": "Q - Volley",
+      "field": "Total damage per flurry",
+      "change_type": "buff",
+      "old": "110/115/120/125/130% AD",
+      "new": "111/117/123/129/135% AD",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "W - Volley",
+      "field": "AD ratio",
+      "change_type": "buff",
+      "old": "100% bonus AD",
+      "new": "110% bonus AD",
+      "magnitude_pct": 10
+    },
+    {
+      "champion": "Ashe",
+      "target": "R - Enchanted Crystal Arrow",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "200/400/600 (+120% AP)",
+      "new": "250/450/650 (+120% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ashe",
+      "target": "R - Enchanted Crystal Arrow",
+      "field": "Secondary target damage",
+      "change_type": "buff",
+      "old": "50%",
+      "new": "100%",
+      "magnitude_pct": 100
+    },
+    {
+      "champion": "Diana",
+      "target": "Passive",
+      "field": "Monster damage",
+      "change_type": "nerf",
+      "old": "300%",
+      "new": "225%",
+      "magnitude_pct": -25
+    },
+    {
+      "champion": "Diana",
+      "target": "Q - Crescent Strike",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "60/95/130/165/200 (+70% AP)",
+      "new": "70/105/140/175/210 (+70% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Diana",
+      "target": "W - Pale Cascade",
+      "field": "Maximum damage",
+      "change_type": "buff",
+      "old": "54/90/126/162/198 (+54% AP)",
+      "new": "60/96/132/168/204 (+54% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Ekko",
+      "target": "Q - Timewinder",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "70/85/100/115/130 (+30% AP)",
+      "new": "80/95/110/125/140 (+30% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Elise",
+      "target": "W - Neurotoxin (Human)",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "60/105/150/195/240 (+95% AP)",
+      "new": "60/100/140/180/220 (+75% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Elise",
+      "target": "W - Spider Form Cooldown",
+      "field": "Cooldown",
+      "change_type": "buff",
+      "old": "10",
+      "new": "6",
+      "magnitude_pct": -40
+    },
+    {
+      "champion": "Elise",
+      "target": "W - Spider Form",
+      "field": "Bonus attack speed",
+      "change_type": "buff",
+      "old": "60/70/80/90/100%",
+      "new": "60/75/90/105/120%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Elise",
+      "target": "R - Spider Form Spiderling",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "8/14/20/26 (+15% AP)",
+      "new": "10/20/30/40 (+15% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Gangplank",
+      "target": "Base Stats",
+      "field": "AD growth",
+      "change_type": "buff",
+      "old": "3.7",
+      "new": "4.2",
+      "magnitude_pct": 13.51
+    },
+    {
+      "champion": "Hwei",
+      "target": "Passive",
+      "field": "Damage AP ratio",
+      "change_type": "nerf",
+      "old": "35% AP",
+      "new": "30% AP",
+      "magnitude_pct": -14.29
+    },
+    {
+      "champion": "Hwei",
+      "target": "Q/W",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "80/100/120/140/160 (+25% AP)",
+      "new": "60/85/110/135/160 (+25% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Hwei",
+      "target": "W/E",
+      "field": "Damage",
+      "change_type": "nerf",
+      "old": "25/35/45/55/65 (+20% AP)",
+      "new": "20/30/40/50/60 (+15% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Jayce",
+      "target": "W - Hyper Charge",
+      "field": "Attack speed",
+      "change_type": "buff",
+      "old": "2.67",
+      "new": "3.0",
+      "magnitude_pct": 12.36
+    },
+    {
+      "champion": "Kalista",
+      "target": "W - Sentinel",
+      "field": "Target max health damage",
+      "change_type": "nerf",
+      "old": "14/15/16/17/18%",
+      "new": "10/12/14/16/18%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "KogMaw",
+      "target": "Q - Caustic Spittle",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "90/140/190/240/290 (+70% AP)",
+      "new": "80/125/170/215/260 (+80% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lulu",
+      "target": "W - Whimsy",
+      "field": "Bonus attack speed",
+      "change_type": "nerf",
+      "old": "25/27.5/30/32.5/35%",
+      "new": "20/22.5/25/27.5/30%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lulu",
+      "target": "W - Whimsy",
+      "field": "Cooldown",
+      "change_type": "nerf",
+      "old": "17/16.5/16/15.5/15",
+      "new": "18/17.5/17/16.5/16",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Lulu",
+      "target": "E - Help, Pix!",
+      "field": "Base damage/shield strength",
+      "change_type": "nerf",
+      "old": "80/125/170/215/260",
+      "new": "80/120/160/200/240",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "Q - Ignition",
+      "field": "Cast range",
+      "change_type": "nerf",
+      "old": "1000",
+      "new": "950",
+      "magnitude_pct": -5
+    },
+    {
+      "champion": "Mel",
+      "target": "Q - Ignition",
+      "field": "Projectile speed",
+      "change_type": "nerf",
+      "old": "5000",
+      "new": "4500",
+      "magnitude_pct": -10
+    },
+    {
+      "champion": "Mel",
+      "target": "W - Electromagnetic Pulse",
+      "field": "Duration",
+      "change_type": "nerf",
+      "old": "1",
+      "new": "0.75",
+      "magnitude_pct": -25
+    },
+    {
+      "champion": "Mel",
+      "target": "W - Electromagnetic Pulse",
+      "field": "Mana cost",
+      "change_type": "nerf",
+      "old": "60/45/30/15/0",
+      "new": "80/60/40/20/0",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "W - Electromagnetic Pulse",
+      "field": "Reflected damage",
+      "change_type": "nerf",
+      "old": "40/47.5/55/62.5/70%",
+      "new": "40/45/50/55/60%",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "E - Vectorial Homing",
+      "field": "Root duration",
+      "change_type": "nerf",
+      "old": "1.75/1.88/2/2.13/2.25",
+      "new": "1.25/1.5/1.75/2/2.25",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "E - Vectorial Homing",
+      "field": "Direct hit damage",
+      "change_type": "buff",
+      "old": "60/100/140/180/220 (+50% AP)",
+      "new": "60/105/150/195/240 (+60% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Mel",
+      "target": "R - Greatest Invention",
+      "field": "Damage per Overwhelm stack AP ratio",
+      "change_type": "buff",
+      "old": "2.5% AP",
+      "new": "3.5% AP",
+      "magnitude_pct": 40
+    },
+    {
+      "champion": "Nautilus",
+      "target": "Q - Dredge Line",
+      "field": "Damage",
+      "change_type": "buff",
+      "old": "70/115/160/205/250 (+90% AP)",
+      "new": "85/130/175/220/265 (+90% AP)",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Sion",
+      "target": "Base Stats",
+      "field": "Armor",
+      "change_type": "buff",
+      "old": "32",
+      "new": "36",
+      "magnitude_pct": 12.5
+    },
+    {
+      "champion": "Sion",
+      "target": "Base Stats",
+      "field": "Health regeneration",
+      "change_type": "buff",
+      "old": "7.5",
+      "new": "9",
+      "magnitude_pct": 20
+    },
+    {
+      "champion": "Teemo",
+      "target": "E - Toxic Shot",
+      "field": "Monster damage",
+      "change_type": "buff",
+      "old": "125%",
+      "new": "145%",
+      "magnitude_pct": 16
+    },
+    {
+      "champion": "Warwick",
+      "target": "Q - Jaws of the Beast",
+      "field": "Mana cost",
+      "change_type": "nerf",
+      "old": "70/75/80/85/90",
+      "new": "80/85/90/95/100",
+      "magnitude_pct": 0
+    },
+    {
+      "champion": "Yasuo",
+      "target": "Passive",
+      "field": "Critical damage reduction",
+      "change_type": "removed",
+      "old": "10%",
+      "new": "",
+      "magnitude_pct": 0
+    }
+  ]
+}

@@ -107,6 +107,46 @@ def normalize_champion(name: str, id_map: dict[str, str]) -> str:
     return id_map.get(re.sub(r"[^a-z0-9]", "", key), name)
 
 
+# --- Champion art -----------------------------------------------------------------------
+# Data Dragon hosts the portraits too, on the same CDN we already pull stats from — so the
+# champion picker needs no new data source, no key, and no image files in the repo.
+#
+#   square icon (pickers):  cdn/{version}/img/champion/{image.full}      64x64 png
+#   loading card (hero):    cdn/img/champion/loading/{id}_{skin}.jpg     308x560, VERSIONLESS
+#   full splash:            cdn/img/champion/splash/{id}_{skin}.jpg      1215x717, VERSIONLESS
+#
+# The icon filename comes out of the champion.json we already cache, so building the map is
+# free (no network hit) and survives Riot's occasional id/filename mismatches — historically
+# 'Fiddlesticks' vs 'FiddleSticks.png' — instead of assuming f"{id}.png". Splash/loading paths
+# carry NO version segment; they always serve current art.
+
+
+def champion_icons(version: str = "16.13.1") -> dict[str, str]:
+    """{champion_id: square-icon URL} for every champion at `version`.
+
+    Keys are Data Dragon ids, the same join key the model and extractions use, so a row's
+    `champion` indexes straight in. Streamlit's st.image() takes the URL as-is — the browser
+    fetches from Riot's CDN, so nothing is downloaded or stored locally."""
+    data = _get_json(f"{BASE}/cdn/{version}/data/en_US/champion.json", f"champion_{version}.json")
+    return {c["id"]: f"{BASE}/cdn/{version}/img/champion/{c['image']['full']}"
+            for c in data["data"].values()}
+
+
+def champion_names(version: str = "16.13.1") -> dict[str, str]:
+    """{champion_id: display name} — 'MonkeyKing' -> 'Wukong', 'Kaisa' -> 'Kai'Sa'.
+
+    Ids are the join key but are wrong to show a user; label the UI with these."""
+    data = _get_json(f"{BASE}/cdn/{version}/data/en_US/champion.json", f"champion_{version}.json")
+    return {c["id"]: c["name"] for c in data["data"].values()}
+
+
+def champion_splash(champion_id: str, skin: int = 0, loading: bool = False) -> str:
+    """Big art URL for a champion: the tall loading card, or the wide splash (default).
+    skin=0 is the base skin. Not versioned by Riot, so no version argument."""
+    kind = "loading" if loading else "splash"
+    return f"{BASE}/cdn/img/champion/{kind}/{champion_id}_{skin}.jpg"
+
+
 # --- Ability cooldowns (per-champion detail files) --------------------------------------
 # The summary champion.json above carries only base stats. Ability cooldowns live in the
 # per-champion detail file cdn/{version}/data/en_US/champion/{id}.json, whose `spells` array
