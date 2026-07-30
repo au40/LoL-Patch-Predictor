@@ -1,14 +1,16 @@
 """
 Pick-rate model — the one outcome patch notes actually predict.
 
-Win-rate turned out to be a dead end and we can now say why with a number: 97.8% of a
+Win-rate turned out to be a dead end and we can now say why with a number: 98.7% of a
 champion's patch-to-patch win-rate movement is binomial sampling noise, and the best
-possible model (one that knew every champion's true strength) would still miss by 4.43pp
-at min_games=20 — which is where our model already sits. Nothing is left to extract.
+possible model (one that knew every champion's true strength) would still miss by 4.45pp
+at min_games=20 — which is where our baselines already sit. Nothing is left to extract.
+Every figure in this paragraph is derived by `src/noise_floor.py`; don't edit them by hand.
 
 PICK-rate is the opposite. A champion's share of all games played is measured against the
-whole sample rather than its own handful of games, so it is ~98% signal (lag-1
-autocorrelation 0.93 vs win-rate's 0.03). And it responds to patch notes:
+whole sample rather than its own handful of games, so it is ~98% signal (reliability 0.979
+and lag-1 autocorrelation 0.920, vs win-rate's 0.040 and 0.036). And it responds to patch
+notes:
 
     buffed champions   +24% pick share the next patch
     nerfed champions   -12%
@@ -234,14 +236,22 @@ def backtest(panel: pd.DataFrame, first_test_frac: float = 0.5) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def persistence(panel: pd.DataFrame, horizons: int = 4) -> pd.DataFrame:
+def persistence(panel: pd.DataFrame, horizons: int = 4,
+                split_lines: bool = False) -> pd.DataFrame:
     """How long does the pick-rate shift last? Effect at k patches after the change,
     measured against the patch BEFORE it.
 
     Only counts champions that were NOT touched again in the interim, so this is the decay
     of one change rather than the sum of several. The answer is not what you'd guess from
     the magnitude-null: buffs spike then partly settle, while nerfs COMPOUND — by +3 patches
-    a nerf outweighs a buff. So the shift is durable, not a fad."""
+    a nerf outweighs a buff. So the shift is durable, not a fad.
+
+    `split_lines=True` splits each direction by how many buff/nerf lines the champion got
+    (1 vs 2+) and adds a `bucket` column. This is measurable -- 72-157 observations per cell
+    -- and the split says something the pooled curve hides: the line COUNT shapes the whole
+    trajectory, not just the size of the first jump. A multi-line buff starts far higher
+    (+37% vs +15%) but decays toward the single-line case by +3 patches, while a multi-line
+    nerf is deeper at every horizon and keeps compounding."""
     pick = {(r.champion, r.role, r.t): r.pick for r in panel.itertuples()}
     chg = {(r.champion, r.role, r.t): (r.buffed, r.nerfed) for r in panel.itertuples()}
     rows = []
@@ -260,24 +270,194 @@ def persistence(panel: pd.DataFrame, horizons: int = 4) -> pd.DataFrame:
                 continue   # touched again -- not a clean read on the original change
             rows.append({"champion": r.champion, "k": k,
                          "direction": "buff" if r.buffed else "nerf",
+                         "bucket": "1 line" if abs(r.net_buff) <= 1 else "2+ lines",
                          "y": np.log(nxt) - np.log(base)})
     ev = pd.DataFrame(rows)
+    buckets = ("1 line", "2+ lines") if split_lines else (None,)
     out = []
     for k in range(horizons):
         for d in ("buff", "nerf"):
-            s = ev[(ev["k"] == k) & (ev["direction"] == d)]
-            if len(s) < 10:
-                continue
-            f = smf.ols("y ~ 1", data=s).fit(cov_type="cluster",
-                                             cov_kwds={"groups": s["champion"]})
-            m = f.params["Intercept"]
-            ci = f.conf_int().loc["Intercept"]
-            out.append({"patches_after": k, "direction": d,
-                        "pick_share_change_pct": round((np.exp(m) - 1) * 100, 1),
-                        "ci_low": round((np.exp(ci[0]) - 1) * 100, 1),
-                        "ci_high": round((np.exp(ci[1]) - 1) * 100, 1),
-                        "n_obs": len(s)})
+            for b in buckets:
+                s = ev[(ev["k"] == k) & (ev["direction"] == d)]
+                if b is not None:
+                    s = s[s["bucket"] == b]
+                if len(s) < 10:
+                    continue
+                f = smf.ols("y ~ 1", data=s).fit(cov_type="cluster",
+                                                 cov_kwds={"groups": s["champion"]})
+                m = f.params["Intercept"]
+                ci = f.conf_int().loc["Intercept"]
+                row = {"patches_after": k, "direction": d,
+                       "pick_share_change_pct": round((np.exp(m) - 1) * 100, 1),
+                       "ci_low": round((np.exp(ci[0]) - 1) * 100, 1),
+                       "ci_high": round((np.exp(ci[1]) - 1) * 100, 1),
+                       "n_obs": len(s)}
+                if b is not None:
+                    row["bucket"] = b
+                out.append(row)
     return pd.DataFrame(out)
+
+
+def scoreboard(panel: pd.DataFrame, patch: str | None = None,
+               changed_only: bool = True) -> pd.DataFrame:
+    """Named per-champion predictions for ONE patch, scored against what actually happened.
+
+    Same protocol as `backtest` -- train on every patch strictly before this one, then
+    predict it -- but keeps the per-champion rows instead of collapsing them to an MAE.
+    That turns the aggregate result ("buffed champions gain ~24%") into a checkable claim
+    ("the model said this champion would gain 31%, it gained 27%").
+
+    `patch` defaults to the newest one in the panel. Returns predicted vs actual percent
+    change in pick share, the reversion-only baseline for comparison, and the signed error,
+    sorted by predicted movement. Empty if there isn't enough history to train on."""
+    ts = sorted(panel["t"].unique())
+    if patch is None:
+        t = ts[-1]
+    else:
+        m = panel[panel["patch"] == str(patch)]
+        if m.empty:
+            return pd.DataFrame()
+        t = int(m["t"].iloc[0])
+
+    tr, te = panel[panel["t"] < t], panel[panel["t"] == t]
+    if len(tr) < 300 or te.empty:
+        return pd.DataFrame()
+
+    # .fillna(0) mirrors backtest(): a role level absent from the training half yields NaN
+    # from patsy, and "no predicted movement" is the honest fallback there.
+    pred = smf.ols(FORMULA, data=tr).fit().predict(te).fillna(0).values
+    base = smf.ols(FORMULA_BASE, data=tr).fit().predict(te).fillna(0).values
+
+    out = te.copy()
+    out["predicted_pct"] = (np.exp(pred) - 1) * 100
+    out["reversion_pct"] = (np.exp(base) - 1) * 100
+    out["actual_pct"] = (np.exp(out["y"].values) - 1) * 100
+    out["error_pp"] = out["predicted_pct"] - out["actual_pct"]
+    # 'mixed' matters: net_buff is a NET, so a champion with one buff line and one nerf
+    # line lands at 0 and is neither buffed nor nerfed -- but it was still touched, and
+    # calling it 'untouched' in a changed-only table is simply wrong.
+    out["direction"] = np.where(out["buffed"] == 1, "buff",
+                       np.where(out["nerfed"] == 1, "nerf",
+                       np.where(out["n_changes"] > 0, "mixed", "untouched")))
+    out["lines"] = out["n_changes"].astype(int)          # how many change lines in total
+    out["net_lines"] = out["net_buff"].astype(int)       # buffs minus nerfs -- the feature
+    out["pick_prev_pct"] = out["pick_l1"] * 100
+    out["pick_now_pct"] = out["pick"] * 100
+
+    if changed_only:
+        out = out[out["changed"] == 1]
+    cols = ["champion", "role", "direction", "lines", "net_lines", "pick_prev_pct",
+            "pick_now_pct", "predicted_pct", "actual_pct", "reversion_pct", "error_pp",
+            "games"]
+    return out[cols].sort_values("predicted_pct", ascending=False).reset_index(drop=True)
+
+
+def forecast(fitted, pick_prev: float, role: str, direction: str, momentum: float = 0.0,
+             n_changes: int = 1, horizons: int = 4) -> list[float]:
+    """Roll the model forward: the change lands at k=0, then nothing else happens.
+
+    Each step feeds its own output back in as the next step's momentum and pick-share level,
+    so this is what the fitted model alone implies over several patches. Returns cumulative
+    percent change versus the patch BEFORE the change, which makes it directly comparable to
+    `persistence()`.
+
+    READ WITH CARE, and compare against persistence() rather than trusting this alone. The
+    model carries ONE symmetric momentum term, so it mean-reverts buffs and nerfs at the same
+    rate. Real behaviour is asymmetric -- players abandon a nerfed champion progressively but
+    largely STAY on a buffed one -- so the iterated path tracks the measured nerf trajectory
+    closely and decays far too fast on buffs (predicting a buffed champion ends up slightly
+    NEGATIVE by +3 patches, where the data says roughly +10%). That gap is a real limitation
+    of a lag-1 specification, not a bug in this function."""
+    p, p0, mom, out = pick_prev, pick_prev, momentum, []
+    for k in range(horizons):
+        d, lines = (direction, n_changes) if k == 0 else ("none", 0)
+        step = predict_change(fitted, p, role, d, mom, lines)
+        new_p = step["new_pick"]
+        mom = float(np.log(max(new_p, 1e-12)) - np.log(max(p, 1e-12)))
+        p = new_p
+        out.append((p / p0 - 1) * 100)
+    return out
+
+
+def forecast_path(panel: pd.DataFrame, fitted, pick_prev: float, role: str, direction: str,
+                  momentum: float = 0.0, n_changes: int = 1) -> pd.DataFrame:
+    """Champion-specific multi-patch forecast: where THIS champion's pick share goes.
+
+    Built from the two things each does best, rather than from one of them doing both:
+
+      * the LEVEL at k=0 comes from the fitted model, which knows this champion's current
+        pick share, its own momentum, its role, and how many lines it got;
+      * the SHAPE from k=0 onward comes from the measured persistence profile for this
+        direction and line-count bucket.
+
+    That matters because iterating the model forward instead (see `forecast()`) gets buffs
+    badly wrong -- a single symmetric momentum term mean-reverts buffs and nerfs at the same
+    rate, so it decays a buff to slightly negative by +3 patches where the data says roughly
+    +10%. The measured shape has the real asymmetry built in: nerfs compound, buffs settle
+    but hold.
+
+    The one assumption is that this champion decays like the average champion in its bucket.
+    That is far milder than assuming lag-1 dynamics describe multi-patch behaviour.
+
+    Returns columns: patches_after, pct (cumulative % vs the patch before the change),
+    lo, hi (the bucket's measured spread, shifted to this champion's anchor), n_obs."""
+    bucket = "1 line" if n_changes <= 1 else "2+ lines"
+    pers = persistence(panel, split_lines=True)
+    src = pers[(pers["direction"] == direction) & (pers["bucket"] == bucket)]
+    if src.empty:
+        return pd.DataFrame()
+    src = src.sort_values("patches_after")
+
+    anchor = predict_change(fitted, pick_prev, role, direction, momentum, n_changes)
+    lvl0 = 1 + anchor["pct_change"] / 100          # model's level at k=0, as a multiplier
+    base0 = 1 + float(src["pick_share_change_pct"].iloc[0]) / 100   # measured level at k=0
+
+    rows = []
+    for r in src.itertuples():
+        # measured level at k, expressed RELATIVE to the measured level at k=0, then applied
+        # to the model's champion-specific anchor.
+        ratio = (1 + r.pick_share_change_pct / 100) / base0
+        rows.append({
+            "patches_after": int(r.patches_after),
+            "pct": (lvl0 * ratio - 1) * 100,
+            "lo": (lvl0 * (1 + r.ci_low / 100) / base0 - 1) * 100,
+            "hi": (lvl0 * (1 + r.ci_high / 100) / base0 - 1) * 100,
+            "n_obs": int(r.n_obs),
+        })
+    return pd.DataFrame(rows)
+
+
+def role_splits(panel: pd.DataFrame, patch: str | None = None) -> pd.DataFrame:
+    """Champions whose roles moved in OPPOSITE directions after the same patch note.
+
+    The model scores each champion-role independently, so it cannot represent a champion
+    *moving between roles* -- it can only predict "more picked" or "less picked". But a buff
+    aimed at one role does exactly that: the pick share doesn't grow, it migrates. Qiyana in
+    16.13 is the clean case (jungle +93%, mid -27% off one buff line), and the model
+    necessarily got one of the two badly wrong.
+
+    Returns one row per (patch, champion) that appears in 2+ roles with actual movement in
+    both directions, with the spread between its best and worst role. Empty if none."""
+    ts = sorted(panel["t"].unique())
+    patches = [str(patch)] if patch else [panel[panel["t"] == t]["patch"].iloc[0] for t in ts]
+    rows = []
+    for p in patches:
+        sb = scoreboard(panel, p)
+        if sb.empty:
+            continue
+        for champ, g in sb.groupby("champion"):
+            if len(g) < 2 or not (g["actual_pct"] > 0).any() or not (g["actual_pct"] < 0).any():
+                continue
+            up, dn = g.loc[g["actual_pct"].idxmax()], g.loc[g["actual_pct"].idxmin()]
+            rows.append({
+                "patch": p, "champion": champ, "direction": up["direction"],
+                "gained_role": up["role"], "gained_pct": round(up["actual_pct"], 1),
+                "lost_role": dn["role"], "lost_pct": round(dn["actual_pct"], 1),
+                "spread_pp": round(up["actual_pct"] - dn["actual_pct"], 1),
+                "worst_error_pp": round(g["error_pp"].abs().max(), 1),
+            })
+    out = pd.DataFrame(rows)
+    return out.sort_values("spread_pp", ascending=False).reset_index(drop=True) if not out.empty else out
 
 
 def predict_change(fitted, pick_prev: float, role: str, direction: str,

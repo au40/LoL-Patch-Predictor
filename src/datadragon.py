@@ -186,6 +186,65 @@ def champion_spell_cooldowns(version: str = "16.13.1") -> dict[str, dict[str, li
     return out
 
 
+# Ability fields Data Dragon publishes numerically, with the direction that counts as a BUFF.
+# Damage and scaling ratios are deliberately absent: Riot zeroes the `effect` arrays and
+# leaves `vars` empty on modern patches, so those numbers genuinely have no ground truth here.
+SPELL_FIELDS = {"cooldown": -1, "cost": -1, "range": +1}   # +1 = higher is better
+
+
+def champion_spells(version: str) -> dict[str, dict[str, dict[str, list[float]]]]:
+    """{champion_id: {slot: {field: [value per rank]}}} for cooldown / cost / range.
+
+    Same per-champion detail files as champion_spell_cooldowns(), but keeps every numeric
+    field we can diff rather than cooldown alone. Cached per version, so re-running is free."""
+    agg = DATA_RAW / f"spell_fields_{version}.json"
+    if agg.exists():
+        return json.loads(agg.read_text(encoding="utf-8"))
+    CHAMPION_DETAIL_DIR.mkdir(parents=True, exist_ok=True)
+    out: dict[str, dict[str, dict[str, list[float]]]] = {}
+    for cid in _champion_ids(version):
+        detail = _get_json(
+            f"{BASE}/cdn/{version}/data/en_US/champion/{cid}.json",
+            f"champion_details/{cid}_{version}.json",
+        )
+        spells = detail["data"][cid]["spells"]
+        out[cid] = {
+            slot: {f: [float(x) for x in (spells[i].get(f) or [])] for f in SPELL_FIELDS}
+            for i, slot in enumerate(_SLOTS) if i < len(spells)
+        }
+    agg.write_text(json.dumps(out), encoding="utf-8")
+    return out
+
+
+def diff_spells(version_new: str, version_old: str) -> pd.DataFrame:
+    """Per-ability numeric changes between two patch versions.
+
+    One row per (champion, slot, field) whose per-rank array changed. `delta` is the change
+    in the MEAN across ranks, so a change that shifts every rank the same way and one that
+    only touches rank 5 both land with the right sign. `buffed` applies each field's polarity
+    (a smaller cooldown is a buff, a longer range is a buff)."""
+    new, old = champion_spells(version_new), champion_spells(version_old)
+    rows = []
+    for cid, slots in new.items():
+        if cid not in old:
+            continue                      # champion released this patch — nothing to diff
+        for slot, fields in slots.items():
+            for field, arr_new in fields.items():
+                arr_old = (old[cid].get(slot) or {}).get(field) or []
+                if not arr_new or not arr_old or arr_new == arr_old:
+                    continue
+                m_new, m_old = sum(arr_new) / len(arr_new), sum(arr_old) / len(arr_old)
+                if m_new == m_old:
+                    continue              # ranks rearranged with no net change — not gradable
+                rows.append({
+                    "champion": cid, "slot": slot, "field": field,
+                    "old": m_old, "new": m_new, "delta": m_new - m_old,
+                    "buffed": (m_new - m_old) * SPELL_FIELDS[field] > 0,
+                    "from_patch": version_old, "to_patch": version_new,
+                })
+    return pd.DataFrame(rows)
+
+
 def spell_slot(target: str) -> str | None:
     """Parse the ability slot from an extraction change's `target`: 'Q'/'W'/'E'/'R',
     'PASSIVE', or None (e.g. 'Base Stats'). Passives are cast continuously, so your model

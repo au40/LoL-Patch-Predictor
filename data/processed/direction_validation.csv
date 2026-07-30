@@ -1,0 +1,309 @@
+patch,kind,champion,field,stat,old,new,delta,llm_label,true_label,agrees
+14.23,ability_cooldown,Aurora,Cooldown,Q cooldown,7.0,8.0,1.0,nerf,nerf,True
+14.23,ability_range,Aurora,Range,Q range,850.0,900.0,50.0,buff,buff,True
+14.23,ability_range,Aurora,Range,E range,850.0,825.0,-25.0,buff,nerf,False
+14.23,base_stat,Jinx,Attack Damage growth,attackdamageperlevel,2.9,3.25,0.35,buff,buff,True
+14.23,base_stat,Khazix,Armor,armor,36.0,32.0,-4.0,nerf,nerf,True
+14.23,ability_cost,MissFortune,Mana cost,Q cost,49.0,40.0,-9.0,buff,buff,True
+14.23,ability_cooldown,Rammus,Cooldown,Q cooldown,11.0,9.0,-2.0,buff,buff,True
+14.23,base_stat,Shyvana,Magic Resist growth,spellblockperlevel,2.05,1.5,-0.55,nerf,nerf,True
+14.24,base_stat,Elise,Health,hp,650.0,620.0,-30.0,nerf,nerf,True
+14.24,base_stat,Poppy,Armor,armor,38.0,35.0,-3.0,nerf,nerf,True
+14.24,base_stat,Poppy,Armor growth,armorperlevel,4.7,5.0,0.3,buff,buff,True
+14.24,base_stat,Rell,Health,hp,610.0,640.0,30.0,buff,buff,True
+14.24,base_stat,Swain,Armor,armor,26.0,25.0,-1.0,nerf,nerf,True
+14.24,base_stat,Swain,Armor growth,armorperlevel,5.2,4.7,-0.5,nerf,nerf,True
+14.24,base_stat,Talon,Magic Resist,spellblock,39.0,36.0,-3.0,nerf,nerf,True
+14.24,ability_cost,Viktor,Mana,E cost,90.0,80.0,-10.0,buff,buff,True
+14.24,base_stat,Warwick,Attack Damage,attackdamage,65.0,63.0,-2.0,nerf,nerf,True
+14.24,ability_range,Warwick,Range,Q range,350.0,365.0,15.0,buff,buff,True
+14.24,ability_cost,Yuumi,Mana,Q cost,75.0,62.5,-12.5,buff,buff,True
+15.1,ability_cost,Kalista,Mana cost,Q cost,60.0,70.0,10.0,nerf,nerf,True
+15.1,base_stat,Varus,Mana,mp,360.0,320.0,-40.0,nerf,nerf,True
+15.1,ability_cost,Varus,Mana cost,Q cost,75.0,60.0,-15.0,buff,buff,True
+15.1,ability_cost,Varus,Mana cost,E cost,80.0,90.0,10.0,nerf,nerf,True
+15.1,base_stat,Viktor,Health growth,hpperlevel,104.0,100.0,-4.0,nerf,nerf,True
+15.2,base_stat,MasterYi,Attack Damage growth,attackdamageperlevel,2.5,2.8,0.3,buff,buff,True
+15.3,base_stat,Galio,Health,hp,632.0,600.0,-32.0,nerf,nerf,True
+15.3,base_stat,Jax,Health growth,hpperlevel,100.0,103.0,3.0,buff,buff,True
+15.3,base_stat,Jax,Mana regen,mpregen,7.6,8.2,0.6,buff,buff,True
+15.3,base_stat,MissFortune,Armor,armor,28.0,25.0,-3.0,nerf,nerf,True
+15.3,base_stat,MissFortune,Armor growth,armorperlevel,4.2,4.0,-0.2,nerf,nerf,True
+15.3,ability_cooldown,Rakan,Cooldown,W cooldown,13.0,12.0,-1.0,buff,buff,True
+15.3,base_stat,Rell,Health,hp,640.0,620.0,-20.0,nerf,nerf,True
+15.3,base_stat,Rell,Armor growth,armorperlevel,4.3,4.0,-0.3,nerf,nerf,True
+15.3,base_stat,Skarner,Armor growth,armorperlevel,4.8,4.5,-0.3,nerf,nerf,True
+15.3,base_stat,Thresh,Health,hp,600.0,620.0,20.0,buff,buff,True
+15.3,base_stat,Viego,Attack Damage,attackdamage,60.0,57.0,-3.0,nerf,nerf,True
+15.3,ability_cooldown,MonkeyKing,Cooldown,W cooldown,16.0,18.0,2.0,nerf,nerf,True
+15.4,base_stat,Gangplank,AD growth,attackdamageperlevel,3.7,4.2,0.5,buff,buff,True
+15.4,ability_cooldown,Lulu,Cooldown,W cooldown,16.0,17.0,1.0,nerf,nerf,True
+15.4,ability_range,Mel,Cast range,Q range,1000.0,950.0,-50.0,nerf,nerf,True
+15.4,ability_cost,Mel,Mana cost,W cost,30.0,40.0,10.0,nerf,nerf,True
+15.4,base_stat,Sion,Armor,armor,32.0,36.0,4.0,buff,buff,True
+15.4,base_stat,Sion,Health regeneration,hpregen,7.5,9.0,1.5,buff,buff,True
+15.4,ability_cost,Warwick,Mana cost,Q cost,80.0,90.0,10.0,nerf,nerf,True
+15.5,base_stat,DrMundo,Health,hp,613.0,640.0,27.0,buff,buff,True
+15.5,base_stat,Poppy,HP growth,hpperlevel,104.0,110.0,6.0,buff,buff,True
+15.5,ability_cooldown,Skarner,E cooldown,E cooldown,18.0,20.0,2.0,nerf,nerf,True
+15.6,base_stat,Corki,Armor,armor,30.0,27.0,-3.0,nerf,nerf,True
+15.6,base_stat,Ezreal,Armor Growth,armorperlevel,4.7,4.2,-0.5,nerf,nerf,True
+15.6,ability_cost,Fiora,Mana Cost,Q cost,30.0,20.0,-10.0,buff,buff,True
+15.6,base_stat,Gwen,Health Growth,hpperlevel,115.0,110.0,-5.0,nerf,nerf,True
+15.6,base_stat,Gwen,Base Health,hp,620.0,650.0,30.0,buff,buff,True
+15.6,ability_cooldown,Gwen,Cooldown,E cooldown,12.0,10.0,-2.0,buff,buff,True
+15.6,base_stat,Kaisa,Armor,armor,25.0,27.0,2.0,buff,buff,True
+15.6,base_stat,Kaisa,Base Health Regen,hpregen,3.5,4.0,0.5,buff,buff,True
+15.6,ability_cooldown,Kaisa,Cooldown,R cooldown,100.0,90.0,-10.0,buff,buff,True
+15.6,ability_cooldown,Lillia,Cooldown,E cooldown,14.0,12.0,-2.0,buff,buff,True
+15.6,ability_cooldown,Lucian,Cooldown,E cooldown,16.5,15.0,-1.5,buff,buff,True
+15.6,base_stat,MasterYi,Armor Growth,armorperlevel,4.7,4.2,-0.5,nerf,nerf,True
+15.6,base_stat,Naafiri,Health Growth,hpperlevel,120.0,105.0,-15.0,nerf,nerf,True
+15.6,base_stat,Naafiri,Armor Growth,armorperlevel,4.7,4.2,-0.5,nerf,nerf,True
+15.6,base_stat,Naafiri,Base AD,attackdamage,55.0,57.0,2.0,buff,buff,True
+15.6,base_stat,Naafiri,AD Growth,attackdamageperlevel,2.1,2.0,-0.1,nerf,nerf,True
+15.6,base_stat,Singed,Base Attack Speed,attackspeed,0.625,0.7,0.075,buff,buff,True
+15.6,base_stat,Singed,Health Growth,hpperlevel,99.0,96.0,-3.0,nerf,nerf,True
+15.6,ability_cooldown,Smolder,Cooldown,R cooldown,120.0,110.0,-10.0,buff,buff,True
+15.6,base_stat,TwistedFate,Armor,armor,21.0,24.0,3.0,buff,buff,True
+15.7,base_stat,Darius,Armor,armor,39.0,37.0,-2.0,nerf,nerf,True
+15.7,ability_cooldown,Darius,Cooldown,E cooldown,19.0,21.0,2.0,nerf,nerf,True
+15.7,ability_cooldown,Lulu,Cooldown,W cooldown,17.0,18.0,1.0,nerf,nerf,True
+15.7,base_stat,Naafiri,Health,hp,635.0,610.0,-25.0,nerf,nerf,True
+15.7,base_stat,Naafiri,Armor,armor,30.0,28.0,-2.0,nerf,nerf,True
+15.7,ability_cooldown,Naafiri,Cooldown,W cooldown,19.0,20.0,1.0,nerf,nerf,True
+15.7,ability_cooldown,Trundle,Cooldown,E cooldown,20.0,18.0,-2.0,buff,buff,True
+15.8,base_stat,Ahri,Armor Growth,armorperlevel,4.7,4.2,-0.5,nerf,nerf,True
+15.8,ability_cooldown,Ahri,Cooldown,W cooldown,7.0,8.0,1.0,nerf,nerf,True
+15.8,base_stat,Annie,Health Growth,hpperlevel,102.0,96.0,-6.0,nerf,nerf,True
+15.8,ability_cooldown,Annie,Cooldown,W cooldown,8.0,7.0,-1.0,buff,buff,True
+15.8,base_stat,Lulu,Health,hp,595.0,565.0,-30.0,nerf,nerf,True
+15.8,base_stat,Mel,Health,hp,600.0,630.0,30.0,buff,buff,True
+15.8,ability_cooldown,Shen,Cooldown,W cooldown,15.0,13.0,-2.0,buff,buff,True
+15.9,ability_cost,Annie,Mana Cost,W cost,100.0,80.0,-20.0,buff,buff,True
+15.9,base_stat,Gwen,Armor Growth,armorperlevel,5.2,4.9,-0.3,nerf,nerf,True
+15.9,base_stat,Kalista,Health,hp,600.0,580.0,-20.0,nerf,nerf,True
+15.9,base_stat,Kalista,Attack Damage,attackdamage,59.0,57.0,-2.0,nerf,nerf,True
+15.9,base_stat,Kalista,AD Growth,attackdamageperlevel,3.25,4.0,0.75,buff,buff,True
+15.9,ability_cost,Leona,Mana Cost,Q cost,45.0,40.0,-5.0,buff,buff,True
+15.9,ability_cost,Leona,Mana Cost,E cost,60.0,50.0,-10.0,buff,buff,True
+15.9,ability_cooldown,Naafiri,Cooldown,W cooldown,20.0,22.0,2.0,nerf,nerf,True
+15.9,ability_cost,Orianna,Mana Cost,Q cost,40.0,35.0,-5.0,buff,buff,True
+15.10,base_stat,Chogath,Attack Speed,attackspeed,0.625,0.658,0.033,buff,buff,True
+15.10,base_stat,Kayn,Health Growth,hpperlevel,109.0,103.0,-6.0,nerf,nerf,True
+15.10,base_stat,Lulu,Armor Growth,armorperlevel,4.9,4.6,-0.3,nerf,nerf,True
+15.10,ability_cooldown,Lulu,Cooldown,R cooldown,90.0,100.0,10.0,nerf,nerf,True
+15.10,ability_cost,Vi,Mana,R cost,125.0,100.0,-25.0,buff,buff,True
+15.10,base_stat,XinZhao,Armor Growth,armorperlevel,5.0,4.4,-0.6,nerf,nerf,True
+15.11,base_stat,Annie,Armor,armor,19.0,23.0,4.0,buff,buff,True
+15.11,base_stat,Annie,Armor Growth,armorperlevel,4.7,4.0,-0.7,nerf,nerf,True
+15.11,base_stat,Chogath,Armor Growth,armorperlevel,5.0,4.5,-0.5,nerf,nerf,True
+15.11,ability_cooldown,Garen,Cooldown,W cooldown,19.0,17.0,-2.0,adjust,buff,False
+15.11,ability_cooldown,Garen,Cooldown,E cooldown,9.0,7.5,-1.5,buff,buff,True
+15.11,base_stat,Kassadin,Armor,armor,19.0,21.0,2.0,buff,buff,True
+15.11,ability_cooldown,Lucian,Cooldown,E cooldown,15.0,16.0,1.0,nerf,nerf,True
+15.11,ability_cooldown,Rengar,Cooldown,R cooldown,100.0,90.0,-10.0,buff,buff,True
+15.11,base_stat,Smolder,Armor,armor,26.0,24.0,-2.0,nerf,nerf,True
+15.11,base_stat,Smolder,Health Regen,hpregen,4.5,3.75,-0.75,nerf,nerf,True
+15.12,ability_cooldown,Ahri,Cooldown,R cooldown,115.0,120.0,5.0,nerf,nerf,True
+15.12,base_stat,Aphelios,Level 1 Attack Speed,attackspeed,0.64,0.665,0.025,buff,buff,True
+15.12,base_stat,Aurora,Magic Resistance,spellblock,30.0,32.0,2.0,buff,buff,True
+15.12,base_stat,Azir,Movement Speed,movespeed,335.0,330.0,-5.0,nerf,nerf,True
+15.12,base_stat,Azir,Attack Speed per Level,attackspeedperlevel,6.0,5.5,-0.5,nerf,nerf,True
+15.12,base_stat,Bard,Movement Speed,movespeed,330.0,335.0,5.0,buff,buff,True
+15.12,ability_range,Belveth,Cast Range,R range,275.0,450.0,175.0,adjust,buff,False
+15.12,base_stat,Gwen,Health,hp,620.0,600.0,-20.0,nerf,nerf,True
+15.12,ability_cooldown,Gwen,Cooldown,W cooldown,20.0,21.0,1.0,nerf,nerf,True
+15.12,base_stat,Kalista,Health,hp,580.0,560.0,-20.0,nerf,nerf,True
+15.12,ability_cooldown,Kalista,Cooldown,Q cooldown,8.0,9.0,1.0,nerf,nerf,True
+15.12,ability_cooldown,Leblanc,Cooldown,R cooldown,40.0,35.0,-5.0,buff,buff,True
+15.12,ability_cooldown,LeeSin,Cooldown,E cooldown,9.0,8.0,-1.0,buff,buff,True
+15.12,base_stat,Rammus,Armor,armor,40.0,35.0,-5.0,nerf,nerf,True
+15.12,base_stat,Rammus,Armor Growth,armorperlevel,5.5,4.5,-1.0,nerf,nerf,True
+15.12,base_stat,Rammus,Level 1 Attack Speed,attackspeed,0.656,0.7,0.044,buff,buff,True
+15.12,base_stat,Rammus,Attack Damage,attackdamage,55.0,65.0,10.0,buff,buff,True
+15.12,ability_cooldown,Rammus,Cooldown,R cooldown,90.0,105.0,15.0,nerf,nerf,True
+15.12,base_stat,Taliyah,Magic Resist,spellblock,30.0,28.0,-2.0,nerf,nerf,True
+15.12,ability_cooldown,TwistedFate,Cooldown,R cooldown,150.0,130.0,-20.0,buff,buff,True
+15.12,base_stat,Varus,Armor,armor,27.0,24.0,-3.0,nerf,nerf,True
+15.13,ability_cost,Gangplank,Mana Cost,Q cost,45.0,40.0,-5.0,nerf,buff,False
+15.13,ability_cooldown,Gangplank,Cooldown,R cooldown,150.0,140.0,-10.0,nerf,buff,False
+15.13,ability_cooldown,Kindred,Cooldown,R cooldown,150.0,140.0,-10.0,buff,buff,True
+15.13,base_stat,Rammus,Health Growth,hpperlevel,94.0,100.0,6.0,buff,buff,True
+15.13,ability_cooldown,TwistedFate,Cooldown,R cooldown,130.0,140.0,10.0,nerf,nerf,True
+15.13,base_stat,Yorick,Base Armor,armor,39.0,36.0,-3.0,nerf,nerf,True
+15.14,base_stat,Azir,Health,hp,550.0,575.0,25.0,buff,buff,True
+15.14,base_stat,Braum,Armor,armor,47.0,42.0,-5.0,nerf,nerf,True
+15.14,ability_cooldown,Fizz,Cooldown,W cooldown,6.0,5.0,-1.0,buff,buff,True
+15.14,ability_cooldown,Kled,Cooldown,W cooldown,8.0,11.0,3.0,nerf,nerf,True
+15.14,base_stat,LeeSin,Attack Damage,attackdamage,69.0,66.0,-3.0,nerf,nerf,True
+15.14,base_stat,Sett,Armor Growth,armorperlevel,5.2,4.7,-0.5,nerf,nerf,True
+15.14,base_stat,Yasuo,AD Growth,attackdamageperlevel,3.0,2.5,-0.5,nerf,nerf,True
+15.15,base_stat,Alistar,Armor,armor,47.0,40.0,-7.0,nerf,nerf,True
+15.15,base_stat,Braum,Armor,armor,42.0,35.0,-7.0,nerf,nerf,True
+15.15,base_stat,Braum,Armor Growth,armorperlevel,5.2,5.0,-0.2,nerf,nerf,True
+15.15,base_stat,Irelia,Health Regen,hpregen,6.0,3.5,-2.5,nerf,nerf,True
+15.15,base_stat,Nilah,Attack Damage,attackdamage,58.0,60.0,2.0,buff,buff,True
+15.15,base_stat,Nilah,Attack Speed Growth,attackspeedperlevel,3.0,2.25,-0.75,nerf,nerf,True
+15.15,base_stat,RekSai,Armor,armor,36.0,35.0,-1.0,nerf,nerf,True
+15.15,base_stat,RekSai,Armor Growth,armorperlevel,4.95,4.5,-0.45,nerf,nerf,True
+15.15,ability_cooldown,RekSai,Cooldown,E cooldown,10.0,6.0,-4.0,buff,buff,True
+15.15,ability_cooldown,RekSai,Cooldown,R cooldown,90.0,100.0,10.0,adjust,nerf,False
+15.16,ability_cooldown,Brand,Cooldown,R cooldown,100.0,90.0,-10.0,buff,buff,True
+15.16,ability_cooldown,Gnar,Cooldown,Q cooldown,15.0,13.0,-2.0,buff,buff,True
+15.16,base_stat,JarvanIV,Armor Growth,armorperlevel,5.2,4.6,-0.6,nerf,nerf,True
+15.16,base_stat,Kalista,AD growth,attackdamageperlevel,4.0,4.25,0.25,buff,buff,True
+15.16,ability_cooldown,Lulu,Cooldown,E cooldown,8.0,9.0,1.0,nerf,nerf,True
+15.16,base_stat,Nocturne,Armor Growth,armorperlevel,4.7,4.2,-0.5,nerf,nerf,True
+15.16,base_stat,RekSai,Base Attack Damage,attackdamage,58.0,62.0,4.0,buff,buff,True
+15.16,ability_cooldown,Shaco,Cooldown,Q cooldown,11.0,12.0,1.0,nerf,nerf,True
+15.16,ability_cooldown,Trundle,Cooldown,W cooldown,14.0,16.0,2.0,nerf,nerf,True
+15.16,base_stat,Viego,Attack Speed Growth,attackspeedperlevel,2.5,2.25,-0.25,nerf,nerf,True
+15.16,base_stat,Warwick,Base Attack Damage,attackdamage,60.0,65.0,5.0,buff,buff,True
+15.16,base_stat,XinZhao,Base Health,hp,640.0,620.0,-20.0,nerf,nerf,True
+15.16,ability_cooldown,Zyra,Cooldown,E cooldown,12.0,11.0,-1.0,buff,buff,True
+15.17,base_stat,Gwen,Armor,armor,36.0,33.0,-3.0,nerf,nerf,True
+15.17,base_stat,Gwen,Attack Speed Growth,attackspeedperlevel,2.25,2.5,0.25,buff,buff,True
+15.17,ability_cooldown,Irelia,Cooldown,E cooldown,14.0,13.0,-1.0,buff,buff,True
+15.17,ability_cost,Kayn,Mana Cost,Q cost,50.0,40.0,-10.0,buff,buff,True
+15.17,ability_cost,Kayn,Mana Cost,W cost,70.0,50.0,-20.0,buff,buff,True
+15.17,base_stat,MasterYi,Health,hp,669.0,655.0,-14.0,nerf,nerf,True
+15.17,base_stat,MissFortune,Attack Damage,attackdamage,53.0,55.0,2.0,buff,buff,True
+15.17,ability_cost,Morgana,Mana Cost,W cost,100.0,90.0,-10.0,buff,buff,True
+15.17,base_stat,Senna,Attack Speed Growth,attackspeedperlevel,2.0,3.0,1.0,buff,buff,True
+15.18,ability_cost,Amumu,Mana Cost,Q cost,55.0,50.0,-5.0,buff,buff,True
+15.18,base_stat,Ashe,Attack Damage Growth,attackdamageperlevel,2.95,3.45,0.5,buff,buff,True
+15.18,base_stat,Azir,Attack Speed Growth,attackspeedperlevel,5.5,5.0,-0.5,nerf,nerf,True
+15.18,ability_range,Briar,Range,R range,10000.0,12000.0,2000.0,buff,buff,True
+15.18,base_stat,Cassiopeia,Mana,mp,400.0,450.0,50.0,buff,buff,True
+15.18,base_stat,Qiyana,Attack Damage,attackdamage,66.0,64.0,-2.0,nerf,nerf,True
+15.18,base_stat,Qiyana,Armor Growth,armorperlevel,4.7,4.5,-0.2,nerf,nerf,True
+15.18,ability_cost,Taliyah,Mana Cost,Q cost,75.0,65.0,-10.0,buff,buff,True
+15.18,ability_cost,Taliyah,Mana Cost,Q cost,75.0,65.0,-10.0,buff,buff,True
+15.18,ability_cost,Taliyah,Mana Cost,E cost,100.0,90.0,-10.0,buff,buff,True
+15.18,ability_cooldown,Velkoz,Cooldown,E cooldown,13.0,11.0,-2.0,buff,buff,True
+15.18,base_stat,Yunara,HP,hp,600.0,575.0,-25.0,nerf,nerf,True
+15.18,base_stat,Yunara,Attack Damage,attackdamage,56.0,53.0,-3.0,nerf,nerf,True
+15.19,base_stat,Caitlyn,Attack Damage,attackdamage,60.0,62.0,2.0,buff,buff,True
+15.19,base_stat,Jax,HP,hp,665.0,650.0,-15.0,nerf,nerf,True
+15.19,base_stat,LeeSin,Armor Growth,armorperlevel,4.9,4.5,-0.4,nerf,nerf,True
+15.19,ability_cooldown,Lillia,Cooldown,R cooldown,130.0,120.0,-10.0,buff,buff,True
+15.19,base_stat,Seraphine,Mana Growth,mpperlevel,25.0,40.0,15.0,buff,buff,True
+15.19,base_stat,Seraphine,HP Growth,hpperlevel,90.0,95.0,5.0,buff,buff,True
+15.19,base_stat,Syndra,Health Growth,hpperlevel,104.0,100.0,-4.0,nerf,nerf,True
+15.19,base_stat,Syndra,Armor Growth,armorperlevel,4.6,4.0,-0.6,nerf,nerf,True
+15.19,ability_cooldown,Syndra,Cooldown,E cooldown,17.0,15.0,-2.0,buff,buff,True
+15.20,ability_cooldown,Anivia,Cooldown,Q cooldown,10.0,9.0,-1.0,buff,buff,True
+15.20,base_stat,Camille,Armor Growth,armorperlevel,5.0,4.5,-0.5,nerf,nerf,True
+15.20,ability_cooldown,Camille,Cooldown,W cooldown,14.0,13.0,-1.0,buff,buff,True
+15.20,base_stat,Katarina,Armor,armor,28.0,32.0,4.0,buff,buff,True
+15.20,base_stat,Malphite,Base Armor,armor,37.0,40.0,3.0,buff,buff,True
+15.20,base_stat,Warwick,Attack Damage Growth,attackdamageperlevel,2.75,2.5,-0.25,nerf,nerf,True
+15.20,base_stat,Warwick,Attack Speed Growth,attackspeedperlevel,2.3,2.0,-0.3,nerf,nerf,True
+15.20,ability_cooldown,MonkeyKing,Cooldown,W cooldown,18.0,20.0,2.0,nerf,nerf,True
+15.21,base_stat,DrMundo,Armor Growth,armorperlevel,3.7,4.5,0.8,buff,buff,True
+15.21,base_stat,Ezreal,Attack Damage Growth,attackdamageperlevel,2.75,3.25,0.5,buff,buff,True
+15.21,base_stat,Graves,Magic Resistance,spellblock,32.0,30.0,-2.0,nerf,nerf,True
+15.21,base_stat,Graves,Magic Resistance Growth,spellblock,32.0,30.0,-2.0,nerf,nerf,True
+15.21,base_stat,Gwen,Health,hp,600.0,620.0,20.0,buff,buff,True
+15.21,base_stat,Gwen,Health Growth,hpperlevel,110.0,115.0,5.0,buff,buff,True
+15.21,base_stat,Gwen,Attack Speed Growth,attackspeedperlevel,2.5,2.25,-0.25,nerf,nerf,True
+15.21,ability_cooldown,Gwen,Cooldown,W cooldown,21.0,20.0,-1.0,buff,buff,True
+15.21,ability_cooldown,Gwen,Cooldown,E cooldown,10.0,12.0,2.0,nerf,nerf,True
+15.21,base_stat,Kalista,Attack Damage Growth,attackdamageperlevel,4.25,4.75,0.5,buff,buff,True
+15.21,base_stat,Morgana,Armor Growth,armorperlevel,5.0,4.2,-0.8,nerf,nerf,True
+15.21,base_stat,Qiyana,Health Growth,hpperlevel,124.0,121.0,-3.0,nerf,nerf,True
+15.21,base_stat,Yone,Attack Damage,attackdamage,60.0,62.0,2.0,buff,buff,True
+15.21,ability_cooldown,Yunara,Cooldown,E cooldown,7.5,9.0,1.5,nerf,nerf,True
+15.22,base_stat,Akshan,Health,hp,630.0,610.0,-20.0,nerf,nerf,True
+15.22,ability_cooldown,Akshan,Cooldown,Q cooldown,6.5,7.0,0.5,nerf,nerf,True
+15.22,base_stat,AurelionSol,Movement Speed,movespeed,335.0,340.0,5.0,buff,buff,True
+15.22,ability_cooldown,Blitzcrank,Cooldown,E cooldown,7.0,6.0,-1.0,buff,buff,True
+15.22,base_stat,Leblanc,Health Growth,hpperlevel,111.0,108.0,-3.0,nerf,nerf,True
+15.22,base_stat,Leblanc,Armor Growth,armorperlevel,4.7,4.2,-0.5,nerf,nerf,True
+15.22,base_stat,Skarner,AD Growth,attackdamageperlevel,3.0,4.0,1.0,buff,buff,True
+15.22,ability_cooldown,Skarner,Cooldown,Q cooldown,10.0,6.0,-4.0,buff,buff,True
+15.22,base_stat,Volibear,Armor,armor,31.0,35.0,4.0,buff,buff,True
+15.22,base_stat,Volibear,Attack Damage,attackdamage,60.0,62.0,2.0,buff,buff,True
+15.23,base_stat,Fizz,Armor,armor,22.0,26.0,4.0,buff,buff,True
+15.23,ability_cooldown,Fizz,Cooldown,R cooldown,85.0,100.0,15.0,adjust,nerf,False
+15.23,base_stat,Jhin,Attack Damage,attackdamage,59.0,61.0,2.0,buff,buff,True
+15.23,base_stat,Kaisa,Armor,armor,27.0,25.0,-2.0,nerf,nerf,True
+15.23,ability_cooldown,Kaisa,Cooldown,R cooldown,90.0,100.0,10.0,nerf,nerf,True
+15.23,base_stat,Skarner,AD Growth,attackdamageperlevel,4.0,5.0,1.0,buff,buff,True
+15.23,ability_cooldown,Skarner,Cooldown,Q cooldown,6.0,5.5,-0.5,buff,buff,True
+15.23,ability_cost,Swain,Mana,E cost,70.0,60.0,-10.0,buff,buff,True
+15.23,base_stat,Tristana,AD Growth,attackdamageperlevel,2.5,2.9,0.4,buff,buff,True
+15.23,base_stat,Vladimir,Health,hp,607.0,600.0,-7.0,nerf,nerf,True
+15.23,base_stat,Vladimir,Armor,armor,27.0,24.0,-3.0,nerf,nerf,True
+15.23,base_stat,Volibear,Attack Damage,attackdamage,62.0,65.0,3.0,buff,buff,True
+15.24,base_stat,Braum,Health,hp,610.0,630.0,20.0,buff,buff,True
+15.24,base_stat,MasterYi,Health,hp,655.0,640.0,-15.0,nerf,nerf,True
+15.24,base_stat,MasterYi,Attack Damage Growth,attackdamageperlevel,2.8,2.5,-0.3,nerf,nerf,True
+15.24,ability_cost,Mel,Mana Cost,E cost,60.0,70.0,10.0,nerf,nerf,True
+15.24,base_stat,Nasus,Health,hp,631.0,650.0,19.0,buff,buff,True
+15.24,ability_cooldown,Sejuani,Cooldown,Q cooldown,16.0,15.0,-1.0,buff,buff,True
+15.24,ability_cost,Sejuani,Mana Cost,Q cost,80.0,70.0,-10.0,buff,buff,True
+15.24,ability_cooldown,Sejuani,Cooldown,R cooldown,110.0,105.0,-5.0,buff,buff,True
+16.1,base_stat,Cassiopeia,Movement speed,movespeed,328.0,335.0,7.0,buff,buff,True
+16.1,base_stat,Draven,AD growth,attackdamageperlevel,3.6,3.0,-0.6,nerf,nerf,True
+16.1,base_stat,Jinx,Attack speed growth,attackspeedperlevel,1.4,1.0,-0.4,nerf,nerf,True
+16.1,base_stat,Lucian,AD growth,attackdamageperlevel,2.9,2.5,-0.4,nerf,nerf,True
+16.1,base_stat,Lucian,Attack speed growth,attackspeedperlevel,3.3,2.5,-0.8,nerf,nerf,True
+16.1,base_stat,Nilah,Attack speed growth,attackspeedperlevel,2.25,2.0,-0.25,nerf,nerf,True
+16.1,ability_cost,Nilah,Mana,R cost,80.0,100.0,20.0,nerf,nerf,True
+16.1,base_stat,Twitch,Attack speed growth,attackspeedperlevel,3.38,3.0,-0.38,nerf,nerf,True
+16.1,base_stat,Twitch,AD growth,attackdamageperlevel,3.1,3.0,-0.1,nerf,nerf,True
+16.2,base_stat,Ashe,Attack Damage Growth,attackdamageperlevel,3.0,3.5,0.5,buff,buff,True
+16.2,ability_cost,Malphite,Mana Cost,E cost,50.0,60.0,10.0,nerf,nerf,True
+16.2,ability_cooldown,Malphite,Cooldown,R cooldown,105.0,115.0,10.0,buff,nerf,False
+16.2,base_stat,MasterYi,Armor Growth,armorperlevel,4.2,4.5,0.3,buff,buff,True
+16.2,ability_cooldown,Nunu,Cooldown,Q cooldown,10.0,11.0,1.0,nerf,nerf,True
+16.2,base_stat,Sivir,Attack Speed Growth,attackspeedperlevel,2.0,1.6,-0.4,nerf,nerf,True
+16.2,base_stat,Sivir,Armor Growth,armorperlevel,4.45,4.0,-0.45,nerf,nerf,True
+16.2,base_stat,Smolder,Armor Growth,armorperlevel,4.7,4.0,-0.7,nerf,nerf,True
+16.2,base_stat,Viego,Attack Speed Growth,attackspeedperlevel,2.25,2.75,0.5,buff,buff,True
+16.3,ability_cooldown,Ahri,Cooldown,W cooldown,8.0,7.0,-1.0,buff,buff,True
+16.3,base_stat,Belveth,Health Growth,hpperlevel,99.0,105.0,6.0,buff,buff,True
+16.3,base_stat,Braum,Health,hp,630.0,610.0,-20.0,nerf,nerf,True
+16.3,base_stat,Briar,Health Growth,hpperlevel,95.0,100.0,5.0,buff,buff,True
+16.3,base_stat,Briar,Armor Growth,armorperlevel,4.2,4.5,0.3,buff,buff,True
+16.3,base_stat,Draven,AD Growth,attackdamageperlevel,3.0,3.4,0.4,buff,buff,True
+16.3,base_stat,Ezreal,AD Growth,attackdamageperlevel,3.25,3.75,0.5,buff,buff,True
+16.3,base_stat,Heimerdinger,Health Growth,hpperlevel,101.0,105.0,4.0,buff,buff,True
+16.3,base_stat,Nilah,AD,attackdamage,60.0,58.0,-2.0,nerf,nerf,True
+16.3,base_stat,Nilah,Armor Growth,armorperlevel,4.5,4.2,-0.3,nerf,nerf,True
+16.3,base_stat,Trundle,Armor Growth,armorperlevel,3.9,4.5,0.6,buff,buff,True
+16.3,base_stat,Trundle,AD Growth,attackdamageperlevel,4.0,4.5,0.5,buff,buff,True
+16.3,base_stat,Tryndamere,AD Growth,attackdamageperlevel,4.0,4.5,0.5,buff,buff,True
+16.3,base_stat,Varus,Armor Growth,armorperlevel,4.6,4.0,-0.6,nerf,nerf,True
+16.3,base_stat,Vi,Health Growth,hpperlevel,99.0,105.0,6.0,buff,buff,True
+16.3,base_stat,Vi,AD Growth,attackdamageperlevel,3.0,3.5,0.5,buff,buff,True
+16.3,ability_cooldown,Volibear,Cooldown,E cooldown,14.0,16.0,2.0,nerf,nerf,True
+16.10,base_stat,Anivia,Base Armor,armor,21.0,19.0,-2.0,nerf,nerf,True
+16.10,base_stat,Anivia,Armor growth (per level),armorperlevel,4.5,4.1,-0.4,nerf,nerf,True
+16.10,ability_cost,Galio,mana cost,Q cost,80.0,70.0,-10.0,buff,buff,True
+16.10,ability_cooldown,LeeSin,cooldown,W cooldown,12.0,7.0,-5.0,adjust,buff,False
+16.10,ability_cost,Quinn,mana cost,R cost,50.0,25.0,-25.0,buff,buff,True
+16.10,base_stat,Shyvana,Health per level,hpperlevel,104.0,95.0,-9.0,nerf,nerf,True
+16.10,ability_cooldown,Shyvana,cooldown scaling,W cooldown,12.0,11.5,-0.5,nerf,buff,False
+16.11,base_stat,Brand,Base Armor,armor,27.0,24.0,-3.0,nerf,nerf,True
+16.11,ability_cooldown,Kassadin,cooldown,Q cooldown,9.0,8.0,-1.0,buff,buff,True
+16.11,base_stat,Teemo,Armor growth (per level),armorperlevel,4.95,4.5,-0.45,nerf,nerf,True
+16.12,ability_cooldown,Hwei,cooldown,E cooldown,12.0,11.0,-1.0,buff,buff,True
+16.12,ability_cost,Jax,mana cost,Q cost,65.0,50.0,-15.0,buff,buff,True
+16.12,base_stat,Orianna,Base Health,hp,585.0,565.0,-20.0,nerf,nerf,True
+16.12,base_stat,Ryze,Base Health,hp,645.0,620.0,-25.0,nerf,nerf,True
+16.12,base_stat,Ryze,Base Attack Damage,attackdamage,58.0,55.0,-3.0,nerf,nerf,True
+16.12,base_stat,Syndra,Base Health,hp,563.0,583.0,20.0,buff,buff,True
+16.12,ability_cost,Tristana,mana cost,Q cost,40.0,25.0,-15.0,buff,buff,True
+16.12,ability_cost,XinZhao,mana cost,W cost,50.0,60.0,10.0,nerf,nerf,True
+16.12,ability_cost,XinZhao,mana cost,E cost,50.0,60.0,10.0,nerf,nerf,True
+16.13,base_stat,Brand,Base Mana Regeneration,mpregen,9.0,11.0,2.0,buff,buff,True
+16.13,ability_cost,Brand,mana cost,E cost,80.0,90.0,10.0,nerf,nerf,True
+16.13,base_stat,Cassiopeia,Health per level,hpperlevel,104.0,98.0,-6.0,nerf,nerf,True
+16.13,ability_cooldown,Draven,cooldown,E cooldown,16.0,14.0,-2.0,buff,buff,True
+16.13,ability_cooldown,Kaisa,cooldown,W cooldown,18.0,17.0,-1.0,buff,buff,True
+16.13,ability_cost,Sion,mana cost,W cost,75.0,85.0,10.0,nerf,nerf,True
+16.13,ability_cooldown,Vex,cooldown,E cooldown,13.0,12.0,-1.0,buff,buff,True
+16.13,ability_cooldown,Zaahen,cooldown,W cooldown,14.0,13.0,-1.0,buff,buff,True
