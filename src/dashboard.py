@@ -54,7 +54,7 @@ BUFF_BLUE, NERF_RED, ACCENT = "#2a78d6", "#e34948", "#eb6834"
 
 st.set_page_config(page_title="LoL Patch Predictor", layout="wide")
 st.title("LoL Patch Predictor")
-st.caption("""Do League patch notes predict anything? Winrate: no, and we can prove it. **Pick rate: yes.**""")
+st.caption("""Do League patch notes predict anything?""")
 
 # ------------------------------------------------------------------ load data
 try:
@@ -796,8 +796,7 @@ with tab_data:
               delta_color="off")
 
     st.write("""**Sample depth per patch.** The dashed line is the 5,000-game floor below which a patch's
-pick-share denominator is too small to trust — patches under it are dropped, and they take the
-steps on *both* sides of them with them.""")
+pick-share denominator is too small to trust. Patches under the line are dropped.""")
     bars = alt.Chart(cov).mark_bar().encode(
         x=alt.X("patch:N", title="patch", sort=allp),
         y=alt.Y("games:Q", title="champion-games sampled"),
@@ -824,10 +823,7 @@ champion-games per match.""")
                      width="stretch")
     with c2:
         st.write("**Adjacency guard**")
-        st.caption("""Steps are kept only when they span exactly one real patch. Without it, a missing patch gets
-modelled as a normal step: the outcome covers two patches of player behaviour while the notes
-cover one, so champions changed in the skipped patch are mislabelled as unchanged *and*
-champions changed in the visible one get credited with two patches of movement.""")
+        st.caption("""Prevents skipping a patch when modeling. If you went from 15.2->15.4 because 15.3 did not have enough data, you would be missing the context from 15.3. Adjacency guard skips it.""")
 
     st.divider()
     st.write("**LLM patch-note extraction**")
@@ -844,9 +840,3 @@ champions changed in the visible one get credited with two patches of movement."
         })
     if rows:
         st.dataframe(pd.DataFrame(rows).sort_values("patch"), width="stretch", hide_index=True)
-    st.info(
-        """Base-stat changes are auto-validated against **Data Dragon ground truth** (~89% recall / ~80%
-precision across 3 patches). The cross-check even caught an **undocumented micropatch** —
-Smolder's base AD 60→58, documented in patch 26.10 but missing from the 26.11 notes — which a
-patch-notes-only analysis would miss."""
-    )
